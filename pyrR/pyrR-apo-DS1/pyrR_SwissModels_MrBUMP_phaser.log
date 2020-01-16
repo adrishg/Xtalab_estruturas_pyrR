@@ -1,0 +1,1846 @@
+<pre>
+<B><FONT COLOR="#FF0000">
+<html><!-- PHENIX HTML LOGFILE -->
+
+##########################################################################################
+##########################################################################################
+##########################################################################################
+### PHENIX: Phaser                                                               2.8.3 ###
+##########################################################################################
+User:         alfredo
+Run time:     Wed Jan  8 18:34:23 2020
+Version:      2.8.3
+Release Date: Wed Oct 16 22:41:51 2019 (svn 8451) (git 7473, f5edf81... )
+
+If you use this software please cite:
+"Phaser Crystallographic Software"
+A.J. McCoy, R.W. Grosse-Kunstleve, P.D. Adams, M.D. Winn, L.C. Storoni & R.J. Read
+J. Appl. Cryst. (2007). 40, 658-674
+<a href="http://journals.iucr.org/j/issues/2007/04/00/he5368/he5368.pdf">PDF</a>
+
+<!--END--></FONT></B>
+
+******************************************************************************************
+*** Phaser Module: PREPROCESSOR                                                  2.8.3 ***
+******************************************************************************************
+
+CELL 108.38 115.71 64.86 90 103.18 90
+COMPOSITION BY ASU
+COMPOSITION PROTEIN SEQ "/Users/alfredo/Documents/Adriana/pyrR_Tthermo.fa" NUM 4
+ELLG HIRES ON
+ENSEMBLE 1w30 PDB "/Users/alfredo/Documents/Adriana/swissm_1w30_Ttecno.pdb" ID 1 
+ENSEMBLE 1w30 ESTIMATOR oeffner
+HKLOUT ON
+INFORMATION OFF
+KEYWORDS OFF
+LABIN I = I SIGI = SIGI
+PEAKS ROT SELECT PERCENT CUTOFF 75
+PEAKS TRA SELECT PERCENT CUTOFF 75
+PURGE ROT PERCENT 75
+PURGE TRA PERCENT 75
+PURGE RNP PERCENT 75
+RESHARPEN PERCENTAGE 100
+ROOT "pyrR_SwissModels_MrBUMP_phaser"
+SEARCH ENSEMBLE 1w30 
+SEARCH METHOD FULL
+SGALT BASE  C 2y
+SPACEGROUP C 1 2 1
+TITLE pyr_apo_ds1_swissMrBUMP
+TNCS RLIST ADD ON
+XYZOUT ON
+
+CPU Time: 0 days 0 hrs 0 mins 0.06 secs (      0.06 secs)
+Finished: Wed Jan  8 18:34:23 2020
+
+******************************************************************************************
+*** Phaser Module: AUTOMATED MOLECULAR REPLACEMENT                               2.8.3 ***
+******************************************************************************************
+
+** Steps:
+**    Cell Content Analysis
+**    Anisotropy correction
+**    Translational NCS correction
+**    Rotation Function
+**    Translation Function
+**    Packing
+**    Refinement
+**    Final Refinement (if data higher resolution than search resolution)
+** Number of search ensembles = 1
+** Search Method: FULL
+** Input Search Order:
+**    #1   1w30  
+** Automatic (best predicted) search order WILL be used
+
+CPU Time: 0 days 0 hrs 0 mins 0.07 secs (      0.07 secs)
+Finished: Wed Jan  8 18:34:23 2020
+
+******************************************************************************************
+*** Phaser Module: CELL CONTENT ANALYSIS                                         2.8.3 ***
+******************************************************************************************
+
+   Space-Group Name (Hall Symbol): C 1 2 1 ( C 2y)
+   Space-Group Number: 5
+   Unit Cell:  108.38  115.71   64.86   90.00  103.18   90.00
+
+--------------------
+SPACE GROUP ANALYSIS
+--------------------
+
+   Input Space Group: C 1 2 1
+
+   (a) Space groups derived by translation (screw) symmetry
+   --------------------------------------------------------
+   Z   Space Group    Hall Symbol
+   ----
+   4   C 1 2 1        C 2y
+   ----
+
+   (b) Subgroups of space group for perfect twinning expansions
+   ------------------------------------------------------------
+   R: Reindexing operation required (*)
+   Only subgroups related by rotational symmetry are reported
+   Z   Space Group   R Hall Symbol
+   ----
+   2   C 1           * P 1 (1/2*x+1/2*y,1/2*x-1/2*y,-z)
+   ---
+   4   C 1 2 1         C 2y
+   ----
+
+   Composition is of type: PROTEIN
+   MW to which Matthews applies: 79690
+   Resolution for Matthews calculation:  2.20
+
+   Z       MW         VM    % solvent  rel. freq.
+   1       79690      2.48  50.49      1.000       <== most probable
+   2       159380     1.24  0.99       0.003     
+
+   Z is the number of multiples of the total composition
+   In most cases the most probable Z value should be 1
+   If it is not 1, you may need to consider other compositions
+
+   Histogram of relative frequencies of VM values
+   ----------------------------------------------
+   Frequency of most common VM value normalized to 1
+   VM values plotted in increments of 1/VM (0.02)
+
+        <--- relative frequency --->
+        0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  
+        |    |    |    |    |    |    |    |    |    |    |    
+   10.00 -
+    8.33 -
+    7.14 -
+    6.25 -
+    5.56 -
+    5.00 -
+    4.55 -
+    4.17 -
+    3.85 --
+    3.57 ---
+    3.33 ------
+    3.12 ---------
+    2.94 --------------
+    2.78 ---------------------
+    2.63 -----------------------------
+    2.50 --------------------------------------
+    2.38 ********************************************* (COMPOSITION*1)
+    2.27 --------------------------------------------------
+    2.17 --------------------------------------------------
+    2.08 --------------------------------------------
+    2.00 ----------------------------------
+    1.92 ----------------------
+    1.85 ------------
+    1.79 -----
+    1.72 --
+    1.67 -
+    1.61 -
+    1.56 -
+    1.52 -
+    1.47 -
+    1.43 -
+    1.39 -
+    1.35 -
+    1.32 -
+    1.28 -
+    1.25 -
+
+   Most probable VM for resolution = 2.2252
+   Most probable MW of protein in asu for resolution = 88976.4
+
+CPU Time: 0 days 0 hrs 0 mins 0.11 secs (      0.11 secs)
+Finished: Wed Jan  8 18:34:23 2020
+
+******************************************************************************************
+*** Phaser Module: ANISOTROPY CORRECTION                                         2.8.3 ***
+******************************************************************************************
+
+------------------------------
+DATA FOR ANISOTROPY CORRECTION
+------------------------------
+
+   Resolution of All Data (Number):        2.20  77.97 (39493)
+   Resolution of Selected Data (Number):   2.20  63.15 (39490)
+
+   Outlier Rejection
+   -----------------
+   There were 3 reflections of 39493 (0.0076%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     -4   36    5   3.11      19.498       0.610   4.100e-09  true   false   
+     -1   49    2   2.36      14.369       0.519   6.581e-07  true   false   
+      1    1    0  77.97      -0.000       0.000   5.310e-08  true   false   
+
+---------------------
+ANISOTROPY CORRECTION
+---------------------
+
+   Protocol cycle #1 of 3
+   Refinement protocol for this macrocycle:
+   BIN SCALES: REFINE
+   ANISOTROPY: REFINE
+   SOLVENT K:  FIX
+   SOLVENT B:  FIX
+
+   Protocol cycle #2 of 3
+   Refinement protocol for this macrocycle:
+   BIN SCALES: REFINE
+   ANISOTROPY: REFINE
+   SOLVENT K:  FIX
+   SOLVENT B:  FIX
+
+   Protocol cycle #3 of 3
+   Refinement protocol for this macrocycle:
+   BIN SCALES: REFINE
+   ANISOTROPY: REFINE
+   SOLVENT K:  FIX
+   SOLVENT B:  FIX
+
+   Outlier Rejection
+   -----------------
+   There were 3 reflections of 39493 (0.0076%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     -4   36    5   3.11      19.498       0.610   4.100e-09  true   false   
+     -1   49    2   2.36      14.369       0.519   6.581e-07  true   false   
+      1    1    0  77.97      -0.000       0.000   5.310e-08  true   false   
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 3 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+     -363731.831           -362775.998               955.833
+
+   Principal components of anisotropic part of B affecting observed amplitudes:
+     eigenB (A^2)     direction cosines (orthogonal coordinates)
+         6.597             -0.6498   0.0000   0.7601
+        -0.293              0.7601   0.0000   0.6498
+        -6.304              0.0000   1.0000   0.0000
+   Anisotropic deltaB (i.e. range of principal components):  12.902
+
+   Outlier Rejection
+   -----------------
+   There were 2 reflections of 39493 (0.0051%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     -4   36    5   3.11      15.612       0.489   1.870e-07  true   false   
+      1    1    0  77.97      -0.000       0.000   6.179e-08  true   false   
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 1 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+     -362792.022           -362791.986                 0.036
+
+   Principal components of anisotropic part of B affecting observed amplitudes:
+     eigenB (A^2)     direction cosines (orthogonal coordinates)
+         6.607             -0.6497   0.0000   0.7602
+        -0.283              0.7602   0.0000   0.6497
+        -6.324              0.0000   1.0000   0.0000
+   Anisotropic deltaB (i.e. range of principal components):  12.931
+
+   Outlier Rejection
+   -----------------
+   There were 2 reflections of 39493 (0.0051%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     -4   36    5   3.11      15.598       0.488   1.895e-07  true   false   
+      1    1    0  77.97      -0.000       0.000   6.180e-08  true   false   
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 1 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+     -362791.986           -362791.986                 0.000
+
+   Principal components of anisotropic part of B affecting observed amplitudes:
+     eigenB (A^2)     direction cosines (orthogonal coordinates)
+         6.607             -0.6497   0.0000   0.7602
+        -0.283              0.7602   0.0000   0.6497
+        -6.324              0.0000   1.0000   0.0000
+   Anisotropic deltaB (i.e. range of principal components):  12.931
+
+   Outlier Rejection
+   -----------------
+   There were 2 reflections of 39493 (0.0051%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     -4   36    5   3.11      15.598       0.488   1.895e-07  true   false   
+      1    1    0  77.97      -0.000       0.000   6.180e-08  true   false   
+
+   Refined Anisotropy Parameters
+   -----------------------------
+   Principal components of anisotropic part of B affecting observed amplitudes:
+     eigenB (A^2)     direction cosines (orthogonal coordinates)
+         6.607             -0.6497   0.0000   0.7602
+        -0.283              0.7602   0.0000   0.6497
+        -6.324              0.0000   1.0000   0.0000
+   Anisotropic deltaB (i.e. range of principal components):  12.931
+
+--------------
+ABSOLUTE SCALE
+--------------
+
+   Scale factor to put input Fs on absolute scale
+   Wilson Scale:    5.80533
+   Wilson B-factor: 37.6204
+
+--------------------------------
+DATA AFTER ANISOTROPY CORRECTION
+--------------------------------
+
+   Resolution of All Data (Number):        2.20  77.97 (39493)
+   Resolution of Selected Data (Number):   2.20  63.15 (39491)
+
+   Outlier Rejection
+   -----------------
+   There were 2 reflections of 39493 (0.0051%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     -4   36    5   3.11      15.598       0.488   1.895e-07  true   false   
+      1    1    0  77.97      -0.000       0.000   6.180e-08  true   false   
+
+------------
+OUTPUT FILES
+------------
+
+   No files output
+
+CPU Time: 0 days 0 hrs 0 mins 4.22 secs (      4.22 secs)
+Finished: Wed Jan  8 18:34:27 2020
+
+******************************************************************************************
+*** Phaser Module: TRANSLATIONAL NON-CRYSTALLOGRAPHIC SYMMETRY                   2.8.3 ***
+******************************************************************************************
+
+   Unit Cell:  108.38  115.71   64.86   90.00  103.18   90.00
+
+---------------------
+MAXIMUM NMOL ANALYSIS
+---------------------
+
+   Stoichiometry of search components:
+      "1w30"
+
+   Molecular weight of components:  78572.4
+   Volume of asymmetric unit:       197990
+   Packing to solvent content:      20%
+   Maximum automatic NMOL number:   1
+
+-------------------------------------
+DATA FOR TRANSLATIONAL NCS CORRECTION
+-------------------------------------
+
+   Resolution of All Data (Number):        2.20  77.97 (39493)
+   Resolution of Selected Data (Number):   2.20  63.15 (39490)
+
+   Outlier Rejection
+   -----------------
+   There were 3 reflections of 39493 (0.0076%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     -4   36    5   3.11      19.498       0.610   4.100e-09  true   false   
+     -1   49    2   2.36      14.369       0.519   6.581e-07  true   false   
+      1    1    0  77.97      -0.000       0.000   5.310e-08  true   false   
+
+   Weighted Intensity Moments for Data
+   -----------------------------------
+   Inverse variance-weighted 2nd Moment = <wE^4>/<wE^2>^2 == <wJ^2>/<wJ>^2
+                        Untwinned   Perfect Twin
+   2nd Moment  Centric:    3.0          2.0
+   2nd Moment Acentric:    2.0          1.5
+                               Measured
+   2nd Moment  Centric:             3.52
+   2nd Moment Acentric:             2.13
+
+   Resolution for Twin Analysis (85% I/SIGI > 3):  2.99A (HiRes= 2.20A)
+
+---------------------
+ANISOTROPY CORRECTION
+---------------------
+
+   Weighted Intensity Moments after Anisotropy Correction
+   ------------------------------------------------------
+   Inverse variance-weighted 2nd Moment = <wE^4>/<wE^2>^2 == <wJ^2>/<wJ>^2
+                        Untwinned   Perfect Twin
+   2nd Moment  Centric:    3.0          2.0
+   2nd Moment Acentric:    2.0          1.5
+                               Measured
+   2nd Moment  Centric:             3.39
+   2nd Moment Acentric:             2.06
+
+   Resolution for Twin Analysis (85% I/SIGI > 3):  2.99A (HiRes= 2.20A)
+
+-----------------
+TRANSLATIONAL NCS
+-----------------
+
+   tNCS vector not set
+   Space Group (without translational symmetry):C 1 2 1
+   Patterson Symmetry: C 1 2/m 1
+   Resolution of All Data (Number):        2.20  77.97 (39493)
+   Resolution of Patterson (Number):       5.00  10.00 (2981)
+
+   Raw Patterson Peaks Table
+   -------------------------
+   Sorted by Height
+   Height Vector
+   100.0%:   FRAC -0.0000 -0.0000 +0.0000   (ORTH   -0.0   -0.0    0.0)
+
+   Patterson Top (All) = 8.61%
+      There were 281 peaks
+
+   Patterson Top (Non-origin) = 4.48%
+      Patterson Origin Vector Distance = 15
+      There were 267 non-origin peaks
+
+   Patterson Top (Cutoff) = 0.00%
+      Patterson cutoff = 20%
+      There were 0 non-origin peaks over cutoff
+
+   Patterson Top (Large Cell) = 0.00%
+      Unit Cell dimension was not smaller than origin Patterson vector distance
+      There were 0 non-origin and large cell peaks over cutoff
+
+   Patterson Top (Analysis) = 0.00%
+      Peaks within minimum Patterson vector distance of one another were deleted
+      There were 0 widely separated non-origin peaks over cutoff
+
+   There were no interesting non-origin Patterson peaks
+
+   No tNCS found in Patterson
+
+--------
+TWINNING
+--------
+
+   tNCS/Twin Detection Table
+   -------------------------
+                                 -Second Moments-             --P-values--
+                                 Centric Acentric       untwinned  twin frac < 5%
+   Theoretical for untwinned      3.00    2.00    
+     including measurement error  3.01    2.00    
+   Theoretical for perfect twin   2.00    1.50    
+   Initial (data as input)        3.52    2.13+/-0.036  1          1         
+   After Anisotropy Correction    3.39    2.06+/-0.036  1          1         
+   After Anisotropy and tNCS         ---n/a---
+
+   P-value < 0.01 for < 5% twinned is considered worth investigating
+   Resolution for Twin Analysis (85% I/SIGI > 3):  2.99A (HiRes= 2.20A)
+
+---------------------------------------
+DATA AFTER TRANSLATIONAL NCS CORRECTION
+---------------------------------------
+
+   Resolution of All Data (Number):        2.20  77.97 (39493)
+   Resolution of Selected Data (Number):   2.20  63.15 (39491)
+
+   Outlier Rejection
+   -----------------
+   There were 2 reflections of 39493 (0.0051%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     -4   36    5   3.11      15.598       0.488   1.895e-07  true   false   
+      1    1    0  77.97      -0.000       0.000   6.180e-08  true   false   
+
+------------
+OUTPUT FILES
+------------
+
+   No files output
+
+CPU Time: 0 days 0 hrs 0 mins 6.00 secs (      6.00 secs)
+Finished: Wed Jan  8 18:34:29 2020
+
+******************************************************************************************
+*** Phaser Module: EXPERIMENTAL ERROR CORRECTION PREPARATION                     2.8.3 ***
+******************************************************************************************
+
+-----------------
+TRANSLATIONAL NCS
+-----------------
+
+   tNCS not present
+
+-----------------------------
+EXPERIMENTAL ERROR CORRECTION
+-----------------------------
+
+   Calculate Luzzati D factors accounting for observational error...
+
+   Data have been provided as raw intensities
+
+------------
+OUTPUT FILES
+------------
+
+   No files output
+
+CPU Time: 0 days 0 hrs 0 mins 7.16 secs (      7.16 secs)
+Finished: Wed Jan  8 18:34:30 2020
+
+******************************************************************************************
+*** Phaser Module: AUTOMATED MOLECULAR REPLACEMENT                               2.8.3 ***
+******************************************************************************************
+
+   Composition Table
+   -----------------
+   Total Scattering = 253844
+   Search occupancy factor = 1 (default)
+   Ensemble                       Frac.Scat. (Search Frac.Scat.) 
+   1w30                               95.99%              95.99%
+
+** Composition not increased
+
+CPU Time: 0 days 0 hrs 0 mins 7.17 secs (      7.17 secs)
+Finished: Wed Jan  8 18:34:30 2020
+
+******************************************************************************************
+*** Phaser Module: EXPECTED LLG OF ENSEMBLES                                     2.8.3 ***
+******************************************************************************************
+
+-----------------
+TRANSLATIONAL NCS
+-----------------
+
+   tNCS not present
+
+   Resolution of Data (Selected):    2.200 (2.20004)
+   Number of Reflections (Selected): 39493 (39491)
+   eLLG Target: 225
+
+----------
+ENSEMBLING
+----------
+
+   Ensemble: 1w30
+   --------------
+   PDB file # 1: swissm_1w30_Ttecno.pdb
+      This file contains 1 model
+      The input RmsD of model #1 with respect to the real structure is 0.543
+
+   Guide to eLLG values
+   ---------------------
+   eLLG      Top solution correct?
+   <25       -no 
+   25-36     -unlikely
+   36-49     -possibly
+   49-64     -probably
+   >64       -yes
+
+-----------------
+POLY-ALANINE ELLG
+-----------------
+
+   Resolution = 2.20004
+   Default RMSD = 0.1 0.2 0.4 0.8 1.6 3.2
+   Minimum solvent = 20%
+      Maximum number of polyalanine residues = 898 (-full-)
+   Alanine residues for eLLG target = 126
+
+   Table of Alanine Residues for eLLG Target
+   -----------------------------------------
+                  ---RMSD--- 
+   eLLG-target |  0.10  0.20  0.40  0.80  1.60  3.20 
+           225 |   126   133   160   293 -full--full-
+           196 |   118   124   149   273 -full--full-
+           169 |   109   115   138   254   868 -full-
+           144 |   101   106   128   234   802 -full-
+           121 |    93    97   117   215   735 -full-
+           100 |    84    88   106   195   668 -full-
+            81 |    76    79    96   176   601 -full-
+            64 |    67    70    85   156   534 -full-
+            49 |    59    62    74   136   467 -full-
+            36 |    50    53    64   117   401 -full-
+            25 |    42    44    53    97   334 -full-
+            16 |    33    35    42    78   267 -full-
+             9 |    25    26    32    58   200 -full-
+             4 |    16    17    21    39   133   878 
+             1 |     8     8    10    19    66   439 
+
+--------------
+MONOMERIC ELLG
+--------------
+
+   Expected LLG (eLLG)
+   -------------------
+   eLLG: eLLG of ensemble alone
+       eLLG   RMSD frac-scat  Ensemble
+     6971.5  0.543   0.95987  1w30
+
+   Resolution for eLLG target
+   --------------------------
+   eLLG-reso: Resolution to achieve target eLLG (225)
+     eLLG-reso  Ensemble
+         6.758  1w30
+
+   Resolution for eLLG target: data collection
+   -------------------------------------------
+   eLLG-reso: Resolution to achieve target eLLG (225) with perfect data
+     eLLG-reso  Ensemble
+         6.763  1w30
+
+   eLLG indicates that placement of a single copy of ensemble "1w30" should be easy
+
+   Expected LLG (eLLG): Chains
+   ---------------------------
+   eLLG: eLLG of chain alone
+       eLLG   RMSD frac-scat chain  Ensemble
+      435.7  0.543   0.23997  " A"  1w30
+      435.7  0.543   0.23997  " B"  1w30
+      435.7  0.543   0.23997  " C"  1w30
+      435.7  0.543   0.23997  " D"  1w30
+
+   Resolution for eLLG target: Chains
+   ----------------------------------
+   eLLG-reso: Resolution to achieve target eLLG (225)
+     eLLG-reso chain  Ensemble
+         3.131  " A"  1w30
+         3.131  " B"  1w30
+         3.131  " C"  1w30
+         3.131  " D"  1w30
+
+--------------------
+HOMO-OLIGOMERIC ELLG
+--------------------
+
+   Number of copies for eLLG target
+   --------------------------------
+   eLLG-target   RMSD frac-scat-known frac-scat   num-copies  Ensemble
+           225  0.543         0.00000   0.95987            1  1w30
+
+CPU Time: 0 days 0 hrs 0 mins 8.31 secs (      8.31 secs)
+Finished: Wed Jan  8 18:34:32 2020
+
+******************************************************************************************
+*** Phaser Module: AUTOMATED MOLECULAR REPLACEMENT                               2.8.3 ***
+******************************************************************************************
+
+** Loop over permutations
+** Permutation #1 of 1
+** Search Order:
+**    #1: 1w30
+
+CPU Time: 0 days 0 hrs 0 mins 8.33 secs (      8.33 secs)
+Finished: Wed Jan  8 18:34:32 2020
+
+******************************************************************************************
+*** Phaser Module: AUTOMATED MOLECULAR REPLACEMENT                               2.8.3 ***
+******************************************************************************************
+
+** Permutation #1 of 1
+** Search Order (next rotation function *):
+**    #1   1w30 *
+
+CPU Time: 0 days 0 hrs 0 mins 8.33 secs (      8.33 secs)
+Finished: Wed Jan  8 18:34:32 2020
+
+******************************************************************************************
+*** Phaser Module: EXPECTED LLG OF ENSEMBLES                                     2.8.3 ***
+******************************************************************************************
+
+-----------------
+TRANSLATIONAL NCS
+-----------------
+
+   tNCS not present
+
+   Resolution of Data (Selected):    2.200 (2.20004)
+   Number of Reflections (Selected): 39493 (39491)
+   eLLG Target: 225
+
+----------
+ENSEMBLING
+----------
+
+   Ensemble: 1w30
+   --------------
+   PDB file # 1: swissm_1w30_Ttecno.pdb
+      This file contains 1 model
+      The input RmsD of model #1 with respect to the real structure is 0.543
+
+   Guide to eLLG values
+   ---------------------
+   eLLG      Top solution correct?
+   <25       -no 
+   25-36     -unlikely
+   36-49     -possibly
+   49-64     -probably
+   >64       -yes
+
+-----------------
+POLY-ALANINE ELLG
+-----------------
+
+   Resolution = 2.20004
+   Default RMSD = 0.1 0.2 0.4 0.8 1.6 3.2
+   Minimum solvent = 20%
+      Maximum number of polyalanine residues = 898 (-full-)
+   Alanine residues for eLLG target = 126
+
+   Table of Alanine Residues for eLLG Target
+   -----------------------------------------
+                  ---RMSD--- 
+   eLLG-target |  0.10  0.20  0.40  0.80  1.60  3.20 
+           225 |   126   133   160   293 -full--full-
+           196 |   118   124   149   273 -full--full-
+           169 |   109   115   138   254   868 -full-
+           144 |   101   106   128   234   802 -full-
+           121 |    93    97   117   215   735 -full-
+           100 |    84    88   106   195   668 -full-
+            81 |    76    79    96   176   601 -full-
+            64 |    67    70    85   156   534 -full-
+            49 |    59    62    74   136   467 -full-
+            36 |    50    53    64   117   401 -full-
+            25 |    42    44    53    97   334 -full-
+            16 |    33    35    42    78   267 -full-
+             9 |    25    26    32    58   200 -full-
+             4 |    16    17    21    39   133   878 
+             1 |     8     8    10    19    66   439 
+
+--------------
+MONOMERIC ELLG
+--------------
+
+   Expected LLG (eLLG)
+   -------------------
+   eLLG: eLLG of ensemble alone
+       eLLG   RMSD frac-scat  Ensemble
+     6971.5  0.543   0.95987  1w30
+
+   Resolution for eLLG target
+   --------------------------
+   eLLG-reso: Resolution to achieve target eLLG (225)
+     eLLG-reso  Ensemble
+         6.758  1w30
+
+   Resolution for eLLG target: data collection
+   -------------------------------------------
+   eLLG-reso: Resolution to achieve target eLLG (225) with perfect data
+     eLLG-reso  Ensemble
+         6.763  1w30
+
+   eLLG indicates that placement of a single copy of ensemble "1w30" should be easy
+
+   Expected LLG (eLLG): Chains
+   ---------------------------
+   eLLG: eLLG of chain alone
+       eLLG   RMSD frac-scat chain  Ensemble
+      435.7  0.543   0.23997  " A"  1w30
+      435.7  0.543   0.23997  " B"  1w30
+      435.7  0.543   0.23997  " C"  1w30
+      435.7  0.543   0.23997  " D"  1w30
+
+   Resolution for eLLG target: Chains
+   ----------------------------------
+   eLLG-reso: Resolution to achieve target eLLG (225)
+     eLLG-reso chain  Ensemble
+         3.131  " A"  1w30
+         3.131  " B"  1w30
+         3.131  " C"  1w30
+         3.131  " D"  1w30
+
+--------------------
+HOMO-OLIGOMERIC ELLG
+--------------------
+
+   Number of copies for eLLG target
+   --------------------------------
+   eLLG-target   RMSD frac-scat-known frac-scat   num-copies  Ensemble
+           225  0.543         0.00000   0.95987            1  1w30
+
+CPU Time: 0 days 0 hrs 0 mins 9.48 secs (      9.48 secs)
+Finished: Wed Jan  8 18:34:33 2020
+
+******************************************************************************************
+*** Phaser Module: MOLECULAR REPLACEMENT ROTATION FUNCTION                       2.8.3 ***
+******************************************************************************************
+
+-----------------
+TRANSLATIONAL NCS
+-----------------
+
+   tNCS not present
+
+--------------------------
+DATA FOR ROTATION FUNCTION
+--------------------------
+
+   High resolution limit unaltered by RMS of ensemble
+   High resolution limit lowered by expected LLG =  6.76
+
+   Outlier Rejection
+   -----------------
+   There were 2 reflections of 39493 (0.0051%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     -4   36    5   3.11      15.598       0.488   1.895e-07  true   false   
+      1    1    0  77.97      -0.000       0.000   6.180e-08  true   false   
+
+   Resolution of All Data (Number):        2.20  77.97 (39493)
+   Resolution of Selected Data (Number):   6.76  63.15 (1398)
+
+-------------------
+WILSON DISTRIBUTION
+-------------------
+
+   Parameters set for Wilson log-likelihood calculation
+   E = 0 and variance 1 for each reflection
+   Without correction for SigF to the variances,
+      Wilson log(likelihood) = - number of acentrics (1283)
+                               - half number of centrics (115/2)
+                             = -1340
+   With correction for SigF,
+      Wilson log(likelihood) = -1354.04
+
+----------
+ENSEMBLING
+----------
+
+   Ensemble: 1w30
+   --------------
+   PDB file # 1: swissm_1w30_Ttecno.pdb
+      This file contains 1 model
+      The input RmsD of model #1 with respect to the real structure is 0.543
+
+   Ensemble Generation: 1w30
+   -------------------------
+   Ensemble configured for structure factor interpolation
+   Ensemble configured to resolution  6.76
+
+   Electron Density Calculation
+   0%      100%
+   |=======| DONE
+
+   Ensemble Generation
+   -------------------
+   Resolution of Ensembles: 6.7585
+   Scat% Radius Model# Rel-B    RMS   DRMS   VRMS Ensemble                           
+    96.0   34.8      1 109.7  0.543  0.000  0.543 1w30                               
+
+-----------------
+ROTATION FUNCTION
+-----------------
+
+   Ensemble configured to resolution  6.76
+   Elmn for Search Ensemble
+   Elmn Calculation for Search Ensemble
+   0%                                                                        100%
+   |=========================================================================| DONE
+
+   Target Function: FAST LERF1
+
+-------------------------
+ROTATION FUNCTION #1 OF 1
+-------------------------
+
+   Search Ensemble: 1w30
+
+   Sampling:  5.55 degrees
+
+
+   Spherical Harmonics
+   -------------------
+   Elmn for Data
+   Elmn Calculation for Data
+   0%                                                                               100%
+   |================================================================================| DONE
+
+   Scanning the Range of Beta Angles
+   ---------------------------------
+   Clmn Calculation
+   0%                                 100%
+   |==================================| DONE
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 20 sites over 67.5% of top
+   20 peaks selected
+   The sites over 67.5% are:
+   #     Euler1 Euler2 Euler3    FSS   Z-score
+   1      282.1   52.3  192.5    100.000  7.33
+   2       77.9   52.3  227.5     99.993  7.33
+   3       72.8   32.6  228.8     87.281  6.40
+   #Sites = 20: output truncated to 3 sites
+
+   Top 20 rotations before clustering will be rescored
+   Calculating Likelihood for RF #1 of 1
+   0%                    100%
+   |=====================| DONE
+
+   Mean and Standard Deviation
+   ---------------------------
+   Scoring 500 randomly sampled rotations
+   Generating Statistics for RF #1 of 1
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Highest Score (Z-score):  -45.515   ( 5.30)
+
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 4 sites over 75% of top
+   The sites over 75% are:
+   #     Euler1 Euler2 Euler3    LLG   Z-score Split #Group  FSS-this-ang/FSS-top
+   1       80.1   53.8  224.6    -45.515  5.30   0.0      5     87.146/    99.993
+           99.9  126.2   44.6
+   2      279.9   53.8  195.4    -45.563  5.30 177.7      5     87.151/   100.000
+          260.1  126.2   15.4
+   3      291.6   31.4  186.5    -52.339  5.02 156.3      2     87.081/    87.266
+          248.4  148.6    6.5
+   #SITES = 4: OUTPUT TRUNCATED TO 3 SITES
+
+   Rotation Function Results
+   Top1: ENSEMBLE 1w30 EULER 80.104 53.842 224.593 RF=-45.5 RFZ=5.30
+
+   Rotation Function Table: 1w30
+   -----------------------------
+   (Z-scores from Fast Rotation Function)
+   #SET        Top    (Z)      Second    (Z)       Third    (Z)
+   1        -45.52   5.30      -45.56   5.30      -52.34   5.02
+
+---------------
+FINAL SELECTION
+---------------
+
+   Select by Percentage of Top value: 75%
+   Top RF = -45.515
+   Purge RF mean = -174.679
+   Number of sets stored before final selection = 1
+   Number of solutions stored before final selection = 4
+   Number of sets stored (deleted) after final selection = 1 (0)
+   Number of solutions stored (deleted) after final selection = 4 (0)
+   Percent used for purge = 75.000%
+
+   Rotation Function Final Selection Table
+   ---------------------------------------
+   Rotation list length by SET
+   SET#  Start Final Deleted Set (*)
+      1  4     4           -
+   ALL   4     4    
+
+------------
+OUTPUT FILES
+------------
+
+   No files output
+
+CPU Time: 0 days 0 hrs 0 mins 16.42 secs (     16.42 secs)
+Finished: Wed Jan  8 18:34:40 2020
+
+******************************************************************************************
+*** Phaser Module: MOLECULAR REPLACEMENT TRANSLATION FUNCTION                    2.8.3 ***
+******************************************************************************************
+
+-----------------
+TRANSLATIONAL NCS
+-----------------
+
+   tNCS not present
+
+-----------------------------
+DATA FOR TRANSLATION FUNCTION
+-----------------------------
+
+   High Resolution Limit imposed by RF list =  6.76
+
+   Outlier Rejection
+   -----------------
+   There were 2 reflections of 39493 (0.0051%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     -4   36    5   3.11      15.598       0.488   1.895e-07  true   false   
+      1    1    0  77.97      -0.000       0.000   6.180e-08  true   false   
+
+   Resolution of All Data (Number):        2.20  77.97 (39493)
+   Resolution of Selected Data (Number):   6.76  63.15 (1398)
+
+-------------------
+WILSON DISTRIBUTION
+-------------------
+
+   Parameters set for Wilson log-likelihood calculation
+   E = 0 and variance 1 for each reflection
+   Without correction for SigF to the variances,
+      Wilson log(likelihood) = - number of acentrics (1283)
+                               - half number of centrics (115/2)
+                             = -1340
+   With correction for SigF,
+      Wilson log(likelihood) = -1354.04
+
+------------------------
+ALTERNATIVE SPACE GROUPS
+------------------------
+
+   Space Group(s) to be tested:
+     C 1 2 1
+
+----------
+ENSEMBLING
+----------
+
+   Ensemble: 1w30
+   --------------
+   PDB file # 1: swissm_1w30_Ttecno.pdb
+      This file contains 1 model
+      The input RmsD of model #1 with respect to the real structure is 0.543
+
+   Ensemble Generation
+   -------------------
+   Resolution of Ensembles: 6.7585
+   Scat% Radius Model# Rel-B    RMS   DRMS   VRMS Ensemble                           
+    96.0   34.8      1 109.7  0.543  0.000  0.543 1w30                               
+
+   Trace Generation: 1w30
+   ----------------------
+      This trace is from coordinates
+
+   Trace Generation
+   ----------------
+   Ensemble        Trace-type  Length      Sampling Close-contact
+   1w30            C-alpha        696          3.00          2.00
+
+---------------------
+TRANSLATION FUNCTIONS
+---------------------
+
+   Target Function: FAST LETF1
+   Translation Packing Function applied: top peak will pack
+   Translation Packing Cutoff: 50%
+   Sampling:  1.69 Angstroms
+
+----------------------------
+TRANSLATION FUNCTION #1 OF 1
+----------------------------
+
+   SOLU SET 
+   SOLU SPAC C 1 2 1
+   SOLU TRIAL ENSEMBLE 1w30 EULER   80.104   53.842  224.593 RF  -45.5 RFZ  5.30
+
+   SOLU TRIAL ENSEMBLE 1w30 EULER  279.895   53.841  195.408 RF  -45.6 RFZ  5.30
+
+   SOLU TRIAL ENSEMBLE 1w30 EULER  291.559   31.374  186.468 RF  -52.3 RFZ  5.02
+
+   SOLU TRIAL ENSEMBLE 1w30 EULER   68.440   31.374  233.533 RF  -52.3 RFZ  5.02
+
+   This TF set has 4 trial orientations
+
+   #    Euler                  Rot-LLG      RF     RFZ  Ensemble
+   1      80.1   53.8  224.6     -45.5   -45.5     5.3 1w30
+   2     279.9   53.8  195.4     -45.6   -45.6     5.3 1w30
+   3     291.6   31.4  186.5     -52.3   -52.3     5.0 1w30
+   4      68.4   31.4  233.5     -52.3   -52.3     5.0 1w30
+
+   SET #1 of 1 TRIAL #1 of 4
+   -------------------------
+   Ensemble 1w30 Euler  80.10  53.84 224.59 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      114 peaks
+      All peaks checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There was 1 site over 67.5% of top
+   1 peak selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.900 -0.000  0.689    -26.624  4.18
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #1 of 1 TRIAL #1 of 4
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 1 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #1 of 1 TRIAL #1 of 4
+   0% 100%
+   |==| DONE
+
+   Packing LLG Translations: pass 1 of 11...
+      1 peaks
+      1 peaks over -176.378 checked for packing
+      Translation peak 1 first to be kept
+      Done
+      Exit: found a peak that packs
+
+   Highest Score (Z-score):  -176.38   ( 4.01)
+   New Top (ML) Translation Function LLG = -176.38 (TFZ=4.0) at Trial #1
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There was 1 site over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.900 -0.000  0.689    -176.38  4.01   0.0      1    -26.624/   -26.624
+
+   SET #1 of 1 TRIAL #2 of 4
+   -------------------------
+   Ensemble 1w30 Euler 279.90  53.84 195.41 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      114 peaks
+      All peaks checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There was 1 site over 67.5% of top
+   1 peak selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.204 -0.000  0.365    -26.648  4.18
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #1 of 1 TRIAL #2 of 4
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 1 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #1 of 1 TRIAL #2 of 4
+   0% 100%
+   |==| DONE
+
+   Highest Score (Z-score):  -176.43   ( 4.16)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There was 1 site over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.204 -0.000  0.365    -176.43  4.16   0.0      1    -26.648/   -26.648
+
+   SET #1 of 1 TRIAL #3 of 4
+   -------------------------
+   Ensemble 1w30 Euler 291.56  31.37 186.47 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      106 peaks
+      All peaks checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 2 sites over 67.5% of top
+   2 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.150  0.000  0.266    -25.524  4.38
+   2      0.997 -0.000  0.341    -55.970  3.04
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #1 of 1 TRIAL #3 of 4
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 2 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #1 of 1 TRIAL #3 of 4
+   0%  100%
+   |===| DONE
+
+   Packing LLG Translations: pass 1 of 1...
+      2 peaks
+      1 peaks over -176.378 checked for packing
+      Translation peak 1 first to be kept
+      Done
+      Exit: found a peak that packs
+
+   Highest Score (Z-score):  -173.38   ( 4.70)
+   New Top (ML) Translation Function LLG = -173.38 (TFZ=4.7) at Trial #3
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There was 1 site over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.150  0.000  0.266    -173.38  4.70   0.0      1    -25.524/   -25.524
+
+   SET #1 of 1 TRIAL #4 of 4
+   -------------------------
+   Ensemble 1w30 Euler  68.44  31.37 233.53 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      106 peaks
+      All peaks checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 2 sites over 67.5% of top
+   2 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.791 -0.000  0.143    -25.495  4.38
+   2      0.944 -0.000  0.068    -55.967  3.04
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #1 of 1 TRIAL #4 of 4
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 2 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #1 of 1 TRIAL #4 of 4
+   0%  100%
+   |===| DONE
+
+   Packing LLG Translations: pass 1 of 1...
+      2 peaks
+      1 peaks over -173.379 checked for packing
+      Translation peak 1 first to be kept
+      Done
+      Exit: found a peak that packs
+
+   Highest Score (Z-score):  -173.37   ( 4.63)
+   New Top (ML) Translation Function LLG = -173.37 (TFZ=4.6) at Trial #4
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There was 1 site over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.791 -0.000  0.143    -173.37  4.63   0.0      1    -25.495/   -25.495
+
+   Translation Function Results
+   Top1: ENSEMBLE 1w30 EULER 68.440 31.374 233.533 FRAC 0.791 -0.000 0.143 TF=-173.4
+
+   Translation Function Table
+   --------------------------
+   SET ROT*deep   Top   (Z)     Second   (Z)      Third   (Z) SpaceGroup  Ensemble
+     1   1     -176.4  4.01          -     -          -     - C 1 2 1  1w30       
+     1   2     -176.4  4.16          -     -          -     - C 1 2 1  1w30       
+     1   3     -173.4  4.70          -     -          -     - C 1 2 1  1w30       
+     1   4     -173.4  4.63          -     -          -     - C 1 2 1  1w30       
+   --- ---
+
+---------------
+FINAL SELECTION
+---------------
+
+   LLG will be used for purge, not FSS
+   Top TF  = -173.37
+   Top TFZ = 4.70
+   Mean TF = -294.81
+   Percent used for purge = 75%
+   Cutoff for acceptance = -203.7
+      TFZ used for final selection = 8
+         Number of solutions over TF final cutoff  = 4
+         Number of solutions over TFZ final cutoff = 0
+         Number of solutions over TF & TFZ cutoff  = 0
+   Number of solutions stored before final selection = 4
+   Number of solutions stored (deleted) after final selection = 4 (0)
+
+------------
+OUTPUT FILES
+------------
+
+   No files output
+
+CPU Time: 0 days 0 hrs 0 mins 34.47 secs (     34.47 secs)
+Finished: Wed Jan  8 18:34:59 2020
+
+******************************************************************************************
+*** Phaser Module: MOLECULAR REPLACEMENT PACKING ANALYSIS                        2.8.3 ***
+******************************************************************************************
+
+---------
+ENSEMBLES
+---------
+
+   Trace Generation: 1w30
+   ----------------------
+      This trace is from coordinates
+
+   Trace Generation
+   ----------------
+   Ensemble        Trace-type  Length      Sampling Close-contact
+   1w30            C-alpha        696          3.00          2.00
+
+-----------------
+ENSEMBLE SYMMETRY
+-----------------
+
+   Ensemble "1w30" Point Group: 2
+
+   Clash background has been packed at 10.00%
+
+----------------
+PACKING FUNCTION
+----------------
+
+   There are 4 solutions to pack
+   Packing analysis
+   0%    100%
+   |=====| DONE
+
+   Packing Table
+   -------------
+   Solutions accepted if pairwise clashes less than 10 % of trace atoms
+   #in  #out Clash-% Symm  SpaceGroup  Annotation                                                   
+   1    Top1  3.879  --    C 1 2 1     RFZ=5.0 TFZ=4.6 PAK=4                                        
+   2    2     3.879  --    C 1 2 1     RFZ=5.0 TFZ=4.7 PAK=4                                        
+   3    3     5.747  --    C 1 2 1     RFZ=5.3 TFZ=4.0 PAK=6                                        
+   4    4     5.747  --    C 1 2 1     RFZ=5.3 TFZ=4.2 PAK=6                                        
+
+   4 accepted of 4 solutions
+      4 pack of 4 accepted solutions
+
+------------
+OUTPUT FILES
+------------
+
+   pyrR_SwissModels_MrBUMP_phaser.1.pdb
+
+CPU Time: 0 days 0 hrs 0 mins 34.87 secs (     34.87 secs)
+Finished: Wed Jan  8 18:34:59 2020
+
+******************************************************************************************
+*** Phaser Module: MOLECULAR REPLACEMENT REFINEMENT AND PHASING                  2.8.3 ***
+******************************************************************************************
+
+-----------------
+TRANSLATIONAL NCS
+-----------------
+
+   tNCS not present
+
+-------------------------------
+DATA FOR REFINEMENT AND PHASING
+-------------------------------
+
+   High resolution limit imposed by solution list =  6.76
+
+   Outlier Rejection
+   -----------------
+   There were 2 reflections of 39493 (0.0051%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     -4   36    5   3.11      15.598       0.488   1.895e-07  true   false   
+      1    1    0  77.97      -0.000       0.000   6.180e-08  true   false   
+
+   Resolution of All Data (Number):        2.20  77.97 (39493)
+   Resolution of Selected Data (Number):   6.76  63.15 (1398)
+
+-------------------
+WILSON DISTRIBUTION
+-------------------
+
+   Parameters set for Wilson log-likelihood calculation
+   E = 0 and variance 1 for each reflection
+   Without correction for SigF to the variances,
+      Wilson log(likelihood) = - number of acentrics (1283)
+                               - half number of centrics (115/2)
+                             = -1340
+   With correction for SigF,
+      Wilson log(likelihood) = -1354.04
+
+----------
+ENSEMBLING
+----------
+
+   Ensemble: 1w30
+   --------------
+   PDB file # 1: swissm_1w30_Ttecno.pdb
+      This file contains 1 model
+      The input RmsD of model #1 with respect to the real structure is 0.543
+
+   Ensemble Generation
+   -------------------
+   Resolution of Ensembles: 6.7585
+   Scat% Radius Model# Rel-B    RMS   DRMS   VRMS Ensemble                           
+    96.0   34.8      1 109.7  0.543  0.000  0.543 1w30                               
+
+   Trace Generation
+   ----------------
+   Ensemble        Trace-type  Length      Sampling Close-contact
+   1w30            C-alpha        696          3.00          2.00
+
+----------
+REFINEMENT
+----------
+
+   Protocol cycle #1 of 1
+   Refinement protocol for this macrocycle:
+   ROTATION:         REFINE
+   TRANSLATION:      REFINE
+   BFACTOR:          REFINE
+   MODEL VRMS:       FIX
+   CELL SCALE:       FIX
+   OCCUPANCY FACTOR: FIX
+   LAST ONLY:        FALSE
+   ROTATION RESTRAINT:    OFF
+   TRANSLATION RESTRAINT: OFF
+
+   There are 4 solutions to refine
+   Refining solutions
+   0%    100%
+   |=====| DONE
+
+
+   REFINING SET #1 OF 4
+   --------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE 1w30 EULER   68.4   31.4  233.5 FRAC -0.71 -0.50 -0.86 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 14 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -174.413                12.881               187.294
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE 1w30 EULER   68.9   32.4  234.0 FRAC -0.71 -0.51 -0.83 BFAC 43.17
+
+   REFINING SET #2 OF 4
+   --------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE 1w30 EULER  291.6   31.4  186.5 FRAC -0.35  0.50 -0.73 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 11 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -174.418                12.808               187.226
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE 1w30 EULER  291.4   32.4  185.7 FRAC -0.35  0.51 -0.74 BFAC 43.16
+
+   REFINING SET #3 OF 4
+   --------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE 1w30 EULER   80.1   53.8  224.6 FRAC -0.60 -0.50 -0.31 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 10 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -177.862                50.605               228.467
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE 1w30 EULER   79.9   51.6  227.8 FRAC -0.60 -0.49 -0.33 BFAC 36.78
+
+   REFINING SET #4 OF 4
+   --------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE 1w30 EULER  279.9   53.8  195.4 FRAC -0.30  0.50 -0.63 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 10 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -177.908                50.605               228.513
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE 1w30 EULER  280.1   51.6  192.2 FRAC -0.30  0.48 -0.69 BFAC 36.82
+
+
+   Mean and Sigma after Refinement (for Purge)
+   -------------------------------------------
+   Scoring 500 randomly sampled orientations and translations
+
+   Generating Statistics
+   0%    100%
+   |=====| DONE
+
+   Mean Score for Purge before Refinement:  -294.81
+   Mean Score for Purge after Refinement :  -49.03
+
+---------------
+FIND DUPLICATES
+---------------
+
+   Check for nearly equivalent solutions
+   Calculating Duplicates for 4 solutions
+   0%    100%
+   |=====| DONE
+
+   2 duplicate solutions found
+
+---------------------
+FIND TEMPLATE MATCHES
+---------------------
+
+   No Template Solution(s) for comparison
+
+---------------
+PURGE SELECTION
+---------------
+
+   Purge solutions according to highest LLG from Refinement
+   --------------------------------------------------------
+   Top LLG (all) = 69.1446
+   Top LLG (packs) = 69.1446
+   Mean LLG = -49.0315
+   Percent used for purge = 75%
+      Cutoff for acceptance = 39.6
+   Overall cutoff for acceptance (excluding high TFZ) = 39.6
+   Number of solutions stored before purge = 4
+   Number of solutions stored (deleted) after purge = 2 (2)
+
+---------------
+TFZ EQUIVALENTS
+---------------
+
+   Refined TFZ equivalents calculated
+   1 top TFZ equivalents calculated
+      1 (Topfiles)
+      0 with TFZ > 6 (TFZ for Possibly Solved)
+
+   SOLUTION #1 OF 4
+   ----------------
+   TFZ equivalent calculation #1 of 1
+      TOPFILE
+
+   Generating Statistics
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Mean Score (Sigma):       -55.36   (15.13)
+   Refined TF/TFZ equivalent = 69.14/  8.2 (Unrefined TF/TFZ=-176.43/  4.2)
+
+-------
+RESULTS
+-------
+
+   Refinement Table (Sorted)
+   -------------------------
+   #out =#out #in =T (Start LLG Rval TFZ) (Refined LLG Rval TFZ==) SpaceGroup  Cntrst
+   Top1 ---   4          -176.4 50.8  4.2         69.1 48.3  8.2   C 1 2 1      1.345
+   ---  1     3          -176.4 50.8  4.2         69.1 48.4  n/a   C 1 2 1      1.345
+   ---  ---   2          -173.4 50.4  4.7         38.8 48.8  n/a   C 1 2 1       n/a 
+   ---  ---   1          -173.4 50.4  4.6         38.5 48.9  n/a   C 1 2 1       n/a 
+
+   Refinement Table (Variance Ranges)
+   ----------------------------------
+   Range of delta-VRMS and VRMS given over current solution list (4 solution(s))
+   Ensemble        Model#   RMS   Delta-VRMS min/max  (VRMS min/max)
+   1w30                 1   0.543   +0.000/+0.000    ( 0.543/ 0.543 )
+
+------------
+OUTPUT FILES
+------------
+
+   Calculation of Map Coefficients
+   -------------------------------
+   1 top map coefficients calculated
+
+   Map coefficient calculated for top solution #1
+   SOLU SPAC C 1 2 1
+   SOLU 6DIM ENSE 1w30 EULER  280.1   51.6  192.2 FRAC -0.30  0.48 -0.69 BFAC 36.82 #TFZ==8.2
+
+   pyrR_SwissModels_MrBUMP_phaser.1.pdb
+   pyrR_SwissModels_MrBUMP_phaser.1.mtz
+
+CPU Time: 0 days 0 hrs 0 mins 36.91 secs (     36.91 secs)
+Finished: Wed Jan  8 18:35:01 2020
+
+******************************************************************************************
+*** Phaser Module: AUTOMATED MOLECULAR REPLACEMENT                               2.8.3 ***
+******************************************************************************************
+
+** Permutation #1 of 1
+** New Best Solution
+**    Best Solution: Top LLG = 69.1446
+**    Best Solution: Number of components = 1
+**    Best Solution: List size: 1
+
+CPU Time: 0 days 0 hrs 0 mins 36.93 secs (     36.93 secs)
+Finished: Wed Jan  8 18:35:01 2020
+
+******************************************************************************************
+*** Phaser Module: AUTOMATED MOLECULAR REPLACEMENT                               2.8.3 ***
+******************************************************************************************
+
+** Solutions will be refined to highest resolution
+**    Resolution for refinement: 2.20004
+
+CPU Time: 0 days 0 hrs 0 mins 37.39 secs (     37.39 secs)
+Finished: Wed Jan  8 18:35:02 2020
+
+******************************************************************************************
+*** Phaser Module: MOLECULAR REPLACEMENT REFINEMENT AND PHASING                  2.8.3 ***
+******************************************************************************************
+
+-----------------
+TRANSLATIONAL NCS
+-----------------
+
+   tNCS not present
+
+-------------------------------
+DATA FOR REFINEMENT AND PHASING
+-------------------------------
+
+   Outlier Rejection
+   -----------------
+   There were 2 reflections of 39493 (0.0051%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     -4   36    5   3.11      15.598       0.488   1.895e-07  true   false   
+      1    1    0  77.97      -0.000       0.000   6.180e-08  true   false   
+
+   Resolution of All Data (Number):        2.20  77.97 (39493)
+   Resolution of Selected Data (Number):   2.20  63.15 (39491)
+
+-------------------
+WILSON DISTRIBUTION
+-------------------
+
+   Parameters set for Wilson log-likelihood calculation
+   E = 0 and variance 1 for each reflection
+   Without correction for SigF to the variances,
+      Wilson log(likelihood) = - number of acentrics (38382)
+                               - half number of centrics (1109/2)
+                             = -38936
+   With correction for SigF,
+      Wilson log(likelihood) = -38652
+
+----------
+ENSEMBLING
+----------
+
+   Ensemble: 1w30
+   --------------
+   PDB file # 1: swissm_1w30_Ttecno.pdb
+      This file contains 1 model
+      The input RmsD of model #1 with respect to the real structure is 0.543
+
+   Ensemble Generation: 1w30
+   -------------------------
+   Ensemble configured for structure factor interpolation
+   Ensemble configured to resolution  2.20
+
+   Electron Density Calculation
+   0%      100%
+   |=======| DONE
+
+   Ensemble Generation
+   -------------------
+   Resolution of Ensembles: 2.20004
+   Scat% Radius Model# Rel-B    RMS   DRMS   VRMS Ensemble                           
+    96.0   34.8      1  34.7  0.543  0.000  0.543 1w30                               
+
+----------
+REFINEMENT
+----------
+
+   Protocol cycle #1 of 1
+   Refinement protocol for this macrocycle:
+   ROTATION:         REFINE
+   TRANSLATION:      REFINE
+   BFACTOR:          REFINE
+   MODEL VRMS:       FIX
+   CELL SCALE:       FIX
+   OCCUPANCY FACTOR: FIX
+   LAST ONLY:        FALSE
+   ROTATION RESTRAINT:    OFF
+   TRANSLATION RESTRAINT: OFF
+
+   There is 1 solution to refine
+   Refining solutions
+   0% 100%
+   |==| DONE
+
+
+   REFINING SET #1 OF 1
+   --------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE 1w30 EULER  280.1   51.6  192.2 FRAC -0.30  0.48 -0.69 BFAC 36.82 #TFZ==8.2
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 4 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+         181.725               277.467                95.742
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE 1w30 EULER  280.2   50.8  191.4 FRAC -0.31  0.47 -0.71 BFAC 43.32 #TFZ==8.2
+
+
+   Mean and Sigma after Refinement (for Purge)
+   -------------------------------------------
+   Scoring 500 randomly sampled orientations and translations
+
+   Generating Statistics
+   0% 100%
+   |==| DONE
+
+   Mean Score for Purge before Refinement:  -49.03
+   Mean Score for Purge after Refinement :  -55.18
+
+---------------
+FIND DUPLICATES
+---------------
+
+   Check for nearly equivalent solutions
+   Calculating Duplicates for 1 solutions
+   0% 100%
+   |==| DONE
+
+   No duplicate solutions found
+
+---------------------
+FIND TEMPLATE MATCHES
+---------------------
+
+   No Template Solution(s) for comparison
+
+---------------
+PURGE SELECTION
+---------------
+
+   Purge solutions according to highest LLG from Refinement
+   --------------------------------------------------------
+   Top LLG (all) = 302.465
+   Top LLG (packs) = 302.465
+   Mean LLG = -55.1827
+   Percent used for purge = 75%
+      Cutoff for acceptance = 213.1
+   Overall cutoff for acceptance (excluding high TFZ) = 302.5
+   Number of solutions stored before purge = 1
+   Number of solutions stored (deleted) after purge = 1 (0)
+
+---------------
+TFZ EQUIVALENTS
+---------------
+
+   Refined TFZ equivalents calculated
+   1 top TFZ equivalents calculated
+      1 (Topfiles)
+      0 with TFZ > 6 (TFZ for Possibly Solved)
+
+   SOLUTION #1 OF 1
+   ----------------
+   TFZ equivalent calculation #1 of 1
+      TOPFILE
+
+   Generating Statistics
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Mean Score (Sigma):       -55.18   (26.10)
+   Refined TF/TFZ equivalent = 302.46/ 13.7 (Unrefined TF/TFZ=199.80/  8.2)
+
+-------
+RESULTS
+-------
+
+   Refinement Table (Sorted)
+   -------------------------
+   Refinement to full resolution
+   #out =#out #in =T (Start LLG Rval TFZ) (Refined LLG Rval TFZ==) SpaceGroup  Cntrst
+   Top1 ---   1           199.8 52.9  8.2        302.5 52.5 13.7   C 1 2 1       n/a 
+
+   Refinement Table (Variance Ranges)
+   ----------------------------------
+   Range of delta-VRMS and VRMS given over current solution list (1 solution(s))
+   Ensemble        Model#   RMS   Delta-VRMS min/max  (VRMS min/max)
+   1w30                 1   0.543   +0.000/+0.000    ( 0.543/ 0.543 )
+
+------------
+OUTPUT FILES
+------------
+
+   Calculation of Map Coefficients
+   -------------------------------
+   1 top map coefficients calculated
+
+   Map coefficient calculated for top solution #1
+   SOLU SPAC C 1 2 1
+   SOLU 6DIM ENSE 1w30 EULER  280.2   50.8  191.4 FRAC -0.31  0.47 -0.71 BFAC 43.32 #TFZ==13.7
+
+   pyrR_SwissModels_MrBUMP_phaser.1.pdb
+   pyrR_SwissModels_MrBUMP_phaser.1.mtz
+
+CPU Time: 0 days 0 hrs 1 mins 5.05 secs (     65.05 secs)
+Finished: Wed Jan  8 18:35:30 2020
+
+******************************************************************************************
+*** Phaser Module: AUTOMATED MOLECULAR REPLACEMENT                               2.8.3 ***
+******************************************************************************************
+
+** SINGLE solution
+
+** Solution written to PDB file:  pyrR_SwissModels_MrBUMP_phaser.1.pdb
+** Solution written to MTZ file:  pyrR_SwissModels_MrBUMP_phaser.1.mtz
+   Solution annotation (history):
+   SOLU SET  RFZ=5.3 TFZ=4.2 PAK=6 LLG=69 TFZ==8.2 LLG=302 TFZ==13.7
+   SOLU SPAC C 1 2 1
+   SOLU 6DIM ENSE 1w30 EULER  280.2   50.8  191.4 FRAC -0.31  0.47 -0.71 BFAC 43.32 #TFZ==13.7
+
+CPU Time: 0 days 0 hrs 1 mins 5.09 secs (     65.09 secs)
+Finished: Wed Jan  8 18:35:30 2020
+
+--------------------
+EXIT STATUS: SUCCESS
+--------------------
+
+CPU Time: 0 days 0 hrs 1 mins 5.10 secs (     65.10 secs)
+Finished: Wed Jan  8 18:35:30 2020
+
+</pre>
+</html>

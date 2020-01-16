@@ -1,0 +1,1268 @@
+Command line arguments: "/Users/alfredo/Documents/Adriana/pyrR/pyrR-gmp-DS3/ref_phenix/.phenix/project_data/real_space_refine_1.eff"
+
+-------------------------------------------------------------------------------
+phenix.real_space_refine: tool for extensive real-space refinement of atomic
+                          coordinates against provided map
+
+Usage:
+  phenix.real_space_refine model.pdb ccp4_formatted_map.map
+  or
+  phenix.real_space_refine model.pdb map.mtz
+  or
+  phenix.real_space_refine model.pdb map.mtz label='2FOFCWT,PH2FOFCWT'
+
+Feedback:
+  PAfonine@lbl.gov or phenixbb@phenix-online.org
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+  PHENIX: Python-based Hierarchical ENvironment for Integrated Xtallography
+  Version: 1.17.1
+  Release tag: 3660
+  Platform: mac-intel-osx-x86_64
+  User: alfredo
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Initialize
+**********
+-------------------------------------------------------------------------------
+Gather and process all inputs:
+******************************
+-------------------------------------------------------------------------------
+Processing inputs
+*****************
+-------------------------------------------------------------------------------
+Parameters:
+***********
+  model_file = "/Users/alfredo/Documents/Adriana/pyrR/pyrR-gmp-DS3/refinement/pyrR-gmp-DS3-1w30-modeloCortes1.pdb"
+  map_file = None
+  mtz_file = "/Users/alfredo/Documents/Adriana/pyrR/pyrR-gmp-DS3/refmac_phaser_HKLOUT_1w30_B1_SCLPTR.mtz"
+  monomers {
+    file_name = None
+  }
+  map_coefficients_label = FC,PHIC
+  resolution = None
+  rotamer_restraints = True
+  mask_and_he_map = False
+  resolution_factor = 0.25
+  ncs_constraints = True
+  refine_ncs_operators = True
+  variable_rama_potential = False
+  weight = None
+  show_statistics = True
+  show_per_residue = True
+  dry_run = False
+  random_seed = 0
+  nproc = 1
+  gradients_method = fd linear quadratic *tricubic
+  scattering_table = n_gaussian wk1995 it1992 *electron neutron
+  ignore_symmetry_conflicts = None
+  refinement {
+    run = *minimization_global rigid_body *local_grid_search morphing \
+          simulated_annealing *adp
+    morphing = every_macro_cycle *once
+    simulated_annealing = every_macro_cycle *once
+    local_grid_search = every_macro_cycle once *last
+    max_iterations = 100
+    macro_cycles = 5
+    target_bonds_rmsd = 0.01
+    target_angles_rmsd = 1.0
+    backbone_sample = None
+    use_adp_restraints = True
+    atom_radius = 3.0
+    do_ss_ideal = False
+    do_ccd = False
+    rigid_body {
+      group = None
+    }
+  }
+  amber {
+    use_amber = False
+    topology_file_name = None
+    coordinate_file_name = None
+    order_file_name = None
+    wxc_factor = .2
+    restraint_wt = 0.
+    restraintmask = ''
+    reference_file_name = ''
+    bellymask = ''
+    qmmask = ''
+    qmcharge = 0
+    netcdf_trajectory_file_name = ''
+    print_amber_energies = False
+  }
+  reference_model {
+    enabled = False
+    file = None
+    use_starting_model_as_reference = False
+    sigma = 1.0
+    limit = 15.0
+    hydrogens = False
+    main_chain = True
+    side_chain = True
+    fix_outliers = True
+    strict_rotamer_matching = False
+    auto_shutoff_for_ncs = False
+    secondary_structure_only = False
+    reference_group {
+      reference = None
+      selection = None
+      file_name = None
+    }
+    search_options {
+      exclude_selection = "element H or element D or water"
+      chain_similarity_threshold = 0.85
+      chain_max_rmsd = 100.
+      residue_match_radius = 1000
+      try_shortcuts = False
+      minimum_number_of_atoms_in_copy = 3
+    }
+  }
+  output {
+    file_name_prefix = None
+    model_format = *pdb *mmcif
+    write_initial_geo_file = True
+    write_final_geo_file = False
+    write_all_states = False
+    write_pkl_stats = False
+  }
+  pdb_interpretation {
+    restraints_library {
+      cdl = True
+      omega_cdl = False
+      rdl = False
+      hpdl = False
+    }
+    sort_atoms = True
+    superpose_ideal_ligand = *None all SF4 F3S DVT
+    flip_symmetric_amino_acids = False
+    disable_uc_volume_vs_n_atoms_check = False
+    allow_polymer_cross_special_position = False
+    correct_hydrogens = True
+    secondary_structure {
+      protein {
+        enabled = True
+        search_method = *ksdssp mmtbx_dssp from_ca cablam
+        distance_ideal_n_o = 2.9
+        distance_cut_n_o = 3.5
+        remove_outliers = True
+        restrain_hbond_angles = True
+        helix {
+          serial_number = None
+          helix_identifier = None
+          enabled = True
+          selection = None
+          helix_type = *alpha pi 3_10 unknown
+          sigma = 0.05
+          slack = 0
+          top_out = False
+          angle_sigma_scale = 1
+          angle_sigma_set = None
+          hbond {
+            donor = None
+            acceptor = None
+          }
+        }
+        sheet {
+          enabled = True
+          first_strand = None
+          sheet_id = None
+          strand {
+            selection = None
+            sense = parallel antiparallel *unknown
+            bond_start_current = None
+            bond_start_previous = None
+          }
+          sigma = 0.05
+          slack = 0
+          top_out = False
+          angle_sigma_scale = 1
+          angle_sigma_set = None
+          hbond {
+            donor = None
+            acceptor = None
+          }
+        }
+      }
+      nucleic_acid {
+        enabled = True
+        hbond_distance_cutoff = 3.4
+        angle_between_bond_and_nucleobase_cutoff = 35.0
+        scale_bonds_sigma = 1.
+        base_pair {
+          enabled = True
+          base1 = None
+          base2 = None
+          saenger_class = 0
+          restrain_planarity = False
+          planarity_sigma = 0.176
+          restrain_hbonds = True
+          restrain_hb_angles = True
+          restrain_parallelity = True
+          parallelity_target = 0
+          parallelity_sigma = 0.0335
+        }
+        stacking_pair {
+          enabled = True
+          base1 = None
+          base2 = None
+          angle = 0
+          sigma = 0.027
+        }
+      }
+      ss_by_chain = True
+      from_ca_conservative = False
+      max_rmsd = 1
+      use_representative_chains = True
+      max_representative_chains = 100
+      enabled = True
+    }
+    c_beta_restraints = True
+    reference_coordinate_restraints {
+      enabled = False
+      exclude_outliers = True
+      selection = all
+      sigma = 0.2
+      limit = 1.0
+      top_out = False
+    }
+    automatic_linking {
+      link_all = False
+      link_none = False
+      link_metals = False
+      link_residues = False
+      link_amino_acid_rna_dna = False
+      link_carbohydrates = True
+      link_ligands = True
+      link_small_molecules = False
+      metal_coordination_cutoff = 3.5
+      amino_acid_bond_cutoff = 1.9
+      inter_residue_bond_cutoff = 2.2
+      buffer_for_second_row_elements = 0.5
+      carbohydrate_bond_cutoff = 1.99
+      ligand_bond_cutoff = 1.99
+      small_molecule_bond_cutoff = 1.98
+    }
+    include_in_automatic_linking {
+      selection_1 = None
+      selection_2 = None
+      bond_cutoff = 4.5
+    }
+    exclude_from_automatic_linking {
+      selection_1 = None
+      selection_2 = None
+    }
+    use_neutron_distances = False
+    apply_cis_trans_specification {
+      cis_trans_mod = cis *trans
+      residue_selection = None
+    }
+    apply_cif_restraints {
+      restraints_file_name = None
+      residue_selection = None
+    }
+    apply_cif_modification {
+      data_mod = None
+      residue_selection = None
+    }
+    apply_cif_link {
+      data_link = None
+      residue_selection_1 = None
+      residue_selection_2 = None
+    }
+    disulfide_bond_exclusions_selection_string = None
+    exclusion_distance_cutoff = 3
+    link_distance_cutoff = 3
+    disulfide_distance_cutoff = 3
+    add_angle_and_dihedral_restraints_for_disulfides = True
+    dihedral_function_type = *determined_by_sign_of_periodicity \
+                             all_sinusoidal all_harmonic
+    chir_volume_esd = 0.2
+    peptide_link {
+      ramachandran_restraints = True
+      cis_threshold = 45
+      apply_all_trans = False
+      discard_omega = False
+      discard_psi_phi = True
+      apply_peptide_plane = False
+      omega_esd_override_value = None
+      rama_weight = 1.0
+      scale_allowed = 1.0
+      rama_potential = *oldfield emsley
+      oldfield {
+        esd = 10.0
+        weight_scale = 1.0
+        dist_weight_max = 10.0
+        weight = None
+        plot_cutoff = 0.027
+      }
+      rama_selection = None
+      restrain_rama_outliers = True
+      restrain_rama_allowed = True
+      restrain_allowed_outliers_with_emsley = False
+    }
+    max_reasonable_bond_distance = 50.0
+    nonbonded_distance_cutoff = None
+    default_vdw_distance = 1
+    min_vdw_distance = 1
+    nonbonded_buffer = 1
+    nonbonded_weight = 100
+    const_shrink_donor_acceptor = 0.6
+    vdw_1_4_factor = 0.8
+    min_distance_sym_equiv = 0.5
+    custom_nonbonded_symmetry_exclusions = None
+    translate_cns_dna_rna_residue_names = None
+    proceed_with_excessive_length_bonds = False
+    rna_sugar_pucker_analysis {
+      bond_min_distance = 1.2
+      bond_max_distance = 1.8
+      epsilon_range_min = 155.0
+      epsilon_range_max = 310.0
+      delta_range_2p_min = 129.0
+      delta_range_2p_max = 162.0
+      delta_range_3p_min = 65.0
+      delta_range_3p_max = 104.0
+      p_distance_c1p_outbound_line_2p_max = 2.9
+      o3p_distance_c1p_outbound_line_2p_max = 2.4
+      bond_detection_distance_tolerance = 0.5
+    }
+    show_histogram_slots {
+      bond_lengths = 5
+      nonbonded_interaction_distances = 5
+      bond_angle_deviations_from_ideal = 5
+      dihedral_angle_deviations_from_ideal = 5
+      chiral_volume_deviations_from_ideal = 5
+    }
+    show_max_items {
+      not_linked = 5
+      bond_restraints_sorted_by_residual = 5
+      nonbonded_interactions_sorted_by_model_distance = 5
+      bond_angle_restraints_sorted_by_residual = 5
+      dihedral_angle_restraints_sorted_by_residual = 3
+      chirality_restraints_sorted_by_residual = 3
+      planarity_restraints_sorted_by_residual = 3
+      residues_with_excluded_nonbonded_symmetry_interactions = 12
+      fatal_problem_max_lines = 10
+    }
+    ncs_group {
+      reference = None
+      selection = None
+    }
+    ncs_search {
+      enabled = True
+      exclude_selection = "element H or element D or water"
+      chain_similarity_threshold = 0.85
+      chain_max_rmsd = 999
+      residue_match_radius = 1000
+      try_shortcuts = False
+      minimum_number_of_atoms_in_copy = 3
+    }
+    clash_guard {
+      nonbonded_distance_threshold = 0.5
+      max_number_of_distances_below_threshold = 100
+      max_fraction_of_distances_below_threshold = 0.1
+    }
+  }
+  geometry_restraints {
+    edits {
+      excessive_bond_distance_limit = 10
+      bond {
+        action = *add delete change
+        atom_selection_1 = None
+        atom_selection_2 = None
+        symmetry_operation = None
+        distance_ideal = None
+        sigma = None
+        slack = None
+        limit = -1.0
+        top_out = False
+      }
+      angle {
+        action = *add delete change
+        atom_selection_1 = None
+        atom_selection_2 = None
+        atom_selection_3 = None
+        angle_ideal = None
+        sigma = None
+      }
+      dihedral {
+        action = *add delete change
+        atom_selection_1 = None
+        atom_selection_2 = None
+        atom_selection_3 = None
+        atom_selection_4 = None
+        angle_ideal = None
+        alt_angle_ideals = None
+        sigma = None
+        periodicity = 1
+      }
+      planarity {
+        action = *add delete change
+        atom_selection = None
+        sigma = None
+      }
+      parallelity {
+        action = *add delete change
+        atom_selection_1 = None
+        atom_selection_2 = None
+        sigma = 0.027
+        target_angle_deg = 0
+      }
+    }
+    remove {
+      angles = None
+      dihedrals = None
+      chiralities = None
+      planarities = None
+      parallelities = None
+    }
+  }
+  simulated_annealing {
+    start_temperature = 5000
+    final_temperature = 300
+    cool_rate = 100
+    number_of_steps = 50
+    time_step = 0.0005
+    initial_velocities_zero_fraction = 0
+    interleave_minimization = False
+    verbose = -1
+    n_print = 100
+    update_grads_shift = 0.3
+    random_seed = None
+  }
+  job_title = """Refinamiento_pyrR-gmp-DS3"""
+  gui {
+    output_dir = None
+    phil_file = None
+    run_validation = True
+  }
+-------------------------------------------------------------------------------
+Set random seed: 0
+******************
+  Available suitable arrays:
+     FC,PHIC
+     FC_ALL,PHIC_ALL
+     FWT,PHWT
+     DELFWT,PHDELWT
+     FC_ALL_LS,PHIC_ALL_LS
+
+  Selected: FC,PHIC
+-------------------------------------------------------------------------------
+Extract target map:
+*******************
+-------------------------------------------------------------------------------
+Process model file:
+*******************
+  Monomer Library directory:
+    "/Applications/phenix-1.17.1-3660/modules/chem_data/mon_lib"
+  Total number of atoms: 4134
+  Number of models: 1
+  Model: ""
+    Number of chains: 4
+    Chain: "B"
+      Number of atoms: 984
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 144, 984
+          Classifications: {'peptide': 144}
+          Incomplete info: {'truncation_to_alanine': 15}
+          Link IDs: {'CIS': 1, 'PTRANS': 7, 'TRANS': 135}
+          Chain breaks: 2
+          Unresolved chain link angles: 4
+          Unresolved non-hydrogen bonds: 154
+          Unresolved non-hydrogen angles: 200
+          Unresolved non-hydrogen dihedrals: 115
+          Unresolved non-hydrogen chiralities: 19
+          Planarities with less than four sites: {'ASN:plan1': 5, 'TYR:plan': 1, 'UNK:plan-1': 1, 'ASP:plan': 3, 'GLU:plan': 6, 'ARG:plan': 5}
+          Unresolved non-hydrogen planarities: 70
+    Chain: "A"
+      Number of atoms: 1033
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 152, 1033
+          Classifications: {'peptide': 152}
+          Incomplete info: {'truncation_to_alanine': 17}
+          Link IDs: {'CIS': 1, 'PTRANS': 7, 'TRANS': 143}
+          Chain breaks: 3
+          Unresolved chain link angles: 4
+          Unresolved non-hydrogen bonds: 164
+          Unresolved non-hydrogen angles: 215
+          Unresolved non-hydrogen dihedrals: 120
+          Unresolved non-hydrogen chiralities: 21
+          Planarities with less than four sites: {'ASN:plan1': 5, 'TYR:plan': 1, 'UNK:plan-1': 2, 'ASP:plan': 4, 'GLU:plan': 6, 'ARG:plan': 6}
+          Unresolved non-hydrogen planarities: 78
+    Chain: "C"
+      Number of atoms: 1055
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 154, 1055
+          Classifications: {'peptide': 154}
+          Incomplete info: {'truncation_to_alanine': 15}
+          Link IDs: {'CIS': 1, 'PTRANS': 7, 'TRANS': 145}
+          Chain breaks: 2
+          Unresolved chain link angles: 4
+          Unresolved non-hydrogen bonds: 166
+          Unresolved non-hydrogen angles: 216
+          Unresolved non-hydrogen dihedrals: 123
+          Unresolved non-hydrogen chiralities: 21
+          Planarities with less than four sites: {'TYR:plan': 1, 'GLU:plan': 7, 'ARG:plan': 6, 'ASN:plan1': 5, 'ASP:plan': 4}
+          Unresolved non-hydrogen planarities: 79
+    Chain: "D"
+      Number of atoms: 1062
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 154, 1062
+          Classifications: {'peptide': 154}
+          Incomplete info: {'truncation_to_alanine': 14}
+          Link IDs: {'CIS': 1, 'PTRANS': 7, 'TRANS': 145}
+          Chain breaks: 2
+          Unresolved chain link angles: 5
+          Unresolved non-hydrogen bonds: 160
+          Unresolved non-hydrogen angles: 209
+          Unresolved non-hydrogen dihedrals: 117
+          Unresolved non-hydrogen chiralities: 21
+          Planarities with less than four sites: {'TYR:plan': 1, 'GLU:plan': 6, 'ARG:plan': 6, 'ASN:plan1': 5, 'ASP:plan': 4}
+          Unresolved non-hydrogen planarities: 76
+  Time building chain proxies: 1.09, per 1000 atoms: 0.26
+Found NCS groups:
+ncs_group {
+  reference = (chain 'A' and (resid 1 through 23 or resid 35 through 69 or (resid 70 and (name \ 
+ N or name CA or name C or name O or name CB )) or resid 96 through 178))
+  selection = (chain 'B' and (resid 1 through 23 or resid 35 through 157 or resid 159 through  \ 
+178))
+  selection = (chain 'C' and (resid 1 through 23 or resid 35 through 69 or (resid 70 and (name \ 
+ N or name CA or name C or name O or name CB )) or resid 96 through 157 or resid \ 
+ 159 through 178))
+  selection = (chain 'D' and (resid 1 through 69 or (resid 70 and (name N or name CA or name C \ 
+ or name O or name CB )) or resid 96 through 157 or resid 159 through 178))
+}
+
+  Number of scatterers: 4134
+  At special positions: 0
+  Unit cell: (105.417, 75.8231, 70.5074, 90, 104.23, 90)
+  Space group: P 1 (No. 1)
+  Number of sites at special positions: 0
+  Number of scattering types: 4
+    Type Number    sf(0)
+     S       4     16.00
+     O     756      8.00
+     N     759      7.00
+     C    2615      6.00
+    sf(0) = scattering factor at diffraction angle 0.
+
+Number of NCS constrained groups: 0
+    WARNING: No NCS constrained groups left after filtering.
+    We exclude NCS groups that cover only part of a chain.
+Resolution:   3.00 A
+-------------------------------------------------------------------------------
+Setting up scattering table to: electron
+****************************************
+Number of scattering types: 4
+  Type Number    sf(0)   Gaussians
+   S       4      5.16       5
+   C    2615      2.51       5
+   N     759      2.21       5
+   O     756      1.98       5
+  sf(0) = scattering factor at diffraction angle 0.
+  Number of disulfides: simple=0, symmetry=0
+
+  Automatic linking
+    Parameters for automatic linking
+      Linking & cutoffs
+        Metal                : False - 3.50
+        Amimo acid           : False - 1.90
+        Carbohydrate         : True  - 1.99
+        Ligands              : True  - 1.99
+        Small molecules      : False - 1.98
+        Amino acid - RNA/DNA : False
+      
+  Number of custom bonds: simple=0, symmetry=0
+  Time building additional restraints: 0.68
+  Conformation dependent library (CDL) restraints added in 255.5 milliseconds
+  
+
+  575 Ramachandran restraints generated.
+    575 Oldfield and 0 Emsley.
+  Adding C-beta torsion restraints...
+  Number of C-beta restraints generated:  1130
+
+  Finding SS restraints...
+  running ksdssp...
+    Secondary structure from input PDB file:
+      17 helices and 8 sheets defined
+      35.1% alpha, 21.0% beta
+      0 base pairs and 0 stacking pairs defined.
+    Time for finding SS restraints: 0.50
+  Creating SS restraints...
+    Processing helix  chain 'B' and resid 5 through 23
+    Processing helix  chain 'B' and resid 44 through 60
+      removed outlier: 3.500A  pdb=" N   LEU B  48 " --> pdb=" O   ARG B  44 " (cutoff:3.500A)
+    Processing helix  chain 'B' and resid 112 through 124
+    Processing helix  chain 'B' and resid 167 through 170
+      No H-bonds generated for 'chain 'B' and resid 167 through 170'
+    Processing helix  chain 'A' and resid 5 through 23
+    Processing helix  chain 'A' and resid 44 through 60
+    Processing helix  chain 'A' and resid 112 through 122
+    Processing helix  chain 'A' and resid 167 through 170
+      No H-bonds generated for 'chain 'A' and resid 167 through 170'
+    Processing helix  chain 'C' and resid 5 through 23
+    Processing helix  chain 'C' and resid 44 through 60
+    Processing helix  chain 'C' and resid 112 through 124
+    Processing helix  chain 'C' and resid 167 through 170
+      No H-bonds generated for 'chain 'C' and resid 167 through 170'
+    Processing helix  chain 'D' and resid 5 through 22
+    Processing helix  chain 'D' and resid 44 through 60
+    Processing helix  chain 'D' and resid 72 through 74
+      No H-bonds generated for 'chain 'D' and resid 72 through 74'
+    Processing helix  chain 'D' and resid 112 through 124
+    Processing helix  chain 'D' and resid 167 through 170
+      No H-bonds generated for 'chain 'D' and resid 167 through 170'
+    Processing sheet with id=  A, first strand: chain 'B' and resid 65 through 69
+      removed outlier: 6.132A  pdb=" N   ILE B 100 " --> pdb=" O   VAL B  37 " (cutoff:3.500A)
+      removed outlier: 7.359A  pdb=" N   ILE B  39 " --> pdb=" O   ILE B 100 " (cutoff:3.500A)
+      removed outlier: 6.168A  pdb=" N   VAL B 102 " --> pdb=" O   ILE B  39 " (cutoff:3.500A)
+      removed outlier: 7.224A  pdb=" N   ILE B  41 " --> pdb=" O   VAL B 102 " (cutoff:3.500A)
+      removed outlier: 6.942A  pdb=" N   VAL B 104 " --> pdb=" O   ILE B  41 " (cutoff:3.500A)
+      removed outlier: 6.354A  pdb=" N   SER B 129 " --> pdb=" O   VAL B 101 " (cutoff:3.500A)
+      removed outlier: 7.367A  pdb=" N   LEU B 103 " --> pdb=" O   SER B 129 " (cutoff:3.500A)
+      removed outlier: 6.528A  pdb=" N   GLN B 131 " --> pdb=" O   LEU B 103 " (cutoff:3.500A)
+      removed outlier: 8.192A  pdb=" N   ASP B 105 " --> pdb=" O   GLN B 131 " (cutoff:3.500A)
+      removed outlier: 6.272A  pdb=" N   ALA B 133 " --> pdb=" O   ASP B 105 " (cutoff:3.500A)
+    Processing sheet with id=  B, first strand: chain 'B' and resid 161 through 165
+    Processing sheet with id=  C, first strand: chain 'A' and resid 66 through 69
+      removed outlier: 9.087A  pdb=" N   GLY A  67 " --> pdb=" O   LEU A  36 " (cutoff:3.500A)
+      removed outlier: 6.830A  pdb=" N   LEU A  38 " --> pdb=" O   GLY A  67 " (cutoff:3.500A)
+      removed outlier: 7.606A  pdb=" N   LEU A  69 " --> pdb=" O   LEU A  38 " (cutoff:3.500A)
+      removed outlier: 6.250A  pdb=" N   GLY A  40 " --> pdb=" O   LEU A  69 " (cutoff:3.500A)
+      removed outlier: 6.205A  pdb=" N   SER A 129 " --> pdb=" O   VAL A 101 " (cutoff:3.500A)
+      removed outlier: 7.396A  pdb=" N   LEU A 103 " --> pdb=" O   SER A 129 " (cutoff:3.500A)
+      removed outlier: 6.409A  pdb=" N   GLN A 131 " --> pdb=" O   LEU A 103 " (cutoff:3.500A)
+      removed outlier: 8.052A  pdb=" N   ASP A 105 " --> pdb=" O   GLN A 131 " (cutoff:3.500A)
+      removed outlier: 6.366A  pdb=" N   ALA A 133 " --> pdb=" O   ASP A 105 " (cutoff:3.500A)
+    Processing sheet with id=  D, first strand: chain 'A' and resid 161 through 165
+    Processing sheet with id=  E, first strand: chain 'C' and resid 66 through 68
+      removed outlier: 8.654A  pdb=" N   GLY C  67 " --> pdb=" O   LEU C  36 " (cutoff:3.500A)
+      removed outlier: 6.778A  pdb=" N   LEU C  38 " --> pdb=" O   GLY C  67 " (cutoff:3.500A)
+      removed outlier: 6.065A  pdb=" N   ILE C 100 " --> pdb=" O   VAL C  37 " (cutoff:3.500A)
+      removed outlier: 7.348A  pdb=" N   ILE C  39 " --> pdb=" O   ILE C 100 " (cutoff:3.500A)
+      removed outlier: 5.973A  pdb=" N   VAL C 102 " --> pdb=" O   ILE C  39 " (cutoff:3.500A)
+      removed outlier: 6.347A  pdb=" N   SER C 129 " --> pdb=" O   VAL C 101 " (cutoff:3.500A)
+      removed outlier: 7.395A  pdb=" N   LEU C 103 " --> pdb=" O   SER C 129 " (cutoff:3.500A)
+      removed outlier: 6.613A  pdb=" N   GLN C 131 " --> pdb=" O   LEU C 103 " (cutoff:3.500A)
+      removed outlier: 8.424A  pdb=" N   ASP C 105 " --> pdb=" O   GLN C 131 " (cutoff:3.500A)
+      removed outlier: 6.449A  pdb=" N   ALA C 133 " --> pdb=" O   ASP C 105 " (cutoff:3.500A)
+  No H-bonds generated for sheet with id=  E
+    Processing sheet with id=  F, first strand: chain 'C' and resid 161 through 165
+    Processing sheet with id=  G, first strand: chain 'D' and resid 66 through 68
+      removed outlier: 8.862A  pdb=" N   GLY D  67 " --> pdb=" O   LEU D  36 " (cutoff:3.500A)
+      removed outlier: 6.678A  pdb=" N   LEU D  38 " --> pdb=" O   GLY D  67 " (cutoff:3.500A)
+      removed outlier: 5.994A  pdb=" N   ILE D 100 " --> pdb=" O   VAL D  37 " (cutoff:3.500A)
+      removed outlier: 7.018A  pdb=" N   ILE D  39 " --> pdb=" O   ILE D 100 " (cutoff:3.500A)
+      removed outlier: 5.938A  pdb=" N   VAL D 102 " --> pdb=" O   ILE D  39 " (cutoff:3.500A)
+      removed outlier: 6.527A  pdb=" N   SER D 129 " --> pdb=" O   VAL D 101 " (cutoff:3.500A)
+      removed outlier: 7.477A  pdb=" N   LEU D 103 " --> pdb=" O   SER D 129 " (cutoff:3.500A)
+      removed outlier: 6.315A  pdb=" N   GLN D 131 " --> pdb=" O   LEU D 103 " (cutoff:3.500A)
+      removed outlier: 8.212A  pdb=" N   ASP D 105 " --> pdb=" O   GLN D 131 " (cutoff:3.500A)
+      removed outlier: 6.571A  pdb=" N   ALA D 133 " --> pdb=" O   ASP D 105 " (cutoff:3.500A)
+  No H-bonds generated for sheet with id=  G
+    Processing sheet with id=  H, first strand: chain 'D' and resid 161 through 165
+
+    178 hydrogen bonds defined for protein.
+    510 hydrogen bond angles defined for protein.
+    Restraints generated for nucleic acids:
+      0 hydrogen bonds
+      0 hydrogen bond angles
+      0 basepair planarities
+      0 basepair parallelities
+      0 stacking parallelities
+  Total time for adding SS restraints: 0.60
+
+  Time building geometry restraints manager: 0.59 seconds
+
+  NOTE: a complete listing of the restraints can be obtained by requesting
+        output of .geo file.
+
+  Histogram of bond lengths:
+        1.21 -     1.33: 942
+        1.33 -     1.46: 1146
+        1.46 -     1.58: 2054
+        1.58 -     1.71: 0
+        1.71 -     1.83: 9
+  Bond restraints: 4151
+  Sorted by residual:
+  bond pdb=" CG  ARG C  10 "
+       pdb=" CD  ARG C  10 "
+    ideal  model  delta    sigma   weight residual
+    1.520  1.776 -0.256 3.00e-02 1.11e+03 7.26e+01
+  bond pdb=" CD  ARG C  10 "
+       pdb=" NE  ARG C  10 "
+    ideal  model  delta    sigma   weight residual
+    1.460  1.383  0.077 1.80e-02 3.09e+03 1.84e+01
+  bond pdb=" CA  TYR D 109 "
+       pdb=" C   TYR D 109 "
+    ideal  model  delta    sigma   weight residual
+    1.517  1.537 -0.019 6.30e-03 2.52e+04 9.41e+00
+  bond pdb=" CE1 HIS C 140 "
+       pdb=" NE2 HIS C 140 "
+    ideal  model  delta    sigma   weight residual
+    1.321  1.351 -0.030 1.00e-02 1.00e+04 8.73e+00
+  bond pdb=" N   ILE A  92 "
+       pdb=" CA  ILE A  92 "
+    ideal  model  delta    sigma   weight residual
+    1.459  1.495 -0.036 1.25e-02 6.40e+03 8.10e+00
+  ... (remaining 4146 not shown)
+
+  Histogram of bond angle deviations from ideal:
+       94.37 -   101.82: 22
+      101.82 -   109.28: 487
+      109.28 -   116.73: 2537
+      116.73 -   124.19: 2317
+      124.19 -   131.64: 246
+  Bond angle restraints: 5609
+  Sorted by residual:
+  angle pdb=" C   GLU C  21 "
+        pdb=" CA  GLU C  21 "
+        pdb=" CB  GLU C  21 "
+      ideal   model   delta    sigma   weight residual
+     110.96   94.37   16.59 1.54e+00 4.22e-01 1.16e+02
+  angle pdb=" N   PRO A 147 "
+        pdb=" CA  PRO A 147 "
+        pdb=" CB  PRO A 147 "
+      ideal   model   delta    sigma   weight residual
+     103.36   94.67    8.69 8.80e-01 1.29e+00 9.75e+01
+  angle pdb=" C   GLU B  21 "
+        pdb=" CA  GLU B  21 "
+        pdb=" CB  GLU B  21 "
+      ideal   model   delta    sigma   weight residual
+     110.92   96.29   14.63 1.59e+00 3.96e-01 8.46e+01
+  angle pdb=" N   PRO B  65 "
+        pdb=" CA  PRO B  65 "
+        pdb=" CB  PRO B  65 "
+      ideal   model   delta    sigma   weight residual
+     103.31   95.54    7.77 8.90e-01 1.26e+00 7.62e+01
+  angle pdb=" N   PRO B 147 "
+        pdb=" CA  PRO B 147 "
+        pdb=" CB  PRO B 147 "
+      ideal   model   delta    sigma   weight residual
+     103.36   96.90    6.46 8.80e-01 1.29e+00 5.40e+01
+  ... (remaining 5604 not shown)
+
+  Histogram of dihedral angle deviations from ideal:
+        0.00 -    25.78: 2379
+       25.78 -    51.56: 163
+       51.56 -    77.33: 33
+       77.33 -   103.11: 1
+      103.11 -   128.89: 2
+  Dihedral angle restraints: 2578
+    sinusoidal: 847
+      harmonic: 1731
+  Sorted by residual:
+  dihedral pdb=" C   ASN B  23 "
+           pdb=" N   ASN B  23 "
+           pdb=" CA  ASN B  23 "
+           pdb=" CB  ASN B  23 "
+      ideal   model   delta  harmonic     sigma   weight residual
+    -122.60 -142.45   19.85     0      2.50e+00 1.60e-01 6.31e+01
+  dihedral pdb=" C   GLU C  21 "
+           pdb=" N   GLU C  21 "
+           pdb=" CA  GLU C  21 "
+           pdb=" CB  GLU C  21 "
+      ideal   model   delta  harmonic     sigma   weight residual
+    -122.60 -105.24  -17.36     0      2.50e+00 1.60e-01 4.82e+01
+  dihedral pdb=" N   ASN B  23 "
+           pdb=" C   ASN B  23 "
+           pdb=" CA  ASN B  23 "
+           pdb=" CB  ASN B  23 "
+      ideal   model   delta  harmonic     sigma   weight residual
+     122.80  139.76  -16.96     0      2.50e+00 1.60e-01 4.60e+01
+  ... (remaining 2575 not shown)
+
+  Histogram of chiral volume deviations from ideal:
+       0.000 -    1.060: 693
+       1.060 -    2.120: 0
+       2.120 -    3.181: 0
+       3.181 -    4.241: 0
+       4.241 -    5.301: 12
+  Chirality restraints: 705
+  Sorted by residual:
+  chirality pdb=" CB  VAL A  20 "
+            pdb=" CA  VAL A  20 "
+            pdb=" CG1 VAL A  20 "
+            pdb=" CG2 VAL A  20 "
+    both_signs  ideal   model   delta    sigma   weight residual
+      False     -2.63    2.67   -5.30 2.00e-01 2.50e+01 7.03e+02
+  chirality pdb=" CB  VAL D  20 "
+            pdb=" CA  VAL D  20 "
+            pdb=" CG1 VAL D  20 "
+            pdb=" CG2 VAL D  20 "
+    both_signs  ideal   model   delta    sigma   weight residual
+      False     -2.63    2.56   -5.19 2.00e-01 2.50e+01 6.72e+02
+  chirality pdb=" CB  VAL C  20 "
+            pdb=" CA  VAL C  20 "
+            pdb=" CG1 VAL C  20 "
+            pdb=" CG2 VAL C  20 "
+    both_signs  ideal   model   delta    sigma   weight residual
+      False     -2.63    2.54   -5.17 2.00e-01 2.50e+01 6.68e+02
+  ... (remaining 702 not shown)
+
+  Planarity restraints: 726
+  Sorted by residual:
+                                 delta    sigma   weight rms_deltas residual
+  plane pdb=" CB  TYR D 149 "   -0.021 2.00e-02 2.50e+03   1.36e-02 3.69e+00
+        pdb=" CG  TYR D 149 "    0.004 2.00e-02 2.50e+03
+        pdb=" CD1 TYR D 149 "    0.002 2.00e-02 2.50e+03
+        pdb=" CD2 TYR D 149 "    0.020 2.00e-02 2.50e+03
+        pdb=" CE1 TYR D 149 "    0.017 2.00e-02 2.50e+03
+        pdb=" CE2 TYR D 149 "   -0.002 2.00e-02 2.50e+03
+        pdb=" CZ  TYR D 149 "   -0.002 2.00e-02 2.50e+03
+        pdb=" OH  TYR D 149 "   -0.018 2.00e-02 2.50e+03
+                                 delta    sigma   weight rms_deltas residual
+  plane pdb=" CA  ARG C  10 "    0.009 2.00e-02 2.50e+03   1.85e-02 3.41e+00
+        pdb=" C   ARG C  10 "   -0.032 2.00e-02 2.50e+03
+        pdb=" O   ARG C  10 "    0.012 2.00e-02 2.50e+03
+        pdb=" N   ALA C  11 "    0.011 2.00e-02 2.50e+03
+                                 delta    sigma   weight rms_deltas residual
+  plane pdb=" CA  ASP B 148 "   -0.009 2.00e-02 2.50e+03   1.73e-02 3.00e+00
+        pdb=" C   ASP B 148 "    0.030 2.00e-02 2.50e+03
+        pdb=" O   ASP B 148 "   -0.011 2.00e-02 2.50e+03
+        pdb=" N   TYR B 149 "   -0.010 2.00e-02 2.50e+03
+  ... (remaining 723 not shown)
+
+  Histogram of nonbonded interaction distances:
+        1.50 -     2.18: 1
+        2.18 -     2.86: 1483
+        2.86 -     3.54: 5851
+        3.54 -     4.22: 9827
+        4.22 -     4.90: 15860
+  Nonbonded interactions: 33022
+  Sorted by model distance:
+  nonbonded pdb=" NH1 ARG B  44 "
+            pdb=" O   VAL B 164 "
+     model   vdw
+     1.505 2.520
+  nonbonded pdb=" N   PRO C  47 "
+            pdb=" CG  PRO C  47 "
+     model   vdw
+     2.283 2.816
+  nonbonded pdb=" O   ILE D  19 "
+            pdb=" CG  ASN D  23 "
+     model   vdw
+     2.305 3.270
+  nonbonded pdb=" OE1 GLN D 131 "
+            pdb=" OH  TYR D 149 "
+     model   vdw
+     2.316 2.440
+  nonbonded pdb=" OD1 ASP B 119 "
+            pdb=" NH2 ARG C 115 "
+     model   vdw
+     2.397 2.520
+  ... (remaining 33017 not shown)
+
+  NOTE: a complete listing of the restraints can be obtained by requesting
+        output of .geo file.
+-------------------------------------------------------------------------------
+Macro-cycles
+************
+-------------------------------------------------------------------------------
+Set structure monitor
+*********************
+-------------------------------------------------------------------------------
+Start info (overall)
+********************
+model-to-map fit, CC_mask: 0.9729
+moved from start:          0.0000
+
+Geometry Restraints Library: GeoStd + Monomer Library + CDL v1.2
+Deviations from Ideal Values.
+  Bond      :  0.009   0.256   4151
+  Angle     :  1.886  16.594   5609
+  Chirality :  0.682   5.301    705
+  Planarity :  0.006   0.018    726
+  Dihedral  : 18.576 128.888   1448
+  Min Nonbonded Distance : 1.505
+
+Molprobity Statistics.
+  All-atom Clashscore : 11.58
+  Ramachandran Plot:
+    Outliers :  1.04 %
+    Allowed  :  4.87 %
+    Favored  : 94.09 %
+  Rotamer Outliers :  8.36 %
+  Cbeta Deviations :  4.60 %
+  Peptide Plane:
+    Cis-proline     : 0.00 %
+    Cis-general     : 0.71 %
+    Twisted Proline : 0.00 %
+    Twisted General : 0.18 %
+-------------------------------------------------------------------------------
+Set refinery object
+*******************
+
+*********************** REFINEMENT MACRO_CYCLE 1 OF 5 *************************
+
+-------------------------------------------------------------------------------
+Global refinement
+*****************
+Weight determination summary:
+   number of chunks: 59
+   random chunks:
+   chunk 49 optimal weight:   20.0000
+   chunk 44 optimal weight:   50.0000
+   chunk 24 optimal weight:    9.9990
+   chunk 15 optimal weight:    9.9990
+   chunk 30 optimal weight:   20.0000
+   chunk 23 optimal weight:    5.9990
+   chunk 46 optimal weight:   30.0000
+   chunk 17 optimal weight:   20.0000
+   chunk 28 optimal weight:   10.0000
+   chunk 34 optimal weight:   10.0000
+   chunk 53 optimal weight:   20.0000
+   overall best weight:   19.9998
+
+Overall counts
+  model-to-map fit, CC_mask: 0.9644
+  moved from start:          0.2248
+  
+  Geometry Restraints Library: GeoStd + Monomer Library + CDL v1.2
+  Deviations from Ideal Values.
+    Bond      :  0.006   0.048   4151
+    Angle     :  0.584   6.044   5609
+    Chirality :  0.052   0.189    705
+    Planarity :  0.004   0.042    726
+    Dihedral  : 15.342 161.343   1448
+    Min Nonbonded Distance : 2.095
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 6.89
+    Ramachandran Plot:
+      Outliers :  1.04 %
+      Allowed  :  2.96 %
+      Favored  : 96.00 %
+    Rotamer Outliers :  7.36 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 0.00 %
+      Cis-general     : 0.71 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.36 %
+
+*********************** REFINEMENT MACRO_CYCLE 2 OF 5 *************************
+
+-------------------------------------------------------------------------------
+Local refinement
+****************
+outliers start: 26
+outliers after map fit: 21
+tune up
+outliers final: 12
+Did it for: 207
+-------------------------------------------------------------------------------
+Global refinement
+*****************
+Weight determination summary:
+   number of chunks: 59
+   random chunks:
+   chunk 29 optimal weight:   60.0000
+   chunk 16 optimal weight:   30.0000
+   chunk 44 optimal weight:   60.0000
+   chunk 36 optimal weight:   30.0000
+   chunk 14 optimal weight:   60.0000
+   chunk 53 optimal weight:   30.0000
+   chunk 57 optimal weight:    0.8980
+   chunk 47 optimal weight:   40.0000
+   chunk 18 optimal weight:   20.0000
+   chunk 43 optimal weight:   30.0000
+   chunk 40 optimal weight:   10.0000
+   overall best weight:   40.0000
+
+Overall counts
+  model-to-map fit, CC_mask: 0.9648
+  moved from start:          0.2595
+  
+  Geometry Restraints Library: GeoStd + Monomer Library + CDL v1.2
+  Deviations from Ideal Values.
+    Bond      :  0.011   0.072   4151
+    Angle     :  0.663   5.603   5609
+    Chirality :  0.057   0.229    705
+    Planarity :  0.004   0.038    726
+    Dihedral  :  5.777  45.609    642
+    Min Nonbonded Distance : 2.102
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 7.67
+    Ramachandran Plot:
+      Outliers :  0.70 %
+      Allowed  :  3.65 %
+      Favored  : 95.65 %
+    Rotamer Outliers :  6.02 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 0.00 %
+      Cis-general     : 0.71 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.54 %
+
+*********************** REFINEMENT MACRO_CYCLE 3 OF 5 *************************
+
+-------------------------------------------------------------------------------
+Local refinement
+****************
+outliers start: 22
+outliers after map fit: 22
+tune up
+outliers final: 12
+Did it for: 200
+-------------------------------------------------------------------------------
+Global refinement
+*****************
+Weight determination summary:
+   number of chunks: 59
+   random chunks:
+   chunk 27 optimal weight:   20.0000
+   chunk 5 optimal weight:   50.0000
+   chunk 25 optimal weight:    6.9990
+   chunk 36 optimal weight:    0.0570
+   chunk 53 optimal weight:    7.9990
+   chunk 57 optimal weight:   20.0000
+   chunk 28 optimal weight:    8.9990
+   chunk 51 optimal weight:    6.9990
+   chunk 15 optimal weight:    8.9990
+   chunk 47 optimal weight:   40.0000
+   chunk 32 optimal weight:    7.9990
+   overall best weight:   14.2216
+
+Overall counts
+  model-to-map fit, CC_mask: 0.9610
+  moved from start:          0.2892
+  
+  Geometry Restraints Library: GeoStd + Monomer Library + CDL v1.2
+  Deviations from Ideal Values.
+    Bond      :  0.004   0.027   4151
+    Angle     :  0.491   4.925   5609
+    Chirality :  0.049   0.145    705
+    Planarity :  0.003   0.031    726
+    Dihedral  :  4.835  34.263    642
+    Min Nonbonded Distance : 2.135
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 6.37
+    Ramachandran Plot:
+      Outliers :  0.70 %
+      Allowed  :  2.26 %
+      Favored  : 97.04 %
+    Rotamer Outliers :  6.02 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 0.00 %
+      Cis-general     : 0.71 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.54 %
+
+*********************** REFINEMENT MACRO_CYCLE 4 OF 5 *************************
+
+-------------------------------------------------------------------------------
+Local refinement
+****************
+outliers start: 22
+outliers after map fit: 19
+tune up
+outliers final: 10
+Did it for: 202
+-------------------------------------------------------------------------------
+Global refinement
+*****************
+Weight determination summary:
+   number of chunks: 59
+   random chunks:
+   chunk 0 optimal weight:   50.0000
+   chunk 42 optimal weight:   20.0000
+   chunk 23 optimal weight:   10.0000
+   chunk 48 optimal weight:    6.9990
+   chunk 39 optimal weight:   40.0000
+   chunk 29 optimal weight:   60.0000
+   chunk 51 optimal weight:   50.0000
+   chunk 14 optimal weight:   60.0000
+   chunk 19 optimal weight:    8.9990
+   chunk 11 optimal weight:    9.9990
+   chunk 33 optimal weight:   30.0000
+   overall best weight:   44.2857
+
+Overall counts
+  model-to-map fit, CC_mask: 0.9652
+  moved from start:          0.2683
+  
+  Geometry Restraints Library: GeoStd + Monomer Library + CDL v1.2
+  Deviations from Ideal Values.
+    Bond      :  0.012   0.072   4151
+    Angle     :  0.665   5.495   5609
+    Chirality :  0.057   0.247    705
+    Planarity :  0.004   0.040    726
+    Dihedral  :  5.550  40.936    642
+    Min Nonbonded Distance : 2.095
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 7.93
+    Ramachandran Plot:
+      Outliers :  0.70 %
+      Allowed  :  3.83 %
+      Favored  : 95.48 %
+    Rotamer Outliers :  6.02 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 0.00 %
+      Cis-general     : 0.71 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.54 %
+
+*********************** REFINEMENT MACRO_CYCLE 5 OF 5 *************************
+
+-------------------------------------------------------------------------------
+Local refinement
+****************
+outliers start: 21
+outliers after map fit: 19
+tune up
+outliers final: 9
+Did it for: 200
+-------------------------------------------------------------------------------
+Global refinement
+*****************
+Weight determination summary:
+   number of chunks: 59
+   random chunks:
+   chunk 14 optimal weight:   20.0000
+   chunk 57 optimal weight:    9.9990
+   chunk 47 optimal weight:    7.9990
+   chunk 26 optimal weight:    8.9990
+   chunk 4 optimal weight:   20.0000
+   chunk 18 optimal weight:    5.9990
+   chunk 29 optimal weight:   30.0000
+   chunk 55 optimal weight:    7.9990
+   chunk 6 optimal weight:    0.9990
+   chunk 32 optimal weight:    9.9990
+   chunk 41 optimal weight:    8.9990
+   overall best weight:   12.9993
+
+|-group b-factor refinement (macro cycle = 0; iterations = 0)-----------------|
+| r_work = 0.2697 r_free = 0.2697 target = 0.093459 restraints weight = None  |
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 1; iterations = 31)----------------|
+| r_work = 0.2361 r_free = 0.2361 target = 0.082436 restraints weight = 14910.897|
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 2; iterations = 26)----------------|
+| r_work = 0.2380 r_free = 0.2380 target = 0.083047 restraints weight = 10545.228|
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 3; iterations = 25)----------------|
+| r_work = 0.2397 r_free = 0.2397 target = 0.083609 restraints weight = 8609.365|
+|-----------------------------------------------------------------------------|
+
+GEOMETRY RESTRAINTS LIBRARY: GEOSTD + MONOMER LIBRARY + CDL V1.2
+DEVIATIONS FROM IDEAL VALUES.
+  BOND      :  0.004   0.024   4151
+  ANGLE     :  0.477   4.528   5609
+  CHIRALITY :  0.048   0.145    705
+  PLANARITY :  0.003   0.032    726
+  DIHEDRAL  :  4.703  33.119    642
+  MIN NONBONDED DISTANCE : 2.152
+
+MOLPROBITY STATISTICS.
+  ALL-ATOM CLASHSCORE : 6.50
+  RAMACHANDRAN PLOT:
+    OUTLIERS :  0.17 %
+    ALLOWED  :  2.43 %
+    FAVORED  : 97.39 %
+  ROTAMER OUTLIERS :  4.01 %
+  CBETA DEVIATIONS :  0.00 %
+  PEPTIDE PLANE:
+    CIS-PROLINE     : 0.00 %
+    CIS-GENERAL     : 0.71 %
+    TWISTED PROLINE : 0.00 %
+    TWISTED GENERAL : 0.18 %
+Overall counts
+  model-to-map fit, CC_mask: 0.9638
+  moved from start:          0.3023
+  
+  Geometry Restraints Library: GeoStd + Monomer Library + CDL v1.2
+  Deviations from Ideal Values.
+    Bond      :  0.004   0.024   4151
+    Angle     :  0.477   4.528   5609
+    Chirality :  0.048   0.145    705
+    Planarity :  0.003   0.032    726
+    Dihedral  :  4.703  33.119    642
+    Min Nonbonded Distance : 2.152
+  
+  Molprobity Statistics.
+    All-atom Clashscore : 6.50
+    Ramachandran Plot:
+      Outliers :  0.17 %
+      Allowed  :  2.43 %
+      Favored  : 97.39 %
+    Rotamer Outliers :  4.01 %
+    Cbeta Deviations :  0.00 %
+    Peptide Plane:
+      Cis-proline     : 0.00 %
+      Cis-general     : 0.71 %
+      Twisted Proline : 0.00 %
+      Twisted General : 0.18 %
+-------------------------------------------------------------------------------
+Final info (overall)
+********************
+model-to-map fit, CC_mask: 0.9638
+moved from start:          0.3023
+
+Geometry Restraints Library: GeoStd + Monomer Library + CDL v1.2
+Deviations from Ideal Values.
+  Bond      :  0.004   0.024   4151
+  Angle     :  0.477   4.528   5609
+  Chirality :  0.048   0.145    705
+  Planarity :  0.003   0.032    726
+  Dihedral  :  4.703  33.119    642
+  Min Nonbonded Distance : 2.152
+
+Molprobity Statistics.
+  All-atom Clashscore : 6.50
+  Ramachandran Plot:
+    Outliers :  0.17 %
+    Allowed  :  2.43 %
+    Favored  : 97.39 %
+  Rotamer Outliers :  4.01 %
+  Cbeta Deviations :  0.00 %
+  Peptide Plane:
+    Cis-proline     : 0.00 %
+    Cis-general     : 0.71 %
+    Twisted Proline : 0.00 %
+    Twisted General : 0.18 %
+-------------------------------------------------------------------------------
+Detailed timing
+***************
+  Initialize:                      8.950
+  Write initial .geo file:         3.130
+  Set structure monitor:           0.440
+  Start info (overall):            2.620
+  Set refinery object:             0.000
+  Global refinement:               9.300
+  Overall counts:                  2.690
+  Local refinement:                8.480
+  Global refinement:               13.790
+  Overall counts:                  2.590
+  Local refinement:                7.290
+  Global refinement:               16.900
+  Overall counts:                  2.850
+  Local refinement:                7.770
+  Global refinement:               11.880
+  Overall counts:                  2.770
+  Local refinement:                7.330
+  Global refinement:               9.910
+  ADP refinement:                  13.200
+  Overall counts:                  2.700
+  Final info (overall):            2.580
+  Write PDB file:                  3.490
+  Write mmCIF file:                5.660
+  Sum of individual times: 146.470
+-------------------------------------------------------------------------------
+Running validation
+******************
+-------------------------------------------------------------------------------
+Validation currently supports real-space maps only.
+***************************************************

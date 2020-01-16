@@ -1,0 +1,3856 @@
+<pre>
+<B><FONT COLOR="#FF0000">
+<html><!-- PHENIX HTML LOGFILE -->
+
+##########################################################################################
+##########################################################################################
+##########################################################################################
+### PHENIX: Phaser                                                               2.8.3 ###
+##########################################################################################
+User:         alfredo
+Run time:     Wed Jan  8 15:39:27 2020
+Version:      2.8.3
+Release Date: Wed Oct 16 22:41:51 2019 (svn 8451) (git 7473, f5edf81... )
+
+If you use this software please cite:
+"Phaser Crystallographic Software"
+A.J. McCoy, R.W. Grosse-Kunstleve, P.D. Adams, M.D. Winn, L.C. Storoni & R.J. Read
+J. Appl. Cryst. (2007). 40, 658-674
+<a href="http://journals.iucr.org/j/issues/2007/04/00/he5368/he5368.pdf">PDF</a>
+
+<!--END--></FONT></B>
+
+******************************************************************************************
+*** Phaser Module: PREPROCESSOR                                                  2.8.3 ***
+******************************************************************************************
+
+CELL 69.49 69.49 90.581 90 90 120
+COMPOSITION BY ASU
+COMPOSITION PROTEIN SEQ "/Users/alfredo/Documents/Adriana/pyrR_Tthermo.fa" NUM 1
+ELLG HIRES ON
+ENSEMBLE swissmodel4p84 PDB "/Users/alfredo/Downloads/01.pdb" ID 1 
+ENSEMBLE swissmodel4p84 ESTIMATOR oeffner
+HKLOUT ON
+INFORMATION OFF
+KEYWORDS OFF
+LABIN I = I SIGI = SIGI
+PEAKS ROT SELECT PERCENT CUTOFF 75
+PEAKS TRA SELECT PERCENT CUTOFF 75
+PURGE ROT PERCENT 75
+PURGE TRA PERCENT 75
+PURGE RNP PERCENT 75
+RESHARPEN PERCENTAGE 100
+ROOT "pyrR_ds2-3_phaser"
+SEARCH ENSEMBLE swissmodel4p84 
+SEARCH METHOD FULL
+SGALT BASE  P 31 2"
+SPACEGROUP P 31 2 1
+TITLE pyrR_apo_ds2
+TNCS RLIST ADD ON
+XYZOUT ON
+
+CPU Time: 0 days 0 hrs 0 mins 0.02 secs (      0.02 secs)
+Finished: Wed Jan  8 15:39:27 2020
+
+******************************************************************************************
+*** Phaser Module: AUTOMATED MOLECULAR REPLACEMENT                               2.8.3 ***
+******************************************************************************************
+
+** Steps:
+**    Cell Content Analysis
+**    Anisotropy correction
+**    Translational NCS correction
+**    Rotation Function
+**    Translation Function
+**    Packing
+**    Refinement
+**    Final Refinement (if data higher resolution than search resolution)
+** Number of search ensembles = 1
+** Search Method: FULL
+** Input Search Order:
+**    #1   swissmodel4p84  
+** Automatic (best predicted) search order WILL be used
+
+CPU Time: 0 days 0 hrs 0 mins 0.03 secs (      0.03 secs)
+Finished: Wed Jan  8 15:39:27 2020
+
+******************************************************************************************
+*** Phaser Module: CELL CONTENT ANALYSIS                                         2.8.3 ***
+******************************************************************************************
+
+   Space-Group Name (Hall Symbol): P 31 2 1 ( P 31 2")
+   Space-Group Number: 152
+   Unit Cell:   69.49   69.49   90.58   90.00   90.00  120.00
+
+--------------------
+SPACE GROUP ANALYSIS
+--------------------
+
+   Input Space Group: P 31 2 1
+
+   (a) Space groups derived by translation (screw) symmetry
+   --------------------------------------------------------
+   Z   Space Group    Hall Symbol
+   ----
+   6   P 31 2 1       P 31 2"
+       P 3 2 1        P 3 2"
+       P 32 2 1       P 32 2"
+   ----
+
+   (b) Subgroups of space group for perfect twinning expansions
+   ------------------------------------------------------------
+   R: Reindexing operation required (*)
+   Only subgroups related by rotational symmetry are reported
+   Z   Space Group   R Hall Symbol
+   ----
+   1   P 1             P 1
+   ---
+   ---
+   ---
+   2   C 1 2 1       * C 2y (x+y,-x+y,z)
+   ---
+   3   P 31            P 31
+       P 32            P 32
+       P 3             P 3
+   ---
+   6   P 31 2 1        P 31 2"
+       P 3 2 1         P 3 2"
+       P 32 2 1        P 32 2"
+   ----
+
+   Composition is of type: PROTEIN
+   MW to which Matthews applies: 19922
+   Resolution for Matthews calculation:  2.00
+
+   Z       MW         VM    % solvent  rel. freq.
+   1       19922      3.17  61.19      1.000       <== most probable
+   2       39845      1.58  22.37      0.021     
+
+   Z is the number of multiples of the total composition
+   In most cases the most probable Z value should be 1
+   If it is not 1, you may need to consider other compositions
+
+   Histogram of relative frequencies of VM values
+   ----------------------------------------------
+   Frequency of most common VM value normalized to 1
+   VM values plotted in increments of 1/VM (0.02)
+
+        <--- relative frequency --->
+        0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  
+        |    |    |    |    |    |    |    |    |    |    |    
+   10.00 -
+    8.33 -
+    7.14 -
+    6.25 -
+    5.56 -
+    5.00 -
+    4.55 -
+    4.17 -
+    3.85 --
+    3.57 ---
+    3.33 -----
+    3.12 ******** (COMPOSITION*1)
+    2.94 ------------
+    2.78 ------------------
+    2.63 --------------------------
+    2.50 -----------------------------------
+    2.38 -------------------------------------------
+    2.27 -------------------------------------------------
+    2.17 --------------------------------------------------
+    2.08 ---------------------------------------------
+    2.00 ------------------------------------
+    1.92 ------------------------
+    1.85 -------------
+    1.79 ------
+    1.72 --
+    1.67 -
+    1.61 -
+    1.56 * (COMPOSITION*2)
+    1.52 -
+    1.47 -
+    1.43 -
+    1.39 -
+    1.35 -
+    1.32 -
+    1.28 -
+    1.25 -
+
+   Most probable VM for resolution = 2.20181
+   Most probable MW of protein in asu for resolution = 28673.5
+
+CPU Time: 0 days 0 hrs 0 mins 0.10 secs (      0.10 secs)
+Finished: Wed Jan  8 15:39:27 2020
+
+******************************************************************************************
+*** Phaser Module: ANISOTROPY CORRECTION                                         2.8.3 ***
+******************************************************************************************
+
+------------------------------
+DATA FOR ANISOTROPY CORRECTION
+------------------------------
+
+   Resolution of All Data (Number):        2.00  32.44 (17592)
+   Resolution of Selected Data (Number):   2.00  32.44 (17567)
+
+   Outlier Rejection
+   -----------------
+   There were 25 reflections of 17592 (0.1421%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+      2    1   45   2.01      17.070       0.478   4.327e-08  true   false   
+      2    2   43   2.09      16.992       0.415   4.547e-08  true   false   
+      3    1  -44   2.04      18.783       0.433   7.644e-09  true   false   
+      3    1   43   2.09      21.625       0.503   4.604e-10  true   false   
+      3    3   43   2.07      14.385       0.461   6.294e-07  true   false   
+      4    4   44   2.00      17.598       0.641   2.797e-08  true   false   
+      5    3  -44   2.00      16.133       0.565   1.157e-07  true   false   
+      7    4  -39   2.18      19.659       0.585   3.437e-09  true   false   
+      9    0  -43   2.01      24.474       1.048   8.745e-07  true   false   
+      9    0  -42   2.05      28.253       1.066   1.240e-07  true   false   
+      9    0   35   2.41      26.466       0.757   2.898e-07  true   false   
+      9    1   41   2.09      16.875       0.437   5.159e-08  true   false   
+     10    0  -37   2.27      40.642       1.390   2.357e-10  true   false   
+     10    8  -29   2.43      -0.089       0.019   1.055e-08  true   false   
+     12    2   39   2.07      20.362       0.505   1.629e-09  true   false   
+     14    0   38   2.08      25.258       0.808   5.480e-07  true   false   
+     15    1   29   2.43      -0.152       0.028   1.843e-10  true   false   
+     16   13    2   2.39      -0.170       0.040   7.708e-08  true   false   
+     17    8   17   2.42      -0.142       0.036   4.069e-07  true   false   
+     17   11   10   2.38      -0.190       0.048   4.522e-07  true   false   
+   More than 20 outliers (see VERBOSE output)
+
+---------------------
+ANISOTROPY CORRECTION
+---------------------
+
+   Protocol cycle #1 of 3
+   Refinement protocol for this macrocycle:
+   BIN SCALES: REFINE
+   ANISOTROPY: REFINE
+   SOLVENT K:  FIX
+   SOLVENT B:  FIX
+
+   Protocol cycle #2 of 3
+   Refinement protocol for this macrocycle:
+   BIN SCALES: REFINE
+   ANISOTROPY: REFINE
+   SOLVENT K:  FIX
+   SOLVENT B:  FIX
+
+   Protocol cycle #3 of 3
+   Refinement protocol for this macrocycle:
+   BIN SCALES: REFINE
+   ANISOTROPY: REFINE
+   SOLVENT K:  FIX
+   SOLVENT B:  FIX
+
+   Outlier Rejection
+   -----------------
+   There were 25 reflections of 17592 (0.1421%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+      2    1   45   2.01      17.070       0.478   4.327e-08  true   false   
+      2    2   43   2.09      16.992       0.415   4.547e-08  true   false   
+      3    1  -44   2.04      18.783       0.433   7.644e-09  true   false   
+      3    1   43   2.09      21.625       0.503   4.604e-10  true   false   
+      3    3   43   2.07      14.385       0.461   6.294e-07  true   false   
+      4    4   44   2.00      17.598       0.641   2.797e-08  true   false   
+      5    3  -44   2.00      16.133       0.565   1.157e-07  true   false   
+      7    4  -39   2.18      19.659       0.585   3.437e-09  true   false   
+      9    0  -43   2.01      24.474       1.048   8.745e-07  true   false   
+      9    0  -42   2.05      28.253       1.066   1.240e-07  true   false   
+      9    0   35   2.41      26.466       0.757   2.898e-07  true   false   
+      9    1   41   2.09      16.875       0.437   5.159e-08  true   false   
+     10    0  -37   2.27      40.642       1.390   2.357e-10  true   false   
+     10    8  -29   2.43      -0.089       0.019   1.055e-08  true   false   
+     12    2   39   2.07      20.362       0.505   1.629e-09  true   false   
+     14    0   38   2.08      25.258       0.808   5.480e-07  true   false   
+     15    1   29   2.43      -0.152       0.028   1.843e-10  true   false   
+     16   13    2   2.39      -0.170       0.040   7.708e-08  true   false   
+     17    8   17   2.42      -0.142       0.036   4.069e-07  true   false   
+     17   11   10   2.38      -0.190       0.048   4.522e-07  true   false   
+   More than 20 outliers (see VERBOSE output)
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 11 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+     -165839.938           -162002.423              3837.515
+
+   Principal components of anisotropic part of B affecting observed amplitudes:
+     eigenB (A^2)     direction cosines (orthogonal coordinates)
+         9.098              0.1506   0.9886  -0.0000
+         9.098              0.9886  -0.1506   0.0000
+       -18.196             -0.0000   0.0000   1.0000
+   Anisotropic deltaB (i.e. range of principal components):  27.294
+
+   Outlier Rejection
+   -----------------
+   There were 9 reflections of 17592 (0.0512%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     10    8  -29   2.43      -0.064       0.014   7.591e-09  true   false   
+     15    1   29   2.43      -0.109       0.020   1.318e-10  true   false   
+     16   13    2   2.39      -0.443       0.104   1.987e-07  true   false   
+     17    8   17   2.42      -0.256       0.066   7.300e-07  true   false   
+     18    7   -5   2.66      -0.152       0.035   4.996e-08  true   false   
+     19    6  -17   2.38      -0.249       0.065   8.951e-07  true   false   
+     19    9    2   2.43      -0.410       0.086   1.554e-08  true   false   
+     22    1    3   2.66      -0.119       0.032   8.469e-07  true   false   
+     23    2    9   2.43      -0.423       0.099   2.152e-07  true   false   
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 3 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+     -162227.488           -162225.864                 1.624
+
+   Principal components of anisotropic part of B affecting observed amplitudes:
+     eigenB (A^2)     direction cosines (orthogonal coordinates)
+         9.243              0.1414   0.9899  -0.0000
+         9.243              0.9899  -0.1414   0.0000
+       -18.487             -0.0000   0.0000   1.0000
+   Anisotropic deltaB (i.e. range of principal components):  27.730
+
+   Outlier Rejection
+   -----------------
+   There were 9 reflections of 17592 (0.0512%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     10    8  -29   2.43      -0.063       0.014   7.480e-09  true   false   
+     15    1   29   2.43      -0.107       0.020   1.299e-10  true   false   
+     16   13    2   2.39      -0.450       0.105   2.018e-07  true   false   
+     17    8   17   2.42      -0.256       0.066   7.300e-07  true   false   
+     18    7   -5   2.66      -0.153       0.035   5.050e-08  true   false   
+     19    6  -17   2.38      -0.251       0.065   9.023e-07  true   false   
+     19    9    2   2.43      -0.413       0.087   1.566e-08  true   false   
+     22    1    3   2.66      -0.121       0.033   8.563e-07  true   false   
+     23    2    9   2.43      -0.425       0.100   2.163e-07  true   false   
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 1 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+     -162225.864           -162225.814                 0.051
+
+   Principal components of anisotropic part of B affecting observed amplitudes:
+     eigenB (A^2)     direction cosines (orthogonal coordinates)
+         9.250              0.1412   0.9900  -0.0000
+         9.250              0.9900  -0.1412   0.0000
+       -18.500             -0.0000   0.0000   1.0000
+   Anisotropic deltaB (i.e. range of principal components):  27.750
+
+   Outlier Rejection
+   -----------------
+   There were 9 reflections of 17592 (0.0512%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     10    8  -29   2.43      -0.063       0.014   7.485e-09  true   false   
+     15    1   29   2.43      -0.107       0.020   1.300e-10  true   false   
+     16   13    2   2.39      -0.451       0.105   2.021e-07  true   false   
+     17    8   17   2.42      -0.256       0.066   7.309e-07  true   false   
+     18    7   -5   2.66      -0.153       0.035   5.057e-08  true   false   
+     19    6  -17   2.38      -0.251       0.065   9.035e-07  true   false   
+     19    9    2   2.43      -0.414       0.087   1.568e-08  true   false   
+     22    1    3   2.66      -0.121       0.033   8.574e-07  true   false   
+     23    2    9   2.43      -0.426       0.100   2.166e-07  true   false   
+
+   Refined Anisotropy Parameters
+   -----------------------------
+   Principal components of anisotropic part of B affecting observed amplitudes:
+     eigenB (A^2)     direction cosines (orthogonal coordinates)
+         9.250              0.1412   0.9900  -0.0000
+         9.250              0.9900  -0.1412   0.0000
+       -18.500             -0.0000   0.0000   1.0000
+   Anisotropic deltaB (i.e. range of principal components):  27.750
+
+--------------
+ABSOLUTE SCALE
+--------------
+
+   Scale factor to put input Fs on absolute scale
+   Wilson Scale:    2.1382
+   Wilson B-factor: 33.7923
+
+--------------------------------
+DATA AFTER ANISOTROPY CORRECTION
+--------------------------------
+
+   Resolution of All Data (Number):        2.00  32.44 (17592)
+   Resolution of Selected Data (Number):   2.00  32.44 (17583)
+
+   Outlier Rejection
+   -----------------
+   There were 9 reflections of 17592 (0.0512%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     10    8  -29   2.43      -0.063       0.014   7.485e-09  true   false   
+     15    1   29   2.43      -0.107       0.020   1.300e-10  true   false   
+     16   13    2   2.39      -0.451       0.105   2.021e-07  true   false   
+     17    8   17   2.42      -0.256       0.066   7.309e-07  true   false   
+     18    7   -5   2.66      -0.153       0.035   5.057e-08  true   false   
+     19    6  -17   2.38      -0.251       0.065   9.035e-07  true   false   
+     19    9    2   2.43      -0.414       0.087   1.568e-08  true   false   
+     22    1    3   2.66      -0.121       0.033   8.574e-07  true   false   
+     23    2    9   2.43      -0.426       0.100   2.166e-07  true   false   
+
+------------
+OUTPUT FILES
+------------
+
+   No files output
+
+CPU Time: 0 days 0 hrs 0 mins 4.18 secs (      4.18 secs)
+Finished: Wed Jan  8 15:39:31 2020
+
+******************************************************************************************
+*** Phaser Module: TRANSLATIONAL NON-CRYSTALLOGRAPHIC SYMMETRY                   2.8.3 ***
+******************************************************************************************
+
+   Unit Cell:   69.49   69.49   90.58   90.00   90.00  120.00
+
+---------------------
+MAXIMUM NMOL ANALYSIS
+---------------------
+
+   Stoichiometry of search components:
+      "swissmodel4p84"
+
+   Molecular weight of components:  19885.3
+   Volume of asymmetric unit:       63133.7
+   Packing to solvent content:      20%
+   Maximum automatic NMOL number:   2
+
+-------------------------------------
+DATA FOR TRANSLATIONAL NCS CORRECTION
+-------------------------------------
+
+   Resolution of All Data (Number):        2.00  32.44 (17592)
+   Resolution of Selected Data (Number):   2.00  32.44 (17567)
+
+   Outlier Rejection
+   -----------------
+   There were 25 reflections of 17592 (0.1421%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+      2    1   45   2.01      17.070       0.478   4.327e-08  true   false   
+      2    2   43   2.09      16.992       0.415   4.547e-08  true   false   
+      3    1  -44   2.04      18.783       0.433   7.644e-09  true   false   
+      3    1   43   2.09      21.625       0.503   4.604e-10  true   false   
+      3    3   43   2.07      14.385       0.461   6.294e-07  true   false   
+      4    4   44   2.00      17.598       0.641   2.797e-08  true   false   
+      5    3  -44   2.00      16.133       0.565   1.157e-07  true   false   
+      7    4  -39   2.18      19.659       0.585   3.437e-09  true   false   
+      9    0  -43   2.01      24.474       1.048   8.745e-07  true   false   
+      9    0  -42   2.05      28.253       1.066   1.240e-07  true   false   
+      9    0   35   2.41      26.466       0.757   2.898e-07  true   false   
+      9    1   41   2.09      16.875       0.437   5.159e-08  true   false   
+     10    0  -37   2.27      40.642       1.390   2.357e-10  true   false   
+     10    8  -29   2.43      -0.089       0.019   1.055e-08  true   false   
+     12    2   39   2.07      20.362       0.505   1.629e-09  true   false   
+     14    0   38   2.08      25.258       0.808   5.480e-07  true   false   
+     15    1   29   2.43      -0.152       0.028   1.843e-10  true   false   
+     16   13    2   2.39      -0.170       0.040   7.708e-08  true   false   
+     17    8   17   2.42      -0.142       0.036   4.069e-07  true   false   
+     17   11   10   2.38      -0.190       0.048   4.522e-07  true   false   
+   More than 20 outliers (see VERBOSE output)
+
+   Weighted Intensity Moments for Data
+   -----------------------------------
+   Inverse variance-weighted 2nd Moment = <wE^4>/<wE^2>^2 == <wJ^2>/<wJ>^2
+                        Untwinned   Perfect Twin
+   2nd Moment  Centric:    3.0          2.0
+   2nd Moment Acentric:    2.0          1.5
+                               Measured
+   2nd Moment  Centric:             3.97
+   2nd Moment Acentric:             2.35
+
+   Resolution for Twin Analysis (85% I/SIGI > 3):  2.46A (HiRes= 2.00A)
+
+---------------------
+ANISOTROPY CORRECTION
+---------------------
+
+   Weighted Intensity Moments after Anisotropy Correction
+   ------------------------------------------------------
+   Inverse variance-weighted 2nd Moment = <wE^4>/<wE^2>^2 == <wJ^2>/<wJ>^2
+                        Untwinned   Perfect Twin
+   2nd Moment  Centric:    3.0          2.0
+   2nd Moment Acentric:    2.0          1.5
+                               Measured
+   2nd Moment  Centric:             3.19
+   2nd Moment Acentric:             1.94
+
+   Resolution for Twin Analysis (85% I/SIGI > 3):  2.46A (HiRes= 2.00A)
+
+-----------------
+TRANSLATIONAL NCS
+-----------------
+
+   tNCS vector not set
+   Space Group (without translational symmetry):P 3 2 1
+   Patterson Symmetry: P -3 m 1
+   Resolution of All Data (Number):        2.00  32.44 (17592)
+   Resolution of Patterson (Number):       5.00   9.97 (1053)
+
+   Raw Patterson Peaks Table
+   -------------------------
+   Sorted by Height
+   Height Vector
+   100.0%:   FRAC +0.0000 +0.0000 -0.0000   (ORTH    0.0    0.0    0.0)
+
+   Patterson Top (All) = 7.64%
+      There were 156 peaks
+
+   Patterson Top (Non-origin) = 5.21%
+      Patterson Origin Vector Distance = 15
+      There were 150 non-origin peaks
+
+   Patterson Top (Cutoff) = 0.00%
+      Patterson cutoff = 20%
+      There were 0 non-origin peaks over cutoff
+
+   Patterson Top (Large Cell) = 0.00%
+      Unit Cell dimension was not smaller than origin Patterson vector distance
+      There were 0 non-origin and large cell peaks over cutoff
+
+   Patterson Top (Analysis) = 0.00%
+      Peaks within minimum Patterson vector distance of one another were deleted
+      There were 0 widely separated non-origin peaks over cutoff
+
+   There were no interesting non-origin Patterson peaks
+
+   No tNCS found in Patterson
+
+--------
+TWINNING
+--------
+
+   tNCS/Twin Detection Table
+   -------------------------
+                                 -Second Moments-             --P-values--
+                                 Centric Acentric       untwinned  twin frac < 5%
+   Theoretical for untwinned      3.00    2.00    
+     including measurement error  3.01    2.00    
+   Theoretical for perfect twin   2.00    1.50    
+   Initial (data as input)        3.97    2.35+/-0.050  1          1         
+   After Anisotropy Correction    3.19    1.94+/-0.050  0.132      1         
+   After Anisotropy and tNCS         ---n/a---
+
+   P-value < 0.01 for < 5% twinned is considered worth investigating
+   Resolution for Twin Analysis (85% I/SIGI > 3):  2.46A (HiRes= 2.00A)
+
+---------------------------------------
+DATA AFTER TRANSLATIONAL NCS CORRECTION
+---------------------------------------
+
+   Resolution of All Data (Number):        2.00  32.44 (17592)
+   Resolution of Selected Data (Number):   2.00  32.44 (17583)
+
+   Outlier Rejection
+   -----------------
+   There were 9 reflections of 17592 (0.0512%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     10    8  -29   2.43      -0.063       0.014   7.485e-09  true   false   
+     15    1   29   2.43      -0.107       0.020   1.300e-10  true   false   
+     16   13    2   2.39      -0.451       0.105   2.021e-07  true   false   
+     17    8   17   2.42      -0.256       0.066   7.309e-07  true   false   
+     18    7   -5   2.66      -0.153       0.035   5.057e-08  true   false   
+     19    6  -17   2.38      -0.251       0.065   9.035e-07  true   false   
+     19    9    2   2.43      -0.414       0.087   1.568e-08  true   false   
+     22    1    3   2.66      -0.121       0.033   8.574e-07  true   false   
+     23    2    9   2.43      -0.426       0.100   2.166e-07  true   false   
+
+------------
+OUTPUT FILES
+------------
+
+   No files output
+
+CPU Time: 0 days 0 hrs 0 mins 5.59 secs (      5.59 secs)
+Finished: Wed Jan  8 15:39:32 2020
+
+******************************************************************************************
+*** Phaser Module: EXPERIMENTAL ERROR CORRECTION PREPARATION                     2.8.3 ***
+******************************************************************************************
+
+-----------------
+TRANSLATIONAL NCS
+-----------------
+
+   tNCS not present
+
+-----------------------------
+EXPERIMENTAL ERROR CORRECTION
+-----------------------------
+
+   Calculate Luzzati D factors accounting for observational error...
+
+   Data have been provided as raw intensities
+
+------------
+OUTPUT FILES
+------------
+
+   No files output
+
+CPU Time: 0 days 0 hrs 0 mins 6.44 secs (      6.44 secs)
+Finished: Wed Jan  8 15:39:33 2020
+
+******************************************************************************************
+*** Phaser Module: AUTOMATED MOLECULAR REPLACEMENT                               2.8.3 ***
+******************************************************************************************
+
+   Composition Table
+   -----------------
+   Total Scattering = 63461
+   Search occupancy factor = 1 (default)
+   Ensemble                       Frac.Scat. (Search Frac.Scat.) 
+   swissmodel4p84                     97.23%              97.23%
+
+** Composition not increased
+
+CPU Time: 0 days 0 hrs 0 mins 6.44 secs (      6.44 secs)
+Finished: Wed Jan  8 15:39:33 2020
+
+******************************************************************************************
+*** Phaser Module: EXPECTED LLG OF ENSEMBLES                                     2.8.3 ***
+******************************************************************************************
+
+-----------------
+TRANSLATIONAL NCS
+-----------------
+
+   tNCS not present
+
+   Resolution of Data (Selected):    2.000 (2.00003)
+   Number of Reflections (Selected): 17592 (17583)
+   eLLG Target: 225
+
+----------
+ENSEMBLING
+----------
+
+   Ensemble: swissmodel4p84
+   ------------------------
+   PDB file # 1: 01.pdb
+      This file contains 1 model
+      The input RmsD of model #1 with respect to the real structure is 0.400
+
+   Guide to eLLG values
+   ---------------------
+   eLLG      Top solution correct?
+   <25       -no 
+   25-36     -unlikely
+   36-49     -possibly
+   49-64     -probably
+   >64       -yes
+
+-----------------
+POLY-ALANINE ELLG
+-----------------
+
+   Resolution = 2.00003
+   Default RMSD = 0.1 0.2 0.4 0.8 1.6 3.2
+   Minimum solvent = 20%
+      Maximum number of polyalanine residues = 224 (-full-)
+   Alanine residues for eLLG target = 47
+
+   Table of Alanine Residues for eLLG Target
+   -----------------------------------------
+                  ---RMSD--- 
+   eLLG-target |  0.10  0.20  0.40  0.80  1.60  3.20 
+           225 |    47    50    62   122 -full--full-
+           196 |    44    46    58   114 -full--full-
+           169 |    40    43    53   106 -full--full-
+           144 |    37    40    49    98 -full--full-
+           121 |    34    36    45    89 -full--full-
+           100 |    31    33    41    81 -full--full-
+            81 |    28    30    37    73 -full--full-
+            64 |    25    26    33    65 -full--full-
+            49 |    22    23    29    57   197 -full-
+            36 |    18    20    24    49   168 -full-
+            25 |    15    16    20    40   140 -full-
+            16 |    12    13    16    32   112 -full-
+             9 |     9    10    12    24    84 -full-
+             4 |     6     6     8    16    56 -full-
+             1 |     3     3     4     8    28   181 
+
+--------------
+MONOMERIC ELLG
+--------------
+
+   Expected LLG (eLLG)
+   -------------------
+   eLLG: eLLG of ensemble alone
+       eLLG   RMSD frac-scat  Ensemble
+     4330.5  0.400   0.97233  swissmodel4p84
+
+   Resolution for eLLG target
+   --------------------------
+   eLLG-reso: Resolution to achieve target eLLG (225)
+     eLLG-reso  Ensemble
+         5.588  swissmodel4p84
+
+   Resolution for eLLG target: data collection
+   -------------------------------------------
+   eLLG-reso: Resolution to achieve target eLLG (225) with perfect data
+     eLLG-reso  Ensemble
+         5.588  swissmodel4p84
+
+   eLLG indicates that placement of a single copy of ensemble "swissmodel4p84" should be
+   easy
+
+   Expected LLG (eLLG): Chains
+   ---------------------------
+   eLLG: eLLG of chain alone
+       eLLG   RMSD frac-scat chain  Ensemble
+     4330.5  0.400   0.97233  " A"  swissmodel4p84
+
+   Resolution for eLLG target: Chains
+   ----------------------------------
+   eLLG-reso: Resolution to achieve target eLLG (225)
+     eLLG-reso chain  Ensemble
+         5.588  " A"  swissmodel4p84
+
+--------------------
+HOMO-OLIGOMERIC ELLG
+--------------------
+
+   Number of copies for eLLG target
+   --------------------------------
+   eLLG-target   RMSD frac-scat-known frac-scat   num-copies  Ensemble
+           225  0.400         0.00000   0.97233            1  swissmodel4p84
+
+CPU Time: 0 days 0 hrs 0 mins 7.24 secs (      7.24 secs)
+Finished: Wed Jan  8 15:39:34 2020
+
+******************************************************************************************
+*** Phaser Module: AUTOMATED MOLECULAR REPLACEMENT                               2.8.3 ***
+******************************************************************************************
+
+** Loop over permutations
+** Permutation #1 of 1
+** Search Order:
+**    #1: swissmodel4p84
+
+CPU Time: 0 days 0 hrs 0 mins 7.25 secs (      7.25 secs)
+Finished: Wed Jan  8 15:39:34 2020
+
+******************************************************************************************
+*** Phaser Module: AUTOMATED MOLECULAR REPLACEMENT                               2.8.3 ***
+******************************************************************************************
+
+** Permutation #1 of 1
+** Search Order (next rotation function *):
+**    #1   swissmodel4p84 *
+
+CPU Time: 0 days 0 hrs 0 mins 7.25 secs (      7.25 secs)
+Finished: Wed Jan  8 15:39:34 2020
+
+******************************************************************************************
+*** Phaser Module: EXPECTED LLG OF ENSEMBLES                                     2.8.3 ***
+******************************************************************************************
+
+-----------------
+TRANSLATIONAL NCS
+-----------------
+
+   tNCS not present
+
+   Resolution of Data (Selected):    2.000 (2.00003)
+   Number of Reflections (Selected): 17592 (17583)
+   eLLG Target: 225
+
+----------
+ENSEMBLING
+----------
+
+   Ensemble: swissmodel4p84
+   ------------------------
+   PDB file # 1: 01.pdb
+      This file contains 1 model
+      The input RmsD of model #1 with respect to the real structure is 0.400
+
+   Guide to eLLG values
+   ---------------------
+   eLLG      Top solution correct?
+   <25       -no 
+   25-36     -unlikely
+   36-49     -possibly
+   49-64     -probably
+   >64       -yes
+
+-----------------
+POLY-ALANINE ELLG
+-----------------
+
+   Resolution = 2.00003
+   Default RMSD = 0.1 0.2 0.4 0.8 1.6 3.2
+   Minimum solvent = 20%
+      Maximum number of polyalanine residues = 224 (-full-)
+   Alanine residues for eLLG target = 47
+
+   Table of Alanine Residues for eLLG Target
+   -----------------------------------------
+                  ---RMSD--- 
+   eLLG-target |  0.10  0.20  0.40  0.80  1.60  3.20 
+           225 |    47    50    62   122 -full--full-
+           196 |    44    46    58   114 -full--full-
+           169 |    40    43    53   106 -full--full-
+           144 |    37    40    49    98 -full--full-
+           121 |    34    36    45    89 -full--full-
+           100 |    31    33    41    81 -full--full-
+            81 |    28    30    37    73 -full--full-
+            64 |    25    26    33    65 -full--full-
+            49 |    22    23    29    57   197 -full-
+            36 |    18    20    24    49   168 -full-
+            25 |    15    16    20    40   140 -full-
+            16 |    12    13    16    32   112 -full-
+             9 |     9    10    12    24    84 -full-
+             4 |     6     6     8    16    56 -full-
+             1 |     3     3     4     8    28   181 
+
+--------------
+MONOMERIC ELLG
+--------------
+
+   Expected LLG (eLLG)
+   -------------------
+   eLLG: eLLG of ensemble alone
+       eLLG   RMSD frac-scat  Ensemble
+     4330.5  0.400   0.97233  swissmodel4p84
+
+   Resolution for eLLG target
+   --------------------------
+   eLLG-reso: Resolution to achieve target eLLG (225)
+     eLLG-reso  Ensemble
+         5.588  swissmodel4p84
+
+   Resolution for eLLG target: data collection
+   -------------------------------------------
+   eLLG-reso: Resolution to achieve target eLLG (225) with perfect data
+     eLLG-reso  Ensemble
+         5.588  swissmodel4p84
+
+   eLLG indicates that placement of a single copy of ensemble "swissmodel4p84" should be
+   easy
+
+   Expected LLG (eLLG): Chains
+   ---------------------------
+   eLLG: eLLG of chain alone
+       eLLG   RMSD frac-scat chain  Ensemble
+     4330.5  0.400   0.97233  " A"  swissmodel4p84
+
+   Resolution for eLLG target: Chains
+   ----------------------------------
+   eLLG-reso: Resolution to achieve target eLLG (225)
+     eLLG-reso chain  Ensemble
+         5.588  " A"  swissmodel4p84
+
+--------------------
+HOMO-OLIGOMERIC ELLG
+--------------------
+
+   Number of copies for eLLG target
+   --------------------------------
+   eLLG-target   RMSD frac-scat-known frac-scat   num-copies  Ensemble
+           225  0.400         0.00000   0.97233            1  swissmodel4p84
+
+CPU Time: 0 days 0 hrs 0 mins 8.06 secs (      8.06 secs)
+Finished: Wed Jan  8 15:39:35 2020
+
+******************************************************************************************
+*** Phaser Module: MOLECULAR REPLACEMENT ROTATION FUNCTION                       2.8.3 ***
+******************************************************************************************
+
+-----------------
+TRANSLATIONAL NCS
+-----------------
+
+   tNCS not present
+
+--------------------------
+DATA FOR ROTATION FUNCTION
+--------------------------
+
+   High resolution limit unaltered by RMS of ensemble
+   High resolution limit lowered by expected LLG =  5.59
+
+   Outlier Rejection
+   -----------------
+   There were 9 reflections of 17592 (0.0512%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     10    8  -29   2.43      -0.063       0.014   7.485e-09  true   false   
+     15    1   29   2.43      -0.107       0.020   1.300e-10  true   false   
+     16   13    2   2.39      -0.451       0.105   2.021e-07  true   false   
+     17    8   17   2.42      -0.256       0.066   7.309e-07  true   false   
+     18    7   -5   2.66      -0.153       0.035   5.057e-08  true   false   
+     19    6  -17   2.38      -0.251       0.065   9.035e-07  true   false   
+     19    9    2   2.43      -0.414       0.087   1.568e-08  true   false   
+     22    1    3   2.66      -0.121       0.033   8.574e-07  true   false   
+     23    2    9   2.43      -0.426       0.100   2.166e-07  true   false   
+
+   Resolution of All Data (Number):        2.00  32.44 (17592)
+   Resolution of Selected Data (Number):   5.59  32.44 (886)
+
+-------------------
+WILSON DISTRIBUTION
+-------------------
+
+   Parameters set for Wilson log-likelihood calculation
+   E = 0 and variance 1 for each reflection
+   Without correction for SigF to the variances,
+      Wilson log(likelihood) = - number of acentrics (631)
+                               - half number of centrics (255/2)
+                             = -758
+   With correction for SigF,
+      Wilson log(likelihood) = -759.523
+
+----------
+ENSEMBLING
+----------
+
+   Ensemble: swissmodel4p84
+   ------------------------
+   PDB file # 1: 01.pdb
+      This file contains 1 model
+      The input RmsD of model #1 with respect to the real structure is 0.400
+
+   Ensemble Generation: swissmodel4p84
+   -----------------------------------
+   Ensemble configured for structure factor interpolation
+   Ensemble configured to resolution  5.59
+
+   Electron Density Calculation
+   0%      100%
+   |=======| DONE
+
+   Ensemble Generation
+   -------------------
+   Resolution of Ensembles: 5.58763
+   Scat% Radius Model# Rel-B    RMS   DRMS   VRMS Ensemble                           
+    97.2   21.2      1   8.7  0.400  0.000  0.400 swissmodel4p84                     
+
+-----------------
+ROTATION FUNCTION
+-----------------
+
+   Ensemble configured to resolution  5.59
+   Elmn for Search Ensemble
+   Elmn Calculation for Search Ensemble
+   0%                                                                               100%
+   |================================================================================| DONE
+
+   Target Function: FAST LERF1
+
+-------------------------
+ROTATION FUNCTION #1 OF 1
+-------------------------
+
+   Search Ensemble: swissmodel4p84
+
+   Sampling:  7.54 degrees
+
+
+   Spherical Harmonics
+   -------------------
+   Elmn for Data
+   Elmn Calculation for Data
+   0%                                                                      100%
+   |=======================================================================| DONE
+
+   Scanning the Range of Beta Angles
+   ---------------------------------
+   Clmn Calculation
+   0%                        100%
+   |=========================| DONE
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 110 sites over 67.5% of top
+   110 peaks selected
+   The sites over 67.5% are:
+   #     Euler1 Euler2 Euler3    FSS   Z-score
+   1       34.4   73.7    2.2    100.000  4.26
+   2       15.6   87.4   18.8     98.542  4.20
+   3       16.7   86.0   15.6     98.360  4.19
+   #Sites = 110: output truncated to 3 sites
+
+   Top 110 rotations before clustering will be rescored
+   Calculating Likelihood for RF #1 of 1
+   0%                                                       100%
+   |========================================================| DONE
+
+   Mean and Standard Deviation
+   ---------------------------
+   Scoring 500 randomly sampled rotations
+   Generating Statistics for RF #1 of 1
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Highest Score (Z-score):  -3.634   ( 3.35)
+
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 14 sites over 75% of top
+   The sites over 75% are:
+   #     Euler1 Euler2 Euler3    LLG   Z-score Split #Group  FSS-this-ang/FSS-top
+   1       26.0   72.6  359.6    -3.6338  3.35   0.0     10     74.690/    93.593
+          146.0   72.6  359.6
+          266.0   72.6  359.6
+           94.0  107.4  179.6
+          214.0  107.4  179.6
+          334.0  107.4  179.6
+   2       16.7   86.0   15.6    -4.6264  3.27  21.6      5     98.360/    98.360
+          136.7   86.0   15.6
+          256.7   86.0   15.6
+          103.3   94.0  195.6
+          223.3   94.0  195.6
+          343.3   94.0  195.6
+   3       85.9   64.2  337.5    -5.3589  3.22  55.9      2     85.351/    85.351
+          205.9   64.2  337.5
+          325.9   64.2  337.5
+           34.1  115.8  157.5
+          154.1  115.8  157.5
+          274.1  115.8  157.5
+   #SITES = 14: OUTPUT TRUNCATED TO 3 SITES
+
+   Rotation Function Results
+   Top1: ENSEMBLE swissmodel4p84 EULER 26.006 72.608 359.566 RF=-3.6 RFZ=3.35
+
+   Rotation Function Table: swissmodel4p84
+   ---------------------------------------
+   (Z-scores from Fast Rotation Function)
+   #SET        Top    (Z)      Second    (Z)       Third    (Z)
+   1         -3.63   3.35       -4.63   3.27       -5.36   3.22
+
+---------------
+FINAL SELECTION
+---------------
+
+   Select by Percentage of Top value: 75%
+   Top RF = -3.634
+   Purge RF mean = -48.787
+   Number of sets stored before final selection = 1
+   Number of solutions stored before final selection = 14
+   Number of sets stored (deleted) after final selection = 1 (0)
+   Number of solutions stored (deleted) after final selection = 14 (0)
+   Percent used for purge = 75.000%
+
+   Rotation Function Final Selection Table
+   ---------------------------------------
+   Rotation list length by SET
+   SET#  Start Final Deleted Set (*)
+      1  14    14          -
+   ALL   14    14   
+
+------------
+OUTPUT FILES
+------------
+
+   No files output
+
+CPU Time: 0 days 0 hrs 0 mins 12.36 secs (     12.36 secs)
+Finished: Wed Jan  8 15:39:40 2020
+
+******************************************************************************************
+*** Phaser Module: MOLECULAR REPLACEMENT TRANSLATION FUNCTION                    2.8.3 ***
+******************************************************************************************
+
+-----------------
+TRANSLATIONAL NCS
+-----------------
+
+   tNCS not present
+
+-----------------------------
+DATA FOR TRANSLATION FUNCTION
+-----------------------------
+
+   High Resolution Limit imposed by RF list =  5.59
+
+   Outlier Rejection
+   -----------------
+   There were 9 reflections of 17592 (0.0512%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     10    8  -29   2.43      -0.063       0.014   7.485e-09  true   false   
+     15    1   29   2.43      -0.107       0.020   1.300e-10  true   false   
+     16   13    2   2.39      -0.451       0.105   2.021e-07  true   false   
+     17    8   17   2.42      -0.256       0.066   7.309e-07  true   false   
+     18    7   -5   2.66      -0.153       0.035   5.057e-08  true   false   
+     19    6  -17   2.38      -0.251       0.065   9.035e-07  true   false   
+     19    9    2   2.43      -0.414       0.087   1.568e-08  true   false   
+     22    1    3   2.66      -0.121       0.033   8.574e-07  true   false   
+     23    2    9   2.43      -0.426       0.100   2.166e-07  true   false   
+
+   Resolution of All Data (Number):        2.00  32.44 (17592)
+   Resolution of Selected Data (Number):   5.59  32.44 (886)
+
+-------------------
+WILSON DISTRIBUTION
+-------------------
+
+   Parameters set for Wilson log-likelihood calculation
+   E = 0 and variance 1 for each reflection
+   Without correction for SigF to the variances,
+      Wilson log(likelihood) = - number of acentrics (631)
+                               - half number of centrics (255/2)
+                             = -758
+   With correction for SigF,
+      Wilson log(likelihood) = -759.523
+
+------------------------
+ALTERNATIVE SPACE GROUPS
+------------------------
+
+   Space Group(s) to be tested:
+     P 32 2 1
+     P 31 2 1
+
+----------
+ENSEMBLING
+----------
+
+   Ensemble: swissmodel4p84
+   ------------------------
+   PDB file # 1: 01.pdb
+      This file contains 1 model
+      The input RmsD of model #1 with respect to the real structure is 0.400
+
+   Ensemble Generation
+   -------------------
+   Resolution of Ensembles: 5.58763
+   Scat% Radius Model# Rel-B    RMS   DRMS   VRMS Ensemble                           
+    97.2   21.2      1   8.7  0.400  0.000  0.400 swissmodel4p84                     
+
+   Trace Generation: swissmodel4p84
+   --------------------------------
+      This trace is from coordinates
+
+   Trace Generation
+   ----------------
+   Ensemble        Trace-type  Length      Sampling Close-contact
+   swissmodel4p84  C-alpha        176          3.00          2.00
+
+---------------------
+TRANSLATION FUNCTIONS
+---------------------
+
+   Target Function: FAST LETF1
+   Translation Packing Function applied: top peak will pack
+   Translation Packing Cutoff: 50%
+   Sampling:  1.40 Angstroms
+
+----------------------------
+TRANSLATION FUNCTION #1 OF 2
+----------------------------
+
+   Space Group: P 32 2 1
+   SOLU SET 
+   SOLU SPAC P 32 2 1
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER   26.006   72.608  359.566 RF   -3.6 RFZ  3.35
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER   16.689   85.988   15.617 RF   -4.6 RFZ  3.27
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER   85.902   64.211  337.492 RF   -5.4 RFZ  3.22
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER   20.237   83.627   26.247 RF   -5.4 RFZ  3.21
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER    1.107   78.619  192.176 RF   -5.6 RFZ  3.20
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER   34.449   73.701    2.237 RF   -5.9 RFZ  3.18
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER   21.992   55.075  145.805 RF   -7.3 RFZ  3.07
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER  107.994   80.235  190.098 RF   -9.0 RFZ  2.94
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER   44.027   85.365  208.597 RF  -10.9 RFZ  2.81
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER   93.076   78.695  190.650 RF  -12.1 RFZ  2.72
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER  100.048   57.607  353.731 RF  -12.2 RFZ  2.71
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER   21.470   62.201  188.253 RF  -12.8 RFZ  2.67
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER  101.634   66.912  182.211 RF  -13.7 RFZ  2.60
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER    5.234   52.879  289.515 RF  -14.5 RFZ  2.54
+
+   This TF set has 14 trial orientations
+
+   #    Euler                  Rot-LLG      RF     RFZ  Ensemble
+   1      26.0   72.6  359.6      -3.6    -3.6     3.3 swissmodel4p84
+   2      16.7   86.0   15.6      -4.6    -4.6     3.3 swissmodel4p84
+   3      85.9   64.2  337.5      -5.4    -5.4     3.2 swissmodel4p84
+   4      20.2   83.6   26.2      -5.4    -5.4     3.2 swissmodel4p84
+   5       1.1   78.6  192.2      -5.6    -5.6     3.2 swissmodel4p84
+   6      34.4   73.7    2.2      -5.9    -5.9     3.2 swissmodel4p84
+   7      22.0   55.1  145.8      -7.3    -7.3     3.1 swissmodel4p84
+   8     108.0   80.2  190.1      -9.0    -9.0     2.9 swissmodel4p84
+   9      44.0   85.4  208.6     -10.9   -10.9     2.8 swissmodel4p84
+   10     93.1   78.7  190.7     -12.1   -12.1     2.7 swissmodel4p84
+   11    100.0   57.6  353.7     -12.2   -12.2     2.7 swissmodel4p84
+   12     21.5   62.2  188.3     -12.8   -12.8     2.7 swissmodel4p84
+   13    101.6   66.9  182.2     -13.7   -13.7     2.6 swissmodel4p84
+   14      5.2   52.9  289.5     -14.5   -14.5     2.5 swissmodel4p84
+
+   SET #1 of 2 TRIAL #1 of 14
+   --------------------------
+   Ensemble swissmodel4p84 Euler  26.01  72.61 359.57 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5428 peaks
+      500 peaks over -101.396 checked for packing
+      Translation peak 2 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 333 sites over 67.5% of top
+   333 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.683  0.319  0.444    -25.015  4.12
+   2      0.482  0.400  0.488    -25.521  4.11
+   3      0.283  0.989  0.587    -26.640  4.09
+   #Sites = 333: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #1 of 2 TRIAL #1 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 333 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #1 of 2 TRIAL #1 of 14
+   0%                                                                  100%
+   |===================================================================| DONE
+
+   Packing LLG Translations: pass 1 of 11...
+      333 peaks
+      1 peaks over -420.702 checked for packing
+      No translation peaks pack
+      Done
+
+   Packing LLG Translations: pass 2 of 11...
+      332 peaks
+      1 peaks over -437.669 checked for packing
+      Translation peak 1 first to be kept
+      Done
+      Exit: found a peak that packs
+
+   Highest Score (Z-score):  -436.68   ( 4.17)
+   New Top (ML) Translation Function LLG = -436.68 (TFZ=4.2) at Trial #1
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 87 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.809  0.259  0.669    -436.68  4.17   0.0      4    -43.105/   -43.105
+   2      0.668  0.835  0.657    -439.22  4.12   7.6      1    -45.142/   -45.142
+   3      0.683  0.319  0.444    -442.50  4.06  17.4      1    -25.015/   -25.015
+   #SITES = 87: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #1 of 2 TRIAL #2 of 14
+   --------------------------
+   Ensemble swissmodel4p84 Euler  16.69  85.99  15.62 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5617 peaks
+      500 peaks over -75.7199 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 192 sites over 67.5% of top
+   192 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.430  0.474  0.477     21.447  4.43
+   2      0.749  0.388  0.486     11.445  4.25
+   3      0.087  0.059  0.563      6.684  4.16
+   #Sites = 192: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #1 of 2 TRIAL #2 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 192 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #1 of 2 TRIAL #2 of 14
+   0%                                                                100%
+   |=================================================================| DONE
+
+   Packing LLG Translations: pass 1 of 1...
+      192 peaks
+      7 peaks over -436.681 checked for packing
+      Translation peak 1 first to be kept
+      Done
+      Exit: found a peak that packs
+
+   Highest Score (Z-score):  -420.68   ( 3.97)
+   New Top (ML) Translation Function LLG = -420.68 (TFZ=4.0) at Trial #2
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 68 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.672  0.860  0.483    -420.68  3.97   0.0      1    -17.236/   -17.236
+   2      0.430  0.474  0.477    -424.23  3.91  23.5      1     21.447/    21.447
+   3      0.226  0.296  0.651    -425.34  3.89  15.6      2     -6.410/    -6.410
+   #SITES = 68: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #1 of 2 TRIAL #3 of 14
+   --------------------------
+   Ensemble swissmodel4p84 Euler  85.90  64.21 337.49 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5148 peaks
+      500 peaks over -76.3596 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 170 sites over 67.5% of top
+   170 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.638  0.645  0.207     18.263  4.42
+   2      0.897  0.264  0.297     15.476  4.36
+   3      0.498  0.108  0.286      9.848  4.25
+   #Sites = 170: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #1 of 2 TRIAL #3 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 170 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #1 of 2 TRIAL #3 of 14
+   0%                                                        100%
+   |=========================================================| DONE
+
+   Packing LLG Translations: pass 1 of 1...
+      170 peaks
+      3 peaks over -420.678 checked for packing
+      Translation peak 1 first to be kept
+      Done
+      Exit: found a peak that packs
+
+   Highest Score (Z-score):  -409.86   ( 4.20)
+   New Top (ML) Translation Function LLG = -409.86 (TFZ=4.2) at Trial #3
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 47 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.638  0.645  0.207    -409.86  4.20   0.0      1     18.263/    18.263
+   2      0.899  0.111  0.290    -411.19  4.17  20.9      1    -49.019/   -49.019
+   3      0.901  0.165  0.256    -415.81  4.09  16.4      1    -44.741/   -44.741
+   #SITES = 47: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #1 of 2 TRIAL #4 of 14
+   --------------------------
+   Ensemble swissmodel4p84 Euler  20.24  83.63  26.25 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5603 peaks
+      500 peaks over -93.4649 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 214 sites over 67.5% of top
+   214 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.289  0.131  0.506    -5.6952  4.30
+   2      0.764  0.877  0.422    -9.1471  4.23
+   3      0.299  0.142  0.506   -10.7189  4.20
+   #Sites = 214: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #1 of 2 TRIAL #4 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 214 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #1 of 2 TRIAL #4 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Highest Score (Z-score):  -414.15   ( 4.30)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 33 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.495  0.268  0.607    -414.15  4.30   0.0      2    -15.478/   -15.478
+   2      0.381  0.589  0.601    -422.37  4.15  20.2      2    -26.464/   -26.464
+   3      0.299  0.142  0.506    -424.53  4.11  15.1      2    -10.719/    -5.695
+   #SITES = 33: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #1 of 2 TRIAL #5 of 14
+   --------------------------
+   Ensemble swissmodel4p84 Euler   1.11  78.62 192.18 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5445 peaks
+      500 peaks over -74.3385 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 62 sites over 67.5% of top
+   62 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.229  0.198  0.454     38.894  4.93
+   2      0.350  0.197  0.455     11.437  4.37
+   3      0.357  0.521  0.523      0.587  4.15
+   #Sites = 62: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #1 of 2 TRIAL #5 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 62 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #1 of 2 TRIAL #5 of 14
+   0%                                                              100%
+   |===============================================================| DONE
+
+   Highest Score (Z-score):  -410.77   ( 4.33)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 30 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.229  0.198  0.454    -410.77  4.33   0.0      1     38.894/    38.894
+   2      0.357  0.521  0.523    -410.78  4.33  17.7      1      0.587/     0.587
+   3      0.090  0.566  0.644    -421.16  4.13  23.7      1    -24.588/   -24.588
+   #SITES = 30: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #1 of 2 TRIAL #6 of 14
+   --------------------------
+   Ensemble swissmodel4p84 Euler  34.45  73.70   2.24 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5245 peaks
+      500 peaks over -104.526 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 104 sites over 67.5% of top
+   104 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.303  0.539  0.547     7.5147  4.74
+   2      0.639  0.207  0.585     5.1098  4.69
+   3      0.801  0.076  0.404   -21.2736  4.19
+   #Sites = 104: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #1 of 2 TRIAL #6 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 104 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #1 of 2 TRIAL #6 of 14
+   0%                                                    100%
+   |=====================================================| DONE
+
+   Highest Score (Z-score):  -420.19   ( 4.62)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 39 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.975  0.891  0.495    -420.19  4.62   0.0      1    -42.817/   -42.817
+   2      0.303  0.539  0.547    -428.98  4.47  35.4      1      7.515/     7.515
+   3      0.540  0.564  0.501    -441.96  4.24  26.7      1    -44.262/   -44.262
+   #SITES = 39: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #1 of 2 TRIAL #7 of 14
+   --------------------------
+   Ensemble swissmodel4p84 Euler  21.99  55.08 145.80 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5287 peaks
+      500 peaks over -90.1089 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 288 sites over 67.5% of top
+   288 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.654  0.825  0.281    -11.265  4.19
+   2      0.217  0.870  0.618    -15.940  4.10
+   3      0.360  0.614  0.681    -21.601  3.99
+   #Sites = 288: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #1 of 2 TRIAL #7 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 288 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #1 of 2 TRIAL #7 of 14
+   0%                                                                        100%
+   |=========================================================================| DONE
+
+   Highest Score (Z-score):  -426.36   ( 4.29)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 75 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.433  0.673  0.439    -426.36  4.29   0.0      1    -52.657/   -52.657
+   2      0.878  0.019  0.530    -427.06  4.27  29.3      2    -26.747/   -26.747
+   3      0.217  0.870  0.618    -430.46  4.21  26.0      1    -15.940/   -15.940
+   #SITES = 75: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #1 of 2 TRIAL #8 of 14
+   --------------------------
+   Ensemble swissmodel4p84 Euler 107.99  80.24 190.10 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5496 peaks
+      500 peaks over -86.2515 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 306 sites over 67.5% of top
+   306 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.657  0.437  0.464    -6.7359  4.17
+   2      0.388  0.029  0.492    -9.1993  4.12
+   3      0.993  0.886  0.726   -10.3092  4.10
+   #Sites = 306: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #1 of 2 TRIAL #8 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 306 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #1 of 2 TRIAL #8 of 14
+   0%                                                                            100%
+   |=============================================================================| DONE
+
+   Highest Score (Z-score):  -417.01   ( 4.32)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 79 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.517  0.162  0.856    -417.01  4.32   0.0      1    -11.714/   -11.714
+   2      0.320  0.962  0.489    -422.30  4.22  10.1      1    -40.167/   -40.167
+   3      0.110  0.224  0.390    -425.28  4.17  27.5      1    -31.871/   -31.871
+   #SITES = 79: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #1 of 2 TRIAL #9 of 14
+   --------------------------
+   Ensemble swissmodel4p84 Euler  44.03  85.37 208.60 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5141 peaks
+      500 peaks over -101.174 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 228 sites over 67.5% of top
+   228 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.600  0.335  0.862    -8.5157  4.42
+   2      0.320  0.454  0.696   -19.8052  4.20
+   3      0.246  0.174  0.875   -20.2252  4.19
+   #Sites = 228: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #1 of 2 TRIAL #9 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 228 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #1 of 2 TRIAL #9 of 14
+   0%                                                                            100%
+   |=============================================================================| DONE
+
+   Highest Score (Z-score):  -417.60   ( 4.80)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 45 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.246  0.185  0.702    -417.60  4.80   0.0      2    -44.424/   -44.424
+   2      0.705  0.032  0.610    -429.03  4.59  22.9      1    -49.917/   -49.917
+   3      0.644  0.395  0.474    -430.51  4.56  31.7      1    -35.343/   -35.343
+   #SITES = 45: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #1 of 2 TRIAL #10 of 14
+   ---------------------------
+   Ensemble swissmodel4p84 Euler  93.08  78.70 190.65 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5706 peaks
+      500 peaks over -109.182 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 177 sites over 67.5% of top
+   177 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.823  0.382  0.554    -11.197  4.50
+   2      0.221  0.199  0.348    -16.027  4.40
+   3      0.342  0.083  0.516    -20.856  4.31
+   #Sites = 177: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #1 of 2 TRIAL #10 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 177 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #1 of 2 TRIAL #10 of 14
+   0%                                                           100%
+   |============================================================| DONE
+
+   Highest Score (Z-score):  -437.94   ( 4.13)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 52 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.342  0.083  0.516    -437.94  4.13   0.0      1    -20.856/   -20.856
+   2      0.744  0.272  0.401    -448.53  3.95  22.8      2    -64.965/   -63.950
+   3      0.823  0.382  0.554    -452.06  3.89  20.6      2    -11.197/   -11.197
+   #SITES = 52: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #1 of 2 TRIAL #11 of 14
+   ---------------------------
+   Ensemble swissmodel4p84 Euler 100.05  57.61 353.73 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5388 peaks
+      500 peaks over -114.992 checked for packing
+      Translation peak 5 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 589 sites over 67.5% of top
+   589 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.929  0.561  0.171    -50.177  3.67
+   2      0.482  0.576  0.140    -51.359  3.65
+   3      0.648  0.293  0.978    -51.701  3.65
+   #Sites = 589: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #1 of 2 TRIAL #11 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 589 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #1 of 2 TRIAL #11 of 14
+   0%                                                                         100%
+   |==========================================================================| DONE
+
+   Highest Score (Z-score):  -437.51   ( 4.04)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 73 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.862  0.563  0.182    -437.51  4.04   0.0      1    -100.55/   -100.55
+   2      0.814  0.440  0.171    -438.39  4.02   7.5      1    -109.90/   -109.90
+   3      0.929  0.561  0.171    -447.09  3.87   4.8      1     -50.18/    -50.18
+   #SITES = 73: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #1 of 2 TRIAL #12 of 14
+   ---------------------------
+   Ensemble swissmodel4p84 Euler  21.47  62.20 188.25 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5400 peaks
+      500 peaks over -94.6801 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 125 sites over 67.5% of top
+   125 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.015  0.178  0.563     6.4736  4.71
+   2      0.831  0.939  0.395     1.4372  4.61
+   3      0.434  0.674  0.185    -0.3588  4.57
+   #Sites = 125: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #1 of 2 TRIAL #12 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 125 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #1 of 2 TRIAL #12 of 14
+   0%                                                              100%
+   |===============================================================| DONE
+
+   Highest Score (Z-score):  -420.87   ( 4.50)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 30 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.434  0.674  0.185    -420.87  4.50   0.0      1    -0.3588/   -0.3588
+   2      0.137  0.774  0.262    -426.83  4.39  25.8      1   -35.1973/  -35.1973
+   3      0.904  0.515  0.228    -435.33  4.22  13.8      1   -59.2663/  -59.2663
+   #SITES = 30: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #1 of 2 TRIAL #13 of 14
+   ---------------------------
+   Ensemble swissmodel4p84 Euler 101.63  66.91 182.21 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5617 peaks
+      500 peaks over -92.4729 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 112 sites over 67.5% of top
+   112 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.990  0.563  0.611     17.586  4.77
+   2      0.665  0.967  0.690     10.337  4.63
+   3      0.327  0.306  0.531     -3.802  4.36
+   #Sites = 112: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #1 of 2 TRIAL #13 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 112 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #1 of 2 TRIAL #13 of 14
+   0%                                                        100%
+   |=========================================================| DONE
+
+   Highest Score (Z-score):  -413.79   ( 4.40)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 30 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.333  0.236  0.263    -413.79  4.40   0.0      1    -21.424/   -21.424
+   2      0.291  0.900  0.405    -425.34  4.20  25.5      1    -15.108/   -15.108
+   3      0.168  0.593  0.626    -434.66  4.04  21.7      1    -60.781/   -60.781
+   #SITES = 30: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #1 of 2 TRIAL #14 of 14
+   ---------------------------
+   Ensemble swissmodel4p84 Euler   5.23  52.88 289.52 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5390 peaks
+      500 peaks over -95.6814 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 33 sites over 67.5% of top
+   33 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.556  0.001  0.918     37.620  5.24
+   2      0.713  0.779  0.922    -14.586  4.21
+   3      0.372  0.110  0.837    -14.701  4.20
+   #Sites = 33: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #1 of 2 TRIAL #14 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 33 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #1 of 2 TRIAL #14 of 14
+   0%                                 100%
+   |==================================| DONE
+
+   Packing LLG Translations: pass 1 of 1...
+      33 peaks
+      1 peaks over -409.858 checked for packing
+      Translation peak 1 first to be kept
+      Done
+      Exit: found a peak that packs
+
+   Highest Score (Z-score):  -387.81   ( 4.87)
+   New Top (ML) Translation Function LLG = -387.81 (TFZ=4.9) at Trial #14
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 6 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.381  0.109  0.759    -387.81  4.87   0.0      1    -40.668/   -40.668
+   2      0.556  0.001  0.918    -425.75  4.20  21.5      1     37.620/    37.620
+   3      0.958  0.782  0.632    -430.24  4.12  19.8      1    -45.417/   -45.417
+   #SITES = 6: OUTPUT TRUNCATED TO 3 SITES
+
+----------------------------
+TRANSLATION FUNCTION #2 OF 2
+----------------------------
+
+   Space Group: P 31 2 1
+   SOLU SET 
+   SOLU SPAC P 31 2 1
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER   26.006   72.608  359.566 RF   -3.6 RFZ  3.35
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER   16.689   85.988   15.617 RF   -4.6 RFZ  3.27
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER   85.902   64.211  337.492 RF   -5.4 RFZ  3.22
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER   20.237   83.627   26.247 RF   -5.4 RFZ  3.21
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER    1.107   78.619  192.176 RF   -5.6 RFZ  3.20
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER   34.449   73.701    2.237 RF   -5.9 RFZ  3.18
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER   21.992   55.075  145.805 RF   -7.3 RFZ  3.07
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER  107.994   80.235  190.098 RF   -9.0 RFZ  2.94
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER   44.027   85.365  208.597 RF  -10.9 RFZ  2.81
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER   93.076   78.695  190.650 RF  -12.1 RFZ  2.72
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER  100.048   57.607  353.731 RF  -12.2 RFZ  2.71
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER   21.470   62.201  188.253 RF  -12.8 RFZ  2.67
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER  101.634   66.912  182.211 RF  -13.7 RFZ  2.60
+
+   SOLU TRIAL ENSEMBLE swissmodel4p84 EULER    5.234   52.879  289.515 RF  -14.5 RFZ  2.54
+
+   This TF set has 14 trial orientations
+
+   #    Euler                  Rot-LLG      RF     RFZ  Ensemble
+   1      26.0   72.6  359.6      -3.6    -3.6     3.3 swissmodel4p84
+   2      16.7   86.0   15.6      -4.6    -4.6     3.3 swissmodel4p84
+   3      85.9   64.2  337.5      -5.4    -5.4     3.2 swissmodel4p84
+   4      20.2   83.6   26.2      -5.4    -5.4     3.2 swissmodel4p84
+   5       1.1   78.6  192.2      -5.6    -5.6     3.2 swissmodel4p84
+   6      34.4   73.7    2.2      -5.9    -5.9     3.2 swissmodel4p84
+   7      22.0   55.1  145.8      -7.3    -7.3     3.1 swissmodel4p84
+   8     108.0   80.2  190.1      -9.0    -9.0     2.9 swissmodel4p84
+   9      44.0   85.4  208.6     -10.9   -10.9     2.8 swissmodel4p84
+   10     93.1   78.7  190.7     -12.1   -12.1     2.7 swissmodel4p84
+   11    100.0   57.6  353.7     -12.2   -12.2     2.7 swissmodel4p84
+   12     21.5   62.2  188.3     -12.8   -12.8     2.7 swissmodel4p84
+   13    101.6   66.9  182.2     -13.7   -13.7     2.6 swissmodel4p84
+   14      5.2   52.9  289.5     -14.5   -14.5     2.5 swissmodel4p84
+
+   SET #2 of 2 TRIAL #1 of 14
+   --------------------------
+   Ensemble swissmodel4p84 Euler  26.01  72.61 359.57 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5241 peaks
+      500 peaks over -98.3912 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 230 sites over 67.5% of top
+   230 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.280  0.201  0.449    -9.7384  4.31
+   2      0.205  0.266  0.628   -14.7835  4.21
+   3      0.343  0.042  0.435   -23.7369  4.04
+   #Sites = 230: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #2 of 2 TRIAL #1 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 230 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #2 of 2 TRIAL #1 of 14
+   0%                                                                            100%
+   |=============================================================================| DONE
+
+   Highest Score (Z-score):  -389.94   ( 4.90)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 12 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.381  0.798  0.317    -389.94  4.90   0.0      1    -33.611/   -33.611
+   2      0.088  0.923  0.698    -429.86  4.19  28.8      1    -58.173/   -58.173
+   3      0.022  0.316  0.607    -437.97  4.05  16.9      1    -39.327/   -39.327
+   #SITES = 12: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #2 of 2 TRIAL #2 of 14
+   --------------------------
+   Ensemble swissmodel4p84 Euler  16.69  85.99  15.62 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5883 peaks
+      500 peaks over -77.1525 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 146 sites over 67.5% of top
+   146 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.993  0.517  0.691     22.993  4.43
+   2      0.668  0.859  0.815      7.813  4.15
+   3      0.045  0.860  0.440      3.910  4.08
+   #Sites = 146: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #2 of 2 TRIAL #2 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 146 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #2 of 2 TRIAL #2 of 14
+   0%                                                                         100%
+   |==========================================================================| DONE
+
+   Highest Score (Z-score):  -410.47   ( 4.08)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 50 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.023  0.267  0.513    -410.47  4.08   0.0      1    -31.490/   -31.490
+   2      0.056  0.335  0.586    -431.05  3.73   7.8      1    -41.212/   -41.212
+   3      0.042  0.743  0.815    -431.09  3.73  22.1      2    -23.292/   -23.292
+   #SITES = 50: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #2 of 2 TRIAL #3 of 14
+   --------------------------
+   Ensemble swissmodel4p84 Euler  85.90  64.21 337.49 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5236 peaks
+      500 peaks over -77.6376 checked for packing
+      Translation peak 2 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 192 sites over 67.5% of top
+   192 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.251  0.806  0.323     13.657  4.40
+   2      0.552  0.886  0.379     -1.340  4.10
+   3      0.553  0.707  0.376     -1.585  4.10
+   #Sites = 192: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #2 of 2 TRIAL #3 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 192 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #2 of 2 TRIAL #3 of 14
+   0%                                                                100%
+   |=================================================================| DONE
+
+   Highest Score (Z-score):  -389.98   ( 4.78)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 27 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.553  0.707  0.376    -389.98  4.78   0.0      1    -1.5850/   -1.5850
+   2      0.251  0.806  0.323    -411.64  4.38  25.6      1    13.6572/   13.6572
+   3      0.314  0.861  0.328    -419.85  4.23  24.2      2   -29.7072/  -29.7072
+   #SITES = 27: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #2 of 2 TRIAL #4 of 14
+   --------------------------
+   Ensemble swissmodel4p84 Euler  20.24  83.63  26.25 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5614 peaks
+      500 peaks over -93.436 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 343 sites over 67.5% of top
+   343 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.101  0.203  0.537    -18.917  4.09
+   2      0.382  0.686  0.437    -19.677  4.07
+   3      0.887  0.444  0.592    -22.791  4.01
+   #Sites = 343: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #2 of 2 TRIAL #4 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 343 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #2 of 2 TRIAL #4 of 14
+   0%                                                                    100%
+   |=====================================================================| DONE
+
+   Highest Score (Z-score):  -412.04   ( 4.47)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 38 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.375  0.127  0.492    -412.04  4.47   0.0      1    -25.582/   -25.582
+   2      0.645  0.809  0.474    -438.04  4.00  33.4      1    -48.006/   -48.006
+   3      0.765  0.545  0.597    -444.48  3.88  29.6      1    -64.236/   -64.236
+   #SITES = 38: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #2 of 2 TRIAL #5 of 14
+   --------------------------
+   Ensemble swissmodel4p84 Euler   1.11  78.62 192.18 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5256 peaks
+      500 peaks over -71.5281 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 105 sites over 67.5% of top
+   105 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.015  0.538  0.357     34.184  4.69
+   2      0.608  0.542  0.356     10.240  4.21
+   3      0.991  0.081  0.763      8.213  4.17
+   #Sites = 105: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #2 of 2 TRIAL #5 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 105 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #2 of 2 TRIAL #5 of 14
+   0%                                                    100%
+   |=====================================================| DONE
+
+   Highest Score (Z-score):  -408.55   ( 4.02)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 42 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.200  0.895  0.819    -408.55  4.02   0.0      1    -35.633/   -35.633
+   2      0.956  0.635  0.720    -413.46  3.93  19.7      1    -42.231/   -42.231
+   3      0.435  0.137  0.820    -420.77  3.80   8.6      1     -7.634/    -7.634
+   #SITES = 42: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #2 of 2 TRIAL #6 of 14
+   --------------------------
+   Ensemble swissmodel4p84 Euler  34.45  73.70   2.24 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5254 peaks
+      500 peaks over -97.4258 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 7 sites over 67.5% of top
+   7 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.361  0.566  0.344     83.840  5.95
+   2      0.786  0.397  0.555     -3.282  4.34
+   3      0.419  0.784  0.271     -4.759  4.31
+   #Sites = 7: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #2 of 2 TRIAL #6 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 7 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #2 of 2 TRIAL #6 of 14
+   0%       100%
+   |========| DONE
+
+   Packing LLG Translations: pass 1 of 1...
+      7 peaks
+      1 peaks over -387.805 checked for packing
+      Translation peak 1 first to be kept
+      Done
+      Exit: found a peak that packs
+
+   Highest Score (Z-score):  -370.00   ( 5.14)
+   New Top (ML) Translation Function LLG = -370.00 (TFZ=5.1) at Trial #6
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 5 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.361  0.566  0.344    -370.00  5.14   0.0      1     83.840/    83.840
+   2      0.800  0.684  0.233    -403.50  4.58  19.0      1    -10.578/   -10.578
+   3      0.698  0.242  0.405    -413.62  4.41  13.8      1     -7.706/    -7.706
+   #SITES = 5: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #2 of 2 TRIAL #7 of 14
+   --------------------------
+   Ensemble swissmodel4p84 Euler  21.99  55.08 145.80 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5377 peaks
+      500 peaks over -90.5897 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 264 sites over 67.5% of top
+   264 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.515  0.309  0.572    -10.015  4.22
+   2      0.320  0.149  0.739    -15.568  4.10
+   3      0.944  0.730  0.570    -19.612  4.02
+   #Sites = 264: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #2 of 2 TRIAL #7 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 264 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #2 of 2 TRIAL #7 of 14
+   0%                                                                  100%
+   |===================================================================| DONE
+
+   Highest Score (Z-score):  -437.06   ( 4.01)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 86 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.701  0.292  0.420    -437.06  4.01   0.0      1    -56.431/   -56.431
+   2      0.761  0.106  0.249    -445.35  3.85  22.0      1    -67.333/   -67.333
+   3      0.458  0.400  0.493    -445.86  3.84  22.5      1    -50.978/   -50.978
+   #SITES = 86: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #2 of 2 TRIAL #8 of 14
+   --------------------------
+   Ensemble swissmodel4p84 Euler 107.99  80.24 190.10 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5337 peaks
+      500 peaks over -87.1699 checked for packing
+      Translation peak 2 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 179 sites over 67.5% of top
+   179 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.167  0.566  0.411     9.6013  4.52
+   2      0.521  0.067  0.631     1.4551  4.36
+   3      0.518  0.305  0.694    -1.4556  4.30
+   #Sites = 179: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #2 of 2 TRIAL #8 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 179 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #2 of 2 TRIAL #8 of 14
+   0%                                                           100%
+   |============================================================| DONE
+
+   Highest Score (Z-score):  -400.15   ( 4.35)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 46 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.578  0.558  0.410    -400.15  4.35   0.0      1    -30.950/   -30.950
+   2      0.994  0.383  0.764    -412.31  4.14  28.5      1    -26.499/   -26.499
+   3      0.458  0.904  0.670    -413.79  4.11  10.9      1    -38.088/   -38.088
+   #SITES = 46: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #2 of 2 TRIAL #9 of 14
+   --------------------------
+   Ensemble swissmodel4p84 Euler  44.03  85.37 208.60 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5423 peaks
+      500 peaks over -100.423 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 131 sites over 67.5% of top
+   131 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.482  0.858  0.904     6.8208  4.59
+   2      0.078  0.138  0.736   -10.5965  4.26
+   3      0.820  0.458  0.879   -15.1655  4.18
+   #Sites = 131: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #2 of 2 TRIAL #9 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 131 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #2 of 2 TRIAL #9 of 14
+   0%                                                                 100%
+   |==================================================================| DONE
+
+   Highest Score (Z-score):  -425.99   ( 4.15)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 39 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.922  0.370  0.729    -425.99  4.15   0.0      1    -61.353/   -61.353
+   2      0.485  0.795  0.673    -427.61  4.12  27.2      1    -23.068/   -23.068
+   3      0.081  0.140  0.637    -432.59  4.04  21.7      1    -33.414/   -33.414
+   #SITES = 39: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #2 of 2 TRIAL #10 of 14
+   ---------------------------
+   Ensemble swissmodel4p84 Euler  93.08  78.70 190.65 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5708 peaks
+      500 peaks over -103.831 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 108 sites over 67.5% of top
+   108 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.368  0.517  0.740     9.3929  4.75
+   2      0.228  0.081  0.685     4.1158  4.65
+   3      0.144  0.384  0.717    -7.4638  4.43
+   #Sites = 108: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #2 of 2 TRIAL #10 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 108 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #2 of 2 TRIAL #10 of 14
+   0%                                                      100%
+   |=======================================================| DONE
+
+   Highest Score (Z-score):  -391.77   ( 4.71)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 19 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.368  0.517  0.740    -391.77  4.71   0.0      1     9.3929/    9.3929
+   2      0.126  0.820  0.549    -412.10  4.38  19.0      1   -22.4958/  -22.4958
+   3      0.228  0.081  0.685    -415.14  4.33  27.2      1     4.1158/    4.1158
+   #SITES = 19: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #2 of 2 TRIAL #11 of 14
+   ---------------------------
+   Ensemble swissmodel4p84 Euler 100.05  57.61 353.73 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5512 peaks
+      500 peaks over -117.409 checked for packing
+      Translation peak 2 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 343 sites over 67.5% of top
+   343 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.741  0.093  0.116    -36.722  4.02
+   2      0.868  0.262  0.015    -37.787  4.00
+   3      0.987  0.565  0.309    -41.728  3.93
+   #Sites = 343: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #2 of 2 TRIAL #11 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 343 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #2 of 2 TRIAL #11 of 14
+   0%                                                                    100%
+   |=====================================================================| DONE
+
+   Highest Score (Z-score):  -433.53   ( 4.50)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 40 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.272  0.429  0.110    -433.53  4.50   0.0      1    -57.223/   -57.223
+   2      0.868  0.262  0.015    -448.67  4.21  20.8      1    -37.787/   -37.787
+   3      0.266  0.699  0.141    -457.27  4.05  19.1      1    -66.325/   -66.325
+   #SITES = 40: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #2 of 2 TRIAL #12 of 14
+   ---------------------------
+   Ensemble swissmodel4p84 Euler  21.47  62.20 188.25 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5475 peaks
+      500 peaks over -89.0657 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 193 sites over 67.5% of top
+   193 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.569  0.468  0.532     4.2441  4.53
+   2      0.230  0.795  0.530     1.0961  4.46
+   3      0.491  0.378  0.531    -7.6102  4.29
+   #Sites = 193: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #2 of 2 TRIAL #12 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 193 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #2 of 2 TRIAL #12 of 14
+   0%                                                                100%
+   |=================================================================| DONE
+
+   Highest Score (Z-score):  -399.96   ( 4.36)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 31 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.562  0.460  0.529    -399.96  4.36   0.0      2    -9.6200/    4.2441
+   2      0.350  0.517  0.566    -424.83  3.93  10.9      1   -13.6139/  -13.6139
+   3      0.953  0.151  0.291    -426.27  3.91  23.7      1   -67.1022/  -67.1022
+   #SITES = 31: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #2 of 2 TRIAL #13 of 14
+   ---------------------------
+   Ensemble swissmodel4p84 Euler 101.63  66.91 182.21 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5654 peaks
+      500 peaks over -93.4493 checked for packing
+      Translation peak 1 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 152 sites over 67.5% of top
+   152 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.486  0.846  0.488     5.6180  4.55
+   2      0.169  0.448  0.458     3.2332  4.50
+   3      0.510  0.121  0.362   -11.5082  4.22
+   #Sites = 152: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #2 of 2 TRIAL #13 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 152 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #2 of 2 TRIAL #13 of 14
+   0%                                                                            100%
+   |=============================================================================| DONE
+
+   Highest Score (Z-score):  -424.25   ( 4.28)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 48 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.725  0.905  0.349    -424.25  4.28   0.0      1    -25.979/   -25.979
+   2      0.834  0.785  0.275    -438.31  4.03  15.3      2    -52.766/   -52.766
+   3      0.209  0.732  0.304    -439.98  4.01  31.9      1    -51.194/   -51.194
+   #SITES = 48: OUTPUT TRUNCATED TO 3 SITES
+
+   SET #2 of 2 TRIAL #14 of 14
+   ---------------------------
+   Ensemble swissmodel4p84 Euler   5.23  52.88 289.52 
+
+   Doing Fast Translation Function FFT...
+      Done
+
+   Packing Fast Search Translations...
+      5111 peaks
+      500 peaks over -91.5893 checked for packing
+      Translation peak 2 first to be kept
+      Done
+
+   Top Peaks Without Clustering
+   Select peaks over 67.5% of top (i.e. 0.675*(top-mean)+mean)
+   There were 220 sites over 67.5% of top
+   220 peaks selected
+   The sites over 67.5% are:
+   #     Frac X Frac Y Frac Z    FSS   Z-score
+   1      0.250  0.593  0.759    -2.7306  4.29
+   2      0.248  0.595  0.673    -8.4124  4.18
+   3      0.472  0.724  0.017   -11.0052  4.13
+   #Sites = 220: output truncated to 3 sites
+
+   Scoring 500 randomly sampled translations
+   Generating Statistics for TF SET #2 of 2 TRIAL #14 of 14
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Top 220 translations before clustering will be rescored
+   Calculating Likelihood for TF SET #2 of 2 TRIAL #14 of 14
+   0%                                                                         100%
+   |==========================================================================| DONE
+
+   Highest Score (Z-score):  -384.58   ( 5.01)
+   Top Peaks With Clustering
+   Select peaks over 75% of top (i.e. 0.75*(top-mean)+mean)
+   There were 17 sites over 75% of top
+   The sites over 75% are:
+   #     Frac X Frac Y Frac Z    LLG   Z-score Split #Group  FSS-this-xyz/FSS-top
+   1      0.472  0.724  0.017    -384.58  5.01   0.0      1    -11.005/   -11.005
+   2      0.250  0.593  0.759    -402.00  4.69   8.3      1     -2.731/    -2.731
+   3      0.246  0.595  0.560    -411.77  4.51  12.2      1    -50.755/   -50.755
+   #SITES = 17: OUTPUT TRUNCATED TO 3 SITES
+
+------------------------------------------------------------------------------------------
+Advisory: The top solution from a FTF did not pack
+------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------
+Advisory: The top solution from a TF rescoring did not pack
+------------------------------------------------------------------------------------------
+
+   Translation Function Results
+   Top1: ENSEMBLE swissmodel4p84 EULER 34.449 73.701 2.237 FRAC 0.361 0.566 0.344
+   TF=-370.0
+
+   Translation Function Table
+   --------------------------
+   SET ROT*deep   Top   (Z)     Second   (Z)      Third   (Z) SpaceGroup  Ensemble
+     1   1     -436.7  4.17     -439.2  4.12     -442.5  4.06 P 32 2 1 swissmod   
+     1   2     -420.7  3.97     -424.2  3.91     -425.3  3.89 P 32 2 1 swissmod   
+     1   3     -409.9  4.20     -411.2  4.17     -415.8  4.09 P 32 2 1 swissmod   
+     1   4     -414.1  4.30     -422.4  4.15     -424.5  4.11 P 32 2 1 swissmod   
+     1   5     -410.8  4.33     -410.8  4.33     -421.2  4.13 P 32 2 1 swissmod   
+     1   6     -420.2  4.62     -429.0  4.47     -442.0  4.24 P 32 2 1 swissmod   
+     1   7     -426.4  4.29     -427.1  4.27     -430.5  4.21 P 32 2 1 swissmod   
+     1   8     -417.0  4.32     -422.3  4.22     -425.3  4.17 P 32 2 1 swissmod   
+     1   9     -417.6  4.80     -429.0  4.59     -430.5  4.56 P 32 2 1 swissmod   
+     1  10     -437.9  4.13     -448.5  3.95     -452.1  3.89 P 32 2 1 swissmod   
+     1  11     -437.5  4.04     -438.4  4.02     -447.1  3.87 P 32 2 1 swissmod   
+     1  12     -420.9  4.50     -426.8  4.39     -435.3  4.22 P 32 2 1 swissmod   
+     1  13     -413.8  4.40     -425.3  4.20     -434.7  4.04 P 32 2 1 swissmod   
+     1  14     -387.8  4.87     -425.7  4.20     -430.2  4.12 P 32 2 1 swissmod   
+   --- ---
+     2   1     -389.9  4.90     -429.9  4.19     -438.0  4.05 P 31 2 1 swissmod   
+     2   2     -410.5  4.08     -431.1  3.73     -431.1  3.73 P 31 2 1 swissmod   
+     2   3     -390.0  4.78     -411.6  4.38     -419.9  4.23 P 31 2 1 swissmod   
+     2   4     -412.0  4.47     -438.0  4.00     -444.5  3.88 P 31 2 1 swissmod   
+     2   5     -408.6  4.02     -413.5  3.93     -420.8  3.80 P 31 2 1 swissmod   
+     2   6     -370.0  5.14     -403.5  4.58     -413.6  4.41 P 31 2 1 swissmod   
+     2   7     -437.1  4.01     -445.4  3.85     -445.9  3.84 P 31 2 1 swissmod   
+     2   8     -400.2  4.35     -412.3  4.14     -413.8  4.11 P 31 2 1 swissmod   
+     2   9     -426.0  4.15     -427.6  4.12     -432.6  4.04 P 31 2 1 swissmod   
+     2  10     -391.8  4.71     -412.1  4.38     -415.1  4.33 P 31 2 1 swissmod   
+     2  11     -433.5  4.50     -448.7  4.21     -457.3  4.05 P 31 2 1 swissmod   
+     2  12     -400.0  4.36     -424.8  3.93     -426.3  3.91 P 31 2 1 swissmod   
+     2  13     -424.2  4.28     -438.3  4.03     -440.0  4.01 P 31 2 1 swissmod   
+     2  14     -384.6  5.01     -402.0  4.69     -411.8  4.51 P 31 2 1 swissmod   
+   --- ---
+
+---------------
+FINAL SELECTION
+---------------
+
+   LLG will be used for purge, not FSS
+   Top TF  = -370.00
+   Top TFZ = 5.14
+   Mean TF = -660.77
+   Percent used for purge = 75%
+   Cutoff for acceptance = -442.7
+      TFZ used for final selection = 8
+         Number of solutions over TF final cutoff  = 190
+         Number of solutions over TFZ final cutoff = 0
+         Number of solutions over TF & TFZ cutoff  = 0
+   Number of solutions stored before final selection = 1194
+   Number of solutions stored (deleted) after final selection = 190 (1004)
+
+------------
+OUTPUT FILES
+------------
+
+   No files output
+
+CPU Time: 0 days 0 hrs 1 mins 46.36 secs (    106.36 secs)
+Finished: Wed Jan  8 15:41:18 2020
+
+******************************************************************************************
+*** Phaser Module: MOLECULAR REPLACEMENT PACKING ANALYSIS                        2.8.3 ***
+******************************************************************************************
+
+---------
+ENSEMBLES
+---------
+
+   Trace Generation: swissmodel4p84
+   --------------------------------
+      This trace is from coordinates
+
+   Trace Generation
+   ----------------
+   Ensemble        Trace-type  Length      Sampling Close-contact
+   swissmodel4p84  C-alpha        176          3.00          2.00
+
+-----------------
+ENSEMBLE SYMMETRY
+-----------------
+
+   Ensemble "swissmodel4p84" Point Group: 1
+
+   Clash background has been packed at 10.00%
+
+----------------
+PACKING FUNCTION
+----------------
+
+   There are 190 solutions to pack
+   Packing analysis
+   0%                                                               100%
+   |================================================================| DONE
+
+   Packing Table
+   -------------
+   Solutions accepted if pairwise clashes less than 10 % of trace atoms
+   #in  #out Clash-% Symm  SpaceGroup  Annotation                                                   
+   1    Top1  1.136  --    P 31 2 1    RFZ=3.2 TFZ=5.1 PAK=1                                        
+   2    ---  >10.23  --    P 31 2 1    RFZ=2.5 TFZ=5.0 PAK>10                                       
+   3    ---  >10.23  --    P 32 2 1    RFZ=2.5 TFZ=4.9 PAK>10                                       
+   4    2     0      --    P 31 2 1    RFZ=3.3 TFZ=4.9 PAK=0                                        
+   5    ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=4.8 PAK>10                                       
+   6    3     9.091  --    P 31 2 1    RFZ=2.7 TFZ=4.7 PAK=9                                        
+   7    ---  >10.23  --    P 31 2 1    RFZ=2.7 TFZ=4.4 PAK>10                                       
+   8    ---  >10.23  --    P 31 2 1    RFZ=2.9 TFZ=4.3 PAK>10                                       
+   9    ---  >10.23  --    P 31 2 1    RFZ=2.5 TFZ=4.7 PAK>10                                       
+   10   ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=4.6 PAK>10                                       
+   11   ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=4.0 PAK>10                                       
+   12   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=4.2 PAK>10                                       
+   13   ---  >10.23  --    P 31 2 1    RFZ=3.3 TFZ=4.1 PAK>10                                       
+   14   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=4.3 PAK>10                                       
+   15   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=4.3 PAK>10                                       
+   16   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=4.2 PAK>10                                       
+   17   ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=4.4 PAK>10                                       
+   18   ---  >10.23  --    P 31 2 1    RFZ=2.5 TFZ=4.5 PAK>10                                       
+   19   ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=4.5 PAK>10                                       
+   20   ---  >10.23  --    P 31 2 1    RFZ=2.7 TFZ=4.4 PAK>10                                       
+   21   4     3.409  --    P 31 2 1    RFZ=2.9 TFZ=4.1 PAK=3                                        
+   22   5     2.273  --    P 31 2 1    RFZ=3.2 TFZ=3.9 PAK=2                                        
+   23   ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=4.4 PAK>10                                       
+   24   ---  >10.23  --    P 31 2 1    RFZ=2.9 TFZ=4.1 PAK>10                                       
+   25   ---  >10.23  --    P 32 2 1    RFZ=2.6 TFZ=4.4 PAK>10                                       
+   26   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=4.3 PAK>10                                       
+   27   ---  >10.23  --    P 31 2 1    RFZ=2.7 TFZ=4.3 PAK>10                                       
+   28   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=4.1 PAK>10                                       
+   29   ---  >10.23  --    P 31 2 1    RFZ=2.7 TFZ=4.3 PAK>10                                       
+   30   ---  >10.23  --    P 31 2 1    RFZ=2.5 TFZ=4.4 PAK>10                                       
+   31   ---  >10.23  --    P 32 2 1    RFZ=2.9 TFZ=4.3 PAK>10                                       
+   32   ---  >10.23  --    P 32 2 1    RFZ=2.8 TFZ=4.8 PAK>10                                       
+   33   ---  >10.23  --    P 31 2 1    RFZ=2.9 TFZ=4.0 PAK>10                                       
+   34   ---  >10.23  --    P 31 2 1    RFZ=2.9 TFZ=4.0 PAK>10                                       
+   35   ---  >10.23  --    P 31 2 1    RFZ=2.9 TFZ=4.0 PAK>10                                       
+   36   ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=4.2 PAK>10                                       
+   37   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=4.6 PAK>10                                       
+   38   ---  >10.23  --    P 31 2 1    RFZ=2.9 TFZ=4.0 PAK>10                                       
+   39   ---  >10.23  --    P 32 2 1    RFZ=3.3 TFZ=4.0 PAK>10                                       
+   40   ---  >10.23  --    P 31 2 1    RFZ=2.9 TFZ=4.0 PAK>10                                       
+   41   6     9.091  --    P 31 2 1    RFZ=3.2 TFZ=3.8 PAK=9                                        
+   42   ---  >10.23  --    P 32 2 1    RFZ=2.7 TFZ=4.5 PAK>10                                       
+   43   ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=3.8 PAK>10                                       
+   44   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=4.1 PAK>10                                       
+   45   ---  >10.23  --    P 32 2 1    RFZ=2.9 TFZ=4.2 PAK>10                                       
+   46   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=4.2 PAK>10                                       
+   47   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=4.1 PAK>10                                       
+   48   7     9.659  --    P 32 2 1    RFZ=3.2 TFZ=4.1 PAK=10                                       
+   49   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=4.0 PAK>10                                       
+   50   8     7.955  --    P 31 2 1    RFZ=3.2 TFZ=3.8 PAK=8                                        
+   51   9     3.409  --    P 32 2 1    RFZ=3.2 TFZ=4.1 PAK=3                                        
+   52   ---  >10.23  --    P 31 2 1    RFZ=2.9 TFZ=3.9 PAK>10                                       
+   53   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=3.9 PAK>10                                       
+   54   ---  >10.23  --    P 32 2 1    RFZ=3.3 TFZ=3.9 PAK>10                                       
+   55   ---  >10.23  --    P 31 2 1    RFZ=2.6 TFZ=4.3 PAK>10                                       
+   56   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=4.1 PAK>10                                       
+   57   10    9.659  --    P 31 2 1    RFZ=2.5 TFZ=4.3 PAK=10                                       
+   58   ---  >10.23  --    P 31 2 1    RFZ=2.7 TFZ=3.9 PAK>10                                       
+   59   ---  >10.23  --    P 32 2 1    RFZ=2.9 TFZ=4.2 PAK>10                                       
+   60   11    3.409  --    P 32 2 1    RFZ=3.3 TFZ=3.9 PAK=3                                        
+   61   ---  >10.23  --    P 32 2 1    RFZ=2.6 TFZ=4.2 PAK>10                                       
+   62   ---  >10.23  --    P 31 2 1    RFZ=2.7 TFZ=4.2 PAK>10                                       
+   63   ---  >10.23  --    P 32 2 1    RFZ=2.5 TFZ=4.2 PAK>10                                       
+   64   ---  >10.23  --    P 31 2 1    RFZ=2.8 TFZ=4.2 PAK>10                                       
+   65   ---  >10.23  --    P 31 2 1    RFZ=2.7 TFZ=3.9 PAK>10                                       
+   66   ---  >10.23  --    P 32 2 1    RFZ=3.1 TFZ=4.3 PAK>10                                       
+   67   ---  >10.23  --    P 32 2 1    RFZ=2.9 TFZ=4.1 PAK>10                                       
+   68   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=3.9 PAK>10                                       
+   69   ---  >10.23  --    P 32 2 1    RFZ=2.7 TFZ=4.4 PAK>10                                       
+   70   12    5.682  --    P 32 2 1    RFZ=3.1 TFZ=4.3 PAK=6                                        
+   71   ---  >10.23  --    P 31 2 1    RFZ=2.9 TFZ=3.9 PAK>10                                       
+   72   13    5.114  --    P 31 2 1    RFZ=2.8 TFZ=4.1 PAK=5                                        
+   73   ---  >10.23  --    P 31 2 1    RFZ=2.9 TFZ=3.9 PAK>10                                       
+   74   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=4.0 PAK>10                                       
+   75   ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=4.2 PAK>10                                       
+   76   ---  >10.23  --    P 31 2 1    RFZ=2.9 TFZ=3.9 PAK>10                                       
+   77   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=4.0 PAK>10                                       
+   78   14    3.409  --    P 31 2 1    RFZ=2.7 TFZ=3.9 PAK=3                                        
+   79   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=4.5 PAK>10                                       
+   80   ---  >10.23  --    P 32 2 1    RFZ=2.8 TFZ=4.6 PAK>10                                       
+   81   ---  >10.23  --    P 31 2 1    RFZ=2.9 TFZ=3.8 PAK>10                                       
+   82   15    7.386  --    P 32 2 1    RFZ=3.2 TFZ=4.0 PAK=7                                        
+   83   ---  >10.23  --    P 31 2 1    RFZ=3.3 TFZ=4.2 PAK>10                                       
+   84   ---  >10.23  --    P 32 2 1    RFZ=3.3 TFZ=3.8 PAK>10                                       
+   85   ---  >10.23  --    P 32 2 1    RFZ=2.5 TFZ=4.1 PAK>10                                       
+   86   ---  >10.23  --    P 31 2 1    RFZ=2.9 TFZ=3.8 PAK>10                                       
+   87   ---  >10.23  --    P 32 2 1    RFZ=3.1 TFZ=4.2 PAK>10                                       
+   88   ---  >10.23  --    P 32 2 1    RFZ=2.8 TFZ=4.6 PAK>10                                       
+   89   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=3.9 PAK>10                                       
+   90   16    1.136  --    P 32 2 1    RFZ=3.2 TFZ=3.9 PAK=1                                        
+   91   ---  >10.23  --    P 31 2 1    RFZ=3.3 TFZ=3.7 PAK>10                                       
+   92   ---  >10.23  --    P 31 2 1    RFZ=3.3 TFZ=3.7 PAK>10                                       
+   93   ---  >10.23  --    P 31 2 1    RFZ=2.5 TFZ=4.2 PAK>10                                       
+   94   ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=4.1 PAK>10                                       
+   95   ---  >10.23  --    P 32 2 1    RFZ=2.9 TFZ=4.0 PAK>10                                       
+   96   ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=3.9 PAK>10                                       
+   97   17    4.545  --    P 32 2 1    RFZ=3.1 TFZ=4.2 PAK=5                                        
+   98   ---  >10.23  --    P 31 2 1    RFZ=2.5 TFZ=4.1 PAK>10                                       
+   99   ---  >10.23  --    P 31 2 1    RFZ=2.8 TFZ=4.0 PAK>10                                       
+   100  ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=3.6 PAK>10                                       
+   101  ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=4.0 PAK>10                                       
+   102  18    1.136  --    P 32 2 1    RFZ=3.2 TFZ=4.0 PAK=1                                        
+   103  ---  >10.23  --    P 32 2 1    RFZ=2.9 TFZ=4.0 PAK>10                                       
+   104  ---  >10.23  --    P 32 2 1    RFZ=3.3 TFZ=3.8 PAK>10                                       
+   105  ---  >10.23  --    P 31 2 1    RFZ=2.7 TFZ=4.5 PAK>10                                       
+   106  19    3.977  --    P 32 2 1    RFZ=2.5 TFZ=4.1 PAK=4                                        
+   107  ---  >10.23  --    P 31 2 1    RFZ=3.3 TFZ=3.7 PAK>10                                       
+   108  ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=3.9 PAK>10                                       
+   109  ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=3.6 PAK>10                                       
+   110  ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=3.6 PAK>10                                       
+   111  ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=3.6 PAK>10                                       
+   112  ---  >10.23  --    P 31 2 1    RFZ=2.9 TFZ=3.8 PAK>10                                       
+   113  ---  >10.23  --    P 32 2 1    RFZ=3.3 TFZ=3.7 PAK>10                                       
+   114  ---  >10.23  --    P 32 2 1    RFZ=2.8 TFZ=4.5 PAK>10                                       
+   115  ---  >10.23  --    P 32 2 1    RFZ=2.6 TFZ=4.0 PAK>10                                       
+   116  ---  >10.23  --    P 31 2 1    RFZ=2.7 TFZ=3.8 PAK>10                                       
+   117  ---  >10.23  --    P 32 2 1    RFZ=2.7 TFZ=4.2 PAK>10                                       
+   118  ---  >10.23  --    P 31 2 1    RFZ=2.8 TFZ=4.0 PAK>10                                       
+   119  ---  >10.23  --    P 31 2 1    RFZ=2.9 TFZ=3.7 PAK>10                                       
+   120  ---  >10.23  --    P 32 2 1    RFZ=2.6 TFZ=4.0 PAK>10                                       
+   121  ---  >10.23  --    P 31 2 1    RFZ=2.7 TFZ=3.7 PAK>10                                       
+   122  ---  >10.23  --    P 32 2 1    RFZ=3.3 TFZ=3.7 PAK>10                                       
+   123  ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=3.7 PAK>10                                       
+   124  20    5.114  --    P 31 2 1    RFZ=3.2 TFZ=3.9 PAK=5                                        
+   125  ---  >10.23  --    P 31 2 1    RFZ=3.3 TFZ=3.6 PAK>10                                       
+   126  ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=3.9 PAK>10                                       
+   127  21    8.523  --    P 32 2 1    RFZ=3.3 TFZ=4.2 PAK=9                                        
+   128  ---  >10.23  --    P 32 2 1    RFZ=2.6 TFZ=4.0 PAK>10                                       
+   129  ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=3.7 PAK>10                                       
+   130  22    9.091  --    P 31 2 1    RFZ=3.1 TFZ=4.0 PAK=9                                        
+   131  ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=3.9 PAK>10                                       
+   132  ---  >10.23  --    P 32 2 1    RFZ=2.7 TFZ=4.0 PAK>10                                       
+   133  ---  >10.23  --    P 32 2 1    RFZ=3.1 TFZ=4.1 PAK>10                                       
+   134  23    0      --    P 32 2 1    RFZ=2.6 TFZ=4.0 PAK=0                                        
+   135  ---  >10.23  --    P 32 2 1    RFZ=2.7 TFZ=4.1 PAK>10                                       
+   136  ---  >10.23  --    P 31 2 1    RFZ=3.3 TFZ=4.1 PAK>10                                       
+   137  ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=4.0 PAK>10                                       
+   138  ---  >10.23  --    P 31 2 1    RFZ=2.8 TFZ=4.0 PAK>10                                       
+   139  ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=3.8 PAK>10                                       
+   140  ---  >10.23  --    P 31 2 1    RFZ=2.6 TFZ=4.0 PAK>10                                       
+   141  ---  >10.23  --    P 32 2 1    RFZ=2.7 TFZ=4.0 PAK>10                                       
+   142  24    6.250  --    P 31 2 1    RFZ=3.2 TFZ=3.5 PAK=6                                        
+   143  ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=3.5 PAK>10                                       
+   144  ---  >10.23  --    P 31 2 1    RFZ=3.3 TFZ=3.6 PAK>10                                       
+   145  ---  >10.23  --    P 32 2 1    RFZ=2.6 TFZ=4.0 PAK>10                                       
+   146  ---  >10.23  --    P 32 2 1    RFZ=2.9 TFZ=3.9 PAK>10                                       
+   147  ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=3.5 PAK>10                                       
+   148  ---  >10.23  --    P 32 2 1    RFZ=2.8 TFZ=4.4 PAK>10                                       
+   149  ---  >10.23  --    P 32 2 1    RFZ=3.3 TFZ=4.1 PAK>10                                       
+   150  ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=3.8 PAK>10                                       
+   151  ---  >10.23  --    P 32 2 1    RFZ=2.7 TFZ=4.1 PAK>10                                       
+   152  ---  >10.23  --    P 31 2 1    RFZ=3.3 TFZ=4.0 PAK>10                                       
+   153  ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=3.8 PAK>10                                       
+   154  ---  >10.23  --    P 31 2 1    RFZ=3.3 TFZ=3.6 PAK>10                                       
+   155  ---  >10.23  --    P 31 2 1    RFZ=2.9 TFZ=3.7 PAK>10                                       
+   156  25    8.523  --    P 31 2 1    RFZ=2.5 TFZ=4.0 PAK=9                                        
+   157  ---  >10.23  --    P 31 2 1    RFZ=2.6 TFZ=4.0 PAK>10                                       
+   158  ---  >10.23  --    P 32 2 1    RFZ=3.3 TFZ=3.6 PAK>10                                       
+   159  26    5.114  --    P 31 2 1    RFZ=3.3 TFZ=4.0 PAK=5                                        
+   160  ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=3.8 PAK>10                                       
+   161  ---  >10.23  --    P 32 2 1    RFZ=3.3 TFZ=3.6 PAK>10                                       
+   162  ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=3.5 PAK>10                                       
+   163  ---  >10.23  --    P 32 2 1    RFZ=2.9 TFZ=3.9 PAK>10                                       
+   164  ---  >10.23  --    P 31 2 1    RFZ=2.8 TFZ=3.9 PAK>10                                       
+   165  ---  >10.23  --    P 32 2 1    RFZ=3.3 TFZ=3.6 PAK>10                                       
+   166  ---  >10.23  --    P 31 2 1    RFZ=2.7 TFZ=3.7 PAK>10                                       
+   167  ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=3.5 PAK>10                                       
+   168  ---  >10.23  --    P 32 2 1    RFZ=2.6 TFZ=3.9 PAK>10                                       
+   169  ---  >10.23  --    P 32 2 1    RFZ=2.9 TFZ=3.9 PAK>10                                       
+   170  ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=3.8 PAK>10                                       
+   171  ---  >10.23  --    P 32 2 1    RFZ=3.3 TFZ=3.6 PAK>10                                       
+   172  27    8.523  --    P 32 2 1    RFZ=3.3 TFZ=3.6 PAK=9                                        
+   173  ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=3.8 PAK>10                                       
+   174  ---  >10.23  --    P 31 2 1    RFZ=2.5 TFZ=4.0 PAK>10                                       
+   175  ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=3.6 PAK>10                                       
+   176  28    9.659  --    P 32 2 1    RFZ=3.3 TFZ=3.6 PAK=10                                       
+   177  29    5.114  --    P 31 2 1    RFZ=2.6 TFZ=4.0 PAK=5                                        
+   178  ---  >10.23  --    P 32 2 1    RFZ=2.6 TFZ=3.9 PAK>10                                       
+   179  ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=3.8 PAK>10                                       
+   180  ---  >10.23  --    P 32 2 1    RFZ=2.9 TFZ=3.9 PAK>10                                       
+   181  ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=4.2 PAK>10                                       
+   182  ---  >10.23  --    P 32 2 1    RFZ=3.3 TFZ=3.6 PAK>10                                       
+   183  ---  >10.23  --    P 31 2 1    RFZ=2.7 TFZ=3.6 PAK>10                                       
+   184  ---  >10.23  --    P 32 2 1    RFZ=3.2 TFZ=4.2 PAK>10                                       
+   185  ---  >10.23  --    P 32 2 1    RFZ=3.3 TFZ=4.1 PAK>10                                       
+   186  ---  >10.23  --    P 32 2 1    RFZ=2.9 TFZ=3.8 PAK>10                                       
+   187  30    5.682  --    P 31 2 1    RFZ=3.2 TFZ=3.4 PAK=6                                        
+   188  ---  >10.23  --    P 32 2 1    RFZ=2.5 TFZ=3.9 PAK>10                                       
+   189  ---  >10.23  --    P 32 2 1    RFZ=2.9 TFZ=3.8 PAK>10                                       
+   190  ---  >10.23  --    P 31 2 1    RFZ=3.2 TFZ=3.8 PAK>10                                       
+
+   30 accepted of 190 solutions
+      30 pack of 30 accepted solutions
+
+------------
+OUTPUT FILES
+------------
+
+   pyrR_ds2-3_phaser.1.pdb
+
+CPU Time: 0 days 0 hrs 1 mins 48.84 secs (    108.84 secs)
+Finished: Wed Jan  8 15:41:21 2020
+
+******************************************************************************************
+*** Phaser Module: MOLECULAR REPLACEMENT REFINEMENT AND PHASING                  2.8.3 ***
+******************************************************************************************
+
+-----------------
+TRANSLATIONAL NCS
+-----------------
+
+   tNCS not present
+
+-------------------------------
+DATA FOR REFINEMENT AND PHASING
+-------------------------------
+
+   High resolution limit imposed by solution list =  5.59
+
+   Outlier Rejection
+   -----------------
+   There were 9 reflections of 17592 (0.0512%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     10    8  -29   2.43      -0.063       0.014   7.485e-09  true   false   
+     15    1   29   2.43      -0.107       0.020   1.300e-10  true   false   
+     16   13    2   2.39      -0.451       0.105   2.021e-07  true   false   
+     17    8   17   2.42      -0.256       0.066   7.309e-07  true   false   
+     18    7   -5   2.66      -0.153       0.035   5.057e-08  true   false   
+     19    6  -17   2.38      -0.251       0.065   9.035e-07  true   false   
+     19    9    2   2.43      -0.414       0.087   1.568e-08  true   false   
+     22    1    3   2.66      -0.121       0.033   8.574e-07  true   false   
+     23    2    9   2.43      -0.426       0.100   2.166e-07  true   false   
+
+   Resolution of All Data (Number):        2.00  32.44 (17592)
+   Resolution of Selected Data (Number):   5.59  32.44 (886)
+
+-------------------
+WILSON DISTRIBUTION
+-------------------
+
+   Parameters set for Wilson log-likelihood calculation
+   E = 0 and variance 1 for each reflection
+   Without correction for SigF to the variances,
+      Wilson log(likelihood) = - number of acentrics (631)
+                               - half number of centrics (255/2)
+                             = -758
+   With correction for SigF,
+      Wilson log(likelihood) = -759.523
+
+----------
+ENSEMBLING
+----------
+
+   Ensemble: swissmodel4p84
+   ------------------------
+   PDB file # 1: 01.pdb
+      This file contains 1 model
+      The input RmsD of model #1 with respect to the real structure is 0.400
+
+   Ensemble Generation
+   -------------------
+   Resolution of Ensembles: 5.58763
+   Scat% Radius Model# Rel-B    RMS   DRMS   VRMS Ensemble                           
+    97.2   21.2      1   8.7  0.400  0.000  0.400 swissmodel4p84                     
+
+   Trace Generation
+   ----------------
+   Ensemble        Trace-type  Length      Sampling Close-contact
+   swissmodel4p84  C-alpha        176          3.00          2.00
+
+----------
+REFINEMENT
+----------
+
+   Protocol cycle #1 of 1
+   Refinement protocol for this macrocycle:
+   ROTATION:         REFINE
+   TRANSLATION:      REFINE
+   BFACTOR:          REFINE
+   MODEL VRMS:       FIX
+   CELL SCALE:       FIX
+   OCCUPANCY FACTOR: FIX
+   LAST ONLY:        FALSE
+   ROTATION RESTRAINT:    OFF
+   TRANSLATION RESTRAINT: OFF
+
+   There are 30 solutions to refine
+   Refining solutions
+   0%                              100%
+   |===============================| DONE
+
+
+   REFINING SET #1 OF 30
+   ---------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER   34.4   73.7    2.2 FRAC -1.64 -0.43  0.34 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 16 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -369.236                32.033               401.269
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER   31.5   69.9    1.8 FRAC -1.65 -0.37  0.27 BFAC 36.17
+
+   REFINING SET #2 OF 30
+   ---------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER   26.0   72.6  359.6 FRAC -1.62 -0.20  0.32 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 14 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -388.638                32.033               420.671
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER   31.5   69.8    1.8 FRAC -1.65 -0.37  0.27 BFAC 36.17
+
+   REFINING SET #3 OF 30
+   ---------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  333.1   78.7  190.7 FRAC -0.85  0.63 -0.59 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 13 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -391.311               -27.339               363.972
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  334.1   77.1  190.3 FRAC -0.85  0.60 -0.61 BFAC 41.18
+
+   REFINING SET #4 OF 30
+   ---------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  348.0   80.2  190.1 FRAC -0.61  0.01 -0.57 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 12 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -411.171               -33.311               377.859
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  346.6   80.9  191.2 FRAC -0.59  0.05 -0.56 BFAC 42.66
+
+   REFINING SET #5 OF 30
+   ---------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  241.1   78.6  192.2 FRAC  0.68  1.04 -0.61 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 16 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -414.600               -32.925               381.675
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  238.8   79.8  192.3 FRAC  0.71  1.04 -0.60 BFAC 41.20
+
+   REFINING SET #6 OF 30
+   ---------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  241.1   78.6  192.2 FRAC  0.70  0.56 -0.51 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 16 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -421.579               -38.267               383.312
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  239.7   80.8  190.7 FRAC  0.73  0.59 -0.49 BFAC 43.43
+
+   REFINING SET #7 OF 30
+   ---------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER    1.1   78.6  192.2 FRAC -1.23  0.20 -0.55 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 16 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -423.194               -41.102               382.091
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER    3.5   80.1  191.6 FRAC -1.27  0.15 -0.53 BFAC 43.81
+
+   REFINING SET #8 OF 30
+   ---------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  241.1   78.6  192.2 FRAC  0.75  1.35 -0.75 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 14 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -422.095               -37.780               384.315
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  242.6   78.3  194.6 FRAC  0.75  1.33 -0.75 BFAC 43.55
+
+   REFINING SET #9 OF 30
+   ---------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  121.1   78.6  192.2 FRAC  0.32 -1.02 -0.75 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 23 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -422.057               -31.432               390.626
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  116.8   83.1  192.2 FRAC  0.25 -1.11 -0.70 BFAC 43.93
+
+   REFINING SET #10 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER    5.2   52.9  289.5 FRAC -1.09  0.49 -0.43 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 15 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -422.713               -42.810               379.902
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER    5.8   54.3  289.8 FRAC -1.11  0.48 -0.41 BFAC 43.20
+
+   REFINING SET #11 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  136.7   86.0   15.6 FRAC  0.70 -1.07  0.32 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 15 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -425.695               -47.641               378.054
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  134.1   86.4   15.6 FRAC  0.65 -1.10  0.32 BFAC 45.38
+
+   REFINING SET #12 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  142.0   55.1  145.8 FRAC  0.98 -0.14 -0.80 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 16 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -426.980               -35.814               391.166
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  142.9   55.0  144.8 FRAC  1.00 -0.13 -0.80 BFAC 43.22
+
+   REFINING SET #13 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  284.0   85.4  208.6 FRAC  0.31  1.51 -0.66 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 13 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -425.847               -29.909               395.938
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  285.4   85.7  207.5 FRAC  0.27  1.51 -0.66 BFAC 43.26
+
+   REFINING SET #14 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER   21.5   62.2  188.3 FRAC -0.98 -0.15 -0.76 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 14 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -427.629               -45.261               382.368
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER   21.7   63.5  187.8 FRAC -1.01 -0.17 -0.75 BFAC 44.13
+
+   REFINING SET #15 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  121.1   78.6  192.2 FRAC -0.17 -0.69 -0.52 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 13 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -424.940               -33.894               391.046
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  121.3   77.2  192.1 FRAC -0.16 -0.67 -0.53 BFAC 42.29
+
+   REFINING SET #16 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  121.1   78.6  192.2 FRAC -0.34 -0.89 -0.71 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 19 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -433.043               -42.348               390.695
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  120.9   79.8  192.3 FRAC -0.34 -0.91 -0.70 BFAC 44.83
+
+   REFINING SET #17 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  142.0   55.1  145.8 FRAC  0.52  0.38 -0.80 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 19 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -435.407               -35.634               399.772
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  143.4   55.6  144.1 FRAC  0.55  0.40 -0.79 BFAC 45.27
+
+   REFINING SET #18 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER   20.2   83.6   26.2 FRAC -1.24 -0.12  0.42 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 19 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -431.959               -35.640               396.319
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER   19.6   84.6   28.8 FRAC -1.23 -0.15  0.43 BFAC 43.81
+
+   REFINING SET #19 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  125.2   52.9  289.5 FRAC -0.78 -1.07 -0.41 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 18 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -433.973               -64.564               369.409
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  128.8   54.1  290.2 FRAC -0.74 -1.06 -0.39 BFAC 47.94
+
+   REFINING SET #20 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  325.9   64.2  337.5 FRAC -0.69  0.76 -0.14 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 14 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -439.929               -27.177               412.751
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  324.8   62.9  339.0 FRAC -0.68  0.77 -0.16 BFAC 42.48
+
+   REFINING SET #21 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  266.0   72.6  359.6 FRAC  1.45  1.19  0.00 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 16 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -435.645               -30.293               405.352
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  264.4   71.2    0.8 FRAC  1.48  1.19 -0.01 BFAC 42.21
+
+   REFINING SET #22 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER   22.0   55.1  145.8 FRAC -1.30 -0.71 -0.58 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 17 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -435.423               -54.475               380.948
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER   20.3   56.2  146.4 FRAC -1.32 -0.69 -0.69 BFAC 47.77
+
+   REFINING SET #23 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  221.6   66.9  182.2 FRAC  0.96  1.06 -0.67 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 12 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -435.014               -37.576               397.438
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  219.7   68.5  183.1 FRAC  1.00  1.06 -0.65 BFAC 44.36
+
+   REFINING SET #24 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  241.1   78.6  192.2 FRAC  0.71  0.56 -0.65 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 14 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -438.310               -38.219               400.091
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  241.7   76.9  192.2 FRAC  0.68  0.53 -0.68 BFAC 43.76
+
+   REFINING SET #25 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER    5.2   52.9  289.5 FRAC -0.22  0.61 -0.36 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 10 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -439.085               -39.681               399.405
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER    5.2   53.3  290.0 FRAC -0.23  0.60 -0.36 BFAC 43.90
+
+   REFINING SET #26 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER   26.0   72.6  359.6 FRAC -1.67 -0.30  0.35 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 13 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -440.755               -32.871               407.884
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER   26.7   72.8  357.6 FRAC -1.66 -0.29  0.35 BFAC 44.20
+
+   REFINING SET #27 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER   16.7   86.0   15.6 FRAC -1.16 -0.86  0.61 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 15 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -440.338               -31.102               409.236
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER   16.0   87.3   15.6 FRAC -1.14 -0.84  0.63 BFAC 43.08
+
+   REFINING SET #28 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER   16.7   86.0   15.6 FRAC -1.25 -0.61  0.49 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 14 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -440.206               -28.973               411.232
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER   15.3   87.3   15.0 FRAC -1.22 -0.57  0.50 BFAC 43.56
+
+   REFINING SET #29 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  341.6   66.9  182.2 FRAC -0.50 -0.06 -0.78 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 14 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -442.453               -40.854               401.599
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  340.6   66.8  182.8 FRAC -0.48 -0.04 -0.78 BFAC 44.64
+
+   REFINING SET #30 OF 30
+   ----------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  241.1   78.6  192.2 FRAC  0.59  0.99 -0.53 BFAC  0.00
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 12 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+        -441.849               -42.778               399.071
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER  241.4   79.2  192.4 FRAC  0.59  0.99 -0.52 BFAC 45.05
+
+
+   Mean and Sigma after Refinement (for Purge)
+   -------------------------------------------
+   Scoring 510 randomly sampled orientations and translations
+
+   Generating Statistics
+   0%                              100%
+   |===============================| DONE
+
+   Mean Score for Purge before Refinement:  -660.77
+   Mean Score for Purge after Refinement :  -65.90
+
+---------------
+FIND DUPLICATES
+---------------
+
+   Check for nearly equivalent solutions
+   Calculating Duplicates for 30 solutions
+   0%                              100%
+   |===============================| DONE
+
+   One duplicate solution found
+
+---------------------
+FIND TEMPLATE MATCHES
+---------------------
+
+   No Template Solution(s) for comparison
+
+---------------
+PURGE SELECTION
+---------------
+
+   Purge solutions according to highest LLG from Refinement
+   --------------------------------------------------------
+   Top LLG (all) = 49.9884
+   Top LLG (packs) = 49.9884
+   Mean LLG = -65.9004
+   Percent used for purge = 75%
+      Cutoff for acceptance = 21.0
+   Overall cutoff for acceptance (excluding high TFZ) = 21.0
+   Number of solutions stored before purge = 30
+   Number of solutions stored (deleted) after purge = 2 (28)
+
+---------------
+TFZ EQUIVALENTS
+---------------
+
+   Refined TFZ equivalents calculated
+   1 top TFZ equivalents calculated
+      1 (Topfiles)
+      0 with TFZ > 6 (TFZ for Possibly Solved)
+
+   SOLUTION #1 OF 30
+   -----------------
+   TFZ equivalent calculation #1 of 1
+      TOPFILE
+
+   Generating Statistics
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Mean Score (Sigma):       -80.46   (16.12)
+   Refined TF/TFZ equivalent = 49.99/  8.1 (Unrefined TF/TFZ=-370.00/  5.1)
+
+-------
+RESULTS
+-------
+
+   Refinement Table (Sorted)
+   -------------------------
+   #out =#out #in =T (Start LLG Rval TFZ) (Refined LLG Rval TFZ==) SpaceGroup  Cntrst
+   Top1 ---   1          -370.0 51.6  5.1         50.0 48.8  8.1   P 31 2 1     1.805
+   ---  1     2          -389.9 52.9  4.9         49.9 48.8  n/a   P 31 2 1     1.805
+   ---  ---   20         -436.4 55.8  5.1         -1.7 54.9  n/a   P 31 2 1     1.013
+   ---  ---   28         -441.4 56.8  3.6         -2.6 57.0  n/a   P 32 2 1     1.019
+   ---  ---   13         -427.6 56.4  5.1         -3.7 55.6  n/a   P 31 2 1     1.005
+   ---  ---   3          -391.8 56.5  4.7         -4.0 56.2  n/a   P 31 2 1     1.008
+   ---  ---   9          -423.5 58.2  4.1         -4.5 56.9  n/a   P 32 2 1     1.003
+   ---  ---   27         -441.2 56.4  3.6         -4.7 55.5  n/a   P 32 2 1     1.014
+   ---  ---   26         -440.1 55.7  4.0         -5.6 54.9  n/a   P 31 2 1     1.002
+   ---  ---   21         -436.7 56.1  4.2         -5.7 56.2  n/a   P 32 2 1     1.021
+   ---  ---   17         -432.3 56.4  4.2         -6.9 56.8  n/a   P 32 2 1     1.033
+   ---  ---   15         -429.1 57.0  4.0         -8.8 56.6  n/a   P 32 2 1     1.004
+   ---  ---   4          -412.3 55.5  5.1         -9.0 54.3  n/a   P 31 2 1     1.001
+   ---  ---   18         -432.9 56.6  4.0         -9.1 54.5  n/a   P 32 2 1     1.011
+   ---  ---   5          -413.5 56.4  3.9         -9.7 55.4  n/a   P 31 2 1     1.006
+   ---  ---   12         -427.1 56.8  4.3        -10.1 56.5  n/a   P 32 2 1     1.019
+   ---  ---   23         -437.6 57.4  4.0        -11.1 56.8  n/a   P 32 2 1     1.004
+   ---  ---   8          -423.1 57.2  5.1        -11.3 56.4  n/a   P 31 2 1     1.011
+   ---  ---   6          -420.8 56.4  5.1        -11.9 56.5  n/a   P 31 2 1     1.008
+   ---  ---   24         -438.6 58.0  5.1        -12.4 57.0  n/a   P 31 2 1     1.007
+   ---  ---   25         -439.8 56.8  4.0        -12.8 56.5  n/a   P 31 2 1     1.012
+   ---  ---   29         -441.4 56.4  4.0        -13.4 56.6  n/a   P 31 2 1     1.020
+   ---  ---   30         -442.6 56.6  3.4        -14.4 56.5  n/a   P 31 2 1     1.010
+   ---  ---   7          -422.5 57.5  4.1        -14.9 57.4  n/a   P 32 2 1     1.000
+   ---  ---   16         -430.8 57.4  3.9        -14.9 56.5  n/a   P 32 2 1     1.045
+   ---  ---   10         -424.6 57.8  4.3        -17.1 57.4  n/a   P 31 2 1     1.023
+   ---  ---   14         -428.9 57.8  3.9        -18.2 57.0  n/a   P 31 2 1     1.002
+   ---  ---   11         -425.3 57.9  3.9        -18.3 56.9  n/a   P 32 2 1     1.107
+   ---  ---   22         -437.1 57.9  5.1        -22.9 58.1  n/a   P 31 2 1     1.304
+   ---  ---   19         -433.7 57.7  4.1        -32.9 58.6  n/a   P 32 2 1      n/a 
+
+   Refinement Table (Variance Ranges)
+   ----------------------------------
+   Range of delta-VRMS and VRMS given over current solution list (30 solution(s))
+   Ensemble        Model#   RMS   Delta-VRMS min/max  (VRMS min/max)
+   swissmodel4p84       1   0.400   +0.000/+0.000    ( 0.400/ 0.400 )
+
+------------
+OUTPUT FILES
+------------
+
+   Calculation of Map Coefficients
+   -------------------------------
+   1 top map coefficients calculated
+
+   Map coefficient calculated for top solution #1
+   SOLU SPAC P 31 2 1
+   SOLU 6DIM ENSE swissmodel4p84 EULER   31.5   69.9    1.8 FRAC -1.65 -0.37  0.27 BFAC 36.17 #TFZ==8.1
+
+   pyrR_ds2-3_phaser.1.pdb
+   pyrR_ds2-3_phaser.1.mtz
+
+CPU Time: 0 days 0 hrs 1 mins 54.51 secs (    114.51 secs)
+Finished: Wed Jan  8 15:41:27 2020
+
+******************************************************************************************
+*** Phaser Module: AUTOMATED MOLECULAR REPLACEMENT                               2.8.3 ***
+******************************************************************************************
+
+** Permutation #1 of 1
+** New Best Solution
+**    Best Solution: Top LLG = 49.9884
+**    Best Solution: Number of components = 1
+**    Best Solution: List size: 1
+
+CPU Time: 0 days 0 hrs 1 mins 54.53 secs (    114.53 secs)
+Finished: Wed Jan  8 15:41:27 2020
+
+******************************************************************************************
+*** Phaser Module: AUTOMATED MOLECULAR REPLACEMENT                               2.8.3 ***
+******************************************************************************************
+
+** Solutions will be refined to highest resolution
+**    Resolution for refinement: 2.00003
+
+CPU Time: 0 days 0 hrs 1 mins 54.90 secs (    114.90 secs)
+Finished: Wed Jan  8 15:41:28 2020
+
+******************************************************************************************
+*** Phaser Module: MOLECULAR REPLACEMENT REFINEMENT AND PHASING                  2.8.3 ***
+******************************************************************************************
+
+-----------------
+TRANSLATIONAL NCS
+-----------------
+
+   tNCS not present
+
+-------------------------------
+DATA FOR REFINEMENT AND PHASING
+-------------------------------
+
+   Outlier Rejection
+   -----------------
+   There were 9 reflections of 17592 (0.0512%) rejected as outliers
+      - outliers with a Wilson probability less than 1e-06
+      - measurements expected to contain fewer than 0.01 bits of information
+
+      H    K    L   reso        Eo^2       sigma probability  wilson low-info
+     10    8  -29   2.43      -0.063       0.014   7.485e-09  true   false   
+     15    1   29   2.43      -0.107       0.020   1.300e-10  true   false   
+     16   13    2   2.39      -0.451       0.105   2.021e-07  true   false   
+     17    8   17   2.42      -0.256       0.066   7.309e-07  true   false   
+     18    7   -5   2.66      -0.153       0.035   5.057e-08  true   false   
+     19    6  -17   2.38      -0.251       0.065   9.035e-07  true   false   
+     19    9    2   2.43      -0.414       0.087   1.568e-08  true   false   
+     22    1    3   2.66      -0.121       0.033   8.574e-07  true   false   
+     23    2    9   2.43      -0.426       0.100   2.166e-07  true   false   
+
+   Resolution of All Data (Number):        2.00  32.44 (17592)
+   Resolution of Selected Data (Number):   2.00  32.44 (17583)
+
+-------------------
+WILSON DISTRIBUTION
+-------------------
+
+   Parameters set for Wilson log-likelihood calculation
+   E = 0 and variance 1 for each reflection
+   Without correction for SigF to the variances,
+      Wilson log(likelihood) = - number of acentrics (15477)
+                               - half number of centrics (2106/2)
+                             = -16530
+   With correction for SigF,
+      Wilson log(likelihood) = -16401.2
+
+----------
+ENSEMBLING
+----------
+
+   Ensemble: swissmodel4p84
+   ------------------------
+   PDB file # 1: 01.pdb
+      This file contains 1 model
+      The input RmsD of model #1 with respect to the real structure is 0.400
+
+   Ensemble Generation: swissmodel4p84
+   -----------------------------------
+   Ensemble configured for structure factor interpolation
+   Ensemble configured to resolution  2.00
+
+   Electron Density Calculation
+   0%      100%
+   |=======| DONE
+
+   Ensemble Generation
+   -------------------
+   Resolution of Ensembles: 2.00003
+   Scat% Radius Model# Rel-B    RMS   DRMS   VRMS Ensemble                           
+    97.2   21.2      1  31.3  0.400  0.000  0.400 swissmodel4p84                     
+
+----------
+REFINEMENT
+----------
+
+   Protocol cycle #1 of 1
+   Refinement protocol for this macrocycle:
+   ROTATION:         REFINE
+   TRANSLATION:      REFINE
+   BFACTOR:          REFINE
+   MODEL VRMS:       FIX
+   CELL SCALE:       FIX
+   OCCUPANCY FACTOR: FIX
+   LAST ONLY:        FALSE
+   ROTATION RESTRAINT:    OFF
+   TRANSLATION RESTRAINT: OFF
+
+   There is 1 solution to refine
+   Refining solutions
+   0% 100%
+   |==| DONE
+
+
+   REFINING SET #1 OF 1
+   --------------------
+   Initial Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER   31.5   69.9    1.8 FRAC -1.65 -0.37  0.27 BFAC 36.17 #TFZ==8.1
+
+   Performing Optimization...
+      Done
+   --- Convergence before iteration limit (50) at cycle 15 ---
+   Start-this-macrocycle End-this-macrocycle Change-this-macrocycle
+         296.247               530.665               234.418
+
+   Final Parameters:
+   SOLU SET 
+   SOLU 6DIM ENSE swissmodel4p84 EULER   30.7   70.6    0.9 FRAC -1.65 -0.34  0.28 BFAC 16.99 #TFZ==8.1
+
+
+   Mean and Sigma after Refinement (for Purge)
+   -------------------------------------------
+   Scoring 500 randomly sampled orientations and translations
+
+   Generating Statistics
+   0% 100%
+   |==| DONE
+
+   Mean Score for Purge before Refinement:  -65.90
+   Mean Score for Purge after Refinement :  -654.27
+
+---------------
+FIND DUPLICATES
+---------------
+
+   Check for nearly equivalent solutions
+   Calculating Duplicates for 1 solutions
+   0% 100%
+   |==| DONE
+
+   No duplicate solutions found
+
+---------------------
+FIND TEMPLATE MATCHES
+---------------------
+
+   No Template Solution(s) for comparison
+
+---------------
+PURGE SELECTION
+---------------
+
+   Purge solutions according to highest LLG from Refinement
+   --------------------------------------------------------
+   Top LLG (all) = 533.279
+   Top LLG (packs) = 533.279
+   Mean LLG = -654.269
+   Percent used for purge = 75%
+      Cutoff for acceptance = 236.4
+   Overall cutoff for acceptance (excluding high TFZ) = 533.3
+   Number of solutions stored before purge = 1
+   Number of solutions stored (deleted) after purge = 1 (0)
+
+---------------
+TFZ EQUIVALENTS
+---------------
+
+   Refined TFZ equivalents calculated
+   1 top TFZ equivalents calculated
+      1 (Topfiles)
+      0 with TFZ > 6 (TFZ for Possibly Solved)
+
+   SOLUTION #1 OF 1
+   ----------------
+   TFZ equivalent calculation #1 of 1
+      TOPFILE
+
+   Generating Statistics
+   0%                                                                       100%
+   |========================================================================| DONE
+
+   Mean Score (Sigma):       -654.27   (46.76)
+   Refined TF/TFZ equivalent = 533.28/ 25.4 (Unrefined TF/TFZ=314.18/  8.1)
+
+-------
+RESULTS
+-------
+
+   Refinement Table (Sorted)
+   -------------------------
+   Refinement to full resolution
+   #out =#out #in =T (Start LLG Rval TFZ) (Refined LLG Rval TFZ==) SpaceGroup  Cntrst
+   Top1 ---   1           314.2 49.8  8.1        533.3 48.4 25.4   P 31 2 1      n/a 
+
+   Refinement Table (Variance Ranges)
+   ----------------------------------
+   Range of delta-VRMS and VRMS given over current solution list (1 solution(s))
+   Ensemble        Model#   RMS   Delta-VRMS min/max  (VRMS min/max)
+   swissmodel4p84       1   0.400   +0.000/+0.000    ( 0.400/ 0.400 )
+
+------------
+OUTPUT FILES
+------------
+
+   Calculation of Map Coefficients
+   -------------------------------
+   1 top map coefficients calculated
+
+   Map coefficient calculated for top solution #1
+   SOLU SPAC P 31 2 1
+   SOLU 6DIM ENSE swissmodel4p84 EULER   30.7   70.6    0.9 FRAC -1.65 -0.34  0.28 BFAC 16.99 #TFZ==25.4
+
+   pyrR_ds2-3_phaser.1.pdb
+   pyrR_ds2-3_phaser.1.mtz
+
+CPU Time: 0 days 0 hrs 2 mins 10.15 secs (    130.15 secs)
+Finished: Wed Jan  8 15:41:43 2020
+
+******************************************************************************************
+*** Phaser Module: AUTOMATED MOLECULAR REPLACEMENT                               2.8.3 ***
+******************************************************************************************
+
+** SINGLE solution
+
+** Solution written to PDB file:  pyrR_ds2-3_phaser.1.pdb
+** Solution written to MTZ file:  pyrR_ds2-3_phaser.1.mtz
+   Solution annotation (history):
+   SOLU SET  RFZ=3.2 TFZ=5.1 PAK=1 LLG=50 TFZ==8.1 LLG=533 TFZ==25.4
+   SOLU SPAC P 31 2 1
+   SOLU 6DIM ENSE swissmodel4p84 EULER   30.7   70.6    0.9 FRAC -1.65 -0.34  0.28 BFAC 16.99 #TFZ==25.4
+
+CPU Time: 0 days 0 hrs 2 mins 10.18 secs (    130.18 secs)
+Finished: Wed Jan  8 15:41:43 2020
+
+--------
+ADVISORY
+--------
+
+The top solution from a FTF did not pack
+
+The top solution from a TF rescoring did not pack
+
+--------------------
+EXIT STATUS: SUCCESS
+--------------------
+
+CPU Time: 0 days 0 hrs 2 mins 10.18 secs (    130.18 secs)
+Finished: Wed Jan  8 15:41:43 2020
+
+</pre>
+</html>
