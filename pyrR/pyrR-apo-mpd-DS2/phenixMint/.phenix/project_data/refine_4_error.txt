@@ -1,0 +1,39 @@
+mli target is not implemented (yet). Pick another target.:
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/libtbx/thread_utils.py", line 236, in run
+    return_value = self._target(self._args, self._kwargs, self._c)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/libtbx/runtime_utils.py", line 97, in __call__
+    result = self.target()
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/libtbx/runtime_utils.py", line 76, in __call__
+    result = self.run()
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/phenix/phenix/refinement/runtime.py", line 79, in run
+    refine_object = self._run(args, callback)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/phenix/phenix/refinement/runtime.py", line 92, in _run
+    call_back_handler=callback)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/phenix/phenix/refinement/command_line.py", line 152, in run
+    call_back_handler=call_back_handler)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/phenix/phenix/refinement/driver.py", line 1166, in run
+    call_back_handler       = call_back_handler).result
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/phenix/phenix/refinement/strategies.py", line 130, in __init__
+    self.fmodels.show_comprehensive()
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/mmtbx/__init__.py", line 170, in show_comprehensive
+    self.fmodel_xray().info().show_all(header = message, out = self.log)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/mmtbx/f_model/f_model.py", line 2357, in info
+    n_bins                   = n_bins)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/mmtbx/f_model/f_model_info.py", line 118, in __init__
+    self.target_work = fmodel.target_w()
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/mmtbx/f_model/f_model.py", line 132, in target_w
+    alpha_beta=alpha_beta)(compute_gradients=False).target_work()
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/mmtbx/refinement/targets.py", line 254, in __call__
+    raise Sorry("mli target is not implemented (yet). Pick another target.")

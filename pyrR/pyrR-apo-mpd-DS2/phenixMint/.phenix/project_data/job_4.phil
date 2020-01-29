@@ -1,0 +1,37 @@
+LIBTBX_BASE_DIR = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint"
+job {
+  job_id = 4
+  app_id = Refine
+  program_name = None
+  title = """pyrR_apo_gmp_ref4"""
+  directory = "$(LIBTBX_BASE_DIR)/Refine_4"
+  process_type = None
+  hostname = None
+  queue_id = None
+  citation = None
+  input_file {
+    file_name = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/cooot/DS2-pyrR-refinements_refine_3-coot-0.pdb"
+    file_type = Input model
+    param_name = refinement.input.pdb.file_name
+  }
+  input_file {
+    file_name = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/pyrR_apo_ds2_scaled1.mtz"
+    file_type = Reflections file
+    param_name = refinement.input.xray_data.file_name
+  }
+  input_file {
+    file_name = "/home/adrmercurio/XtaLab/git_pyrR/pyrR_Tthermo.fa"
+    file_type = Sequences
+    param_name = refinement.input.sequence.file_name
+  }
+  output_file {
+    file_name = None
+    file_type = None
+  }
+  statistic {
+    stat_name = None
+    stat_value = None
+  }
+  user_comments = None
+  deleted = False
+}
