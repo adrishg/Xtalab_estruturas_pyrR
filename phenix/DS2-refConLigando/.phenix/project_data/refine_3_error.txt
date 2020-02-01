@@ -1,0 +1,38 @@
+Fatal problems interpreting model file:
+  Number of atoms with unknown nonbonded energy type symbols: 24
+    Please edit the model file to resolve the problems and/or supply a
+    CIF file with matching restraint definitions, along with
+    apply_cif_modification and apply_cif_link parameter definitions
+    if necessary.:
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/libtbx/thread_utils.py", line 236, in run
+    return_value = self._target(self._args, self._kwargs, self._c)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/libtbx/runtime_utils.py", line 97, in __call__
+    result = self.target()
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/libtbx/runtime_utils.py", line 76, in __call__
+    result = self.run()
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/phenix/phenix/refinement/runtime.py", line 79, in run
+    refine_object = self._run(args, callback)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/phenix/phenix/refinement/runtime.py", line 92, in _run
+    call_back_handler=callback)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/phenix/phenix/refinement/command_line.py", line 86, in run
+    skip_write_data_mtz_file=skip_write_data_mtz_file)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/phenix/phenix/refinement/command_line.py", line 385, in __init__
+    log = log)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/mmtbx/model/model.py", line 275, in __init__
+    self._process_input_model()
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/mmtbx/model/model.py", line 1059, in _process_input_model
+    allow_missing_symmetry=True)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/mmtbx/utils/__init__.py", line 1007, in process_pdb_files
+    allow_missing_symmetry   = allow_missing_symmetry)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/mmtbx/utils/__init__.py", line 1092, in _process_pdb_file
+    raise Sorry(msg)
