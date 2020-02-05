@@ -1,0 +1,20 @@
+# Input script for LigandFit
+#  Tue Feb  4 11:09:31 2020
+# 
+# Use:
+# 
+# phenix.runWizard LigandFit LigandFit_run_5_/LigandFit.inp restart 
+# 
+input_lig_file /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/mpd/eLBOW_3/mpd.pdb
+input_labels 'I-obs'
+lig_map_type fo-fc_difference_map
+input_data_file /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz
+space_group P 31 2 1
+ligand_code MPD
+clean_up True
+input_partial_model_file /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/cooot/DS2-pyrR-refinements_refine_12-coot-2.pdb
+wizard_directory_number 5
+cif_def_file_list '/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/mpd/eLBOW_3/mpd.cif'
+unit_cell 69.49 69.49 90.581 90.0 90.0 120.0
+raise_sorry True
+job_title pyrR_ds2_placeLigand

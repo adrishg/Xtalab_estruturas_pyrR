@@ -1,0 +1,91 @@
+LIBTBX_BASE_DIR = "/home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando"
+job {
+  job_id = 15
+  app_id = Refine
+  program_name = None
+  title = """pyrR_ds2_ref15"""
+  directory = "$(LIBTBX_BASE_DIR)/Refine_15"
+  process_type = None
+  hostname = None
+  queue_id = None
+  citation = None
+  input_file {
+    file_name = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conLigando/DS2-refConLigando_refine_14-coot-0.pdb"
+    file_type = Input model
+    param_name = refinement.input.pdb.file_name
+  }
+  input_file {
+    file_name = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz"
+    file_type = Reflections file
+    param_name = refinement.input.xray_data.file_name
+  }
+  input_file {
+    file_name = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz"
+    file_type = File with R(free) flags
+    param_name = refinement.input.xray_data.r_free_flags.file_name
+  }
+  input_file {
+    file_name = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/mpd/eLBOW_3/MPD.cif"
+    file_type = Restraints (CIF)
+    param_name = refinement.input.monomers.file_name
+  }
+  input_file {
+    file_name = "/home/adrmercurio/XtaLab/git_pyrR/pyrR_Tthermo.fa"
+    file_type = Sequences
+    param_name = refinement.input.sequence.file_name
+  }
+  output_file {
+    file_name = "DS2-refConLigando_refine_15.log"
+    file_type = phenix.refine log file
+  }
+  output_file {
+    file_name = "DS2-refConLigando_refine_15.cif"
+    file_type = mmCIF model for PDB deposition
+  }
+  output_file {
+    file_name = "DS2-refConLigando_refine_15.geo"
+    file_type = Geometry restraints before refinement
+  }
+  output_file {
+    file_name = "DS2-refConLigando_refine_15.eff"
+    file_type = Effective parameters for this run
+  }
+  output_file {
+    file_name = "DS2-refConLigando_refine_15.pdb"
+    file_type = Refined model
+  }
+  output_file {
+    file_name = "DS2-refConLigando_refine_15_info.txt"
+    file_type = Run summary in text format
+  }
+  output_file {
+    file_name = "DS2-refConLigando_refine_15.mtz"
+    file_type = Map coefficients for Coot
+  }
+  statistic {
+    stat_name = R-work
+    stat_value = 0.2325
+  }
+  statistic {
+    stat_name = R-free
+    stat_value = 0.2625
+  }
+  statistic {
+    stat_name = RMSbonds
+    stat_value = 0.009
+  }
+  statistic {
+    stat_name = RMSangles
+    stat_value = 1.118
+  }
+  statistic {
+    stat_name = Clashscore
+    stat_value = 10.4
+  }
+  statistic {
+    stat_name = MolProbity score
+    stat_value = 1.664
+  }
+  user_comments = None
+  deleted = False
+}

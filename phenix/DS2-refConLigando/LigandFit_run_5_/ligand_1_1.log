@@ -1,0 +1,817 @@
+ ------------------------  COPYRIGHT NOTICE  ---------------------------------
+                   Los Alamos National Laboratory
+ This program was prepared by Los Alamos National Security, LLC at
+ Los Alamos National Laboratory (the University) under  Contract No. 
+ W-7405-ENG-36 with the U.S. Department of Energy (DOE).  The University has 
+ certain rights in the program pursuant to the contract and the program should
+ not be copied or distributed outside your organization.  All rights in the 
+ program are reserved by the DOE and the University.  Neither the U.S. 
+ Government nor the University makes any warranty, express or implied, or 
+ assumes any liability or responsibility for the use of this software.
+
+        *******************************************************
+        *                --- RESOLVE ---                      *
+        *                                                     *
+        *         Statistical density modification            *
+        *             Automated model-building                *
+        *                                                     *
+        *                For on-line help                     *
+        *            see "http://solve.lanl.gov"              *
+        *                                                     *
+        *      This software uses library routines from the   *
+        *      CCP4 suite (http://www.ccp4.ac.uk) for which   *
+        *           the author is very thankful!              *
+        *******************************************************
+
+               (version 2.15 of 20-Mar-2010)
+                       (size =  12)
+  Tom Terwilliger, Los Alamos National Laboratory, "terwilliger@LANL.gov"
+
+Trying to open "resolve.solvent"...
+ Default solvent content of  0.680 read from "resolve.solvent"
+ Default database entry of   5 read from "resolve.database"
+>workdir LigandFit_run_2_/TEMP0
+Work directory will be : LigandFit_run_2_/TEMP0/
+
+>outputdir /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_5_
+Directory for STOPWIZARD will be /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_5_/
+
+>freer_if_present
+Only writing out FreeR_flag if present
+
+>hklin resolve_map.mtz
+Data to be read from mtz file: resolve_map.mtz
+
+>labin FP=FP PHIB=PHIM FOM=FOMM
+Current value of "LABIN" is: labin FP=FP PHIB=PHIM FOM=FOMM                                                                                                                                                                                                          
+
+>no_build
+Model will not be built
+
+>ha_file NONE
+Heavy atom sites will be read from file: NONE
+The file does not exist...ignoring it
+
+>model all.pdb
+A model will be used to estimate electron density or mask in part of the unit cell.
+Model coords to be read from pdb file: all.pdb
+
+>keep_atom_name
+Keeping atom names (not left-justifying)
+
+>start_rot 193 42 295
+Starting rotation value (rotation about x, rotation about y, rotation about new x) is     193.0000        42.00000        295.0000    
+
+>ligand_occ    1.00
+Ligand occupancy:    1.000000    
+
+>use_wang
+Wang method for solvent mask will be used
+
+>no_ha
+no_ha: heavy-atoms not written out in pdb files
+
+>delta_phi_ligand 40.0
+Angular increment for ligand search     40.00000    
+
+>ligand_file mpd.pdb
+Conformers of ligand will be read from file: mpd.pdb
+
+>n_indiv_tries_min 100
+Minimum number of top placements to try individually in ligand search
+
+>n_indiv_tries_max 100
+Maximum number of top placements to try individually in ligand search
+
+>n_group_search 4
+Number of groups within ligand to use in searches            4
+
+>group_search 0
+Groups to use in searches           0
+
+>fit_phi_inc 20.0
+Torsion angles increment to be     20.00000    
+
+>n_keep_plac 100
+Number of placements of groups within ligand to keep in searches          100
+
+>ligand_resno 1
+Ligand residue number is            1
+
+>n_template_atom 8
+Number of atoms per group in template for ligand fitting:            8
+
+>fit_phi_range -180.0 180.0
+Torsion angles to be adjusted (relative to start) from    -180.0000     to     180.0000    
+
+>search_center 0.0 0.0 0.0
+Center (A) of region to be searched for ligand in local_ligand_search is     0.000000        0.000000        0.000000    
+
+>search_dist 10.0
+Radius of region to be searched for ligand in local_ligand_search is     10.00000    
+
+>database 5
+Entry in database of histograms to use:            5
+
+>no_optimize_ncs
+Not optimizing NCS
+
+>spg_name_use P 31 2 1
+Space group name for output PDB file only: P 31 2 1   
+
+>no_create_free
+Will not create FREE (test) set
+
+>use_all_for_test
+Will use all data for testing solvent content and histograms
+
+All done with inputs
+Map will be masked around all.pdb
+Building protein
+Setting up for building protein
+Standard fill-in residues: ALA A GLY G
+Standard main-chain atoms: N    CA   C    O    CB   NONE
+All main-chain atoms: N     CA    C     O     
+Max dist between adjacent N    atoms:     6.000000    
+List of all residues: GLY ALA SER VAL ILE LEU MET CYS PHE TYR LYS ARG TRP HIS GLU ASP GLN ASN PRO THR 
+List of 1-letter code of residues: GASVILMCFYKRWHEDQNPT
+List of number of atoms in side-chains:            0           1           2           3           4           4           4           2           7           8           5           7          10           6           5           4           5           4           3           3
+checking license file.. solve2.access
+
+       The date today is 04-feb-20.  Your license is good until 15-dec-96.
+
+Opened mtz file resolve_map.mtz
+Dataset            1 HKL_base            HKL_base            HKL_base                       0    69.49000        69.49000        90.58100        90.00000        90.00000        120.0000        0.000000    
+Dataset            2 project             crystal             dataset                        1    69.49000        69.49000        90.58100        90.00000        90.00000        120.0000        1.000000    
+Reading SG information from resolve_map.mtz
+Space group name: P3121      Point group: PG321     
+Space group number :         152 Symmetry operators:            6
+Number of columns:           13
+H                             K                             L                             FP                            SIGFP                         PHIM                          FOMM                          HLAM                          HLBM                          HLCM                          HLDM                          FWT                           PHWT                          
+
+Column assignments:
+                  PROGRAM                         INPUT_MTZ
+DATA# 1  H                             
+DATA# 2  K                             
+DATA# 3  L                             
+DATA# 4  FP                             :     FP                            
+DATA# 5  PHIB                           :     PHIM                          
+DATA# 6  FOM                            :     FOMM                          
+DATA# 7  HLA                           
+DATA# 8  HLB                           
+DATA# 9  HLC                           
+DATA# 10  HLD                           
+DATA# 11  FC                            
+DATA# 12  PHIC                          
+DATA# 13  SIGFP                         
+DATA# 14  FWT                           
+DATA# 15  FreeR_flag                    
+FP taken from column           4
+Dataset information for dataset number           2 and ID=           1
+Dataset name:dataset             
+Crystal name:crystal             
+Project name:project             
+Cell:      69.489998       69.489998       90.581001       90.000000       90.000000       120.00000
+Wavelength:    1.000000    
+PHIB taken from column           6
+FOM taken from column           7
+WARNING: No SIGFP input data--output SIGFP column will be SIGFP=1.0 for all HKL!
+
+No FreeR_flag read in or created
+Total of        17075 reflections read from file
+Guessing FreeR_flag corresponding to free reflections
+This can be set with free_id xx
+No freeR reflections at all
+Total of            0 of        17075 reflections in test set
+ High-resolution limit of input phased data:  2.00
+Adding F000 term (0.0) to this list
+Closed mtz file
+ Starting resolution:  2.00 max:  2.00
+Space group is         152
+Using symmetry operations from input MTZ file
+
+
+MATRICES: 
+SYMMETRY ELEMENT 0
+1 0 0 0
+0 1 0 0
+0 0 1 0
+SYMMETRY ELEMENT 1
+0 -1 0 0
+1 -1 0 0
+0 0 1 0.333333
+SYMMETRY ELEMENT 2
+-1 1 0 0
+-1 0 0 0
+0 0 1 0.666667
+SYMMETRY ELEMENT 3
+1 -1 0 0
+0 -1 0 0
+0 0 -1 0.666667
+SYMMETRY ELEMENT 4
+-1 0 0 0
+-1 1 0 0
+0 0 -1 0.333333
+SYMMETRY ELEMENT 5
+0 1 0 0
+1 0 0 0
+0 0 -1 0
+SPACE GROUP SYMBOL: P 31 2 1
+CHECK ON SPACE GROUP SYMBOL: P 31 2 1
+HALL SYMBOL :  P 31 2"
+Standard grids used for FFT
+
+ Transformations from orthogonal to fractional and back:
+
+               Orthogonal to fractional
+
+     fractional x=  0.01439 X +   0.00831 Y +  -0.00000 Z 
+     fractional y=  0.00000 X +   0.01662 Y +  -0.00000 Z 
+     fractional z=  0.00000 X +   0.00000 Y +   0.01104 Z 
+
+
+               Fractional to orthogonal
+
+     Orthogonal X= 69.49000 x + -34.74490 y +   0.00010 z 
+     Orthogonal Y=  0.00000 x +  60.18016 y +   0.00018 z 
+     Orthogonal Z=  0.00000 x +   0.00000 y +  90.58100 z 
+
+FILL: Total number of missing reflections added 
+ (to dmin =     2.222253    ) is:          266 for new total of :       17342
+new nrefl:        17342
+Space group is         152
+Using symmetry operations from input MTZ file
+
+
+MATRICES: 
+SYMMETRY ELEMENT 0
+1 0 0 0
+0 1 0 0
+0 0 1 0
+SYMMETRY ELEMENT 1
+0 -1 0 0
+1 -1 0 0
+0 0 1 0.333333
+SYMMETRY ELEMENT 2
+-1 1 0 0
+-1 0 0 0
+0 0 1 0.666667
+SYMMETRY ELEMENT 3
+1 -1 0 0
+0 -1 0 0
+0 0 -1 0.666667
+SYMMETRY ELEMENT 4
+-1 0 0 0
+-1 1 0 0
+0 0 -1 0.333333
+SYMMETRY ELEMENT 5
+0 1 0 0
+1 0 0 0
+0 0 -1 0
+SPACE GROUP SYMBOL: P 31 2 1
+CHECK ON SPACE GROUP SYMBOL: P 31 2 1
+HALL SYMBOL :  P 31 2"
+Standard grids used for FFT
+
+ Transformations from orthogonal to fractional and back:
+
+               Orthogonal to fractional
+
+     fractional x=  0.01439 X +   0.00831 Y +  -0.00000 Z 
+     fractional y=  0.00000 X +   0.01662 Y +  -0.00000 Z 
+     fractional z=  0.00000 X +   0.00000 Y +   0.01104 Z 
+
+
+               Fractional to orthogonal
+
+     Orthogonal X= 69.49000 x + -34.74490 y +   0.00010 z 
+     Orthogonal Y=  0.00000 x +  60.18016 y +   0.00018 z 
+     Orthogonal Z=  0.00000 x +   0.00000 y +  90.58100 z 
+
+Estimated # of atoms in au:        1994
+
+Warning -- Total of           25 centric phases off by >    0.5000000     degrees
+
+Not separating out FREE set from other reflections for main cycles. Using all data.
+
+Expected resolution-corrected F at d = 2.9A : 788.096
+
+ Results of wilson scaling:
+ Scale on I =      8.351
+ B-value =     22.746
+
+ Scaling data with value of      8.351
+
+Reading model density histograms from /home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/solve_resolve/ext_ref_files/segments/rho.list
+Read total of           10 sets of density functions
+Highest value of ix, iy, iz in a.u:         107          107           24
+nu nv nw:          108         108         144   Number of grid points in au:      280044
+ Mean fom of this map was:  1.00
+Reading a pdb file and estimating mask with it.
+Opening all.pdb and reading coordinates
+Center of molecule read in with         1213
+ atoms is      -23.011944       15.130858       7.5431166
+Highest residue number is :          177
+Opening all.pdb and reading coordinates
+Center of molecule read in with         1213
+ atoms is      -23.011934       15.130859       7.5431218
+Getting FCALC from model
+Adding solvent model to FCALC
+Mean of prot, solv in FC map:   0.3188443       2.9302281E-04
+Mean of prot, solv in solv map:   2.6006395E-02   0.1747011    
+Multiplying solvent *     1.000000     to get solvent density =    0.1747011    
+
+ Summary of starting FOM vs resolution 
+    RES     FOM   FOM-smoothed  N 
+   17.94    0.88    0.98        81
+   10.92    1.00    0.98       114
+    8.25    1.00    0.98       210
+    6.51    1.00    0.98       355
+    5.51    1.00    0.98       341
+    4.77    1.00    0.98       618
+    4.16    1.00    0.98       745
+    3.72    1.00    0.98       812
+    3.40    1.00    0.98       938
+    3.14    1.00    0.98       966
+    2.92    1.00    0.98      1299
+    2.74    0.98    0.98      1085
+    2.59    0.97    0.98      1383
+    2.44    0.93    0.98      1745
+    2.29    0.97    0.98      2225
+    2.16    1.00    0.98      1993
+    2.05    1.00    0.98      2431
+
+ Mean fom of this map was:  1.00
+Masking map using model. 
+Writing out           13 columns of data
+Writing out difference map coefficients to ligand_map.mtz
+Reading a pdb file and estimating mask with it.
+Opening all.pdb and reading coordinates
+Center of molecule read in with         1213
+ atoms is      -23.011944       15.130858       7.5431166
+Highest residue number is :          177
+Opening all.pdb and reading coordinates
+Center of molecule read in with         1213
+ atoms is      -23.011944       15.130858       7.5431166
+Model file with         1213 coordinates used
+Opening mpd.pdb and reading coordinates
+NOTE: D and H atoms are ignored
+Center of molecule read in with            8
+ atoms is    -0.069500014      0.11025000      0.20237502
+Total of            8 coordinates for ligand from mpd.pdb
+Fit_ligand:
+Number of atoms in ligand:            8
+Number of copies of ligand:            1
+Routine rings, looking for up to            6 atoms or groups in rings
+Adjusted template by mean of    0.46748843793629874     zeroes:         658 ones:         5102 volume:    14.87500             119
+VOL_LIG:    14.87500    
+    1  11000000
+    2  11110000
+    3  01100000
+    4  01011000
+    5  00011111
+    6  00001100
+    7  00001010
+    8  00001001
+Getting relationships among           3 groups
+GROUP            1
+    1    C01       1       2.570   0.853   0.686
+    2    C02       1       1.044   0.853   0.686
+    3    O03       1       0.577   0.853   2.006
+    4    C04       1       0.535  -0.393  -0.034
+GROUP            2
+    2    C02       1       1.044   0.853   0.686
+    4    C04       1       0.535  -0.393  -0.034
+    5    C05       1      -0.960  -0.316  -0.339
+GROUP            3
+    4    C04       1       0.535  -0.393  -0.034
+    5    C05       1      -0.960  -0.316  -0.339
+    6    C06       1      -1.629  -1.629   0.062
+    7    C07       1      -1.163  -0.077  -1.833
+    8    O08       1      -1.530   0.738   0.385
+
+Groups with atoms in common:
+      1 2 3
+  1   0 1 0
+  2   1 0 1
+  3   0 1 0
+
+Pairs of atoms in the same group:
+
+    0    1 2 3 4 5 6 7 8
+
+    1    1 1 1 1 0 0 0 0
+    2    1 1 1 1 1 0 0 0
+    3    1 1 1 1 0 0 0 0
+    4    1 1 1 1 1 1 1 1
+    5    0 1 0 1 1 1 1 1
+    6    0 0 0 1 1 1 1 1
+    7    0 0 0 1 1 1 1 1
+    8    0 0 0 1 1 1 1 1
+Routine rings, looking for up to           20 atoms or groups in rings
+This appears not to be cyclic
+Using group            3 to search map
+---------------------------------------------------------------
+Convolution search for group            3 with            5 atoms
+Maximum X Y Z distance from origin:      1.4844000       1.2936000       1.4812000
+Angle increment for points on sphere:     40.00000     degrees
+
+ Template search: rotation about X is from    9.4 to   408.4 with 
+ increment of    45.9
+ RMSD min=   0.83
+ RANGE:     1.48    1.29    1.48
+MEAN, SD of D for rotations    1.366099       0.1622259       0.8443774        221.0000    
+
+First rotation will be: 9.40074 2 19.6011
+Adjusted template by mean of    0.41819475715083715     zeroes:         451 ones:         2293 volume:    10.00000              80
+Estimated Volume fraction of ligand   3.9268492E-05 N:          66
+Largest contiguous region is at     -1.2867985       24.517866       11.951660
+Using this as search center
+Little cell runs from           -5          48          26          65           3          38
+Offset is      -11.581641       14.487821       1.8871043
+Cell      69.489998       69.489998       90.581001       90.000000       90.000000       120.00000
+Cell2      34.744999       25.737036       22.645250       90.000000       90.000000       120.00000
+Number of peaks in final unrefined list =          300
+           1 score =     35.59116     Atoms placed =            6    35.59116    
+           2 score =     17.09552     Atoms placed =            6    17.09552    
+           3 score =     16.60039     Atoms placed =            6    16.60039    
+           4 score =     16.40407     Atoms placed =            6    16.40407    
+           5 score =     16.86936     Atoms placed =            6    16.86936    
+           6 score =     15.98499     Atoms placed =            6    15.98499    
+           7 score =     15.84203     Atoms placed =            6    15.84203    
+           8 score =     16.05475     Atoms placed =            6    16.05475    
+           9 score =     15.60983     Atoms placed =            6    15.60983    
+          10 score =     17.43782     Atoms placed =            6    17.43782    
+          11 score =     15.33296     Atoms placed =            5    15.33296    
+          12 score =     32.50115     Atoms placed =            6    32.50115    
+          13 score =     14.45515     Atoms placed =            6    14.45515    
+          14 score =     19.85308     Atoms placed =            8    19.85308    
+          15 score =     15.77325     Atoms placed =            6    15.77325    
+          16 score =     15.83879     Atoms placed =            6    15.83879    
+          17 score =     16.04985     Atoms placed =            6    16.04985    
+          18 score =     15.34076     Atoms placed =            6    15.34076    
+          19 score =     17.49059     Atoms placed =            8    17.49059    
+          20 score =     14.79691     Atoms placed =            6    14.79691    
+          21 score =     15.46731     Atoms placed =            6    15.46731    
+          22 score =     15.56975     Atoms placed =            6    15.56975    
+          23 score =     18.89682     Atoms placed =            6    18.89682    
+          24 score =     13.11276     Atoms placed =            6    13.11276    
+          25 score =     28.50203     Atoms placed =            6    28.50203    
+          26 score =     20.64916     Atoms placed =            6    20.64916    
+          27 score =     23.63857     Atoms placed =            8    23.63857    
+          28 score =     14.36700     Atoms placed =            6    14.36700    
+          29 score =     19.82958     Atoms placed =            6    19.82958    
+          30 score =     13.90920     Atoms placed =            6    13.90920    
+          31 score =     31.97889     Atoms placed =            6    31.97889    
+          32 score =     20.75800     Atoms placed =            8    20.75800    
+          33 score =     30.38779     Atoms placed =            6    30.38779    
+          34 score =     18.78020     Atoms placed =            6    18.78020    
+          35 score =     15.37102     Atoms placed =            6    15.37102    
+          36 score =     33.59105     Atoms placed =            8    33.59105    
+          37 score =     14.85641     Atoms placed =            6    14.85641    
+          38 score =     18.90957     Atoms placed =            6    18.90957    
+          39 score =     31.95704     Atoms placed =            6    31.95704    
+          40 score =     19.17389     Atoms placed =            6    19.17389    
+          41 score =     27.91320     Atoms placed =            8    27.91320    
+          42 score =     30.63300     Atoms placed =            6    30.63300    
+          43 score =     14.62525     Atoms placed =            6    14.62525    
+          44 score =     18.55600     Atoms placed =            6    18.55600    
+          45 score =     27.26624     Atoms placed =            8    27.26624    
+          46 score =     14.23028     Atoms placed =            6    14.23028    
+          47 score =     31.83319     Atoms placed =            6    31.83319    
+          48 score =     32.25195     Atoms placed =            8    32.25195    
+          49 score =     15.98706     Atoms placed =            8    15.98706    
+          50 score =     22.60528     Atoms placed =            8    22.60528    
+          51 score =     17.59400     Atoms placed =            6    17.59400    
+          52 score =     31.63139     Atoms placed =            8    31.63139    
+          53 score =     20.90025     Atoms placed =            6    20.90025    
+          54 score =     21.67604     Atoms placed =            8    21.67604    
+          55 score =     14.64321     Atoms placed =            6    14.64321    
+          56 score =     35.04285     Atoms placed =            8    35.04285    
+          57 score =     32.91161     Atoms placed =            8    32.91161    
+          58 score =     28.64635     Atoms placed =            6    28.64635    
+          59 score =     11.62198     Atoms placed =            6    11.62198    
+          60 score =     29.36985     Atoms placed =            6    29.36985    
+          61 score =     13.53780     Atoms placed =            8    13.53780    
+          62 score =     12.30981     Atoms placed =            6    12.30981    
+          63 score =     31.46254     Atoms placed =            8    31.46254    
+          64 score =     31.13598     Atoms placed =            8    31.13598    
+          65 score =     30.59994     Atoms placed =            8    30.59994    
+          66 score =     19.74595     Atoms placed =            8    19.74595    
+          67 score =     18.00615     Atoms placed =            6    18.00615    
+          68 score =     33.06789     Atoms placed =            8    33.06789    
+          69 score =     20.05105     Atoms placed =            8    20.05105    
+          70 score =     30.03701     Atoms placed =            8    30.03701    
+          71 score =     17.76181     Atoms placed =            8    17.76181    
+          72 score =     20.45172     Atoms placed =            8    20.45172    
+          73 score =     14.87282     Atoms placed =            8    14.87282    
+          74 score =     20.41382     Atoms placed =            8    20.41382    
+          75 score =     17.31298     Atoms placed =            6    17.31298    
+          76 score =     14.13324     Atoms placed =            8    14.13324    
+          77 score =     19.60434     Atoms placed =            8    19.60434    
+          78 score =     22.17327     Atoms placed =            8    22.17327    
+          79 score =     17.10514     Atoms placed =            6    17.10514    
+          80 score =     34.94481     Atoms placed =            8    34.94481    
+          81 score =     10.96334     Atoms placed =            6    10.96334    
+          82 score =     11.01650     Atoms placed =            6    11.01650    
+          83 score =     16.23810     Atoms placed =            6    16.23810    
+          84 score =     19.15188     Atoms placed =            8    19.15188    
+          85 score =     32.88397     Atoms placed =            8    32.88397    
+          86 score =     18.64655     Atoms placed =            8    18.64655    
+          87 score =     13.40631     Atoms placed =            5    13.40631    
+          88 score =     19.22819     Atoms placed =            8    19.22819    
+          89 score =     17.24859     Atoms placed =            6    17.24859    
+          90 score =     10.80855     Atoms placed =            5    10.80855    
+          91 score =     19.01874     Atoms placed =            8    19.01874    
+          92 score =     31.57300     Atoms placed =            8    31.57300    
+          93 score =     18.77784     Atoms placed =            8    18.77784    
+
+Writing out current top solution to ligand_fit.pdb
+
+ ATOM    RESIDUE    X       Y      Z       RHO/RMS
+    2  C02     1   -21.419  12.173  21.036     2.236
+    4  C04     1   -21.333  13.277  19.986     2.221
+    5  C05     1   -20.698  12.790  18.684     9.842
+    6  C06     1   -21.777  12.185  17.788     4.144
+    7  C07     1   -19.643  11.732  18.997     4.418
+    8  O08     1   -20.097  13.870  18.026    11.030
+Final fitted ligand with            6 atoms written to ligand_fit.pdb
+Score:    35.59116    
+Using group            1 to search map
+---------------------------------------------------------------
+Convolution search for group            1 with            4 atoms
+Maximum X Y Z distance from origin:      1.3885000      0.93449998       1.1700001
+Angle increment for points on sphere:     40.00000     degrees
+
+ Template search: rotation about X is from   14.7 to   413.7 with 
+ increment of    59.4
+ RMSD min=   0.60
+ RANGE:     1.39    0.93    1.17
+MEAN, SD of D for rotations    1.170086       0.1732050       0.6017499        167.0000    
+
+First rotation will be: 14.7015 2 57.2686
+Adjusted template by mean of    0.42258568271830843     zeroes:         364 ones:         1988 volume:    7.625000              61
+Estimated Volume fraction of ligand   3.9268492E-05 N:          66
+Largest contiguous region is at     -1.2867985       24.517866       11.951660
+Search center is at      -1.2867985       24.517866       11.951660
+Little cell runs from           -5          48          26          65           3          38
+Offset is      -11.581641       14.487821       1.8871043
+Cell      69.489998       69.489998       90.581001       90.000000       90.000000       120.00000
+Cell2      34.744999       25.737036       22.645250       90.000000       90.000000       120.00000
+Number of peaks in final unrefined list =          300
+           1 score =     14.99687     Atoms placed =            5    14.99687    
+           2 score =     15.97040     Atoms placed =            5    15.97040    
+           3 score =     21.20455     Atoms placed =            5    21.20455    
+           4 score =     15.49423     Atoms placed =            5    15.49423    
+           5 score =     21.29070     Atoms placed =            5    21.29070    
+           6 score =     16.28496     Atoms placed =            5    16.28496    
+           7 score =     15.00495     Atoms placed =            5    15.00495    
+           8 score =     16.49682     Atoms placed =            5    16.49682    
+           9 score =     15.29035     Atoms placed =            5    15.29035    
+          10 score =     23.12203     Atoms placed =            8    23.12203    
+          11 score =     21.14745     Atoms placed =            5    21.14745    
+          12 score =     14.84887     Atoms placed =            5    14.84887    
+          13 score =     23.35165     Atoms placed =            5    23.35165    
+          14 score =     24.81052     Atoms placed =            8    24.81052    
+          15 score =     14.90464     Atoms placed =            5    14.90464    
+          16 score =     26.90938     Atoms placed =            8    26.90938    
+          17 score =     20.41685     Atoms placed =            5    20.41685    
+          18 score =     23.88987     Atoms placed =            8    23.88987    
+          19 score =     17.61105     Atoms placed =            5    17.61105    
+          20 score =     21.76759     Atoms placed =            5    21.76759    
+          21 score =     14.35676     Atoms placed =            5    14.35676    
+          22 score =     20.08428     Atoms placed =            5    20.08428    
+          23 score =     19.27287     Atoms placed =            5    19.27287    
+          24 score =     20.40591     Atoms placed =            5    20.40591    
+          25 score =     19.70471     Atoms placed =            5    19.70471    
+          26 score =     20.50240     Atoms placed =            5    20.50240    
+          27 score =     13.46158     Atoms placed =            5    13.46158    
+          28 score =     18.73625     Atoms placed =            8    18.73625    
+          29 score =     18.58337     Atoms placed =            5    18.58337    
+          30 score =     24.46751     Atoms placed =            8    24.46751    
+          31 score =     23.95634     Atoms placed =            8    23.95634    
+          32 score =     22.80323     Atoms placed =            8    22.80323    
+          33 score =     14.11055     Atoms placed =            5    14.11055    
+          34 score =     14.41896     Atoms placed =            5    14.41896    
+          35 score =     21.34674     Atoms placed =            5    21.34674    
+          36 score =     21.93976     Atoms placed =            5    21.93976    
+          37 score =     18.22289     Atoms placed =            5    18.22289    
+          38 score =     11.00185     Atoms placed =            5    11.00185    
+          39 score =     18.88793     Atoms placed =            5    18.88793    
+          40 score =     20.42574     Atoms placed =            5    20.42574    
+          41 score =     16.13659     Atoms placed =            5    16.13659    
+          42 score =     20.74143     Atoms placed =            5    20.74143    
+          43 score =     23.03465     Atoms placed =            8    23.03465    
+          44 score =     14.79495     Atoms placed =            5    14.79495    
+          45 score =     18.44112     Atoms placed =            5    18.44112    
+          46 score =     15.31670     Atoms placed =            5    15.31670    
+          47 score =     16.73141     Atoms placed =            5    16.73141    
+          48 score =     13.56304     Atoms placed =            5    13.56304    
+          49 score =     14.25729     Atoms placed =            5    14.25729    
+          50 score =     13.50012     Atoms placed =            5    13.50012    
+          51 score =     16.60308     Atoms placed =            5    16.60308    
+          52 score =     18.59114     Atoms placed =            5    18.59114    
+          53 score =     13.17019     Atoms placed =            5    13.17019    
+          54 score =     19.11506     Atoms placed =            5    19.11506    
+          55 score =     16.26380     Atoms placed =            5    16.26380    
+          56 score =     19.95756     Atoms placed =            5    19.95756    
+          57 score =     14.29477     Atoms placed =            5    14.29477    
+          58 score =     27.64034     Atoms placed =            5    27.64034    
+          59 score =     18.72400     Atoms placed =            5    18.72400    
+          60 score =     29.68069     Atoms placed =            5    29.68069    
+          61 score =     21.83718     Atoms placed =            5    21.83718    
+          62 score =     15.93982     Atoms placed =            5    15.93982    
+          63 score =     18.42579     Atoms placed =            5    18.42579    
+          64 score =     21.95995     Atoms placed =            5    21.95995    
+          65 score =     20.57654     Atoms placed =            8    20.57654    
+          66 score =     13.07004     Atoms placed =            5    13.07004    
+          67 score =     19.71727     Atoms placed =            5    19.71727    
+          68 score =     27.85564     Atoms placed =            5    27.85564    
+          69 score =     18.84285     Atoms placed =            5    18.84285    
+          70 score =     27.85615     Atoms placed =            5    27.85615    
+          71 score =     18.63270     Atoms placed =            5    18.63270    
+          72 score =     18.23057     Atoms placed =            5    18.23057    
+          73 score =     18.35189     Atoms placed =            8    18.35189    
+          74 score =     15.76278     Atoms placed =            5    15.76278    
+          75 score =     20.08311     Atoms placed =            8    20.08311    
+          76 score =     25.93685     Atoms placed =            5    25.93685    
+          77 score =     15.05849     Atoms placed =            5    15.05849    
+          78 score =     7.132376     Atoms placed =            5    7.132376    
+          79 score =     14.51738     Atoms placed =            5    14.51738    
+          80 score =     27.98033     Atoms placed =            5    27.98033    
+          81 score =     25.84811     Atoms placed =            5    25.84811    
+          82 score =     30.40495     Atoms placed =            8    30.40495    
+          83 score =     18.35816     Atoms placed =            5    18.35816    
+          84 score =     13.05609     Atoms placed =            5    13.05609    
+          85 score =     29.78205     Atoms placed =            8    29.78205    
+          86 score =     25.35690     Atoms placed =            5    25.35690    
+          87 score =     25.11463     Atoms placed =            5    25.11463    
+          88 score =     24.79813     Atoms placed =            5    24.79813    
+          89 score =     18.50743     Atoms placed =            5    18.50743    
+          90 score =     26.14593     Atoms placed =            5    26.14593    
+          91 score =     14.40987     Atoms placed =            5    14.40987    
+          92 score =     16.28438     Atoms placed =            5    16.28438    
+          93 score =     14.09094     Atoms placed =            5    14.09094    
+          94 score =     28.08600     Atoms placed =            5    28.08600    
+          95 score =     14.29846     Atoms placed =            5    14.29846    
+          96 score =     7.771676     Atoms placed =            5    7.771676    
+          97 score =     16.48026     Atoms placed =            5    16.48026    
+          98 score =     7.651039     Atoms placed =            5    7.651039    
+Using group            2 to search map
+---------------------------------------------------------------
+Convolution search for group            2 with            3 atoms
+Maximum X Y Z distance from origin:      1.1663333      0.80500001      0.58166665
+Angle increment for points on sphere:     40.00000     degrees
+
+ Template search: rotation about X is from   33.0 to   432.0 with 
+ increment of    80.0
+ RMSD min=   0.37
+ RANGE:     1.17    0.81    0.58
+MEAN, SD of D for rotations   0.8643727       0.1665717       0.4590589        149.0000    
+
+First rotation will be: 33 2 55
+Adjusted template by mean of    0.34788374854469778     zeroes:         299 ones:         1717 volume:    6.625000              53
+Estimated Volume fraction of ligand   3.9268492E-05 N:          66
+Largest contiguous region is at     -1.2867985       24.517866       11.951660
+Search center is at      -1.2867985       24.517866       11.951660
+Little cell runs from           -5          48          26          65           3          38
+Offset is      -11.581641       14.487821       1.8871043
+Cell      69.489998       69.489998       90.581001       90.000000       90.000000       120.00000
+Cell2      34.744999       25.737036       22.645250       90.000000       90.000000       120.00000
+Number of peaks in final unrefined list =          300
+           1 score =     20.38937     Atoms placed =            5    20.38937    
+           2 score =     20.82393     Atoms placed =            5    20.82393    
+           3 score =     19.58068     Atoms placed =            3    19.58068    
+           4 score =     22.10798     Atoms placed =            6    22.10798    
+           5 score =     20.29893     Atoms placed =            5    20.29893    
+           6 score =     20.75566     Atoms placed =            5    20.75566    
+           7 score =     15.05613     Atoms placed =            5    15.05613    
+           8 score =     14.44001     Atoms placed =            3    14.44001    
+           9 score =     19.17857     Atoms placed =            3    19.17857    
+          10 score =     19.34630     Atoms placed =            5    19.34630    
+          11 score =     10.37540     Atoms placed =            5    10.37540    
+          12 score =     14.26713     Atoms placed =            5    14.26713    
+          13 score =     17.89329     Atoms placed =            3    17.89329    
+          14 score =     12.85513     Atoms placed =            6    12.85513    
+          15 score =     13.67236     Atoms placed =            3    13.67236    
+          16 score =     14.90374     Atoms placed =            6    14.90374    
+          17 score =     19.20578     Atoms placed =            5    19.20578    
+          18 score =     10.09396     Atoms placed =            5    10.09396    
+          19 score =     19.10887     Atoms placed =            3    19.10887    
+          20 score =     13.83269     Atoms placed =            3    13.83269    
+          21 score =     19.24654     Atoms placed =            5    19.24654    
+          22 score =     14.92575     Atoms placed =            5    14.92575    
+          23 score =     18.48959     Atoms placed =            3    18.48959    
+          24 score =     20.21127     Atoms placed =            5    20.21127    
+          25 score =     17.62715     Atoms placed =            3    17.62715    
+          26 score =     14.21667     Atoms placed =            3    14.21667    
+          27 score =     20.59953     Atoms placed =            5    20.59953    
+          28 score =     10.32651     Atoms placed =            6    10.32651    
+          29 score =     17.96867     Atoms placed =            3    17.96867    
+          30 score =     13.36226     Atoms placed =            6    13.36226    
+          31 score =     17.90703     Atoms placed =            3    17.90703    
+          32 score =     8.582209     Atoms placed =            3    8.582209    
+          33 score =     20.74854     Atoms placed =            5    20.74854    
+          34 score =     18.37583     Atoms placed =            3    18.37583    
+          35 score =     18.20846     Atoms placed =            8    18.20846    
+          36 score =     10.44313     Atoms placed =            8    10.44313    
+          37 score =     13.25078     Atoms placed =            3    13.25078    
+          38 score =     17.12687     Atoms placed =            3    17.12687    
+          39 score =     18.46601     Atoms placed =            8    18.46601    
+          40 score =     29.79124     Atoms placed =            8    29.79124    
+          41 score =     18.22836     Atoms placed =            3    18.22836    
+          42 score =     17.77494     Atoms placed =            3    17.77494    
+          43 score =     16.58099     Atoms placed =            3    16.58099    
+          44 score =     13.51824     Atoms placed =            5    13.51824    
+          45 score =     13.32951     Atoms placed =            6    13.32951    
+          46 score =     14.52031     Atoms placed =            6    14.52031    
+          47 score =     13.89690     Atoms placed =            3    13.89690    
+          48 score =     14.34229     Atoms placed =            5    14.34229    
+          49 score =     19.91366     Atoms placed =            5    19.91366    
+          50 score =     13.15940     Atoms placed =            3    13.15940    
+          51 score =     14.20304     Atoms placed =            6    14.20304    
+          52 score =     16.89259     Atoms placed =            3    16.89259    
+          53 score =     10.47347     Atoms placed =            5    10.47347    
+          54 score =     17.37999     Atoms placed =            3    17.37999    
+          55 score =     14.19654     Atoms placed =            8    14.19654    
+          56 score =     19.08186     Atoms placed =            6    19.08186    
+          57 score =     18.13785     Atoms placed =            5    18.13785    
+          58 score =     13.10382     Atoms placed =            3    13.10382    
+          59 score =     12.71372     Atoms placed =            5    12.71372    
+          60 score =     18.21187     Atoms placed =            6    18.21187    
+          61 score =     10.73182     Atoms placed =            8    10.73182    
+          62 score =     13.19014     Atoms placed =            3    13.19014    
+          63 score =     14.71217     Atoms placed =            5    14.71217    
+          64 score =     15.16956     Atoms placed =            5    15.16956    
+          65 score =     10.18223     Atoms placed =            5    10.18223    
+          66 score =     13.69529     Atoms placed =            3    13.69529    
+          67 score =     14.55891     Atoms placed =            5    14.55891    
+          68 score =     27.32325     Atoms placed =            8    27.32325    
+          69 score =     17.17500     Atoms placed =            3    17.17500    
+          70 score =     13.57078     Atoms placed =            5    13.57078    
+          71 score =     13.21199     Atoms placed =            3    13.21199    
+          72 score =     19.16413     Atoms placed =            5    19.16413    
+          73 score =     12.57887     Atoms placed =            3    12.57887    
+          74 score =     13.39728     Atoms placed =            5    13.39728    
+          75 score =     17.01403     Atoms placed =            3    17.01403    
+          76 score =     14.02276     Atoms placed =            6    14.02276    
+          77 score =     12.96756     Atoms placed =            3    12.96756    
+          78 score =     19.94588     Atoms placed =            8    19.94588    
+          79 score =     17.73102     Atoms placed =            6    17.73102    
+          80 score =     13.15222     Atoms placed =            3    13.15222    
+          81 score =     13.14665     Atoms placed =            5    13.14665    
+          82 score =     12.93497     Atoms placed =            6    12.93497    
+          83 score =     13.16831     Atoms placed =            3    13.16831    
+          84 score =     14.17844     Atoms placed =            5    14.17844    
+          85 score =     18.19092     Atoms placed =            6    18.19092    
+          86 score =     19.51482     Atoms placed =            8    19.51482    
+          87 score =     10.20101     Atoms placed =            5    10.20101    
+          88 score =     25.55098     Atoms placed =            8    25.55098    
+          89 score =     12.96247     Atoms placed =            6    12.96247    
+          90 score =     12.96932     Atoms placed =            3    12.96932    
+          91 score =     12.13253     Atoms placed =            6    12.13253    
+          92 score =     12.95000     Atoms placed =            3    12.95000    
+          93 score =     12.59503     Atoms placed =            6    12.59503    
+          94 score =     12.35634     Atoms placed =            5    12.35634    
+          95 score =     15.38406     Atoms placed =            8    15.38406    
+          96 score =     8.551265     Atoms placed =            8    8.551265    
+          97 score =     13.22900     Atoms placed =            3    13.22900    
+          98 score =     17.53928     Atoms placed =            5    17.53928    
+          99 score =     16.26411     Atoms placed =            8    16.26411    
+         100 score =     16.97100     Atoms placed =            5    16.97100    
+Trying to extend solutions by giving offset of     10.00000     units for every atom placed
+
+Writing out current top solution to ligand_fit.pdb
+
+ ATOM    RESIDUE    X       Y      Z       RHO/RMS
+    1  C01     1   -20.512  13.781  14.622     4.159
+    2  C02     1   -20.177  14.285  16.023     2.077
+    3  O03     1   -19.082  15.155  15.956     1.714
+    4  C04     1   -19.832  13.100  16.921     2.321
+    5  C05     1   -20.246  13.334  18.373    11.686
+    6  C06     1   -20.107  14.817  18.709     2.672
+    7  C07     1   -19.348  12.516  19.297     4.806
+    8  O08     1   -21.579  12.940  18.547     5.967
+Final fitted ligand with            8 atoms written to ligand_fit.pdb
+Score:    35.04285    
+Rescoring solutions with offset for atom placement of     10.00000     and penalty for mis-alignment of up to     3.000000    
+Best score up to now:    115.3363    
+Improved this cycle...trying another
+Best score up to now:    115.3363    
+
+ ATOM    RESIDUE    X       Y      Z       RHO/RMS
+    1  C01     1   -20.512  13.781  14.622     4.159
+    2  C02     1   -20.177  14.285  16.023     2.077
+    3  O03     1   -19.082  15.155  15.956     1.714
+    4  C04     1   -19.917  12.947  16.940     1.277
+    5  C05     1   -20.364  13.115  18.405    11.293
+    6  C06     1   -19.851  11.889  19.397     5.762
+    7  C07     1   -21.994  12.919  18.645     4.106
+    8  O08     1   -19.956  14.169  18.685     6.446
+Final fitted ligand with            8 atoms written to ligand_fit.pdb
+Score:    35.33630    
+resolve exit_info:
+  source_file: /home/builder/slave/phenix-nightly-intel-linux-2_6-x86_64-centos6/modules/solve_resolve/resolve/aaa_resolve_main.cpp
+  source_line: 1692
+  status: 0
+EndOfResolve

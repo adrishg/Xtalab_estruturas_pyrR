@@ -1,0 +1,64 @@
+number of groups of duplicate atom labels: 1206
+  total number of affected atoms:          2412
+  group "ATOM    .*.  N   ALA A   5 .*.     N  "
+        "ATOM    .*.  N   ALA A   5 .*.     N  "
+  group "ATOM    .*.  CA  ALA A   5 .*.     C  "
+        "ATOM    .*.  CA  ALA A   5 .*.     C  "
+  group "ATOM    .*.  C   ALA A   5 .*.     C  "
+        "ATOM    .*.  C   ALA A   5 .*.     C  "
+  group "ATOM    .*.  O   ALA A   5 .*.     O  "
+        "ATOM    .*.  O   ALA A   5 .*.     O  "
+  group "ATOM    .*.  CB  ALA A   5 .*.     C  "
+        "ATOM    .*.  CB  ALA A   5 .*.     C  "
+  group "ATOM    .*.  N   GLU A   6 .*.     N  "
+        "ATOM    .*.  N   GLU A   6 .*.     N  "
+  group "ATOM    .*.  CA  GLU A   6 .*.     C  "
+        "ATOM    .*.  CA  GLU A   6 .*.     C  "
+  group "ATOM    .*.  C   GLU A   6 .*.     C  "
+        "ATOM    .*.  C   GLU A   6 .*.     C  "
+  group "ATOM    .*.  O   GLU A   6 .*.     O  "
+        "ATOM    .*.  O   GLU A   6 .*.     O  "
+  group "ATOM    .*.  CB  GLU A   6 .*.     C  "
+        "ATOM    .*.  CB  GLU A   6 .*.     C  "
+  ... 1196 remaining groups not shown:
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/libtbx/thread_utils.py", line 236, in run
+    return_value = self._target(self._args, self._kwargs, self._c)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/libtbx/runtime_utils.py", line 97, in __call__
+    result = self.target()
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/libtbx/runtime_utils.py", line 76, in __call__
+    result = self.run()
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/phenix/phenix/refinement/runtime.py", line 79, in run
+    refine_object = self._run(args, callback)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/phenix/phenix/refinement/runtime.py", line 92, in _run
+    call_back_handler=callback)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/phenix/phenix/refinement/command_line.py", line 86, in run
+    skip_write_data_mtz_file=skip_write_data_mtz_file)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/phenix/phenix/refinement/command_line.py", line 385, in __init__
+    log = log)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/mmtbx/model/model.py", line 275, in __init__
+    self._process_input_model()
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/mmtbx/model/model.py", line 1059, in _process_input_model
+    allow_missing_symmetry=True)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/mmtbx/utils/__init__.py", line 1007, in process_pdb_files
+    allow_missing_symmetry   = allow_missing_symmetry)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/mmtbx/utils/__init__.py", line 1078, in _process_pdb_file
+    substitute_non_crystallographic_unit_cell_if_necessary=allow_missing_symmetry)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/mmtbx/monomer_library/pdb_interpretation.py", line 5452, in __init__
+    restraints_loading_flags=restraints_loading_flags)
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/mmtbx/monomer_library/pdb_interpretation.py", line 3025, in __init__
+    self.counts.raise_duplicate_atom_labels_if_necessary()
+
+  File "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/cctbx_project/iotbx/pdb/hierarchy.py", line 334, in raise_duplicate_atom_labels_if_necessary
+    if (len(msg) != 0): raise Sorry(msg.rstrip())

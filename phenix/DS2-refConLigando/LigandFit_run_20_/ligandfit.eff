@@ -1,0 +1,146 @@
+# Effective parameters for ligandfit
+#  Tue Feb  4 17:56:19 2020
+# 
+# Use:
+# 
+# phenix.ligandfit LigandFit_run_20_/ligandfit.eff
+# 
+# Input arguments: 
+# Input parameters taken from  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/.phenix/project_data/ligandfit_20.eff
+# 
+ligandfit {
+  data = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz"
+  ligand = "/home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/eLBOW_17/UMP.pdb"
+  model = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/cooot/DS2-pyrR-refinements_refine_12-coot-2.pdb"
+  quick = False
+  crystal_info {
+    unit_cell = 69.49 69.49 90.581 90 90 120
+    resolution = 0
+    space_group = "P 31 2 1"
+  }
+  file_info {
+    file_or_file_list = *single_file file_with_list_of_files
+    input_labels = "I-obs"
+    lig_map_type = *fo-fc_difference_map fobs_map pre_calculated_map_coeffs
+    ligand_format = *PDB SMILES
+  }
+  input_files {
+    existing_ligand_file_list = None
+    ligand_start = None
+    ncs_in = None
+    input_ligand_compare_file = None
+    cif_def_file_list = "/home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/eLBOW_17/UMP.cif"
+    refinement_file = None
+    fobs_labels = None
+    r_free_label = None
+  }
+  search_parameters {
+    fixed_ligand = False
+    conformers = 1
+    fitting {
+      delta_phi_ligand = 40
+      fit_phi_inc = 20
+      fit_phi_range = -180 180
+    }
+    group_search = 0
+    ligand_cc_min = 0.75
+    ligand_completeness_min = 1
+    local_search = True
+    search_dist = 10
+    use_cc_local = False
+    ligands_from_ncs = False
+    max_ligands_from_ncs = 1
+    n_group_search = 3
+    n_indiv_tries_max = 10
+    n_indiv_tries_min = 5
+    number_of_ligands = 1
+    offsets_list = 7 53 29
+    refine_ligand = True
+    ligand_occupancy = 1
+    real_space_target_weight = 10
+  }
+  search_target {
+    ligand_near_chain = None
+    ligand_near_res = None
+    ligand_near_pdb = None
+    name_of_ligand_near_pdb = None
+    search_center = 0 0 0
+  }
+  general {
+    extend_try_list = True
+    ligand_id = None
+    nbatch = 5
+    nproc = 1
+    resolve_command_list = None
+    coot_name = "coot"
+    i_ran_seed = 72432
+    raise_sorry = True
+    background = True
+    check_wait_time = 1
+    max_wait_time = 1
+    wait_between_submit_time = 1
+    cache_resolve_libs = True
+    resolve_size = "12"
+    check_run_command = False
+    run_command = "sh "
+    queue_commands = None
+    condor_universe = "vanilla"
+    add_double_quotes_in_condor = True
+    condor = None
+    last_process_is_local = True
+    skip_r_factor = False
+    test_flag_value = Auto
+    skip_xtriage = False
+    base_path = None
+    temp_dir = None
+    local_temp_directory = None
+    clean_up = True
+    print_citations = True
+    solution_output_pickle_file = None
+    job_title = "pyrR_apo_mpd_UMP"
+    top_output_dir = None
+    wizard_directory_number = 20
+    verbose = False
+    extra_verbose = False
+    debug = False
+    require_nonzero = True
+    remove_path_word_list = None
+    fill = False
+    res_fill = None
+    check_only = False
+    keep_files = "ligandfit*.pdb"
+  }
+  display {
+    number_of_solutions_to_display = None
+    solution_to_display = 1
+  }
+  run_control {
+    ignore_blanks = None
+    stop = None
+    display_facts = None
+    display_summary = None
+    carry_on = None
+    run = None
+    copy_run = None
+    display_runs = None
+    delete_runs = None
+    display_labels = None
+    dry_run = False
+    params_only = False
+    display_all = False
+    coot = None
+  }
+  special_keywords {
+    write_run_directory_to_file = None
+  }
+  non_user_parameters {
+    gui_output_dir = "/home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando"
+    sg = None
+    get_lig_volume = False
+    input_data_file = None
+    input_lig_file = None
+    ligand_code = None
+    input_partial_model_file = None
+    cif_already_generated = False
+  }
+}

@@ -1,0 +1,76 @@
+elbow {
+  input {
+    chemical_file_name = None
+    chemical_file_name_type = *auto pickle
+    chemical_string = """O[C@H]1C[C@@H](O[C@@H]1COP(O)(O)=O)n1ccc(=O)[nH]c1=O"""
+    chemical_string_type = *smiles sequence
+    geometry_file_name = None
+    geometry_file_name_usage = *topology initial orientation final assist
+    template_file_name = None
+    chemical_components_code = None
+    residue = None
+    read_only = False
+    do_all = False
+    optimisation_choice = None *auto am1 mogul amber ampac gamess gaussian \
+                          jaguar mopac nwchem orca qchem
+  }
+  defaults {
+    id = """UMP"""
+    name = None
+    pH = low *neutral high
+    random_seed = None
+    add_hydrogens = None
+    write_hydrogens = True
+    write_redundant_dihedrals = False
+    multiple_planes = False
+    auto_bond_cutoff = 1.95
+    pdb_attributes {
+      resseq = 1
+      icode = None
+      chain_id = A
+    }
+  }
+  optimisation {
+    steps = None
+    tolerence = loose *default tight
+    memory = 1000Mb
+    energy_validation = None
+    third_party_apps {
+      nprocs = 1
+      method = *uhf mp2 b3lyp
+      basis = *am1 sto-3g 3-21g 6-31g 6-31g(d) 6-31g(d,p)
+      aux_basis = None
+    }
+  }
+  view {
+    view_results = *None reel molden pymol
+  }
+  output {
+    no_output = False
+    output = """UMP"""
+    output_dir = /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando
+    pass_through_input_restraints = None
+    pass_through_library_restraints = None
+    output_file_formats = *pdb *cif pdb_ligand tripos sdf data_sheet png xyz \
+                          maestro
+    data_header_file = ""
+    job_title = """ump_restrains"""
+    overwrite = False
+    console_output = *default quiet silent
+    chiral = *retain both enumerate
+    pucker = *random enumerate define
+    pucker_definition = ""
+    cis_trans = *retain enumerate
+    png = False
+  }
+  special {
+    regno = None
+    secondary_smiles = None
+    amgen_id = None
+  }
+  non_user_parameters {
+    opt_type = simple
+    input_type = smiles
+    use_template = False
+  }
+}
