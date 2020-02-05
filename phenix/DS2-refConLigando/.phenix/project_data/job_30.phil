@@ -1,0 +1,86 @@
+LIBTBX_BASE_DIR = "/home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando"
+job {
+  job_id = 30
+  app_id = Refine
+  program_name = None
+  title = """pyrR_apo_mpd_ds2_conPO4_af1"""
+  directory = "$(LIBTBX_BASE_DIR)/Refine_30"
+  process_type = None
+  hostname = None
+  queue_id = None
+  citation = None
+  input_file {
+    file_name = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/pyrR_ds2_apo_mpd_conPO4-coot-1.pdb"
+    file_type = Input model
+    param_name = refinement.input.pdb.file_name
+  }
+  input_file {
+    file_name = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz"
+    file_type = Reflections file
+    param_name = refinement.input.xray_data.file_name
+  }
+  input_file {
+    file_name = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz"
+    file_type = File with R(free) flags
+    param_name = refinement.input.xray_data.r_free_flags.file_name
+  }
+  input_file {
+    file_name = "/home/adrmercurio/XtaLab/git_pyrR/pyrR_Tthermo.fa"
+    file_type = Sequences
+    param_name = refinement.input.sequence.file_name
+  }
+  output_file {
+    file_name = "DS2-refConLigando_refine_30.pdb"
+    file_type = Refined model
+  }
+  output_file {
+    file_name = "DS2-refConLigando_refine_30.mtz"
+    file_type = Map coefficients for Coot
+  }
+  output_file {
+    file_name = "DS2-refConLigando_refine_30.geo"
+    file_type = Geometry restraints before refinement
+  }
+  output_file {
+    file_name = "DS2-refConLigando_refine_30.eff"
+    file_type = Effective parameters for this run
+  }
+  output_file {
+    file_name = "DS2-refConLigando_refine_30.log"
+    file_type = phenix.refine log file
+  }
+  output_file {
+    file_name = "DS2-refConLigando_refine_30.cif"
+    file_type = mmCIF model for PDB deposition
+  }
+  output_file {
+    file_name = "DS2-refConLigando_refine_30_info.txt"
+    file_type = Run summary in text format
+  }
+  statistic {
+    stat_name = R-work
+    stat_value = 0.2256
+  }
+  statistic {
+    stat_name = R-free
+    stat_value = 0.2553
+  }
+  statistic {
+    stat_name = RMSbonds
+    stat_value = 0.008
+  }
+  statistic {
+    stat_name = RMSangles
+    stat_value = 0.910
+  }
+  statistic {
+    stat_name = Clashscore
+    stat_value = 10.0
+  }
+  statistic {
+    stat_name = MolProbity score
+    stat_value = 1.794
+  }
+  user_comments = None
+  deleted = False
+}
