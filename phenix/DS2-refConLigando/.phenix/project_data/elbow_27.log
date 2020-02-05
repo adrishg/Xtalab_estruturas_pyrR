@@ -1,0 +1,216 @@
+---------
+['/home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/.phenix/project_data/elbow_27.eff']
+---------
+<function run at 0x7f5129ab9500>
+ Working parameter 
+elbow {
+  input {
+    chemical_file_name = None
+    chemical_file_name_type = *auto pickle
+    chemical_string = """O[C@@H]1[C@@H](CO[P@](O)(=O)OP(O)(O)=O)O[C@H]([C@@H]1O)n1ccc(=O)[nH]c1=O"""
+    chemical_string_type = *smiles sequence
+    geometry_file_name = None
+    geometry_file_name_usage = *topology initial orientation final assist
+    template_file_name = None
+    chemical_components_code = None
+    residue = None
+    read_only = False
+    do_all = False
+    optimisation_choice = None *auto am1 mogul amber ampac gamess gaussian \
+                          jaguar mopac nwchem orca qchem
+  }
+  defaults {
+    id = """UDP"""
+    name = None
+    pH = low *neutral high
+    random_seed = None
+    add_hydrogens = None
+    write_hydrogens = True
+    write_redundant_dihedrals = False
+    multiple_planes = False
+    auto_bond_cutoff = 1.95
+    pdb_attributes {
+      resseq = 1
+      icode = None
+      chain_id = A
+    }
+  }
+  optimisation {
+    steps = None
+    tolerence = loose *default tight
+    memory = 1000Mb
+    energy_validation = None
+    third_party_apps {
+      nprocs = 1
+      method = *uhf mp2 b3lyp
+      basis = *am1 sto-3g 3-21g 6-31g 6-31g(d) 6-31g(d,p)
+      aux_basis = None
+    }
+  }
+  view {
+    view_results = *None reel molden pymol
+  }
+  output {
+    no_output = False
+    output = """UDP"""
+    output_dir = /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP
+    pass_through_input_restraints = None
+    pass_through_library_restraints = None
+    output_file_formats = *pdb *cif pdb_ligand tripos sdf data_sheet png xyz \
+                          maestro
+    data_header_file = ""
+    job_title = """udp_ligandoRestricciones"""
+    overwrite = False
+    console_output = *default quiet silent
+    chiral = *retain both enumerate
+    pucker = *random enumerate define
+    pucker_definition = ""
+    cis_trans = *retain enumerate
+    png = False
+  }
+  special {
+    regno = None
+    secondary_smiles = None
+    amgen_id = None
+  }
+  non_user_parameters {
+    opt_type = simple
+    input_type = smiles
+    use_template = False
+  }
+}
+ ------------------------------------------------------------------------------
+  electronic Ligand Builder & Optimisation Workbench (eLBOW) 1.17.1-3660 None
+    - Nigel W. Moriarty (NWMoriarty@LBL.Gov)
+ ------------------------------------------------------------------------------
+
+	Option opt_type not available
+
+
+	Option input_type not available
+
+
+	Option job_title not available
+
+
+	Option use_template not available
+
+
+ Random number seed:  3628800
+ Initial processing time : 0.00 seconds
+ 0:00 Parsing Parsing Parsing Parsing Parsing Parsing Parsing Parsing Parsing P
+ ------------------------------------------------------------------------------
+ 012345678901234567890123456789012345678901234567890123456789012345678901
+           1         2         3         4         5         6         7 
+ O[C@@H]1[C@@H](CO[P@](O)(=O)OP(O)(O)=O)O[C@H]([C@@H]1O)n1ccc(=O)[nH]c1=O
+ 1 2      3     45 6   7   8 91 1  1  1 1 1     1     1 1 122  2  2  2  2
+                              0 1  2  3 4 5     6     7 8 901  2  3  4  5
+ ------------------------------------------------------------------------------
+
+Input format is SMILES
+
+MoleculeClass :  C: 9  N: 2  O:12  P: 2 (SMILES format)
+	30 atoms
+	31 bonds
+	0 angles
+	0 dihedrals
+	0 rings
+	0 chirals
+ Predicted memory usage by semi-empirical method : 43Mb
+ Timing estimates
+     Python portion         / ATP : 73%
+     c++ optimisation cycle / ATP : 59%
+ 0:00 Bondise Bondise Bondise Bondise Bondise Bondise Bondise Bondise Bondise B
+ 0:00 Anglise Anglise Anglise Anglise Anglise Anglise Anglise Anglise Anglise A
+ 0:00 Dihedralise Dihedralise Dihedralise Dihedralise Dihedralise Dihedralise D
+ 0:00 Chargise Chargise Chargise Chargise Chargise Chargise Chargise Chargise C
+ 0:00 Peptidise Peptidise Peptidise Peptidise Peptidise Peptidise Peptidise Pep
+ 0:00 Acidise Acidise Acidise Acidise Acidise Acidise Acidise Acidise Acidise A
+ 0:00 Ringise Ringise Ringise Ringise Ringise Ringise Ringise Ringise Ringise R
+ 0:01 Chiralise Chiralise Chiralise Chiralise Chiralise Chiralise Chiralise Chi
+ 0:01 Equilibriumise Equilibriumise Equilibriumise Equilibriumise Equilibriumis
+ 0:01 ZMatrise ZMatrise ZMatrise ZMatrise ZMatrise ZMatrise ZMatrise ZMatrise Z
+ 0:01 FlattenRings FlattenRings FlattenRings FlattenRings FlattenRings FlattenR
+ 0:01 OptimiseProgression OptimiseProgression OptimiseProgression OptimiseProgr
+ 0:01 CheckChiralisation CheckChiralisation CheckChiralisation CheckChiralisati
+ 0:01 FreezeDihedrals FreezeDihedrals FreezeDihedrals FreezeDihedrals FreezeDih
+ 0:01 Hydrogenise Hydrogenise Hydrogenise Hydrogenise Hydrogenise Hydrogenise H
+ 0:01 Anglise Anglise Anglise Anglise Anglise Anglise Anglise Anglise Anglise A
+ 0:02 Dihedralise Dihedralise Dihedralise Dihedralise Dihedralise Dihedralise D
+ 0:02 Equilibriumise Equilibriumise Equilibriumise Equilibriumise Equilibriumis
+ 0:02 pHise pHise pHise pHise pHise pHise pHise pHise pHise pHise pHise pHise p
+ 0:02 ZMatrise ZMatrise ZMatrise ZMatrise ZMatrise ZMatrise ZMatrise ZMatrise Z
+ 0:02 Chiralise Chiralise Chiralise Chiralise Chiralise Chiralise Chiralise Chi
+ 0:02 OptimiseProgression OptimiseProgression OptimiseProgression OptimiseProgr
+ 0:02 Peptidise Peptidise Peptidise Peptidise Peptidise Peptidise Peptidise Pep
+ 0:02 Peptidise Aminise Peptidise Aminise Peptidise Aminise Peptidise Aminise P
+ 0:03 ExplodeAndOptimise ExplodeAndOptimise ExplodeAndOptimise ExplodeAndOptimi
+ 0:11 CheckXYZRational CheckXYZRational CheckXYZRational CheckXYZRational Check
+ 0:11 CheckZMatrixRational CheckZMatrixRational CheckZMatrixRational CheckZMatr
+ 0:11 CheckBondRational CheckBondRational CheckBondRational CheckBondRational C
+ 0:11 CheckAngleRational CheckAngleRational CheckAngleRational CheckAngleRation
+ 0:11 CheckChiralRational CheckChiralRational CheckChiralRational CheckChiralRa
+ 0:11 OptimiseHydrogens OptimiseHydrogens OptimiseHydrogens OptimiseHydrogens O
+ 0:13 FlattenRings FlattenRings FlattenRings FlattenRings FlattenRings FlattenR
+ 0:13 CheckChiralisation CheckChiralisation CheckChiralisation CheckChiralisati
+ 0:13 GetSubRotationUnits GetSubRotationUnits GetSubRotationUnits GetSubRotatio
+ 0:13 RotateSubUnits RotateSubUnits RotateSubUnits RotateSubUnits RotateSubUnit
+ 0:13 MinimumRotation MinimumRotation MinimumRotation MinimumRotation MinimumRo
+ 0:13 ReCentre molecule for optimisation ReCentre molecule for optimisation ReC
+
+	Not performing a QM optimisation
+
+Internal coordinates
+
+bonds       1.48    1.55    1.41    1.65    1.51    1.51    1.65    1.65 
+            1.51    1.51    1.51    1.37    1.60    1.30    1.42    1.66 
+            1.43    1.32    1.39    1.39    1.19    1.32    1.32    1.18 
+            1.33    1.32    1.09    1.08    1.08    1.08    1.00    0.94 
+            1.08    1.08    0.94    1.08    1.08 
+angles    110.07  110.10  110.64  110.29  105.65  110.01  110.08  105.72 
+          110.14  105.46  110.23  108.35  105.45  118.47  110.32  110.46 
+          109.46  109.46  109.49  123.65  109.48  109.46  109.46  109.49 
+          109.46  109.48  109.47  109.45  109.48  110.01  105.78  110.21 
+          110.04  110.10  110.12  118.78  118.79  110.18  110.06  110.22 
+          110.57  110.47  118.52  121.15  119.42  121.71  118.30  120.00 
+          119.91  120.40  119.79  120.01  119.42  119.81  109.48  109.68 
+          109.71  109.70  109.69  109.48  120.76  120.85  120.72  120.85 
+          109.70 
+dihedrals 109.82 -130.97  -12.27   26.84  145.72  -95.34 -102.37  -12.30 
+          -37.49   81.61 -156.32  -91.87   27.01  145.95 -138.08   27.07 
+          -92.02  145.91   40.68  -79.33  160.68 -131.46  -12.50  106.89 
+          141.30   19.45 -150.54  -61.99  178.01   58.01  -30.54   89.47 
+          -12.25  106.71   81.38 -156.44  156.67  -32.90 -131.00  -91.95 
+          170.13 -170.13   10.43   40.31 -149.27  106.46 -159.52  -37.45 
+          149.17  -37.34    0.00   -0.00  180.00  -81.51    0.00 -179.44 
+         -176.93    0.00   -0.00    0.00 -180.00  179.44  176.93   -3.07 
+           88.92   -0.56 -134.59   26.99   84.73   17.35  137.91 -122.44 
+          -67.14  102.21  -18.35  -98.98   21.58  121.40   -9.86  177.02 
+         -180.00  180.00    3.06  180.00  180.00   54.94  139.17 -100.27 
+           -0.52    0.00 
+
+ 0:13 SuperimposeMoleculeOnInput SuperimposeMoleculeOnInput SuperimposeMolecule
+ 0:14 WritePDB WritePDB WritePDB WritePDB WritePDB WritePDB WritePDB WritePDB W
+ 0:14 WriteCIF WriteCIF WriteCIF WriteCIF WriteCIF WriteCIF WriteCIF WriteCIF W
+ 0:14 WritePickle WritePickle WritePickle WritePickle WritePickle WritePickle W
+
+ Output files written
+  /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/eLBOW_27/UDP.cif
+  /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/eLBOW_27/UDP.pdb
+  /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/eLBOW_27/UDP.pickle
+
+ 0:14 Finished Finished Finished Finished Finished Finished Finished Finished F
+ 0:14 CheckChiralisation CheckChiralisation CheckChiralisation CheckChiralisati
+ 0:14 Returning Molecule Returning Molecule Returning Molecule Returning Molecu
+
+Suggestions:
+      To improve the geometry use the --opt option to use the semi-empirical
+    AM1 method.
+
+ 0:14 PerformSuperLigand PerformSuperLigand PerformSuperLigand PerformSuperLiga
+
+ Output files written
+  /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/eLBOW_27/UDP.cif
+  /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/eLBOW_27/UDP.pdb
+  /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/eLBOW_27/UDP.pickle
+

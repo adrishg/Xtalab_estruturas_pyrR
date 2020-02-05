@@ -1,0 +1,538 @@
+Desired run number:  28
+Splitting output to  LigandFit_run_28_/LigandFit_run_28_1.log
+
+
+               PHENIX ligandfit  Wed Feb  5 10:47:54 2020
+
+
+Phenix developers include:
+
+  Paul Adams, Pavel Afonine, Vincent Chen, Ian Davis, Nathaniel Echols,
+  Kreshna Gopal, Ralf Grosse-Kunstleve, Jeff Headd, Li-Wei Hung,
+  Robert Immormino, Tom Ioerger, Airlie McCoy, Erik McKee, Nigel Moriarty,
+  Reetal Pai, Randy Read, Jane Richardson, David Richardson, Tod Romo,
+  Jim Sacchettini, Nicholas Sauter, Jacob Smith, Laurent Storoni,
+  Tom Terwilliger, Peter Zwart
+
+Phenix home page:
+  http://www.phenix-online.org/
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Phenix components are copyrighted by:
+  - Lawrence Berkeley National Laboratory
+  - Los Alamos National Laboratory
+  - University of Cambridge
+  - Duke University
+  - Texas Agricultural Experiment Station &
+    Texas Engineering Experiment Station
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Major third-party components of Phenix include:
+    Python, wxwidgets, wxPython, Boost, SCons, Clipper, PULCHRA,
+    CCP4 Monomer Library, CCP4 I/O libraries, PyCifRW, FFTPACK, L-BFGS
+  Enter phenix.acknowledgments for details.
+
+               If you use PHENIX please cite:
+
+Adams, P.D., Afonine, P.V., Chen, V., Echols, N., Headd, J. J., Hung, L.-W.,
+Grosse-Kunstleve, R.W., McCoy, A.J., Moriarty, N.W., Read, R.J.,
+Richardson, D.C., Richardson, J.S., Terwilliger, T.C. and Zwart, P. H. (2010)
+PHENIX - A Comprehensive Python-based System for Macromolecular Structure
+Solution. Acta Cryst. D66, 213-221.
+
+
+For help type:
+phenix.doc
+
+      
+
+For access to full documentation please type: phenix.doc
+
+
+------------------------------------------------------------ 
+Starting LigandFit with the command:
+
+phenix.ligandfit 
+Reading effective parameters from /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/.phenix/project_data/ligandfit_28.eff
+ligandfit {
+  data = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz"
+  ligand = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/eLBOW_27/UDP.pdb"
+  model = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/pyrR_ds2_apo_mpd_sinUTP-coot-0.pdb"
+  quick = False
+  crystal_info {
+    unit_cell = 69.49 69.49 90.581 90 90 120
+    resolution = 0
+    space_group = "P 31 2 1"
+  }
+  file_info {
+    file_or_file_list = *single_file file_with_list_of_files
+    input_labels = "I-obs"
+    lig_map_type = *fo-fc_difference_map fobs_map pre_calculated_map_coeffs
+    ligand_format = *PDB SMILES
+  }
+  input_files {
+    existing_ligand_file_list = None
+    ligand_start = None
+    ncs_in = None
+    input_ligand_compare_file = None
+    cif_def_file_list = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/eLBOW_27/UDP.cif"
+    refinement_file = None
+    fobs_labels = None
+    r_free_label = None
+  }
+  search_parameters {
+    fixed_ligand = False
+    conformers = 1
+    fitting {
+      delta_phi_ligand = 40
+      fit_phi_inc = 20
+      fit_phi_range = -180 180
+    }
+    group_search = 0
+    ligand_cc_min = 0.75
+    ligand_completeness_min = 1
+    local_search = True
+    search_dist = 10
+    use_cc_local = False
+    ligands_from_ncs = False
+    max_ligands_from_ncs = 1
+    n_group_search = 3
+    n_indiv_tries_max = 10
+    n_indiv_tries_min = 5
+    number_of_ligands = 1
+    offsets_list = 7 53 29
+    refine_ligand = True
+    ligand_occupancy = 1
+    real_space_target_weight = 10
+  }
+  search_target {
+    ligand_near_chain = None
+    ligand_near_res = None
+    ligand_near_pdb = None
+    name_of_ligand_near_pdb = None
+    search_center = 0 0 0
+  }
+  general {
+    extend_try_list = True
+    ligand_id = None
+    nbatch = 5
+    nproc = 1
+    resolve_command_list = None
+    coot_name = "coot"
+    i_ran_seed = 72432
+    raise_sorry = True
+    background = True
+    check_wait_time = 1
+    max_wait_time = 1
+    wait_between_submit_time = 1
+    cache_resolve_libs = True
+    resolve_size = "12"
+    check_run_command = False
+    run_command = "sh "
+    queue_commands = None
+    condor_universe = "vanilla"
+    add_double_quotes_in_condor = True
+    condor = None
+    last_process_is_local = True
+    skip_r_factor = False
+    test_flag_value = Auto
+    skip_xtriage = False
+    base_path = None
+    temp_dir = None
+    local_temp_directory = None
+    clean_up = True
+    print_citations = True
+    solution_output_pickle_file = None
+    job_title = "pyrR_ds2_apo_mpd_conUDP"
+    top_output_dir = None
+    wizard_directory_number = 28
+    verbose = False
+    extra_verbose = False
+    debug = False
+    require_nonzero = True
+    remove_path_word_list = None
+    fill = False
+    res_fill = None
+    check_only = False
+    keep_files = "ligandfit*.pdb"
+  }
+  display {
+    number_of_solutions_to_display = None
+    solution_to_display = 1
+  }
+  run_control {
+    ignore_blanks = None
+    stop = None
+    display_facts = None
+    display_summary = None
+    carry_on = None
+    run = None
+    copy_run = None
+    display_runs = None
+    delete_runs = None
+    display_labels = None
+    dry_run = False
+    params_only = False
+    display_all = False
+    coot = None
+  }
+  special_keywords {
+    write_run_directory_to_file = None
+  }
+  non_user_parameters {
+    gui_output_dir = "/home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando"
+    sg = None
+    get_lig_volume = False
+    input_data_file = None
+    input_lig_file = None
+    ligand_code = None
+    input_partial_model_file = None
+    cif_already_generated = False
+  }
+}
+Sending output to  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/None 
+
+
+Working directory:  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_ 
+
+USER = adrmercurio
+PID = 4037
+
+
+************************************************************
+          PHENIX LigandFit  Wed Feb  5 10:47:54 2020
+************************************************************
+
+Working directory:  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando 
+
+
+LigandFit_start  LigandFit  Run 28 Wed Feb  5 10:47:54 2020
+
+Map type will be:  fo-fc_difference_map
+NOTE: fo-fc_difference_map will use  /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/pyrR_ds2_apo_mpd_sinUTP-coot-0.pdb  for FC and PHIC
+
+
+Set file_or_file_list=single_file 
+as /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/eLBOW_27/UDP.pdb does not contain a list of files 
+
+Ligand starting conformation read from PDB file  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/UDP.pdb
+
+Generating any necessary cif files for  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/UDP.pdb
+ ------------------------------------------------------------------------------
+  electronic Ligand Builder & Optimisation Workbench (eLBOW) 1.17.1-3660 None
+    - Nigel W. Moriarty (NWMoriarty@LBL.Gov)
+ ------------------------------------------------------------------------------
+
+ Random number seed:  3628800
+ Initial processing time : 0.00 seconds
+ 0:00 Parsing Parsing Parsing Parsing Parsing Parsing Parsing Parsing Parsing P
+
+  Reading molecules from /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/eLBOW_27/UDP.cif to ignore
+  
+
+  Skipping residue codes UDP
+
+	No unknown residues
+Generated CIF for /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/UDP.pdb
+Copying PDB file  /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/pyrR_ds2_apo_mpd_sinUTP-coot-0.pdb  to  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/EDITED_pyrR_ds2_apo_mpd_sinUTP-coot-0.pdb
+Removing waters...
+
+Copied partial model file without waters to /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/EDITED_pyrR_ds2_apo_mpd_sinUTP-coot-0.pdb
+
+new_lig_template_file_list ['/home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/UDP.pdb']
+
+LigandFit_datafile_info  LigandFit  Run 28 Wed Feb  5 10:47:54 2020
+
+FILE:  /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz
+Unit cell: (69.49, 69.49, 90.581, 90, 90, 120)
+Space group: P 31 2 1 (No. 152)
+Found  I-obs SIGI-obs ...guessing they are FP SIGFP  or I SIGI
+
+Using user input_labels
+FILE TYPE:  ccp4_mtz
+Converting the files ['/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz'] to mtz amplitude format before proceeding
+SAVING Facts in LastFacts
+INITIALIZING FACTS FOR NEW WIZARD  ImportRawData
+LOADING DEFAULTS INTO FACTS
+
+ImportRawData_start  ImportRawData  Run 28 Wed Feb  5 10:47:54 2020
+
+FINISH START
+Getting column labels from /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz
+Unit cell: (69.49, 69.49, 90.581, 90, 90, 120)
+Space group: P 31 2 1 (No. 152)
+Number of intensity arrays in this file: 1
+Number of amplitude arrays in this file: 0
+Inverse hand of space group:  P 32 2 1
+
+NOTE: To specify a particular set of data from /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz... you can 
+specify one of the following as its labels: ...:
+'I-obs SIGI-obs'
+
+
+ImportRawData_output_files  ImportRawData  Run 28 Wed Feb  5 10:47:54 2020
+
+summary of input files:
+
+hklin : /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz
+    input labels:["I-obs", "SIGI-obs"]
+    OUTPUT FILE NAME: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/DS2-pyrR-refinements_refine_data_PHX.mtz
+
+SPACE GROUP NAME: P 31 2 1
+
+ CELL: [69.49, 69.49, 90.581, 90.0, 90.0, 120.0]
+INPUT LABELS ID LIST: [['["I-obs", "SIGI-obs"]']]
+OUTPUT FILES ID LIST: [['/home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/DS2-pyrR-refinements_refine_data_PHX.mtz']]
+INPUT FILES ID LIST: ['/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz']
+Creating output files from /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz in mtz format
+Unit cell: (69.49, 69.49, 90.581, 90, 90, 120)
+Space group: P 31 2 1 (No. 152)
+
+Interpreting  ['R-free-flags']  as FreeR_flag
+
+Writing ["I-obs", "SIGI-obs"] to /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/DS2-pyrR-refinements_refine_data_PHX.mtz
+Converting intensities to amplitudes:
+OUTPUT MTZ COLUMN LABEL: F_from_DS2-pyrR
+Miller array info: None
+Observation type: xray.amplitude
+Type of data: double, size=17592
+Type of sigmas: double, size=17592
+Number of Miller indices: 17592
+Anomalous flag: False
+Unit cell: (69.49, 69.49, 90.581, 90, 90, 120)
+Space group: P 31 2 1 (No. 152)
+Adding FreeR_flag from input file to output mtz file
+RETURNING TO PREVIOUS WIZARD
+Returning to CallingWizard = LigandFit
+Restored values of OutputDir and RunInstance LigandFit_run_28_ _run_28_
+LOADING DEFAULTS INTO FACTS
+
+LigandFit_Load_from_ImportRawData  LigandFit  Run 28 Wed Feb  5 10:47:54 2020
+
+Load from ImportRawData
+
+LigandFit_start  LigandFit  Run 28 Wed Feb  5 10:47:54 2020
+
+Map type will be:  fo-fc_difference_map
+NOTE: fo-fc_difference_map will use  /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/pyrR_ds2_apo_mpd_sinUTP-coot-0.pdb  for FC and PHIC
+
+
+Set file_or_file_list=single_file 
+as /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/eLBOW_27/UDP.pdb does not contain a list of files 
+
+Ligand starting conformation read from PDB file  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/UDP.pdb
+Skipping cif generation (already done)
+Copying PDB file  /home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/pyrR_ds2_apo_mpd_sinUTP-coot-0.pdb  to  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/EDITED_pyrR_ds2_apo_mpd_sinUTP-coot-0.pdb
+Removing waters...
+
+Copied partial model file without waters to /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/EDITED_pyrR_ds2_apo_mpd_sinUTP-coot-0.pdb
+
+new_lig_template_file_list ['/home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/UDP.pdb']
+
+LigandFit_datafile_info  LigandFit  Run 28 Wed Feb  5 10:47:54 2020
+
+FILE:  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/DS2-pyrR-refinements_refine_data_PHX.mtz
+Unit cell: (69.49, 69.49, 90.581, 90, 90, 120)
+Space group: P 31 2 1 (No. 152)
+Found  F_from_DS2-pyrR SIGF_from_DS2-pyrR ...guessing they are FP SIGFP  or I SIGI
+
+FILE TYPE:  ccp4_mtz
+LABELS:
+['F_from_DS2-pyrR', 'SIGF_from_DS2-pyrR', 'FreeR_flag']
+['F_from_DS2-pyrR']
+['FP']
+LABELS: DONE
+Facts written to LigandFit_run_28_/LigandFit_Facts.dat
+
+LigandFit_datafile_info_inputs  LigandFit  Run 28 Wed Feb  5 10:47:54 2020
+
+INPUT LABELS:  ['F_from_DS2-pyrR']
+
+LigandFit_get_map  LigandFit  Run 28 Wed Feb  5 10:47:54 2020
+
+
+Getting difference map using amplitudes from  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/DS2-pyrR-refinements_refine_data_PHX.mtz 
+with FP=F_from_DS2-pyrR  
+and the model in  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/EDITED_pyrR_ds2_apo_mpd_sinUTP-coot-0.pdb 
+
+
+LigandFit_fit_ligand_inputs  LigandFit  Run 28 Wed Feb  5 10:47:56 2020
+
+CHECKING run command...
+Checking for  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/test_run.out ... OK
+
+LigandFit_fit_ligand  LigandFit  Run 28 Wed Feb  5 10:47:56 2020
+
+Fitting ligand #1 from /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/UDP.pdb
+Ligand file has 25 atoms
+Searching for ligand with id =1
+Estimated ligand volume: 21.0  A**3
+Estimated ligand center:  [-12.2, 29.0, 12.6]
+Starting CC of ligand as input to map: 0.022
+Starting local CC of ligand as input to map: 0.005
+
+Setting background=False as nproc=1
+TEMP DIR:
+/home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0
+Try:  1 quick
+Trying fit with n_indiv_tries_min = 5
+                n_indiv_tries_max = 10
+                n_group_search    = 3
+                ligand_file       = UDP.pdb
+Try:  2 thorough
+Trying fit with n_indiv_tries_min = 100
+                n_indiv_tries_max = 100
+                n_group_search    = 4
+                ligand_file       = UDP.pdb
+Try:  3 randomize
+Randomizing ligand conformation before starting fit
+Randomized version of /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/UDP.pdb placed in random.pdb
+Trying fit with n_indiv_tries_min = 100
+                n_indiv_tries_max = 100
+                n_group_search    = 4
+                ligand_file       = random.pdb
+Try:  4 extra_thorough
+Trying fit with n_indiv_tries_min = 300
+                n_indiv_tries_max = 300
+                n_group_search    = 6
+                ligand_file       = UDP.pdb
+Try:  5 extra_thorough_randomize
+Randomizing ligand conformation before starting fit
+Randomized version of /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/UDP.pdb placed in random.pdb
+Trying fit with n_indiv_tries_min = 300
+                n_indiv_tries_max = 300
+                n_group_search    = 6
+                ligand_file       = random.pdb
+Running 5 jobs on 1 processors
+
+Splitting work into 5 jobs and running with 1 processors using sh 
+background=False in /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0
+
+Starting job 1...Log will be: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/RUN_FILE_1.log
+Starting job 2...Log will be: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/RUN_FILE_2.log
+Starting job 3...Log will be: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/RUN_FILE_3.log
+Starting job 4...Log will be: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/RUN_FILE_4.log
+Starting job 5...Log will be: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/RUN_FILE_5.log
+Collecting all runs now
+
+Collecting run_file: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/RUN_FILE_1  
+info_file: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/INFO_FILE_1 
+method: ligandfit 
+logfile: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/RUN_FILE_1.log
+Calling method:  ligandfit 1
+
+Collecting run_file: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/RUN_FILE_2  
+info_file: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/INFO_FILE_2 
+method: ligandfit 
+logfile: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/RUN_FILE_2.log
+Calling method:  ligandfit 2
+
+Collecting run_file: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/RUN_FILE_3  
+info_file: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/INFO_FILE_3 
+method: ligandfit 
+logfile: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/RUN_FILE_3.log
+Calling method:  ligandfit 3
+
+Collecting run_file: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/RUN_FILE_4  
+info_file: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/INFO_FILE_4 
+method: ligandfit 
+logfile: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/RUN_FILE_4.log
+Calling method:  ligandfit 4
+
+Collecting run_file: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/RUN_FILE_5  
+info_file: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/INFO_FILE_5 
+method: ligandfit 
+logfile: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/TEMP0/RUN_FILE_5.log
+Calling method:  ligandfit 5
+
+Solution for try :  1
+ SCORE=    64.638 CC=     0.621 LIGANDS=       1  LIG=/home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/ligand_fit_1.pdb  TEMPLATE=UDP.pdb
+
+Solution for try :  2
+ SCORE=    66.973 CC=     0.608 LIGANDS=       1  LIG=/home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/ligand_fit_1.pdb  TEMPLATE=UDP.pdb
+
+Solution for try :  3
+ SCORE=    66.851 CC=     0.503 LIGANDS=       1  LIG=/home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/ligand_fit_1.pdb  TEMPLATE=random.pdb
+
+Solution for try :  4
+ SCORE=    67.167 CC=     0.594 LIGANDS=       1  LIG=/home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/ligand_fit_1.pdb  TEMPLATE=UDP.pdb
+
+Solution for try :  5
+ SCORE=    67.200 CC=     0.493 LIGANDS=       1  LIG=/home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/ligand_fit_1.pdb  TEMPLATE=random.pdb
+
+Best solution on try  1 : LigandFit Solution 0.621 
+
+
+Removing directories where subprocesses were run...
+
+Refined file  LigandFit_run_28_/TEMP0/ligand_fit.pdb_real_space_refined.pdb
+Overall score: 64.63831
+Atoms placed: 25 of 25
+CC to map: 0.621
+
+This fit is the new best one...
+ solution_number  1
+ score  64.63831
+ cc_overall  0.621
+ starting_cc  0.022
+ lig_volume  21.0
+ lig_xyz [-12.2, 29.0, 12.6]
+ number_of_ligands  1
+ all_model_PDS_key  ligand_fit_1.pdb
+ model_PDS_key_list  ['ligand_fit_1_1.pdb']
+ log_PDS_key_list  ['ligand_1_1.log']
+ cc_PDS_key_list  ['ligand_cc_1_1.log']
+ template_PDS_key_list  ['UDP.pdb']
+ cc_list  [0.621]
+ fit_score_list  [64.63831]
+ atoms_placed_list  [25]
+ atoms_total_list  [25]
+ map_mtz_PDS_key_list  ['resolve_map.mtz']
+ partial_model_PDS_key_list  ['EDITED_pyrR_ds2_apo_mpd_sinUTP-coot-0.pdb']
+
+LigandFit_copy_out_top_solutions  LigandFit  Run 28 Wed Feb  5 10:49:50 2020
+
+
+finished  LigandFit  Run 28 Wed Feb  5 10:49:50 2020
+
+Finishing  LigandFit Run 28
+Facts written to LigandFit_run_28_/LigandFit_Facts.dat
+LigandFit Run 28
+ LIGAND SOLUTIONS FOR RUN 28  SORTED BY OVERALL CC
+
+   ****    FILES ARE IN THE DIRECTORY: LigandFit_run_28_  ****
+
+  RANK    SCORE        CC      COPIES  FITTED/TOTAL     NAME           TEMPLATE         RMSD  CC_START    LIG_VOLUME
+
+   1      64.638      0.621        1    25 /   25  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/ligand_fit_1.pdb  UDP.pdb     0.00      0.02     21.00 
+
+Modify the parameter solution_to_display (current value: 1) 
+to change ligand to be displayed.  You can do this with 
+"choose a variable to set" in the inputs window.
+
+FULL LIGAND MODEL: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/ligand_fit_1.pdb
+
+
+Citations for LigandFit:
+
+Liebschner D, Afonine PV, Baker ML, Bunkóczi G, Chen VB, Croll TI, Hintze B,
+Hung LW, Jain S, McCoy AJ, Moriarty NW, Oeffner RD, Poon BK, Prisant MG, Read
+RJ, Richardson JS, Richardson DC, Sammito MD, Sobolev OV, Stockwell DH,
+Terwilliger TC, Urzhumtsev AG, Videau LL, Williams CJ, Adams PD. (2019)
+Macromolecular structure determination using X-rays, neutrons and electrons:
+recent developments in Phenix. Acta Cryst. D75:861-877.
+
+Moriarty NW, Grosse-Kunstleve RW, Adams PD. (2009) electronic Ligand Builder
+and Optimization Workbench (eLBOW): a tool for ligand coordinate and restraint
+generation. Acta Crystallogr D Biol Crystallogr 65:1074-80.
+
+Terwilliger TC, Klei H, Adams PD, Moriarty NW, Cohn JD. (2006) Automated ligand
+fitting by core-fragment fitting and extension into density. Acta Crystallogr D
+Biol Crystallogr 62:915-22.
+
+
+
+Cleaning up LigandFit_run_28_/TEMP0 now...
+Done cleaning up ...

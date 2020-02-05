@@ -1,0 +1,793 @@
+ ------------------------  COPYRIGHT NOTICE  ---------------------------------
+                   Los Alamos National Laboratory
+ This program was prepared by Los Alamos National Security, LLC at
+ Los Alamos National Laboratory (the University) under  Contract No. 
+ W-7405-ENG-36 with the U.S. Department of Energy (DOE).  The University has 
+ certain rights in the program pursuant to the contract and the program should
+ not be copied or distributed outside your organization.  All rights in the 
+ program are reserved by the DOE and the University.  Neither the U.S. 
+ Government nor the University makes any warranty, express or implied, or 
+ assumes any liability or responsibility for the use of this software.
+
+        *******************************************************
+        *                --- RESOLVE ---                      *
+        *                                                     *
+        *         Statistical density modification            *
+        *             Automated model-building                *
+        *                                                     *
+        *                For on-line help                     *
+        *            see "http://solve.lanl.gov"              *
+        *                                                     *
+        *      This software uses library routines from the   *
+        *      CCP4 suite (http://www.ccp4.ac.uk) for which   *
+        *           the author is very thankful!              *
+        *******************************************************
+
+               (version 2.15 of 20-Mar-2010)
+                       (size =  12)
+  Tom Terwilliger, Los Alamos National Laboratory, "terwilliger@LANL.gov"
+
+Trying to open "resolve.solvent"...
+ Default solvent content of  0.680 read from "resolve.solvent"
+ Default database entry of   5 read from "resolve.database"
+>workdir LigandFit_run_1_/TEMP0
+Work directory will be : LigandFit_run_1_/TEMP0/
+
+>outputdir /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_
+Directory for STOPWIZARD will be /home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando/LigandFit_run_28_/
+
+>freer_if_present
+Only writing out FreeR_flag if present
+
+>hklin resolve_map.mtz
+Data to be read from mtz file: resolve_map.mtz
+
+>labin FP=FP PHIB=PHIM FOM=FOMM
+Current value of "LABIN" is: labin FP=FP PHIB=PHIM FOM=FOMM                                                                                                                                                                                                          
+
+>no_build
+Model will not be built
+
+>ha_file NONE
+Heavy atom sites will be read from file: NONE
+The file does not exist...ignoring it
+
+>model all.pdb
+A model will be used to estimate electron density or mask in part of the unit cell.
+Model coords to be read from pdb file: all.pdb
+
+>keep_atom_name
+Keeping atom names (not left-justifying)
+
+>start_rot 73 53 272
+Starting rotation value (rotation about x, rotation about y, rotation about new x) is     73.00000        53.00000        272.0000    
+
+>ligand_occ    1.00
+Ligand occupancy:    1.000000    
+
+>use_wang
+Wang method for solvent mask will be used
+
+>no_ha
+no_ha: heavy-atoms not written out in pdb files
+
+>delta_phi_ligand 40.0
+Angular increment for ligand search     40.00000    
+
+>ligand_file UDP.pdb
+Conformers of ligand will be read from file: UDP.pdb
+
+>n_indiv_tries_min 5
+Minimum number of top placements to try individually in ligand search
+
+>n_indiv_tries_max 10
+Maximum number of top placements to try individually in ligand search
+
+>n_group_search 3
+Number of groups within ligand to use in searches            3
+
+>group_search 0
+Groups to use in searches           0
+
+>fit_phi_inc 20.0
+Torsion angles increment to be     20.00000    
+
+>n_keep_plac 100
+Number of placements of groups within ligand to keep in searches          100
+
+>ligand_resno 1
+Ligand residue number is            1
+
+>n_template_atom 25
+Number of atoms per group in template for ligand fitting:           25
+
+>fit_phi_range -180.0 180.0
+Torsion angles to be adjusted (relative to start) from    -180.0000     to     180.0000    
+
+>search_center 0.0 0.0 0.0
+Center (A) of region to be searched for ligand in local_ligand_search is     0.000000        0.000000        0.000000    
+
+>search_dist 10.0
+Radius of region to be searched for ligand in local_ligand_search is     10.00000    
+
+>database 5
+Entry in database of histograms to use:            5
+
+>no_optimize_ncs
+Not optimizing NCS
+
+>spg_name_use P 31 2 1
+Space group name for output PDB file only: P 31 2 1   
+
+>no_create_free
+Will not create FREE (test) set
+
+>use_all_for_test
+Will use all data for testing solvent content and histograms
+
+All done with inputs
+Map will be masked around all.pdb
+Building protein
+Setting up for building protein
+Standard fill-in residues: ALA A GLY G
+Standard main-chain atoms: N    CA   C    O    CB   NONE
+All main-chain atoms: N     CA    C     O     
+Max dist between adjacent N    atoms:     6.000000    
+List of all residues: GLY ALA SER VAL ILE LEU MET CYS PHE TYR LYS ARG TRP HIS GLU ASP GLN ASN PRO THR 
+List of 1-letter code of residues: GASVILMCFYKRWHEDQNPT
+List of number of atoms in side-chains:            0           1           2           3           4           4           4           2           7           8           5           7          10           6           5           4           5           4           3           3
+checking license file.. solve2.access
+
+       The date today is 05-feb-20.  Your license is good until 15-dec-96.
+
+Opened mtz file resolve_map.mtz
+Dataset            1 HKL_base            HKL_base            HKL_base                       0    69.49000        69.49000        90.58100        90.00000        90.00000        120.0000        0.000000    
+Dataset            2 project             crystal             dataset                        1    69.49000        69.49000        90.58100        90.00000        90.00000        120.0000        1.000000    
+Reading SG information from resolve_map.mtz
+Space group name: P3121      Point group: PG321     
+Space group number :         152 Symmetry operators:            6
+Number of columns:           13
+H                             K                             L                             FP                            SIGFP                         PHIM                          FOMM                          HLAM                          HLBM                          HLCM                          HLDM                          FWT                           PHWT                          
+
+Column assignments:
+                  PROGRAM                         INPUT_MTZ
+DATA# 1  H                             
+DATA# 2  K                             
+DATA# 3  L                             
+DATA# 4  FP                             :     FP                            
+DATA# 5  PHIB                           :     PHIM                          
+DATA# 6  FOM                            :     FOMM                          
+DATA# 7  HLA                           
+DATA# 8  HLB                           
+DATA# 9  HLC                           
+DATA# 10  HLD                           
+DATA# 11  FC                            
+DATA# 12  PHIC                          
+DATA# 13  SIGFP                         
+DATA# 14  FWT                           
+DATA# 15  FreeR_flag                    
+FP taken from column           4
+Dataset information for dataset number           2 and ID=           1
+Dataset name:dataset             
+Crystal name:crystal             
+Project name:project             
+Cell:      69.489998       69.489998       90.581001       90.000000       90.000000       120.00000
+Wavelength:    1.000000    
+PHIB taken from column           6
+FOM taken from column           7
+WARNING: No SIGFP input data--output SIGFP column will be SIGFP=1.0 for all HKL!
+
+No FreeR_flag read in or created
+Total of        17078 reflections read from file
+Guessing FreeR_flag corresponding to free reflections
+This can be set with free_id xx
+No freeR reflections at all
+Total of            0 of        17078 reflections in test set
+ High-resolution limit of input phased data:  2.00
+Adding F000 term (0.0) to this list
+Closed mtz file
+ Starting resolution:  2.00 max:  2.00
+Space group is         152
+Using symmetry operations from input MTZ file
+
+
+MATRICES: 
+SYMMETRY ELEMENT 0
+1 0 0 0
+0 1 0 0
+0 0 1 0
+SYMMETRY ELEMENT 1
+0 -1 0 0
+1 -1 0 0
+0 0 1 0.333333
+SYMMETRY ELEMENT 2
+-1 1 0 0
+-1 0 0 0
+0 0 1 0.666667
+SYMMETRY ELEMENT 3
+1 -1 0 0
+0 -1 0 0
+0 0 -1 0.666667
+SYMMETRY ELEMENT 4
+-1 0 0 0
+-1 1 0 0
+0 0 -1 0.333333
+SYMMETRY ELEMENT 5
+0 1 0 0
+1 0 0 0
+0 0 -1 0
+SPACE GROUP SYMBOL: P 31 2 1
+CHECK ON SPACE GROUP SYMBOL: P 31 2 1
+HALL SYMBOL :  P 31 2"
+Standard grids used for FFT
+
+ Transformations from orthogonal to fractional and back:
+
+               Orthogonal to fractional
+
+     fractional x=  0.01439 X +   0.00831 Y +  -0.00000 Z 
+     fractional y=  0.00000 X +   0.01662 Y +  -0.00000 Z 
+     fractional z=  0.00000 X +   0.00000 Y +   0.01104 Z 
+
+
+               Fractional to orthogonal
+
+     Orthogonal X= 69.49000 x + -34.74490 y +   0.00010 z 
+     Orthogonal Y=  0.00000 x +  60.18016 y +   0.00018 z 
+     Orthogonal Z=  0.00000 x +   0.00000 y +  90.58100 z 
+
+FILL: Total number of missing reflections added 
+ (to dmin =     2.222253    ) is:          266 for new total of :       17345
+new nrefl:        17345
+Space group is         152
+Using symmetry operations from input MTZ file
+
+
+MATRICES: 
+SYMMETRY ELEMENT 0
+1 0 0 0
+0 1 0 0
+0 0 1 0
+SYMMETRY ELEMENT 1
+0 -1 0 0
+1 -1 0 0
+0 0 1 0.333333
+SYMMETRY ELEMENT 2
+-1 1 0 0
+-1 0 0 0
+0 0 1 0.666667
+SYMMETRY ELEMENT 3
+1 -1 0 0
+0 -1 0 0
+0 0 -1 0.666667
+SYMMETRY ELEMENT 4
+-1 0 0 0
+-1 1 0 0
+0 0 -1 0.333333
+SYMMETRY ELEMENT 5
+0 1 0 0
+1 0 0 0
+0 0 -1 0
+SPACE GROUP SYMBOL: P 31 2 1
+CHECK ON SPACE GROUP SYMBOL: P 31 2 1
+HALL SYMBOL :  P 31 2"
+Standard grids used for FFT
+
+ Transformations from orthogonal to fractional and back:
+
+               Orthogonal to fractional
+
+     fractional x=  0.01439 X +   0.00831 Y +  -0.00000 Z 
+     fractional y=  0.00000 X +   0.01662 Y +  -0.00000 Z 
+     fractional z=  0.00000 X +   0.00000 Y +   0.01104 Z 
+
+
+               Fractional to orthogonal
+
+     Orthogonal X= 69.49000 x + -34.74490 y +   0.00010 z 
+     Orthogonal Y=  0.00000 x +  60.18016 y +   0.00018 z 
+     Orthogonal Z=  0.00000 x +   0.00000 y +  90.58100 z 
+
+Estimated # of atoms in au:        1994
+
+Warning -- Total of           25 centric phases off by >    0.5000000     degrees
+
+Not separating out FREE set from other reflections for main cycles. Using all data.
+
+Expected resolution-corrected F at d = 2.9A : 788.096
+
+ Results of wilson scaling:
+ Scale on I =      8.537
+ B-value =     22.354
+
+ Scaling data with value of      8.537
+
+Reading model density histograms from /home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/solve_resolve/ext_ref_files/segments/rho.list
+Read total of           10 sets of density functions
+Highest value of ix, iy, iz in a.u:         107          107           24
+nu nv nw:          108         108         144   Number of grid points in au:      280044
+ Mean fom of this map was:  1.00
+Reading a pdb file and estimating mask with it.
+Opening all.pdb and reading coordinates
+Center of molecule read in with         1213
+ atoms is      -23.147842       15.489192       7.3275547
+Highest residue number is :          401
+Opening all.pdb and reading coordinates
+Center of molecule read in with         1213
+ atoms is      -23.147840       15.489204       7.3275542
+Getting FCALC from model
+Adding solvent model to FCALC
+Mean of prot, solv in FC map:   0.3190365       2.2236633E-05
+Mean of prot, solv in solv map:   2.5601111E-02   0.1749787    
+Multiplying solvent *     1.000000     to get solvent density =    0.1749787    
+
+ Summary of starting FOM vs resolution 
+    RES     FOM   FOM-smoothed  N 
+   17.94    0.88    0.98        81
+   10.92    1.00    0.98       114
+    8.25    1.00    0.98       210
+    6.51    1.00    0.98       355
+    5.51    1.00    0.98       341
+    4.77    1.00    0.98       618
+    4.16    1.00    0.98       745
+    3.72    1.00    0.98       812
+    3.40    1.00    0.98       938
+    3.14    1.00    0.98       966
+    2.92    1.00    0.98      1299
+    2.74    0.98    0.98      1085
+    2.59    0.97    0.98      1383
+    2.44    0.93    0.98      1745
+    2.29    0.97    0.98      2225
+    2.16    1.00    0.98      1993
+    2.05    1.00    0.98      2434
+
+ Mean fom of this map was:  1.00
+Masking map using model. 
+Writing out           13 columns of data
+Writing out difference map coefficients to ligand_map.mtz
+Reading a pdb file and estimating mask with it.
+Opening all.pdb and reading coordinates
+Center of molecule read in with         1213
+ atoms is      -23.147842       15.489192       7.3275547
+Highest residue number is :          401
+Opening all.pdb and reading coordinates
+Center of molecule read in with         1213
+ atoms is      -23.147842       15.489192       7.3275547
+Model file with         1213 coordinates used
+Opening UDP.pdb and reading coordinates
+NOTE: D and H atoms are ignored
+Center of molecule read in with           25
+ atoms is    -0.061319951      0.28051990      0.64623994
+Total of           25 coordinates for ligand from UDP.pdb
+Fit_ligand:
+Number of atoms in ligand:           25
+Number of copies of ligand:            1
+Routine rings, looking for up to            6 atoms or groups in rings
+
+Ring or group of rings found with            5 atoms or groups :            2           3          14          15          16
+
+Ring or group of rings found with            6 atoms or groups :           18          19          20          21          23          24
+Adjusted template by mean of    0.61813141473314981     zeroes:        1903 ones:        16577 volume:    39.12500             313
+VOL_LIG:    39.12500    
+    1  1100000000000000000000000
+    2  1110000000000001000000000
+    3  0111000000000100000000000
+    4  0011100000000000000000000
+    5  0001110000000000000000000
+    6  0000111110000000000000000
+    7  0000011000000000000000000
+    8  0000010100000000000000000
+    9  0000010011000000000000000
+   10  0000000011111000000000000
+   11  0000000001100000000000000
+   12  0000000001010000000000000
+   13  0000000001001000000000000
+   14  0010000000000110000000000
+   15  0000000000000111010000000
+   16  0100000000000011100000000
+   17  0000000000000001100000000
+   18  0000000000000010011000010
+   19  0000000000000000011100000
+   20  0000000000000000001110000
+   21  0000000000000000000111100
+   22  0000000000000000000011000
+   23  0000000000000000000010110
+   24  0000000000000000010000111
+   25  0000000000000000000000011
+Getting relationships among           7 groups
+GROUP            1
+    1    O01       1       3.068  -0.483  -1.234
+    2    C02       1       1.591  -0.474  -1.251
+    3    C03       1       1.041  -0.568   0.199
+   14    O14       1      -0.060  -1.724   0.168
+   15    C15       1      -0.272  -1.965  -1.089
+   16    C16       1       1.136  -1.554  -1.873
+    4    C04       1       0.472   0.621   0.569
+   17    O17       1       2.079  -2.612  -1.768
+   18    N18       1      -1.357  -1.162  -1.571
+GROUP            2
+    3    C03       1       1.041  -0.568   0.199
+    4    C04       1       0.472   0.621   0.569
+    5    O05       1       1.376   1.303   1.409
+GROUP            3
+    4    C04       1       0.472   0.621   0.569
+    5    O05       1       1.376   1.303   1.409
+    6    P06       1       0.782   2.070   2.749
+GROUP            4
+    5    O05       1       1.376   1.303   1.409
+    6    P06       1       0.782   2.070   2.749
+    7    O07       1      -0.273   1.208   3.395
+    8    O08       1       0.174   3.391   2.344
+    9    O09       1       2.011   2.335   3.824
+GROUP            5
+    6    P06       1       0.782   2.070   2.749
+    9    O09       1       2.011   2.335   3.824
+   10    P10       1       1.797   2.404   5.462
+GROUP            6
+    9    O09       1       2.011   2.335   3.824
+   10    P10       1       1.797   2.404   5.462
+   11    O11       1       0.878   3.554   5.802
+   12    O12       1       3.135   2.611   6.137
+   13    O13       1       1.184   1.109   5.945
+GROUP            7
+   15    C15       1      -0.272  -1.965  -1.089
+   18    N18       1      -1.357  -1.162  -1.571
+   19    C19       1      -1.433  -0.904  -2.866
+   20    C20       1      -2.587  -0.307  -3.358
+   21    C21       1      -3.605  -0.012  -2.465
+   23    N23       1      -3.461  -0.299  -1.181
+   24    C24       1      -2.349  -0.868  -0.743
+   22    O22       1      -4.625   0.447  -2.859
+   25    O25       1      -2.235  -1.108   0.411
+
+Groups with atoms in common:
+      1 2 3 4 5 6 7
+  1   0 1 0 0 0 0 1
+  2   1 0 1 0 0 0 0
+  3   0 1 0 1 0 0 0
+  4   0 0 1 0 1 0 0
+  5   0 0 0 1 0 1 0
+  6   0 0 0 0 1 0 0
+  7   1 0 0 0 0 0 0
+
+Pairs of atoms in the same group:
+
+    0    1 2 3 4 5 6 7 8 910111213141516171819202122232425
+
+    1    1 1 1 1 0 0 0 0 0 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0
+    2    1 1 1 1 0 0 0 0 0 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0
+    3    1 1 1 1 1 0 0 0 0 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0
+    4    1 1 1 1 1 1 0 0 0 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0
+    5    0 0 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    6    0 0 0 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    7    0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    8    0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+    9    0 0 0 0 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0
+   10    0 0 0 0 0 1 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0
+   11    0 0 0 0 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0
+   12    0 0 0 0 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0
+   13    0 0 0 0 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0
+   14    1 1 1 1 0 0 0 0 0 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0
+   15    1 1 1 1 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1
+   16    1 1 1 1 0 0 0 0 0 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0
+   17    1 1 1 1 0 0 0 0 0 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0
+   18    1 1 1 1 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1
+   19    0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1 1 1 1 1 1 1
+   20    0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1 1 1 1 1 1 1
+   21    0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1 1 1 1 1 1 1
+   22    0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1 1 1 1 1 1 1
+   23    0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1 1 1 1 1 1 1
+   24    0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1 1 1 1 1 1 1
+   25    0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 1 1 1 1 1 1 1
+Routine rings, looking for up to           20 atoms or groups in rings
+This appears not to be cyclic
+Using group            1 to search map
+---------------------------------------------------------------
+Convolution search for group            1 with            9 atoms
+Maximum X Y Z distance from origin:      2.2126667       1.7233334       1.4412223
+Angle increment for points on sphere:     40.00000     degrees
+
+ Template search: rotation about X is from   11.6 to   410.6 with 
+ increment of    61.4
+ RMSD min=   0.93
+ RANGE:     2.21    1.72    1.44
+MEAN, SD of D for rotations    1.858643       0.3936889        1.003213        167.0000    
+
+First rotation will be: 11.5892 13 26.3567
+Adjusted template by mean of    0.54280302902741739     zeroes:         673 ones:         3359 volume:    16.25000             130
+Estimated Volume fraction of ligand   1.0328603E-04 N:         173
+Largest contiguous region is at     -12.225031       28.975658       12.580695
+Using this as search center
+Little cell runs from          -18          35          34          73           4          39
+Offset is      -22.519873       18.945612       2.5161390
+Cell      69.489998       69.489998       90.581001       90.000000       90.000000       120.00000
+Cell2      34.744999       25.737036       22.645250       90.000000       90.000000       120.00000
+Number of peaks in final unrefined list =          300
+           1 score =     18.88066     Atoms placed =            9    18.88066    
+           2 score =     36.28192     Atoms placed =           15    36.28192    
+           3 score =     37.93229     Atoms placed =            9    37.93229    
+           4 score =     16.49540     Atoms placed =            9    16.49540    
+           5 score =     42.29059     Atoms placed =            9    42.29059    
+           6 score =     26.96085     Atoms placed =           11    26.96085    
+           7 score =     31.62450     Atoms placed =           14    31.62450    
+           8 score =     38.77502     Atoms placed =            9    38.77502    
+           9 score =     41.63641     Atoms placed =           14    41.63641    
+          10 score =     35.66414     Atoms placed =            9    35.66414    
+
+Writing out current top solution to ligand_fit.pdb
+
+ ATOM    RESIDUE    X       Y      Z       RHO/RMS
+    1  O01     1   -19.748  11.678  20.031     3.319
+    2  C02     1   -19.588  12.477  18.799     5.981
+    3  C03     1   -19.341  13.968  19.159     1.563
+    4  C04     1   -18.050  14.319  18.868    -0.124
+   14  O14     1   -20.360  14.804  18.258     5.653
+   15  C15     1   -20.817  13.963  17.383     5.892
+   16  C16     1   -20.715  12.465  18.099     6.909
+   17  O17     1   -21.825  12.261  18.963     2.707
+   18  N18     1   -20.015  13.997  16.196     2.960
+   19  C19     1   -18.717  13.767  16.297     3.191
+   20  C20     1   -17.979  13.595  15.132     0.149
+   21  C21     1   -18.644  13.673  13.918    -0.217
+   22  O22     1   -18.056  13.477  12.907    -0.220
+   23  N23     1   -19.946  13.906  13.892     4.814
+   24  C24     1   -20.621  14.065  15.019     2.544
+   25  O25     1   -21.784  14.283  14.975     0.271
+Final fitted ligand with           16 atoms written to ligand_fit.pdb
+Score:    44.97262    
+Using group            7 to search map
+---------------------------------------------------------------
+Convolution search for group            7 with            9 atoms
+Maximum X Y Z distance from origin:      2.1889999       1.2785556       2.1577778
+Angle increment for points on sphere:     40.00000     degrees
+
+ Template search: rotation about X is from    4.5 to   403.5 with 
+ increment of    68.5
+ RMSD min=   0.82
+ RANGE:     2.19    1.28    2.16
+MEAN, SD of D for rotations    1.877778       0.4718740       0.9892758        154.0000    
+
+First rotation will be: 4.51648 13 66.5494
+Adjusted template by mean of    0.56165424570604994     zeroes:         637 ones:         3899 volume:    15.75000             126
+Estimated Volume fraction of ligand   1.0328603E-04 N:         173
+Largest contiguous region is at     -12.225031       28.975658       12.580695
+Search center is at      -12.225031       28.975658       12.580695
+Little cell runs from          -18          35          34          73           4          39
+Offset is      -22.519873       18.945612       2.5161390
+Cell      69.489998       69.489998       90.581001       90.000000       90.000000       120.00000
+Cell2      34.744999       25.737036       22.645250       90.000000       90.000000       120.00000
+Number of peaks in final unrefined list =          300
+           1 score =     23.21085     Atoms placed =            9    23.21085    
+           2 score =     27.95347     Atoms placed =            9    27.95347    
+           3 score =     27.87399     Atoms placed =            9    27.87399    
+           4 score =     24.72332     Atoms placed =            9    24.72332    
+           5 score =     24.05140     Atoms placed =            9    24.05140    
+           6 score =     23.39370     Atoms placed =            9    23.39370    
+           7 score =     29.06915     Atoms placed =           16    29.06915    
+           8 score =     39.76550     Atoms placed =            9    39.76550    
+           9 score =     40.22438     Atoms placed =            9    40.22438    
+          10 score =     45.91933     Atoms placed =           25    45.91933    
+
+Writing out current top solution to ligand_fit.pdb
+
+ ATOM    RESIDUE    X       Y      Z       RHO/RMS
+    1  O01     1   -23.220  25.361  14.452     4.647
+    2  C02     1   -21.924  25.636  15.104     1.892
+    3  C03     1   -20.817  25.826  14.031     1.954
+    4  C04     1   -20.420  27.135  13.985     2.758
+    5  O05     1   -21.336  27.849  13.185     0.974
+    6  P06     1   -20.944  28.136  11.603     2.297
+    7  O07     1   -22.195  28.464  10.828     2.169
+    8  O08     1   -20.295  26.907  11.014     1.911
+    9  O09     1   -19.893  29.410  11.517     1.984
+   10  P10     1   -20.323  30.976  11.827     3.048
+   11  O11     1   -19.286  31.908  11.243     0.631
+   12  O12     1   -20.407  31.189  13.322     2.626
+   13  O13     1   -21.668  31.262  11.200     3.445
+   14  O14     1   -19.605  24.895  14.493    -0.968
+   15  C15     1   -19.885  24.541  15.709    -0.327
+   16  C16     1   -21.544  24.588  15.823     0.036
+   17  O17     1   -22.103  23.397  15.285    -0.513
+   18  N18     1   -19.301  25.461  16.640     4.315
+   19  C19     1   -19.603  26.745  16.542     3.057
+   20  C20     1   -19.207  27.601  17.562     1.211
+   21  C21     1   -18.513  27.065  18.636     4.139
+   22  O22     1   -18.208  27.756  19.549     2.551
+   23  N23     1   -18.245  25.769  18.668     3.252
+   24  C24     1   -18.637  24.979  17.680     6.206
+   25  O25     1   -18.379  23.824  17.723     3.245
+Final fitted ligand with           25 atoms written to ligand_fit.pdb
+Score:    56.74210    
+Using group            4 to search map
+---------------------------------------------------------------
+Convolution search for group            4 with            5 atoms
+Maximum X Y Z distance from origin:      1.1970000       1.3295999       1.3352002
+Angle increment for points on sphere:     40.00000     degrees
+
+ Template search: rotation about X is from   33.0 to   432.0 with 
+ increment of    40.0
+ RMSD min=   0.77
+ RANGE:     1.20    1.33    1.34
+MEAN, SD of D for rotations    1.236875       0.2359278       0.8632364        229.0000    
+
+First rotation will be: 33 13 32
+Adjusted template by mean of    0.60961788164869546     zeroes:         477 ones:         2267 volume:    10.00000              80
+Estimated Volume fraction of ligand   1.0328603E-04 N:         173
+Largest contiguous region is at     -12.225031       28.975658       12.580695
+Search center is at      -12.225031       28.975658       12.580695
+Little cell runs from          -18          35          34          73           4          39
+Offset is      -22.519873       18.945612       2.5161390
+Cell      69.489998       69.489998       90.581001       90.000000       90.000000       120.00000
+Cell2      34.744999       25.737036       22.645250       90.000000       90.000000       120.00000
+Number of peaks in final unrefined list =          300
+           1 score =     39.94530     Atoms placed =           10    39.94530    
+           2 score =     42.90709     Atoms placed =           15    42.90709    
+           3 score =     54.20630     Atoms placed =           14    54.20630    
+           4 score =     27.65117     Atoms placed =            6    27.65117    
+           5 score =     27.49962     Atoms placed =            6    27.49962    
+           6 score =     26.62505     Atoms placed =            6    26.62505    
+           7 score =     35.63889     Atoms placed =           11    35.63889    
+           8 score =     28.18060     Atoms placed =            6    28.18060    
+           9 score =     57.64729     Atoms placed =           25    57.64729    
+          10 score =     33.56685     Atoms placed =            8    33.56685    
+
+Writing out current top solution to ligand_fit.pdb
+
+ ATOM    RESIDUE    X       Y      Z       RHO/RMS
+    1  O01     1   -23.020  13.929  13.832    -0.137
+    2  C02     1   -23.517  12.851  14.712    -0.190
+    3  C03     1   -22.395  12.399  15.687    -0.908
+    4  C04     1   -22.689  12.794  16.964     0.556
+    5  O05     1   -21.675  12.317  17.820     4.479
+    6  P06     1   -20.512  13.376  18.332    12.247
+    7  O07     1   -21.158  14.496  19.108     2.940
+    8  O08     1   -19.788  13.945  17.135     6.671
+    9  O09     1   -19.432  12.584  19.303     5.127
+   10  P10     1   -19.875  11.641  20.587     1.919
+   11  O11     1   -20.987  12.321  21.352     2.313
+   12  O12     1   -18.685  11.440  21.499    -0.803
+   13  O13     1   -20.357  10.299  20.084     0.087
+   14  O14     1   -22.359  10.806  15.593    -0.342
+   15  C15     1   -23.438  10.473  14.954     6.112
+   16  C16     1   -23.816  11.777  13.993     0.031
+   17  O17     1   -23.033  11.751  12.806     0.023
+   18  N18     1   -24.503  10.218  15.879     4.287
+   19  C19     1   -25.752  10.324  15.458     2.117
+   20  C20     1   -26.773   9.879  16.288     0.067
+   21  C21     1   -26.431   9.342  17.519     0.373
+   22  O22     1   -27.273   8.902  18.229    -0.341
+   23  N23     1   -25.158   9.266  17.875     0.099
+   24  C24     1   -24.208   9.699  17.062     0.294
+   25  O25     1   -23.076   9.632  17.403    -0.838
+Final fitted ligand with           25 atoms written to ligand_fit.pdb
+Score:    57.64729    
+Trying to extend solutions by giving offset of     10.00000     units for every atom placed
+
+Writing out current top solution to ligand_fit.pdb
+
+ ATOM    RESIDUE    X       Y      Z       RHO/RMS
+    1  O01     1   -23.020  13.929  13.832    -0.137
+    2  C02     1   -23.517  12.851  14.712    -0.190
+    3  C03     1   -22.395  12.399  15.687    -0.908
+    4  C04     1   -22.689  12.794  16.964     0.556
+    5  O05     1   -21.675  12.317  17.820     4.479
+    6  P06     1   -20.512  13.376  18.332    12.247
+    7  O07     1   -21.158  14.496  19.108     2.940
+    8  O08     1   -19.788  13.945  17.135     6.671
+    9  O09     1   -19.432  12.584  19.303     5.127
+   10  P10     1   -19.875  11.641  20.587     1.919
+   11  O11     1   -20.987  12.321  21.352     2.313
+   12  O12     1   -18.685  11.440  21.499    -0.803
+   13  O13     1   -20.357  10.299  20.084     0.087
+   14  O14     1   -22.359  10.806  15.593    -0.342
+   15  C15     1   -23.438  10.473  14.954     6.112
+   16  C16     1   -23.816  11.777  13.993     0.031
+   17  O17     1   -23.033  11.751  12.806     0.023
+   18  N18     1   -24.503  10.218  15.879     4.287
+   19  C19     1   -25.752  10.324  15.458     2.117
+   20  C20     1   -26.773   9.879  16.288     0.067
+   21  C21     1   -26.431   9.342  17.519     0.373
+   22  O22     1   -27.273   8.902  18.229    -0.341
+   23  N23     1   -25.158   9.266  17.875     0.099
+   24  C24     1   -24.208   9.699  17.062     0.294
+   25  O25     1   -23.076   9.632  17.403    -0.838
+Final fitted ligand with           25 atoms written to ligand_fit.pdb
+Score:    57.64728    
+
+Writing out current top solution to ligand_fit.pdb
+
+ ATOM    RESIDUE    X       Y      Z       RHO/RMS
+    1  O01     1   -23.605  12.705  23.862     0.285
+    2  C02     1   -22.928  12.596  22.554     0.001
+    3  C03     1   -23.101  11.161  21.983    -0.422
+    4  C04     1   -23.940  11.179  20.901    -2.210
+    5  O05     1   -25.207  11.626  21.330     0.190
+    6  P06     1   -26.276  12.175  20.193     4.879
+    7  O07     1   -25.535  12.978  19.154    -0.013
+    8  O08     1   -27.313  13.048  20.858     6.801
+    9  O09     1   -27.020  10.889  19.467     0.161
+   10  P10     1   -27.574  10.910  17.910     4.162
+   11  O11     1   -28.564   9.785  17.712     1.085
+   12  O12     1   -26.412  10.731  16.958     2.155
+   13  O13     1   -28.253  12.233  17.634     0.526
+   14  O14     1   -21.640  10.692  21.544    -0.693
+   15  C15     1   -20.909  11.764  21.578     1.076
+   16  C16     1   -21.620  12.761  22.703    -1.235
+   17  O17     1   -21.225  12.378  24.013    -1.267
+   18  N18     1   -20.899  12.398  20.293     4.688
+   19  C19     1   -21.737  13.397  20.069     0.785
+   20  C20     1   -21.586  14.142  18.906     3.437
+   21  C21     1   -20.562  13.802  18.037    11.580
+   22  O22     1   -20.370  14.451  17.063     4.281
+   23  N23     1   -19.760  12.789  18.325     6.899
+   24  C24     1   -19.929  12.098  19.441     6.034
+   25  O25     1   -19.208  11.190  19.677     1.918
+Final fitted ligand with           25 atoms written to ligand_fit.pdb
+Score:    58.55597    
+
+Writing out current top solution to ligand_fit.pdb
+
+ ATOM    RESIDUE    X       Y      Z       RHO/RMS
+    1  O01     1   -19.861  14.115  13.872     3.875
+    2  C02     1   -20.739  13.020  14.331     1.067
+    3  C03     1   -19.882  11.824  14.831    -0.871
+    4  C04     1   -19.984  11.704  16.191     0.307
+    5  O05     1   -19.468  12.877  16.780     0.369
+    6  P06     1   -20.223  13.484  18.121    11.782
+    7  O07     1   -21.716  13.345  17.963     4.473
+    8  O08     1   -19.867  14.942  18.282     3.154
+    9  O09     1   -19.731  12.645  19.459     5.681
+   10  P10     1   -20.673  12.423  20.800     3.839
+   11  O11     1   -21.394  13.710  21.127     0.024
+   12  O12     1   -19.800  12.022  21.968     0.097
+   13  O13     1   -21.686  11.333  20.530     0.814
+   14  O14     1   -20.485  10.532  14.114     0.231
+   15  C15     1   -21.612  10.916  13.599    -0.369
+   16  C16     1   -21.447  12.546  13.313    -0.572
+   17  O17     1   -20.750  12.758  12.093    -0.254
+   18  N18     1   -22.683  10.685  14.524     3.618
+   19  C19     1   -23.091  11.683  15.290     2.070
+   20  C20     1   -24.255  11.519  16.030     1.062
+   21  C21     1   -24.934  10.315  15.928     4.402
+   22  O22     1   -25.960  10.162  16.503     2.980
+   23  N23     1   -24.468   9.359  15.141     4.031
+   24  C24     1   -23.355   9.546  14.448     6.712
+   25  O25     1   -22.949   8.674  13.757     3.214
+Final fitted ligand with           25 atoms written to ligand_fit.pdb
+Score:    73.19156    
+Rescoring solutions with offset for atom placement of     10.00000     and penalty for mis-alignment of up to     3.000000    
+Best score up to now:    323.1916    
+
+ ATOM    RESIDUE    X       Y      Z       RHO/RMS
+    1  O01     1   -19.861  14.115  13.872     3.875
+    2  C02     1   -20.739  13.020  14.331     1.067
+    3  C03     1   -19.882  11.824  14.831    -0.871
+    4  C04     1   -19.984  11.704  16.191     0.307
+    5  O05     1   -19.468  12.877  16.780     0.369
+    6  P06     1   -20.223  13.484  18.121    11.782
+    7  O07     1   -21.716  13.345  17.963     4.473
+    8  O08     1   -19.867  14.942  18.282     3.154
+    9  O09     1   -19.731  12.645  19.459     5.681
+   10  P10     1   -20.673  12.423  20.800     3.839
+   11  O11     1   -21.394  13.710  21.127     0.024
+   12  O12     1   -19.800  12.022  21.968     0.097
+   13  O13     1   -21.686  11.333  20.530     0.814
+   14  O14     1   -20.485  10.532  14.114     0.231
+   15  C15     1   -21.612  10.916  13.599    -0.369
+   16  C16     1   -21.447  12.546  13.313    -0.572
+   17  O17     1   -20.750  12.758  12.093    -0.254
+   18  N18     1   -22.683  10.685  14.524     3.618
+   19  C19     1   -23.091  11.683  15.290     2.070
+   20  C20     1   -24.255  11.519  16.030     1.062
+   21  C21     1   -24.934  10.315  15.928     4.402
+   22  O22     1   -25.960  10.162  16.503     2.980
+   23  N23     1   -24.468   9.359  15.141     4.031
+   24  C24     1   -23.355   9.546  14.448     6.712
+   25  O25     1   -22.949   8.674  13.757     3.214
+Final fitted ligand with           25 atoms written to ligand_fit.pdb
+Score:    73.19156    
+resolve exit_info:
+  source_file: /home/builder/slave/phenix-nightly-intel-linux-2_6-x86_64-centos6/modules/solve_resolve/resolve/aaa_resolve_main.cpp
+  source_line: 1692
+  status: 0
+EndOfResolve

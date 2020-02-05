@@ -1,0 +1,46 @@
+LIBTBX_BASE_DIR = "/home/adrmercurio/XtaLab/git_pyrR/phenix/DS2-refConLigando"
+job {
+  job_id = 28
+  app_id = "LigandFit"
+  program_name = None
+  title = "pyrR_ds2_apo_mpd_conUDP"
+  directory = "$(LIBTBX_BASE_DIR)/LigandFit_run_28_"
+  process_type = None
+  hostname = None
+  queue_id = None
+  citation = "elbow"
+  input_file {
+    file_name = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz"
+    file_type = "Data"
+    param_name = "ligandfit.data"
+  }
+  input_file {
+    file_name = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/eLBOW_27/UDP.pdb"
+    file_type = "Ligand"
+    param_name = "ligandfit.ligand"
+  }
+  input_file {
+    file_name = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/pyrR_ds2_apo_mpd_sinUTP-coot-0.pdb"
+    file_type = "Ligand-free model"
+    param_name = "ligandfit.model"
+  }
+  input_file {
+    file_name = "/home/adrmercurio/XtaLab/git_pyrR/pyrR/pyrR-apo-mpd-DS2/conUTP/eLBOW_27/UDP.cif"
+    file_type = "Restraints file"
+    param_name = "ligandfit.input_files.cif_def_file_list"
+  }
+  output_file {
+    file_name = "$(LIBTBX_BASE_DIR)/LigandFit_run_28_/resolve_map.mtz"
+    file_type = Map coefficients
+  }
+  output_file {
+    file_name = "$(LIBTBX_BASE_DIR)/LigandFit_run_28_/ligand_fit_1_1.pdb"
+    file_type = Ligand coordinates
+  }
+  statistic {
+    stat_name = None
+    stat_value = None
+  }
+  user_comments = None
+  deleted = False
+}
