@@ -1,0 +1,2453 @@
+# Date 2020-02-06 Time 19:20:26 CST -0600 (1581038426.05 s)
+#phil __OFF__
+
+Command line arguments: "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-gmp-DS3/phenixDS3/.phenix/project_data/refine_1.eff" "--overwrite"
+
+USER = alfredo
+PID = 91511
+
+-------------------------------------------------------------------------------
+  PHENIX: Python-based Hierarchical ENvironment for Integrated Xtallography
+  Version: 1.17.1
+  Release tag: 3660
+  Platform: mac-intel-osx-x86_64
+  User: alfredo
+-------------------------------------------------------------------------------
+
+              phenix.refine: Macromolecular Structure Refinement
+
+-------------------------------------------------------------------------------
+
+Phenix developers include:
+  Paul Adams, Pavel Afonine, Gabor Bunkoczi, Tom Burnley, Vincent Chen, 
+  Youval Dar, Ian Davis, Eli Draizen, Nathaniel Echols, Richard Gildea, 
+  Piet Gros, Ralf Grosse-Kunstleve, Jeffrey Headd, Bradley Hintze, Li-Wei Hung, 
+  Tom Ioerger, Dorothee Liebschner, Airlie McCoy, Erik McKee, Nigel Moriarty, 
+  Robert Oeffner, Billy Poon, Randy Read, Jane Richardson, David Richardson, 
+  Jim Sacchettini, Nicholas Sauter, Oleg Sobolev, Laurent Storoni, 
+  Tom Terwilliger, Christopher Williams, Peter Zwart
+Phenix home page:
+  http://www.phenix-online.org/
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Phenix components are copyrighted by:
+  - Lawrence Berkeley National Laboratory
+  - Los Alamos National Laboratory
+  - University of Cambridge
+  - Duke University
+  - Texas Agricultural Experiment Station &
+    Texas Engineering Experiment Station
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Major third-party components of Phenix include:
+    Python, wxWidgets, wxPython, Boost, SCons, Clipper,
+    CCP4 Monomer Library, CCP4 I/O libraries, PyCifRW, FFTPACK, L-BFGS,
+    MUSCLE, KSDSSP, PULCHRA, ANTLRv3
+  Enter phenix.acknowledgments for details.
+-------------------------------------------------------------------------------
+
+Processing inputs. This may take a minute or two.
+
+Working crystal symmetry after inspecting all inputs:
+  Unit cell: (59.39, 116.651, 109.032, 90, 104.227, 90)
+  Space group: I 1 2 1 (No. 5)
+
+
+================================== X-ray data =================================
+
+I-obs:
+  /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-gmp-DS3/Refine_1/pyrR_refinements_refine_data.mtz:I-obs,SIGI-obs
+
+Miller array info: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-gmp-DS3/Refine_1/pyrR_refinements_refine_data.mtz:I-obs,SIGI-obs
+Observation type: xray.intensity
+Type of data: double, size=14476
+Type of sigmas: double, size=14476
+Number of Miller indices: 14476
+Anomalous flag: False
+Unit cell: (59.39, 116.651, 109.032, 90, 104.227, 90)
+Space group: I 1 2 1 (No. 5)
+Systematic absences: 0
+Centric reflections: 545
+Resolution range: 56.7525 3.00014
+Completeness in resolution range: 0.999793
+Completeness with d_max=infinity: 0.999655
+Wavelength: 1.0000
+
+
+     ----------Scaling input intensities via French-Wilson Method----------    
+
+Trying 60 bins...
+Number of bins = 60
+** Calculating bin mean intensity values for each intensity **
+** Total # rejected intensities: 13 **
+** Summary or rejected intensities **
+-----------------------------------------------------------------
+Miller Index  :  Intensity  :  Sigma  :  Bin Mean Intensity
+(-15, 11, 6)    -696.757      177.776    2893.347
+(-11, 20, 15)    -642.330      122.088    2877.624
+(-5, 27, 14)    -652.867      88.560    3163.399
+(-2, 27, 15)    -542.880      89.366    2660.025
+(-1, 30, 9)    -578.077      89.550    3121.461
+(-11, 22, 11)    -464.016      118.089    3288.698
+(-13, 19, 2)    -724.757      176.670    2584.605
+(-8, 25, 15)    -472.862      108.418    2618.630
+(-6, 13, 27)    -443.083      113.593    2706.421
+(-1, 32, 1)    -629.535      100.054    2666.932
+(-5, 26, 17)    -732.505      116.194    2416.533
+(-1, 30, 11)    -419.865      82.188    2357.635
+(-1, 32, 3)    -664.497      122.247    2457.839
+-----------------------------------------------------------------
+Intensities converted to amplitudes for use in refinement.
+
+Number of F-obs in resolution range:                   14463
+Number of F-obs<0 (these reflections will be rejected): 0
+Number of F-obs=0 (these reflections will be used in refinement): 0
+Refinement resolution range: d_max =  56.7525
+                             d_min =   3.0001
+
+
+Fobs statistics after all cutoffs applied:
+
+Miller array info: None
+Observation type: xray.amplitude
+Type of data: double, size=14463
+Type of sigmas: double, size=14463
+Number of Miller indices: 14463
+Anomalous flag: False
+Unit cell: (59.39, 116.651, 109.032, 90, 104.227, 90)
+Space group: I 1 2 1 (No. 5)
+Systematic absences: 0
+Centric reflections: 545
+Resolution range: 56.7525 3.00014
+Completeness in resolution range: 0.998895
+Completeness with d_max=infinity: 0.998757
+R-free flags:
+  /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-gmp-DS3/Refine_1/pyrR_refinements_refine_data.mtz:R-free-flags
+
+Miller array info: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-gmp-DS3/Refine_1/pyrR_refinements_refine_data.mtz:R-free-flags
+Observation type: None
+Type of data: int, size=14476
+Type of sigmas: None
+Number of Miller indices: 14476
+Anomalous flag: False
+Unit cell: (59.39, 116.651, 109.032, 90, 104.227, 90)
+Space group: I 1 2 1 (No. 5)
+Systematic absences: 0
+Centric reflections: 545
+Resolution range: 56.7525 3.00014
+Completeness in resolution range: 0.999793
+Completeness with d_max=infinity: 0.999655
+Wavelength: 1.0000
+
+Test (R-free flags) flag value: 1
+
+Number of work/free reflections by resolution:
+                                         work  free  %free
+  bin  1: 56.7626 -  6.4607 [1477/1480]  1328   149  10.1%
+  bin  2:  6.4607 -  5.1292 [1467/1467]  1322   145   9.9%
+  bin  3:  5.1292 -  4.4811 [1428/1428]  1285   143  10.0%
+  bin  4:  4.4811 -  4.0715 [1464/1464]  1317   147  10.0%
+  bin  5:  4.0715 -  3.7797 [1445/1445]  1301   144  10.0%
+  bin  6:  3.7797 -  3.5569 [1431/1444]  1289   142   9.9%
+  bin  7:  3.5569 -  3.3788 [1439/1439]  1295   144  10.0%
+  bin  8:  3.3788 -  3.2318 [1444/1444]  1299   145  10.0%
+  bin  9:  3.2318 -  3.1074 [1426/1426]  1284   142  10.0%
+  bin 10:  3.1074 -  3.0001 [1442/1442]  1298   144  10.0%
+                                overall 13018  1445  10.0%
+  Monomer Library directory:
+    "/Applications/phenix-1.17.1-3660/modules/chem_data/mon_lib"
+  Total number of atoms: 4536
+  Number of models: 1
+  Model: ""
+    Number of chains: 5
+    Chain: "A"
+      Number of atoms: 1136
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 152, 1136
+          Classifications: {'peptide': 152}
+          Incomplete info: {'truncation_to_alanine': 6}
+          Link IDs: {'CIS': 1, 'PTRANS': 7, 'TRANS': 143}
+          Chain breaks: 1
+          Unresolved non-hydrogen bonds: 55
+          Unresolved non-hydrogen angles: 71
+          Unresolved non-hydrogen dihedrals: 39
+          Unresolved non-hydrogen chiralities: 7
+          Planarities with less than four sites: {'GLU:plan': 2, 'ARG:plan': 2, 'ASN:plan1': 3, 'ASP:plan': 2}
+          Unresolved non-hydrogen planarities: 28
+    Chain: "B"
+      Number of atoms: 1122
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 155, 1122
+          Classifications: {'peptide': 155}
+          Incomplete info: {'truncation_to_alanine': 7}
+          Link IDs: {'CIS': 2, 'PTRANS': 7, 'TRANS': 145}
+          Chain breaks: 1
+          Unresolved non-hydrogen bonds: 89
+          Unresolved non-hydrogen angles: 118
+          Unresolved non-hydrogen dihedrals: 60
+          Unresolved non-hydrogen chiralities: 16
+          Planarities with less than four sites: {'GLU:plan': 3, 'ARG:plan': 3, 'ASN:plan1': 4, 'ASP:plan': 3}
+          Unresolved non-hydrogen planarities: 40
+    Chain: "C"
+      Number of atoms: 1118
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 157, 1118
+          Classifications: {'peptide': 157}
+          Incomplete info: {'truncation_to_alanine': 11}
+          Link IDs: {'CIS': 1, 'PTRANS': 7, 'TRANS': 148}
+          Chain breaks: 1
+          Unresolved chain link angles: 1
+          Unresolved non-hydrogen bonds: 118
+          Unresolved non-hydrogen angles: 152
+          Unresolved non-hydrogen dihedrals: 88
+          Unresolved non-hydrogen chiralities: 14
+          Planarities with less than four sites: {'TYR:plan': 1, 'GLU:plan': 3, 'ARG:plan': 6, 'ASN:plan1': 3, 'ASP:plan': 4}
+          Unresolved non-hydrogen planarities: 63
+    Chain: "D"
+      Number of atoms: 1149
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 157, 1149
+          Classifications: {'peptide': 157}
+          Incomplete info: {'backbone_only': 1, 'truncation_to_alanine': 10}
+          Link IDs: {'CIS': 1, 'PTRANS': 7, 'TRANS': 148}
+          Chain breaks: 1
+          Unresolved chain link angles: 3
+          Unresolved non-hydrogen bonds: 87
+          Unresolved non-hydrogen angles: 110
+          Unresolved non-hydrogen dihedrals: 65
+          Unresolved non-hydrogen chiralities: 11
+          Planarities with less than four sites: {'GLU:plan': 1, 'ARG:plan': 5, 'ASN:plan1': 2, 'ASP:plan': 2}
+          Unresolved non-hydrogen planarities: 38
+    Chain: "E"
+      Number of atoms: 11
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 11, 11
+          Classifications: {'water': 11}
+          Link IDs: {None: 10}
+  Time building chain proxies: 1.30, per 1000 atoms: 0.29
+Found NCS groups:
+ncs_group {
+  reference = (chain 'A' and (resid 1 through 5 or (resid 6 through 7 and (name N or name CA o \ 
+r name C or name O or name CB )) or resid 8 or (resid 9 and (name N or name CA o \ 
+r name C or name O or name CB )) or resid 10 through 11 or (resid 12 and (name N \ 
+ or name CA or name C or name O or name CB or name CG )) or (resid 13 and (name  \ 
+N or name CA or name C or name O or name CB or name CG1)) or resid 14 through 15 \ 
+ or (resid 16 and (name N or name CA or name C or name O or name CB )) or resid  \ 
+17 through 21 or (resid 22 through 23 and (name N or name CA or name C or name O \ 
+ or name CB or name CG )) or resid 24 through 26 or (resid 27 and (name N or nam \ 
+e CA or name C or name O or name CB or name CG )) or resid 29 or (resid 30 and ( \ 
+name N or name CA or name C or name O or name CB or name CG1)) or resid 31 or (r \ 
+esid 32 and (name N or name CA or name C or name O or name CB or name CG1)) or r \ 
+esid 33 through 35 or (resid 36 and (name N or name CA or name C or name O or na \ 
+me CB )) or resid 37 through 39 or (resid 40 and (name N or name CA or name C or \ 
+ name O or name CB or name CG )) or resid 41 through 47 or (resid 48 and (name N \ 
+ or name CA or name C or name O or name CB )) or resid 49 through 51 or (resid 5 \ 
+2 and (name N or name CA or name C or name O or name CB or name CG1)) or (resid  \ 
+53 and (name N or name CA or name C or name O or name CB or name CG )) or resid  \ 
+54 through 55 or (resid 56 through 57 and (name N or name CA or name C or name O \ 
+ or name CB or name CG )) or (resid 58 and (name N or name CA or name C or name  \ 
+O or name CB )) or resid 59 through 86 or (resid 87 through 88 and (name N or na \ 
+me CA or name C or name O or name CB )) or resid 89 through 91 or (resid 92 and  \ 
+(name N or name CA or name C or name O or name CB )) or (resid 93 and (name N or \ 
+ name CA or name C or name O or name CB or name CG1)) or resid 94 through 100 or \ 
+ (resid 101 and (name N or name CA or name C or name O or name CB or name CG1))  \ 
+or resid 102 through 105 or (resid 106 and (name N or name CA or name C or name  \ 
+O or name CB or name OG1)) or resid 107 through 113 or (resid 114 through 115 an \ 
+d (name N or name CA or name C or name O or name CB or name CG1)) or resid 116 t \ 
+hrough 120 or (resid 121 and (name N or name CA or name C or name O or name CB o \ 
+r name CG )) or resid 122 or resid 124 through 137 or (resid 138 and (name N or  \ 
+name CA or name C or name O or name CB or name CG1)) or resid 139 through 165 or \ 
+ (resid 167 and (name N or name CA or name C or name O or name CB )) or resid 16 \ 
+8 through 170))
+  selection = (chain 'B' and (resid 1 through 8 or (resid 9 and (name N or name CA or name C o \ 
+r name O or name CB )) or resid 10 through 26 or (resid 27 and (name N or name C \ 
+A or name C or name O or name CB or name CG )) or resid 29 or (resid 30 and (nam \ 
+e N or name CA or name C or name O or name CB or name CG1)) or resid 31 through  \ 
+35 or (resid 36 and (name N or name CA or name C or name O or name CB )) or resi \ 
+d 37 through 39 or (resid 40 and (name N or name CA or name C or name O or name  \ 
+CB or name CG )) or resid 41 through 46 or (resid 47 through 48 and (name N or n \ 
+ame CA or name C or name O or name CB )) or resid 49 through 51 or (resid 52 and \ 
+ (name N or name CA or name C or name O or name CB or name CG1)) or resid 53 thr \ 
+ough 55 or (resid 56 through 57 and (name N or name CA or name C or name O or na \ 
+me CB or name CG )) or (resid 58 and (name N or name CA or name C or name O or n \ 
+ame CB )) or resid 59 through 60 or (resid 61 and (name N or name CA or name C o \ 
+r name O or name CB )) or resid 62 through 65 or resid 86 through 89 or (resid 9 \ 
+0 and (name N or name CA or name C or name O or name CB )) or resid 91 through 1 \ 
+00 or (resid 101 and (name N or name CA or name C or name O or name CB or name C \ 
+G1)) or resid 102 through 122 or resid 124 through 137 or (resid 138 and (name N \ 
+ or name CA or name C or name O or name CB or name CG1)) or resid 139 through 15 \ 
+0 or (resid 151 and (name N or name CA or name C or name O or name CB or name CG \ 
+ )) or resid 152 through 165 or (resid 167 and (name N or name CA or name C or n \ 
+ame O or name CB )) or resid 168 through 170))
+  selection = (chain 'C' and (resid 1 through 12 or (resid 13 and (name N or name CA or name C \ 
+ or name O or name CB or name CG1)) or resid 14 through 15 or (resid 16 and (nam \ 
+e N or name CA or name C or name O or name CB )) or resid 17 through 22 or (resi \ 
+d 23 and (name N or name CA or name C or name O or name CB or name CG )) or resi \ 
+d 24 through 27 or (resid 29 and (name N or name CA or name C or name O or name  \ 
+CB or name CG )) or (resid 30 and (name N or name CA or name C or name O or name \ 
+ CB or name CG1)) or resid 31 through 35 or (resid 36 and (name N or name CA or  \ 
+name C or name O or name CB )) or resid 37 through 52 or (resid 53 and (name N o \ 
+r name CA or name C or name O or name CB or name CG )) or resid 54 through 56 or \ 
+ (resid 57 and (name N or name CA or name C or name O or name CB or name CG )) o \ 
+r (resid 58 and (name N or name CA or name C or name O or name CB )) or resid 59 \ 
+ through 65 or resid 86 through 89 or (resid 90 and (name N or name CA or name C \ 
+ or name O or name CB )) or resid 91 through 105 or (resid 106 and (name N or na \ 
+me CA or name C or name O or name CB or name OG1)) or resid 107 through 114 or ( \ 
+resid 115 and (name N or name CA or name C or name O or name CB or name CG1)) or \ 
+ resid 116 through 120 or (resid 121 and (name N or name CA or name C or name O  \ 
+or name CB or name CG )) or (resid 122 and (name N or name CA or name C or name  \ 
+O or name CB )) or resid 124 through 157 or (resid 158 and (name N or name CA or \ 
+ name C or name O or name CB or name CG )) or resid 159 through 165 or resid 167 \ 
+ through 170))
+  selection = (chain 'D' and (resid 1 through 11 or (resid 12 and (name N or name CA or name C \ 
+ or name O or name CB or name CG )) or resid 13 through 22 or (resid 23 and (nam \ 
+e N or name CA or name C or name O or name CB or name CG )) or resid 24 through  \ 
+26 or (resid 27 and (name N or name CA or name C or name O or name CB or name CG \ 
+ )) or resid 29 through 31 or (resid 32 and (name N or name CA or name C or name \ 
+ O or name CB or name CG1)) or resid 33 through 39 or (resid 40 and (name N or n \ 
+ame CA or name C or name O or name CB or name CG )) or resid 41 through 47 or (r \ 
+esid 48 and (name N or name CA or name C or name O or name CB )) or resid 49 or  \ 
+(resid 50 through 51 and (name N or name CA or name C or name O or name CB or na \ 
+me CG )) or resid 52 or (resid 53 and (name N or name CA or name C or name O or  \ 
+name CB or name CG )) or resid 54 through 55 or (resid 56 through 57 and (name N \ 
+ or name CA or name C or name O or name CB or name CG )) or resid 58 through 65  \ 
+or resid 86 or (resid 87 through 88 and (name N or name CA or name C or name O o \ 
+r name CB )) or resid 89 through 91 or (resid 92 and (name N or name CA or name  \ 
+C or name O or name CB )) or (resid 93 and (name N or name CA or name C or name  \ 
+O or name CB or name CG1)) or resid 94 through 100 or (resid 101 and (name N or  \ 
+name CA or name C or name O or name CB or name CG1)) or resid 102 through 105 or \ 
+ (resid 106 and (name N or name CA or name C or name O or name CB or name OG1))  \ 
+or resid 107 through 113 or (resid 114 through 115 and (name N or name CA or nam \ 
+e C or name O or name CB or name CG1)) or resid 116 through 120 or (resid 121 an \ 
+d (name N or name CA or name C or name O or name CB or name CG )) or (resid 122  \ 
+and (name N or name CA or name C or name O or name CB )) or resid 124 through 15 \ 
+3 or (resid 154 and (name N or name CA or name C or name O or name CB or name CG \ 
+1)) or resid 155 through 161 or (resid 162 and (name N or name CA or name C or n \ 
+ame O or name CB or name CG1)) or resid 163 through 164 or (resid 165 and (name  \ 
+N or name CA or name C or name O or name CB or name CG1)) or (resid 167 and (nam \ 
+e N or name CA or name C or name O or name CB )) or (resid 168 through 169 and ( \ 
+name N or name CA or name C or name O or name CB or name CG1 or name CG2)) or re \ 
+sid 170))
+}
+
+  Number of scatterers: 4536
+  At special positions: 0
+  Unit cell: (59.39, 116.651, 109.032, 90, 104.227, 90)
+  Space group: I 1 2 1 (No. 5)
+  Number of sites at special positions: 0
+  Number of scattering types: 4
+    Type Number    sf(0)
+     S       9     16.00
+     O     853      8.00
+     N     814      7.00
+     C    2860      6.00
+    sf(0) = scattering factor at diffraction angle 0.
+
+
+============================== Scattering factors =============================
+
+
+                ----------X-ray scattering dictionary----------                
+
+Number of scattering types: 4
+  Type Number    sf(0)   Gaussians
+   S       9     15.96       2
+   O     853      7.97       1
+   N     814      6.97       1
+   C    2860      5.97       2
+  sf(0) = scattering factor at diffraction angle 0.
+
+
+==================== Fixing bad ADP in input model (if any) ===================
+
+
+========================== Anomalous scatterer groups =========================
+
+All atoms refined with f_prime=0 and f_double_prime=0.
+  Number of disulfides: simple=0, symmetry=0
+
+  Automatic linking
+    Parameters for automatic linking
+      Linking & cutoffs
+        Metal                : False - 3.50
+        Amimo acid           : False - 1.90
+        Carbohydrate         : True  - 1.99
+        Ligands              : True  - 1.99
+        Small molecules      : False - 1.98
+        Amino acid - RNA/DNA : False
+      
+  Number of custom bonds: simple=0, symmetry=0
+  Time building additional restraints: 0.58
+  Conformation dependent library (CDL) restraints added in 238.5 milliseconds
+  
+  Adding C-beta torsion restraints...
+  Number of C-beta restraints generated:  1152
+
+  Time building geometry restraints manager: 0.68 seconds
+
+  NOTE: a complete listing of the restraints can be obtained by requesting
+        output of .geo file.
+
+  Histogram of bond lengths:
+        1.15 -     1.29: 797
+        1.29 -     1.43: 910
+        1.43 -     1.56: 2832
+        1.56 -     1.70: 5
+        1.70 -     1.84: 18
+  Bond restraints: 4562
+  Sorted by residual:
+  bond pdb=" C   PRO B  57 "
+       pdb=" N   PRO B  58 "
+    ideal  model  delta    sigma   weight residual
+    1.331  1.494 -0.163 1.27e-02 6.20e+03 1.65e+02
+  bond pdb=" C   PRO D 140 "
+       pdb=" O   PRO D 140 "
+    ideal  model  delta    sigma   weight residual
+    1.233  1.151  0.082 1.13e-02 7.83e+03 5.25e+01
+  bond pdb=" C   PRO B 140 "
+       pdb=" O   PRO B 140 "
+    ideal  model  delta    sigma   weight residual
+    1.233  1.170  0.063 1.13e-02 7.83e+03 3.13e+01
+  bond pdb=" N   PRO C 140 "
+       pdb=" CD  PRO C 140 "
+    ideal  model  delta    sigma   weight residual
+    1.473  1.547 -0.074 1.40e-02 5.10e+03 2.78e+01
+  bond pdb=" C   VAL C  30 "
+       pdb=" O   VAL C  30 "
+    ideal  model  delta    sigma   weight residual
+    1.236  1.185  0.051 1.02e-02 9.61e+03 2.48e+01
+  ... (remaining 4557 not shown)
+
+  Histogram of bond angle deviations from ideal:
+       98.86 -   106.32: 159
+      106.32 -   113.78: 2583
+      113.78 -   121.25: 2194
+      121.25 -   128.71: 1213
+      128.71 -   136.17: 21
+  Bond angle restraints: 6170
+  Sorted by residual:
+  angle pdb=" C   PRO B  57 "
+        pdb=" N   PRO B  58 "
+        pdb=" CA  PRO B  58 "
+      ideal   model   delta    sigma   weight residual
+     119.90  133.80  -13.90 1.02e+00 9.61e-01 1.86e+02
+  angle pdb=" C   ASP D  69 "
+        pdb=" CA  ASP D  69 "
+        pdb=" CB  ASP D  69 "
+      ideal   model   delta    sigma   weight residual
+     110.10  126.95  -16.85 1.90e+00 2.77e-01 7.86e+01
+  angle pdb=" C   PRO D 140 "
+        pdb=" CA  PRO D 140 "
+        pdb=" CB  PRO D 140 "
+      ideal   model   delta    sigma   weight residual
+     111.46  102.18    9.28 1.21e+00 6.83e-01 5.88e+01
+  angle pdb=" C   LYS B  -1 "
+        pdb=" N   ALA B   0 "
+        pdb=" CA  ALA B   0 "
+      ideal   model   delta    sigma   weight residual
+     121.54  136.17  -14.63 1.91e+00 2.74e-01 5.87e+01
+  angle pdb=" O   VAL C  87 "
+        pdb=" C   VAL C  87 "
+        pdb=" N   ASP C  88 "
+      ideal   model   delta    sigma   weight residual
+     122.57  131.26   -8.69 1.25e+00 6.40e-01 4.83e+01
+  ... (remaining 6165 not shown)
+
+  Histogram of dihedral angle deviations from ideal:
+        0.00 -    35.85: 2747
+       35.85 -    71.70: 93
+       71.70 -   107.55: 9
+      107.55 -   143.40: 7
+      143.40 -   179.25: 3
+  Dihedral angle restraints: 2859
+    sinusoidal: 1082
+      harmonic: 1777
+  Sorted by residual:
+  dihedral pdb=" CD  ARG B 139 "
+           pdb=" NE  ARG B 139 "
+           pdb=" CZ  ARG B 139 "
+           pdb=" NH1 ARG B 139 "
+      ideal   model   delta sinusoidal    sigma   weight residual
+       0.00  179.25 -179.25     1      1.00e+01 1.00e-02 1.92e+02
+  dihedral pdb=" N   PRO D  57 "
+           pdb=" CA  PRO D  57 "
+           pdb=" CB  PRO D  57 "
+           pdb=" CG  PRO D  57 "
+      ideal   model   delta sinusoidal    sigma   weight residual
+     -30.00 -147.78  117.78     1      2.00e+01 2.50e-03 3.52e+01
+  dihedral pdb=" CA  ASP C 163 "
+           pdb=" CB  ASP C 163 "
+           pdb=" CG  ASP C 163 "
+           pdb=" OD1 ASP C 163 "
+      ideal   model   delta sinusoidal    sigma   weight residual
+      70.00 -172.52 -117.48     1      2.00e+01 2.50e-03 3.51e+01
+  ... (remaining 2856 not shown)
+
+  Histogram of chiral volume deviations from ideal:
+       0.000 -    0.223: 724
+       0.223 -    0.447: 30
+       0.447 -    0.670: 3
+       0.670 -    0.894: 0
+       0.894 -    1.117: 1
+  Chirality restraints: 758
+  Sorted by residual:
+  chirality pdb=" CB  VAL A  95 "
+            pdb=" CA  VAL A  95 "
+            pdb=" CG1 VAL A  95 "
+            pdb=" CG2 VAL A  95 "
+    both_signs  ideal   model   delta    sigma   weight residual
+      False     -2.63   -1.51   -1.12 2.00e-01 2.50e+01 3.12e+01
+  chirality pdb=" CB  ILE A 123 "
+            pdb=" CA  ILE A 123 "
+            pdb=" CG1 ILE A 123 "
+            pdb=" CG2 ILE A 123 "
+    both_signs  ideal   model   delta    sigma   weight residual
+      False      2.64    2.11    0.54 2.00e-01 2.50e+01 7.25e+00
+  chirality pdb=" CB  VAL D  95 "
+            pdb=" CA  VAL D  95 "
+            pdb=" CG1 VAL D  95 "
+            pdb=" CG2 VAL D  95 "
+    both_signs  ideal   model   delta    sigma   weight residual
+      False     -2.63   -2.10   -0.53 2.00e-01 2.50e+01 7.03e+00
+  ... (remaining 755 not shown)
+
+  Planarity restraints: 801
+  Sorted by residual:
+                                 delta    sigma   weight rms_deltas residual
+  plane pdb=" CB  ASP A   9 "    0.017 2.00e-02 2.50e+03   3.47e-02 1.20e+01
+        pdb=" CG  ASP A   9 "   -0.060 2.00e-02 2.50e+03
+        pdb=" OD1 ASP A   9 "    0.021 2.00e-02 2.50e+03
+        pdb=" OD2 ASP A   9 "    0.022 2.00e-02 2.50e+03
+                                 delta    sigma   weight rms_deltas residual
+  plane pdb=" CA  LEU C  29 "   -0.012 2.00e-02 2.50e+03   2.57e-02 6.59e+00
+        pdb=" C   LEU C  29 "    0.044 2.00e-02 2.50e+03
+        pdb=" O   LEU C  29 "   -0.017 2.00e-02 2.50e+03
+        pdb=" N   VAL C  30 "   -0.015 2.00e-02 2.50e+03
+                                 delta    sigma   weight rms_deltas residual
+  plane pdb=" CA  ASN A 146 "    0.013 2.00e-02 2.50e+03   2.55e-02 6.50e+00
+        pdb=" C   ASN A 146 "   -0.044 2.00e-02 2.50e+03
+        pdb=" O   ASN A 146 "    0.017 2.00e-02 2.50e+03
+        pdb=" N   VAL A 147 "    0.015 2.00e-02 2.50e+03
+  ... (remaining 798 not shown)
+
+  Histogram of nonbonded interaction distances:
+        0.87 -     1.67: 2
+        1.67 -     2.48: 29
+        2.48 -     3.29: 5317
+        3.29 -     4.09: 11902
+        4.09 -     4.90: 20795
+  Warning: very small nonbonded interaction distances.
+  Nonbonded interactions: 38045
+  Sorted by model distance:
+  nonbonded pdb=" O   ILE D  19 "
+            pdb=" ND2 ASN D  23 "
+     model   vdw
+     0.868 2.520
+  nonbonded pdb=" NZ  LYS A   6 "
+            pdb=" O   HOH E   5 "
+     model   vdw
+     1.150 2.520
+  nonbonded pdb=" N   GLY C  91 "
+            pdb=" O   HOH E   7 "
+     model   vdw
+     1.785 2.520
+  nonbonded pdb=" CA  GLY A  91 "
+            pdb=" O   HOH E   8 "
+     model   vdw
+     1.799 3.440
+  nonbonded pdb=" OE2 GLU D  50 "
+            pdb=" O   LYS D  55 "
+     model   vdw
+     1.835 3.040
+  ... (remaining 38040 not shown)
+
+  NOTE: a complete listing of the restraints can be obtained by requesting
+        output of .geo file.
+
+======================== Summary of geometry restraints =======================
+
+
+====================== Modifying start model if requested =====================
+
+n_use            =  4536
+n_use_u_iso      =  4536
+n_use_u_aniso    =  0
+n_grad_site      =  0
+n_grad_u_iso     =  0
+n_grad_u_aniso   =  0
+n_grad_occupancy =  0
+n_grad_fp        =  0
+n_grad_fdp       =  0
+total number of scatterers =  4536
+
+================== Extract refinement strategy and selections =================
+
+Refinement flags and selection counts:
+  individual_sites       =  True (4536 atoms)
+  torsion_angles         = False (0 atoms)
+  rigid_body             = False (0 atoms in 0 groups)
+  individual_adp         = False (iso = 0 aniso = 0)
+  group_adp              =  True (4536 atoms in 632 groups)
+  tls                    = False (0 atoms in 0 groups)
+  occupancies            =  True (0 atoms)
+  group_anomalous        = False
+
+*******************************************************************************
+Automatic adjustment:
+  hydrogens.refine=riding
+*******************************************************************************
+
+
+==================== Process input NCS or/and find new NCS ====================
+
+Number of NCS groups: 1
+
+refinement.pdb_interpretation.ncs_group {
+  reference = (chain 'A' and (resid 1 through 5 or (resid 6 through 7 and \
+              (name N or name CA or name C or name O or name CB )) or resid 8 \
+              or (resid 9 and (name N or name CA or name C or name O or name \
+              CB )) or resid 10 through 11 or (resid 12 and (name N or name \
+              CA or name C or name O or name CB or name CG )) or (resid 13 \
+              and (name N or name CA or name C or name O or name CB or name \
+              CG1)) or resid 14 through 15 or (resid 16 and (name N or name \
+              CA or name C or name O or name CB )) or resid 17 through 21 or \
+              (resid 22 through 23 and (name N or name CA or name C or name O \
+              or name CB or name CG )) or resid 24 through 26 or (resid 27 \
+              and (name N or name CA or name C or name O or name CB or name \
+              CG )) or resid 29 or (resid 30 and (name N or name CA or name C \
+              or name O or name CB or name CG1)) or resid 31 or (resid 32 and \
+              (name N or name CA or name C or name O or name CB or name CG1)) \
+              or resid 33 through 35 or (resid 36 and (name N or name CA or \
+              name C or name O or name CB )) or resid 37 through 39 or (resid \
+              40 and (name N or name CA or name C or name O or name CB or \
+              name CG )) or resid 41 through 47 or (resid 48 and (name N or \
+              name CA or name C or name O or name CB )) or resid 49 through \
+              51 or (resid 52 and (name N or name CA or name C or name O or \
+              name CB or name CG1)) or (resid 53 and (name N or name CA or \
+              name C or name O or name CB or name CG )) or resid 54 through \
+              55 or (resid 56 through 57 and (name N or name CA or name C or \
+              name O or name CB or name CG )) or (resid 58 and (name N or \
+              name CA or name C or name O or name CB )) or resid 59 through \
+              86 or (resid 87 through 88 and (name N or name CA or name C or \
+              name O or name CB )) or resid 89 through 91 or (resid 92 and \
+              (name N or name CA or name C or name O or name CB )) or (resid \
+              93 and (name N or name CA or name C or name O or name CB or \
+              name CG1)) or resid 94 through 100 or (resid 101 and (name N or \
+              name CA or name C or name O or name CB or name CG1)) or resid \
+              102 through 105 or (resid 106 and (name N or name CA or name C \
+              or name O or name CB or name OG1)) or resid 107 through 113 or \
+              (resid 114 through 115 and (name N or name CA or name C or name \
+              O or name CB or name CG1)) or resid 116 through 120 or (resid \
+              121 and (name N or name CA or name C or name O or name CB or \
+              name CG )) or resid 122 or resid 124 through 137 or (resid 138 \
+              and (name N or name CA or name C or name O or name CB or name \
+              CG1)) or resid 139 through 165 or (resid 167 and (name N or \
+              name CA or name C or name O or name CB )) or resid 168 through \
+              170))
+  selection = (chain 'B' and (resid 1 through 8 or (resid 9 and (name N or \
+              name CA or name C or name O or name CB )) or resid 10 through \
+              26 or (resid 27 and (name N or name CA or name C or name O or \
+              name CB or name CG )) or resid 29 or (resid 30 and (name N or \
+              name CA or name C or name O or name CB or name CG1)) or resid \
+              31 through 35 or (resid 36 and (name N or name CA or name C or \
+              name O or name CB )) or resid 37 through 39 or (resid 40 and \
+              (name N or name CA or name C or name O or name CB or name CG )) \
+              or resid 41 through 46 or (resid 47 through 48 and (name N or \
+              name CA or name C or name O or name CB )) or resid 49 through \
+              51 or (resid 52 and (name N or name CA or name C or name O or \
+              name CB or name CG1)) or resid 53 through 55 or (resid 56 \
+              through 57 and (name N or name CA or name C or name O or name \
+              CB or name CG )) or (resid 58 and (name N or name CA or name C \
+              or name O or name CB )) or resid 59 through 60 or (resid 61 and \
+              (name N or name CA or name C or name O or name CB )) or resid \
+              62 through 65 or resid 86 through 89 or (resid 90 and (name N \
+              or name CA or name C or name O or name CB )) or resid 91 \
+              through 100 or (resid 101 and (name N or name CA or name C or \
+              name O or name CB or name CG1)) or resid 102 through 122 or \
+              resid 124 through 137 or (resid 138 and (name N or name CA or \
+              name C or name O or name CB or name CG1)) or resid 139 through \
+              150 or (resid 151 and (name N or name CA or name C or name O or \
+              name CB or name CG )) or resid 152 through 165 or (resid 167 \
+              and (name N or name CA or name C or name O or name CB )) or \
+              resid 168 through 170))
+  selection = (chain 'C' and (resid 1 through 12 or (resid 13 and (name N or \
+              name CA or name C or name O or name CB or name CG1)) or resid \
+              14 through 15 or (resid 16 and (name N or name CA or name C or \
+              name O or name CB )) or resid 17 through 22 or (resid 23 and \
+              (name N or name CA or name C or name O or name CB or name CG )) \
+              or resid 24 through 27 or (resid 29 and (name N or name CA or \
+              name C or name O or name CB or name CG )) or (resid 30 and \
+              (name N or name CA or name C or name O or name CB or name CG1)) \
+              or resid 31 through 35 or (resid 36 and (name N or name CA or \
+              name C or name O or name CB )) or resid 37 through 52 or (resid \
+              53 and (name N or name CA or name C or name O or name CB or \
+              name CG )) or resid 54 through 56 or (resid 57 and (name N or \
+              name CA or name C or name O or name CB or name CG )) or (resid \
+              58 and (name N or name CA or name C or name O or name CB )) or \
+              resid 59 through 65 or resid 86 through 89 or (resid 90 and \
+              (name N or name CA or name C or name O or name CB )) or resid \
+              91 through 105 or (resid 106 and (name N or name CA or name C \
+              or name O or name CB or name OG1)) or resid 107 through 114 or \
+              (resid 115 and (name N or name CA or name C or name O or name \
+              CB or name CG1)) or resid 116 through 120 or (resid 121 and \
+              (name N or name CA or name C or name O or name CB or name CG )) \
+              or (resid 122 and (name N or name CA or name C or name O or \
+              name CB )) or resid 124 through 157 or (resid 158 and (name N \
+              or name CA or name C or name O or name CB or name CG )) or \
+              resid 159 through 165 or resid 167 through 170))
+  selection = (chain 'D' and (resid 1 through 11 or (resid 12 and (name N or \
+              name CA or name C or name O or name CB or name CG )) or resid \
+              13 through 22 or (resid 23 and (name N or name CA or name C or \
+              name O or name CB or name CG )) or resid 24 through 26 or \
+              (resid 27 and (name N or name CA or name C or name O or name CB \
+              or name CG )) or resid 29 through 31 or (resid 32 and (name N \
+              or name CA or name C or name O or name CB or name CG1)) or \
+              resid 33 through 39 or (resid 40 and (name N or name CA or name \
+              C or name O or name CB or name CG )) or resid 41 through 47 or \
+              (resid 48 and (name N or name CA or name C or name O or name CB \
+              )) or resid 49 or (resid 50 through 51 and (name N or name CA \
+              or name C or name O or name CB or name CG )) or resid 52 or \
+              (resid 53 and (name N or name CA or name C or name O or name CB \
+              or name CG )) or resid 54 through 55 or (resid 56 through 57 \
+              and (name N or name CA or name C or name O or name CB or name \
+              CG )) or resid 58 through 65 or resid 86 or (resid 87 through \
+              88 and (name N or name CA or name C or name O or name CB )) or \
+              resid 89 through 91 or (resid 92 and (name N or name CA or name \
+              C or name O or name CB )) or (resid 93 and (name N or name CA \
+              or name C or name O or name CB or name CG1)) or resid 94 \
+              through 100 or (resid 101 and (name N or name CA or name C or \
+              name O or name CB or name CG1)) or resid 102 through 105 or \
+              (resid 106 and (name N or name CA or name C or name O or name \
+              CB or name OG1)) or resid 107 through 113 or (resid 114 through \
+              115 and (name N or name CA or name C or name O or name CB or \
+              name CG1)) or resid 116 through 120 or (resid 121 and (name N \
+              or name CA or name C or name O or name CB or name CG )) or \
+              (resid 122 and (name N or name CA or name C or name O or name \
+              CB )) or resid 124 through 153 or (resid 154 and (name N or \
+              name CA or name C or name O or name CB or name CG1)) or resid \
+              155 through 161 or (resid 162 and (name N or name CA or name C \
+              or name O or name CB or name CG1)) or resid 163 through 164 or \
+              (resid 165 and (name N or name CA or name C or name O or name \
+              CB or name CG1)) or (resid 167 and (name N or name CA or name C \
+              or name O or name CB )) or (resid 168 through 169 and (name N \
+              or name CA or name C or name O or name CB or name CG1 or name \
+              CG2)) or resid 170))
+}
+Not restraining NCS-related b-factors:
+refinement.ncs.b_factor_weight = 0.0
+
+
+
+Determining NCS matches...
+--------------------------------------------------------
+Torsion NCS Matching Summary:
+ GLU A   1  <=>  GLU B   1  <=>  GLU C   1  <=>  GLU D   1 
+ ILE A   2  <=>  ILE B   2  <=>  ILE C   2  <=>  ILE D   2 
+ MET A   3  <=>  MET B   3  <=>  MET C   3  <=>  MET D   3 
+ ASP A   4  <=>  ASP B   4  <=>  ASP C   4  <=>  ASP D   4 
+ GLU A   5  <=>  GLU B   5  <=>  GLU C   5  <=>  GLU D   5 
+ LYS A   6  <=>  LYS B   6  <=>  LYS C   6  <=>  LYS D   6 
+ ALA A   7  <=>  ALA B   7  <=>  ALA C   7  <=>  ALA D   7 
+ ILE A   8  <=>  ILE B   8  <=>  ILE C   8  <=>  ILE D   8 
+ ASP A   9  <=>  ASP B   9  <=>  ASP C   9  <=>  ASP D   9 
+ ARG A  10  <=>  ARG B  10  <=>  ARG C  10  <=>  ARG D  10 
+ ALA A  11  <=>  ALA B  11  <=>  ALA C  11  <=>  ALA D  11 
+ LEU A  12  <=>  LEU B  12  <=>  LEU C  12  <=>  LEU D  12 
+ ILE A  13  <=>  ILE B  13  <=>  ILE C  13  <=>  ILE D  13 
+ ARG A  14  <=>  ARG B  14  <=>  ARG C  14  <=>  ARG D  14 
+ ILE A  15  <=>  ILE B  15  <=>  ILE C  15  <=>  ILE D  15 
+ SER A  16  <=>  SER B  16  <=>  SER C  16  <=>  SER D  16 
+ HIS A  17  <=>  HIS B  17  <=>  HIS C  17  <=>  HIS D  17 
+ GLU A  18  <=>  GLU B  18  <=>  GLU C  18  <=>  GLU D  18 
+ ILE A  19  <=>  ILE B  19  <=>  ILE C  19  <=>  ILE D  19 
+ VAL A  20  <=>  VAL B  20  <=>  VAL C  20  <=>  VAL D  20 
+ GLU A  21  <=>  GLU B  21  <=>  GLU C  21  <=>  GLU D  21 
+ ARG A  22  <=>  ARG B  22  <=>  ARG C  22  <=>  ARG D  22 
+ ASN A  23  <=>  ASN B  23  <=>  ASN C  23  <=>  ASN D  23 
+ LYS A  24  <=>  LYS B  24  <=>  LYS C  24  <=>  LYS D  24 
+ GLY A  25  <=>  GLY B  25  <=>  GLY C  25  <=>  GLY D  25 
+ ILE A  26  <=>  ILE B  26  <=>  ILE C  26  <=>  ILE D  26 
+ GLU A  27  <=>  GLU B  27  <=>  GLU C  27  <=>  GLU D  27 
+ LEU A  29  <=>  LEU B  29  <=>  LEU C  29  <=>  LEU D  29 
+ VAL A  30  <=>  VAL B  30  <=>  VAL C  30  <=>  VAL D  30 
+ LEU A  31  <=>  LEU B  31  <=>  LEU C  31  <=>  LEU D  31 
+ ILE A  32  <=>  ILE B  32  <=>  ILE C  32  <=>  ILE D  32 
+ GLY A  33  <=>  GLY B  33  <=>  GLY C  33  <=>  GLY D  33 
+ ILE A  34  <=>  ILE B  34  <=>  ILE C  34  <=>  ILE D  34 
+ MET A  35  <=>  MET B  35  <=>  MET C  35  <=>  MET D  35 
+ ARG A  36  <=>  ARG B  36  <=>  ARG C  36  <=>  ARG D  36 
+ ARG A  37  <=>  ARG B  37  <=>  ARG C  37  <=>  ARG D  37 
+ GLY A  38  <=>  GLY B  38  <=>  GLY C  38  <=>  GLY D  38 
+ VAL A  39  <=>  VAL B  39  <=>  VAL C  39  <=>  VAL D  39 
+ PRO A  40  <=>  PRO B  40  <=>  PRO C  40  <=>  PRO D  40 
+ LEU A  41  <=>  LEU B  41  <=>  LEU C  41  <=>  LEU D  41 
+ ALA A  42  <=>  ALA B  42  <=>  ALA C  42  <=>  ALA D  42 
+ ASN A  43  <=>  ASN B  43  <=>  ASN C  43  <=>  ASN D  43 
+ ARG A  44  <=>  ARG B  44  <=>  ARG C  44  <=>  ARG D  44 
+ LEU A  45  <=>  LEU B  45  <=>  LEU C  45  <=>  LEU D  45 
+ ALA A  46  <=>  ALA B  46  <=>  ALA C  46  <=>  ALA D  46 
+ ARG A  47  <=>  ARG B  47  <=>  ARG C  47  <=>  ARG D  47 
+ TYR A  48  <=>  TYR B  48  <=>  TYR C  48  <=>  TYR D  48 
+ ILE A  49  <=>  ILE B  49  <=>  ILE C  49  <=>  ILE D  49 
+ GLU A  50  <=>  GLU B  50  <=>  GLU C  50  <=>  GLU D  50 
+ ARG A  51  <=>  ARG B  51  <=>  ARG C  51  <=>  ARG D  51 
+ ILE A  52  <=>  ILE B  52  <=>  ILE C  52  <=>  ILE D  52 
+ GLU A  53  <=>  GLU B  53  <=>  GLU C  53  <=>  GLU D  53 
+ GLY A  54  <=>  GLY B  54  <=>  GLY C  54  <=>  GLY D  54 
+ LYS A  55  <=>  LYS B  55  <=>  LYS C  55  <=>  LYS D  55 
+ ARG A  56  <=>  ARG B  56  <=>  ARG C  56  <=>  ARG D  56 
+ PRO A  57  <=>  PRO B  57  <=>  PRO C  57  <=>  PRO D  57 
+ PRO A  58  <=>  PRO B  58  <=>  PRO C  58  <=>  PRO D  58 
+ ILE A  59  <=>  ILE B  59  <=>  ILE C  59  <=>  ILE D  59 
+ GLY A  60  <=>  GLY B  60  <=>  GLY C  60  <=>  GLY D  60 
+ SER A  61  <=>  SER B  61  <=>  SER C  61  <=>  SER D  61 
+ LEU A  62  <=>  LEU B  62  <=>  LEU C  62  <=>  LEU D  62 
+ ASP A  63  <=>  ASP B  63  <=>  ASP C  63  <=>  ASP D  63 
+ ILE A  64  <=>  ILE B  64  <=>  ILE C  64  <=>  ILE D  64 
+ THR A  65  <=>  THR B  65  <=>  THR C  65  <=>  THR D  65 
+ GLY A  86  <=>  GLY B  86  <=>  GLY C  86  <=>  GLY D  86 
+ VAL A  87  <=>  VAL B  87  <=>  VAL C  87  <=>  VAL D  87 
+ ASP A  88  <=>  ASP B  88  <=>  ASP C  88  <=>  ASP D  88 
+ VAL A  89  <=>  VAL B  89  <=>  VAL C  89  <=>  VAL D  89 
+ ILE A  90  <=>  ILE B  90  <=>  ILE C  90  <=>  ILE D  90 
+ GLY A  91  <=>  GLY B  91  <=>  GLY C  91  <=>  GLY D  91 
+ LYS A  92  <=>  LYS B  92  <=>  LYS C  92  <=>  LYS D  92 
+ ILE A  93  <=>  ILE B  93  <=>  ILE C  93  <=>  ILE D  93 
+ VAL A  94  <=>  VAL B  94  <=>  VAL C  94  <=>  VAL D  94 
+ VAL A  95  <=>  VAL B  95  <=>  VAL C  95  <=>  VAL D  95 
+ LEU A  96  <=>  LEU B  96  <=>  LEU C  96  <=>  LEU D  96 
+ VAL A  97  <=>  VAL B  97  <=>  VAL C  97  <=>  VAL D  97 
+ ASP A  98  <=>  ASP B  98  <=>  ASP C  98  <=>  ASP D  98 
+ ASP A  99  <=>  ASP B  99  <=>  ASP C  99  <=>  ASP D  99 
+ VAL A 100  <=>  VAL B 100  <=>  VAL C 100  <=>  VAL D 100 
+ ILE A 101  <=>  ILE B 101  <=>  ILE C 101  <=>  ILE D 101 
+ TYR A 102  <=>  TYR B 102  <=>  TYR C 102  <=>  TYR D 102 
+ THR A 103  <=>  THR B 103  <=>  THR C 103  <=>  THR D 103 
+ GLY A 104  <=>  GLY B 104  <=>  GLY C 104  <=>  GLY D 104 
+ ARG A 105  <=>  ARG B 105  <=>  ARG C 105  <=>  ARG D 105 
+ THR A 106  <=>  THR B 106  <=>  THR C 106  <=>  THR D 106 
+ VAL A 107  <=>  VAL B 107  <=>  VAL C 107  <=>  VAL D 107 
+ ARG A 108  <=>  ARG B 108  <=>  ARG C 108  <=>  ARG D 108 
+ ALA A 109  <=>  ALA B 109  <=>  ALA C 109  <=>  ALA D 109 
+ ALA A 110  <=>  ALA B 110  <=>  ALA C 110  <=>  ALA D 110 
+ MET A 111  <=>  MET B 111  <=>  MET C 111  <=>  MET D 111 
+ ASP A 112  <=>  ASP B 112  <=>  ASP C 112  <=>  ASP D 112 
+ ALA A 113  <=>  ALA B 113  <=>  ALA C 113  <=>  ALA D 113 
+ VAL A 114  <=>  VAL B 114  <=>  VAL C 114  <=>  VAL D 114 
+ ILE A 115  <=>  ILE B 115  <=>  ILE C 115  <=>  ILE D 115 
+ ASP A 116  <=>  ASP B 116  <=>  ASP C 116  <=>  ASP D 116 
+ LEU A 117  <=>  LEU B 117  <=>  LEU C 117  <=>  LEU D 117 
+ GLY A 118  <=>  GLY B 118  <=>  GLY C 118  <=>  GLY D 118 
+ ARG A 119  <=>  ARG B 119  <=>  ARG C 119  <=>  ARG D 119 
+ PRO A 120  <=>  PRO B 120  <=>  PRO C 120  <=>  PRO D 120 
+ LYS A 121  <=>  LYS B 121  <=>  LYS C 121  <=>  LYS D 121 
+ GLN A 124  <=>  GLN B 124  <=>  GLN C 124  <=>  GLN D 124 
+ LEU A 125  <=>  LEU B 125  <=>  LEU C 125  <=>  LEU D 125 
+ ALA A 126  <=>  ALA B 126  <=>  ALA C 126  <=>  ALA D 126 
+ GLU A 127  <=>  GLU B 127  <=>  GLU C 127  <=>  GLU D 127 
+ LEU A 128  <=>  LEU B 128  <=>  LEU C 128  <=>  LEU D 128 
+ ILE A 129  <=>  ILE B 129  <=>  ILE C 129  <=>  ILE D 129 
+ ASP A 130  <=>  ASP B 130  <=>  ASP C 130  <=>  ASP D 130 
+ ARG A 131  <=>  ARG B 131  <=>  ARG C 131  <=>  ARG D 131 
+ GLY A 132  <=>  GLY B 132  <=>  GLY C 132  <=>  GLY D 132 
+ HIS A 133  <=>  HIS B 133  <=>  HIS C 133  <=>  HIS D 133 
+ ARG A 134  <=>  ARG B 134  <=>  ARG C 134  <=>  ARG D 134 
+ GLU A 135  <=>  GLU B 135  <=>  GLU C 135  <=>  GLU D 135 
+ LEU A 136  <=>  LEU B 136  <=>  LEU C 136  <=>  LEU D 136 
+ PRO A 137  <=>  PRO B 137  <=>  PRO C 137  <=>  PRO D 137 
+ ILE A 138  <=>  ILE B 138  <=>  ILE C 138  <=>  ILE D 138 
+ ARG A 139  <=>  ARG B 139  <=>  ARG C 139  <=>  ARG D 139 
+ PRO A 140  <=>  PRO B 140  <=>  PRO C 140  <=>  PRO D 140 
+ ASP A 141  <=>  ASP B 141  <=>  ASP C 141  <=>  ASP D 141 
+ TYR A 142  <=>  TYR B 142  <=>  TYR C 142  <=>  TYR D 142 
+ VAL A 143  <=>  VAL B 143  <=>  VAL C 143  <=>  VAL D 143 
+ GLY A 144  <=>  GLY B 144  <=>  GLY C 144  <=>  GLY D 144 
+ LYS A 145  <=>  LYS B 145  <=>  LYS C 145  <=>  LYS D 145 
+ ASN A 146  <=>  ASN B 146  <=>  ASN C 146  <=>  ASN D 146 
+ VAL A 147  <=>  VAL B 147  <=>  VAL C 147  <=>  VAL D 147 
+ PRO A 148  <=>  PRO B 148  <=>  PRO C 148  <=>  PRO D 148 
+ THR A 149  <=>  THR B 149  <=>  THR C 149  <=>  THR D 149 
+ SER A 150  <=>  SER B 150  <=>  SER C 150  <=>  SER D 150 
+ LYS A 151  <=>  LYS B 151  <=>  LYS C 151  <=>  LYS D 151 
+ SER A 152  <=>  SER B 152  <=>  SER C 152  <=>  SER D 152 
+ GLU A 153  <=>  GLU B 153  <=>  GLU C 153  <=>  GLU D 153 
+ ILE A 154  <=>  ILE B 154  <=>  ILE C 154  <=>  ILE D 154 
+ VAL A 155  <=>  VAL B 155  <=>  VAL C 155  <=>  VAL D 155 
+ SER A 156  <=>  SER B 156  <=>  SER C 156  <=>  SER D 156 
+ VAL A 157  <=>  VAL B 157  <=>  VAL C 157  <=>  VAL D 157 
+ MET A 158  <=>  MET B 158  <=>  MET C 158  <=>  MET D 158 
+ LEU A 159  <=>  LEU B 159  <=>  LEU C 159  <=>  LEU D 159 
+ GLU A 160  <=>  GLU B 160  <=>  GLU C 160  <=>  GLU D 160 
+ GLU A 161  <=>  GLU B 161  <=>  GLU C 161  <=>  GLU D 161 
+ VAL A 162  <=>  VAL B 162  <=>  VAL C 162  <=>  VAL D 162 
+ ASP A 163  <=>  ASP B 163  <=>  ASP C 163  <=>  ASP D 163 
+ ASN A 164  <=>  ASN B 164  <=>  ASN C 164  <=>  ASN D 164 
+ VAL A 165  <=>  VAL B 165  <=>  VAL C 165  <=>  VAL D 165 
+ LYS A 167  <=>  LYS B 167  <=>  LYS C 167  <=>  LYS D 167 
+ VAL A 168  <=>  VAL B 168  <=>  VAL C 168  <=>  VAL D 168 
+ ILE A 169  <=>  ILE B 169  <=>  ILE C 169  <=>  ILE D 169 
+ ILE A 170  <=>  ILE B 170  <=>  ILE C 170  <=>  ILE D 170 
+--------------------------------------------------------
+Initializing torsion NCS restraints...
+Number of torsion NCS restraints: 2446
+
+
+=================== Write initial parameters into .eff file ===================
+
+Writing effective parameters to file:
+  /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-gmp-DS3/phenixDS3/Refine_1/DS3_refine_1.eff
+
+Writing geometry restraints to file:
+  /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-gmp-DS3/phenixDS3/Refine_1/DS3_refine_1.geo
+CPU time processing inputs: 16.75
+
+
+============================ Non-default parameters ===========================
+
+A complete record of all parameters was written to the .eff file above.
+Below are only the non-defaults.
+
+#phil __ON__
+refinement {
+  crystal_symmetry {
+    unit_cell = 59.39 116.651 109.032 90 104.227 90
+    space_group = "I 1 2 1"
+  }
+  input {
+    pdb {
+      file_name = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-gmp-DS3/cooooooot/pyrR_ds3_refine7-coot-0.pdb"
+    }
+    xray_data {
+      file_name = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-gmp-DS3/Refine_1/pyrR_refinements_refine_data.mtz"
+      labels = "I-obs,SIGI-obs"
+      r_free_flags {
+        file_name = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-gmp-DS3/Refine_1/pyrR_refinements_refine_data.mtz"
+        label = "R-free-flags"
+        test_flag_value = 1
+      }
+    }
+    sequence {
+      file_name = "/Users/alfredo/Documents/Adriana/pyrR_Tthermo.fa"
+    }
+  }
+  output {
+    prefix = "DS3_refine"
+    serial = 1
+    serial_format = "%d"
+    write_def_file = False
+  }
+  electron_density_maps {
+    map_coefficients {
+      map_type = "2mFo-DFc"
+      mtz_label_amplitudes = "2FOFCWT"
+      mtz_label_phases = "PH2FOFCWT"
+      fill_missing_f_obs = True
+    }
+    map_coefficients {
+      map_type = "2mFo-DFc"
+      mtz_label_amplitudes = "2FOFCWT_no_fill"
+      mtz_label_phases = "PH2FOFCWT_no_fill"
+    }
+    map_coefficients {
+      map_type = "mFo-DFc"
+      mtz_label_amplitudes = "FOFCWT"
+      mtz_label_phases = "PHFOFCWT"
+    }
+    map_coefficients {
+      map_type = "anomalous"
+      mtz_label_amplitudes = "ANOM"
+      mtz_label_phases = "PHANOM"
+    }
+  }
+  refine {
+    strategy = *individual_sites *individual_sites_real_space rigid_body \
+               individual_adp *group_adp tls *occupancies group_anomalous
+  }
+  main {
+    number_of_macro_cycles = 5
+  }
+  hydrogens {
+    refine = individual *riding Auto
+  }
+  ncs {
+    b_factor_weight = 0
+  }
+  pdb_interpretation {
+    ncs_group {
+      reference = "(chain A and (resid 1 through 5 or (resid 6 through 7 and (name N or name CA or name C or name O or name CB )) or resid 8 or (resid 9 and (name N or name CA or name C or name O or name CB )) or resid 10 through 11 or (resid 12 and (name N or name CA or name C or name O or name CB or name CG )) or (resid 13 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 14 through 15 or (resid 16 and (name N or name CA or name C or name O or name CB )) or resid 17 through 21 or (resid 22 through 23 and (name N or name CA or name C or name O or name CB or name CG )) or resid 24 through 26 or (resid 27 and (name N or name CA or name C or name O or name CB or name CG )) or resid 29 or (resid 30 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 31 or (resid 32 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 33 through 35 or (resid 36 and (name N or name CA or name C or name O or name CB )) or resid 37 through 39 or (resid 40 and (name N or name CA or name C or name O or name CB or name CG )) or resid 41 through 47 or (resid 48 and (name N or name CA or name C or name O or name CB )) or resid 49 through 51 or (resid 52 and (name N or name CA or name C or name O or name CB or name CG1)) or (resid 53 and (name N or name CA or name C or name O or name CB or name CG )) or resid 54 through 55 or (resid 56 through 57 and (name N or name CA or name C or name O or name CB or name CG )) or (resid 58 and (name N or name CA or name C or name O or name CB )) or resid 59 through 86 or (resid 87 through 88 and (name N or name CA or name C or name O or name CB )) or resid 89 through 91 or (resid 92 and (name N or name CA or name C or name O or name CB )) or (resid 93 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 94 through 100 or (resid 101 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 102 through 105 or (resid 106 and (name N or name CA or name C or name O or name CB or name OG1)) or resid 107 through 113 or (resid 114 through 115 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 116 through 120 or (resid 121 and (name N or name CA or name C or name O or name CB or name CG )) or resid 122 or resid 124 through 137 or (resid 138 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 139 through 165 or (resid 167 and (name N or name CA or name C or name O or name CB )) or resid 168 through 170))"
+      selection = "(chain B and (resid 1 through 8 or (resid 9 and (name N or name CA or name C or name O or name CB )) or resid 10 through 26 or (resid 27 and (name N or name CA or name C or name O or name CB or name CG )) or resid 29 or (resid 30 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 31 through 35 or (resid 36 and (name N or name CA or name C or name O or name CB )) or resid 37 through 39 or (resid 40 and (name N or name CA or name C or name O or name CB or name CG )) or resid 41 through 46 or (resid 47 through 48 and (name N or name CA or name C or name O or name CB )) or resid 49 through 51 or (resid 52 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 53 through 55 or (resid 56 through 57 and (name N or name CA or name C or name O or name CB or name CG )) or (resid 58 and (name N or name CA or name C or name O or name CB )) or resid 59 through 60 or (resid 61 and (name N or name CA or name C or name O or name CB )) or resid 62 through 65 or resid 86 through 89 or (resid 90 and (name N or name CA or name C or name O or name CB )) or resid 91 through 100 or (resid 101 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 102 through 122 or resid 124 through 137 or (resid 138 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 139 through 150 or (resid 151 and (name N or name CA or name C or name O or name CB or name CG )) or resid 152 through 165 or (resid 167 and (name N or name CA or name C or name O or name CB )) or resid 168 through 170))"
+      selection = "(chain C and (resid 1 through 12 or (resid 13 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 14 through 15 or (resid 16 and (name N or name CA or name C or name O or name CB )) or resid 17 through 22 or (resid 23 and (name N or name CA or name C or name O or name CB or name CG )) or resid 24 through 27 or (resid 29 and (name N or name CA or name C or name O or name CB or name CG )) or (resid 30 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 31 through 35 or (resid 36 and (name N or name CA or name C or name O or name CB )) or resid 37 through 52 or (resid 53 and (name N or name CA or name C or name O or name CB or name CG )) or resid 54 through 56 or (resid 57 and (name N or name CA or name C or name O or name CB or name CG )) or (resid 58 and (name N or name CA or name C or name O or name CB )) or resid 59 through 65 or resid 86 through 89 or (resid 90 and (name N or name CA or name C or name O or name CB )) or resid 91 through 105 or (resid 106 and (name N or name CA or name C or name O or name CB or name OG1)) or resid 107 through 114 or (resid 115 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 116 through 120 or (resid 121 and (name N or name CA or name C or name O or name CB or name CG )) or (resid 122 and (name N or name CA or name C or name O or name CB )) or resid 124 through 157 or (resid 158 and (name N or name CA or name C or name O or name CB or name CG )) or resid 159 through 165 or resid 167 through 170))"
+      selection = "(chain D and (resid 1 through 11 or (resid 12 and (name N or name CA or name C or name O or name CB or name CG )) or resid 13 through 22 or (resid 23 and (name N or name CA or name C or name O or name CB or name CG )) or resid 24 through 26 or (resid 27 and (name N or name CA or name C or name O or name CB or name CG )) or resid 29 through 31 or (resid 32 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 33 through 39 or (resid 40 and (name N or name CA or name C or name O or name CB or name CG )) or resid 41 through 47 or (resid 48 and (name N or name CA or name C or name O or name CB )) or resid 49 or (resid 50 through 51 and (name N or name CA or name C or name O or name CB or name CG )) or resid 52 or (resid 53 and (name N or name CA or name C or name O or name CB or name CG )) or resid 54 through 55 or (resid 56 through 57 and (name N or name CA or name C or name O or name CB or name CG )) or resid 58 through 65 or resid 86 or (resid 87 through 88 and (name N or name CA or name C or name O or name CB )) or resid 89 through 91 or (resid 92 and (name N or name CA or name C or name O or name CB )) or (resid 93 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 94 through 100 or (resid 101 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 102 through 105 or (resid 106 and (name N or name CA or name C or name O or name CB or name OG1)) or resid 107 through 113 or (resid 114 through 115 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 116 through 120 or (resid 121 and (name N or name CA or name C or name O or name CB or name CG )) or (resid 122 and (name N or name CA or name C or name O or name CB )) or resid 124 through 153 or (resid 154 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 155 through 161 or (resid 162 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 163 through 164 or (resid 165 and (name N or name CA or name C or name O or name CB or name CG1)) or (resid 167 and (name N or name CA or name C or name O or name CB )) or (resid 168 through 169 and (name N or name CA or name C or name O or name CB or name CG1 or name CG2)) or resid 170))"
+    }
+    ncs_search {
+      enabled = True
+      chain_max_rmsd = 999
+      residue_match_radius = 999
+    }
+  }
+  gui {
+    base_output_dir = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-gmp-DS3/phenixDS3"
+    tmp_dir = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-gmp-DS3/phenixDS3/.phenix/tmp"
+  }
+}
+#phil __OFF__
+
+
+=============================== refinement start ==============================
+
+
+   ----------structure factors based statistics (before refinement)----------  
+
+
+                         ----------X-ray data----------                        
+
+|--(resolution: 3.00 - 56.75 A, n_refl.=14463 (all), 9.99  % free)------------|
+|                                                                             |
+| r_work= 0.3977 r_free= 0.5336 coordinate error (max.-lik. estimate): 0.27 A |
+|                                                                             |
+| normalized target function (ml) (work): 4.295074                            |
+| target function (ml) not normalized (work): 55913.272544                    |
+| target function (ml) not normalized (free): 6298.269285                     |
+|-----------------------------------------------------------------------------|
+
+|-----------------------------------------------------------------------------|
+| Bin     Resolution   Compl.  No. Refl.    R-factors          Targets        |
+|number     range              work test   work   test        work        test|
+|  1:   56.75 -    6.46 1.00   1328  149 0.4165 0.5460      5.6104      5.6261|
+|  2:    6.46 -    5.13 1.00   1322  145 0.3279 0.4832      4.9503      4.9648|
+|  3:    5.13 -    4.48 1.00   1285  143 0.3435 0.4989      4.5734      4.6521|
+|  4:    4.48 -    4.07 1.00   1317  147 0.4091 0.5454      4.4876      4.4719|
+|  5:    4.07 -    3.78 1.00   1301  144 0.4361 0.5792      4.3129       4.363|
+|  6:    3.78 -    3.56 0.99   1289  142 0.4636 0.5959      4.2589      4.4288|
+|  7:    3.56 -    3.38 1.00   1295  144 0.4331 0.5438      3.9948      3.9909|
+|  8:    3.38 -    3.23 1.00   1299  145 0.3995 0.5412      3.7305       3.888|
+|  9:    3.23 -    3.11 1.00   1284  142 0.3938 0.4803      3.5741      3.6548|
+| 10:    3.11 -    3.00 1.00   1298  144 0.3780 0.4880      3.4071      3.4922|
+|-----------------------------------------------------------------------------|
+
+|-----------------------------------------------------------------------------|
+|R-free likelihood based estimates for figures of merit, absolute phase error,|
+|and distribution parameters alpha and beta (Acta Cryst. (1995). A51, 880-887)|
+|                                                                             |
+| Bin     Resolution      No. Refl.   FOM  Phase Scale    Alpha        Beta   |
+|  #        range        work  test        error factor                       |
+|  1:   56.75 -    6.46  1328   149  0.16  77.74   0.77     0.02      18591.03|
+|  2:    6.46 -    5.13  1322   145  0.35  64.08   1.13     0.07       7526.07|
+|  3:    5.13 -    4.48  1285   143  0.78  28.95   1.37     0.11       1756.99|
+|  4:    4.48 -    4.07  1317   147  0.79  27.91   1.57     0.12       1336.72|
+|  5:    4.07 -    3.78  1301   144  0.75  32.20   1.59     0.13       1096.71|
+|  6:    3.78 -    3.56  1289   142  0.69  36.74   1.62     0.12        864.72|
+|  7:    3.56 -    3.38  1295   144  0.67  38.95   1.51     0.12        618.63|
+|  8:    3.38 -    3.23  1299   145  0.66  40.19   1.39     0.11        424.60|
+|  9:    3.23 -    3.11  1284   142  0.65  40.36   1.34     0.10        302.26|
+| 10:    3.11 -    3.00  1298   144  0.64  41.38   1.26     0.09        220.82|
+|alpha:            min =        0.02 max =            0.13 mean =         0.10|
+|beta:             min =      220.82 max =        18591.03 mean =      3320.43|
+|figures of merit: min =        0.00 max =            1.00 mean =         0.61|
+|phase err.(work): min =        0.00 max =           89.97 mean =        42.97|
+|phase err.(test): min =        0.00 max =           89.92 mean =        42.79|
+|-----------------------------------------------------------------------------|
+
+        ----------Initial model statistics (before refinement)----------       
+
+
+                min    max   mean <Bi,j>   iso aniso
+   Overall:   27.74 230.64  68.45  10.10  4536     0
+   Protein:   27.74 230.64  68.54  10.10  4525     0
+   Water:     30.00  30.00  30.00    N/A    11     0
+   Chain  A:  30.00 149.21  66.64    N/A  1136     0
+   Chain  C:  30.00 230.64  69.39    N/A  1118     0
+   Chain  B:  27.74 179.76  66.10    N/A  1122     0
+   Chain  E:  30.00  30.00  30.00    N/A    11     0
+   Chain  D:  30.00 195.01  71.98    N/A  1149     0
+   Histogram:
+       Values      Number of atoms
+    27.74 - 48.03       774
+    48.03 - 68.32      1881
+    68.32 - 88.61      1124
+    88.61 - 108.90      497
+   108.90 - 129.19      156
+   129.19 - 149.48       74
+   149.48 - 169.77       15
+   169.77 - 190.06        8
+   190.06 - 210.35        5
+   210.35 - 230.64        2
+
+|-Occupancies statistics------------------------------------------------------|
+| occupancies: max = 1.00   min = 1.00   number of occupancies < 0.1 = 0      |
+|-----------------------------------------------------------------------------|
+
+*********************** REFINEMENT MACRO_CYCLE 1 OF 5 *************************
+
+|--(resolution: 3.00 - 56.75 A, n_refl.=14463 (all), 9.99  % free)------------|
+|                                                                             |
+| r_work= 0.3977 r_free= 0.5336 coordinate error (max.-lik. estimate): 0.27 A |
+|                                                                             |
+| normalized target function (ml) (work): 4.295074                            |
+| target function (ml) not normalized (work): 55913.272544                    |
+| target function (ml) not normalized (free): 6298.269285                     |
+|-----------------------------------------------------------------------------|
+
+=========================== Bulk-solvent and scaling ==========================
+
+
+============================= updating all scales =============================
+
+                   start: r(all,work,free)=0.4121 0.3977 0.5336 n_refl.: 14463
+       re-set all scales: r(all,work,free)=0.4121 0.3977 0.5336 n_refl.: 14463
+         remove outliers: r(all,work,free)=0.4121 0.3977 0.5338 n_refl.: 14460
+ overall B=2.95 to atoms: r(all,work,free)=0.4243 0.4095 0.5473 n_refl.: 14460
+bulk-solvent and scaling: r(all,work,free)=0.2604 0.2555 0.3058 n_refl.: 14460
+         remove outliers: r(all,work,free)=0.2598 0.2555 0.2994 n_refl.: 14459
+
+ ======================== Statistics in resolution bins ======================== 
+
+Total model structure factor:
+  F_model = k_total * (F_calc + k_mask * F_mask)
+
+    k_total = k_isotropic * k_anisotropic
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 56.752-15.871   96.15    90    10 0.3501  1547.694  1544.135 1.421 1.014 0.299
+ 15.820-12.710   99.02    91    10 0.2039  1730.894  1651.674 1.203 1.017 0.279
+ 12.676-10.227  100.00   162    17 0.1541  1988.139  1954.101 1.050 1.015 0.260
+ 10.169-8.210   100.00   311    35 0.1770  1594.773  1568.856 1.126 1.013 0.258
+  8.204-6.592   100.00   600    67 0.2391  1009.154   974.580 0.986 1.009 0.256
+  6.589-5.298   100.00  1143   126 0.2871   758.205   711.517 0.911 1.002 0.196
+  5.293-4.255   100.00  2194   245 0.2156   874.801   838.198 1.002 0.993 0.174
+  4.254-3.418    99.72  4237   469 0.2737   565.365   534.546 1.088 0.977 0.105
+  3.418-3.000    99.96  4188   464 0.3252   278.729   253.326 0.954 0.960 0.012
+
+  Approximation of k_total with k_overall*exp(-b_overall*s**2/4)
+    k_overall=1.0576   b_overall=4.2827  
+
+============================ Set refinement target ============================
+
+  using refinement target ls_wunit_k1 
+
+
+================================== NQH flips ==================================
+
+r_work=0.2555 r_free=0.2994
+Analyzing N/Q/H residues for possible flip corrections...
+
+No N/Q/H corrections needed this macrocycle
+r_work=0.2555 r_free=0.2994
+
+==================== Compute data/restraints target weights ===================
+
+|-----------------------------------------------------------------------------|
+| XYZ refinement: T = Eexperimental * wxc * wxc_scale + Echem * wc            |
+| wxc = 31.303362             wxc_scale = 0.500            wc = 1.000         |
+|                                                                             |
+| ADP refinement: T = Eexperimental * wxu * wxu_scale + Eadp  * wu            |
+| wxu = 1.000000              wxu_scale = 1.000            wu = 0.000         |
+|-----------------------------------------------------------------------------|
+
+
+====================== XYZ individual (reciprocal space) ======================
+
+
+              ----------Updating torsion NCS restraints----------              
+
+Verifying torsion NCS restraints...
+Number of torsion NCS restraints: 2446
+
+    R-FACTORS           RMSD     CLASH  RAMA  ROTA CBET WEIGHT    TARGETS
+ work  free  delta  bonds  angl                                  data   restr
+25.55 29.94   4.39  0.013   1.6   25.6   2.8   5.6    1   none  0.071  0.5827
+24.19 30.27   6.08  0.012   1.4   15.8   2.6   8.5    0 15.652  0.061  0.3115
+
+Legend:
+  - first line corresponds to starting state (before refinement)
+  - R-factors reported in percent
+  - delta is Rfree-Rwork in percent
+  - CLASH is all-atom Molprobity clashscore
+  - ROTA is percent of side-chain rotamer outliers
+  - RAMA is percent of Ramachandran plot outliers
+  - CBET is number of Cbeta deviations
+  - WEIGHT is relative weight between X-ray (or neutron) target and restraints
+  - TARGETS: the values of X-ray (or neutron) and restraints target functions
+
+====================== ADP refinement (reciprocal space) ======================
+
+
+               ----------group isotropic ADP refinement----------              
+
+|-group b-factor refinement (macro cycle = 0; iterations = 0)-----------------|
+| r_work = 0.2419 r_free = 0.3027 target = 0.061114 restraints weight = None  |
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 1; iterations = 31)----------------|
+| r_work = 0.2314 r_free = 0.2939 target = 0.056064 restraints weight = 13234.636|
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 2; iterations = 26)----------------|
+| r_work = 0.2303 r_free = 0.2931 target = 0.055501 restraints weight = 16670.721|
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 3; iterations = 22)----------------|
+| r_work = 0.2303 r_free = 0.2931 target = 0.055501 restraints weight = 17333.569|
+|-----------------------------------------------------------------------------|
+
+                min    max   mean <Bi,j>   iso aniso
+   Overall:   30.81 231.87  73.84  10.17  4536     0
+   Protein:   30.81 231.87  73.87  10.17  4525     0
+   Water:     35.06  85.45  59.79    N/A    11     0
+   Chain  A:  30.81 151.54  70.42    N/A  1136     0
+   Chain  C:  33.96 231.87  74.40    N/A  1118     0
+   Chain  B:  31.00 172.57  70.58    N/A  1122     0
+   Chain  E:  35.06  85.45  59.79    N/A    11     0
+   Chain  D:  35.51 197.79  79.99    N/A  1149     0
+   Histogram:
+       Values      Number of atoms
+    30.81 - 50.92       568
+    50.92 - 71.02      1863
+    71.02 - 91.13      1215
+    91.13 - 111.23      601
+   111.23 - 131.34      166
+   131.34 - 151.45       85
+   151.45 - 171.55       23
+   171.55 - 191.66        8
+   191.66 - 211.77        5
+   211.77 - 231.87        2
+
+
+*********************** REFINEMENT MACRO_CYCLE 2 OF 5 *************************
+
+|--(resolution: 3.00 - 56.75 A, n_refl.=14459 (all), 9.98  % free)------------|
+|                                                                             |
+| r_work= 0.2303 r_free= 0.2931 coordinate error (max.-lik. estimate): 0.42 A |
+|                                                                             |
+| normalized target function (ls_wunit_k1) (work): 0.055501                   |
+| target function (ls_wunit_k1) not normalized (work): 722.397320             |
+| target function (ls_wunit_k1) not normalized (free): 131.058101             |
+|-----------------------------------------------------------------------------|
+
+=========================== Bulk-solvent and scaling ==========================
+
+
+============================= updating all scales =============================
+
+                   start: r(all,work,free)=0.2364 0.2303 0.2931 n_refl.: 14459
+       re-set all scales: r(all,work,free)=0.4111 0.4094 0.4281 n_refl.: 14459
+         remove outliers: r(all,work,free)=0.4111 0.4094 0.4281 n_refl.: 14459
+ overall B=0.00 to atoms: r(all,work,free)=0.4111 0.4094 0.4281 n_refl.: 14459
+bulk-solvent and scaling: r(all,work,free)=0.2363 0.2299 0.2952 n_refl.: 14459
+         remove outliers: r(all,work,free)=0.2363 0.2299 0.2952 n_refl.: 14459
+
+ ======================== Statistics in resolution bins ======================== 
+
+Total model structure factor:
+  F_model = k_total * (F_calc + k_mask * F_mask)
+
+    k_total = k_isotropic * k_anisotropic
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 56.752-15.871   96.15    90    10 0.3086  1547.694  1572.852 1.587 1.012 0.310
+ 15.820-12.710   99.02    91    10 0.1715  1730.894  1681.612 1.144 1.015 0.270
+ 12.676-10.227  100.00   162    17 0.1263  1988.139  1977.063 1.012 1.013 0.250
+ 10.169-8.210   100.00   311    35 0.1370  1594.773  1584.533 1.095 1.011 0.250
+  8.204-6.592   100.00   600    67 0.1965  1009.154   993.486 0.969 1.008 0.250
+  6.589-5.298   100.00  1143   126 0.2473   758.205   728.786 0.899 1.002 0.190
+  5.293-4.255   100.00  2194   245 0.1915   874.801   850.201 0.999 0.993 0.180
+  4.254-3.418    99.72  4237   469 0.2506   565.365   543.946 1.109 0.978 0.090
+  3.418-3.000    99.96  4188   464 0.3210   278.729   254.212 0.980 0.962 0.030
+
+  Approximation of k_total with k_overall*exp(-b_overall*s**2/4)
+    k_overall=1.0265   b_overall=1.6953  
+
+============================ Set refinement target ============================
+
+  using refinement target ls_wunit_k1 
+
+
+============================ Update CDL restraints ============================
+
+
+================================== NQH flips ==================================
+
+r_work=0.2299 r_free=0.2952
+Analyzing N/Q/H residues for possible flip corrections...
+
+No N/Q/H corrections needed this macrocycle
+r_work=0.2299 r_free=0.2952
+
+========================= Local real-space refinement =========================
+
+Before:
+  r_work=0.2299 r_free=0.2952
+  rotamer outliers:  8.45 %
+After:
+  r_work=0.2310 r_free=0.2943
+  rotamer outliers:  0.24 %
+
+==================== Compute data/restraints target weights ===================
+
+|-----------------------------------------------------------------------------|
+| XYZ refinement: T = Eexperimental * wxc * wxc_scale + Echem * wc            |
+| wxc = 37.041832             wxc_scale = 0.500            wc = 1.000         |
+|                                                                             |
+| ADP refinement: T = Eexperimental * wxu * wxu_scale + Eadp  * wu            |
+| wxu = 1.000000              wxu_scale = 1.000            wu = 0.000         |
+|-----------------------------------------------------------------------------|
+
+
+====================== XYZ individual (reciprocal space) ======================
+
+
+              ----------Updating torsion NCS restraints----------              
+
+Verifying torsion NCS restraints...
+Number of torsion NCS restraints: 1744
+
+    R-FACTORS           RMSD     CLASH  RAMA  ROTA CBET WEIGHT    TARGETS
+ work  free  delta  bonds  angl                                  data   restr
+23.10 29.43   6.33  0.012   1.4   16.0   2.6   0.2    0   none  0.056  0.2312
+22.49 29.35   6.86  0.011   1.4   17.4   3.0   2.4    0 18.521  0.052  0.2329
+
+Legend:
+  - first line corresponds to starting state (before refinement)
+  - R-factors reported in percent
+  - delta is Rfree-Rwork in percent
+  - CLASH is all-atom Molprobity clashscore
+  - ROTA is percent of side-chain rotamer outliers
+  - RAMA is percent of Ramachandran plot outliers
+  - CBET is number of Cbeta deviations
+  - WEIGHT is relative weight between X-ray (or neutron) target and restraints
+  - TARGETS: the values of X-ray (or neutron) and restraints target functions
+
+===================== Post-minimization rotamer correction ====================
+
+Before:
+  r_work=0.2249 r_free=0.2935
+  rotamer outliers:  2.42 %
+outliers start: 11
+tune up
+outliers final: 1
+Did it for: 0
+After:
+  r_work=0.2253 r_free=0.2938
+  rotamer outliers:  0.00 %
+
+====================== ADP refinement (reciprocal space) ======================
+
+
+               ----------group isotropic ADP refinement----------              
+
+|-group b-factor refinement (macro cycle = 0; iterations = 0)-----------------|
+| r_work = 0.2253 r_free = 0.2938 target = 0.052671 restraints weight = None  |
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 1; iterations = 33)----------------|
+| r_work = 0.2248 r_free = 0.2927 target = 0.052484 restraints weight = 17093.346|
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 2; iterations = 22)----------------|
+| r_work = 0.2248 r_free = 0.2927 target = 0.052484 restraints weight = 17320.886|
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 3; iterations = 22)----------------|
+| r_work = 0.2248 r_free = 0.2927 target = 0.052484 restraints weight = 17320.887|
+|-----------------------------------------------------------------------------|
+
+                min    max   mean <Bi,j>   iso aniso
+   Overall:   33.09 230.90  76.22  10.24  4536     0
+   Protein:   33.09 230.90  76.26  10.24  4525     0
+   Water:     35.81  89.97  62.70    N/A    11     0
+   Chain  A:  33.09 152.91  72.49    N/A  1136     0
+   Chain  C:  36.60 230.90  76.50    N/A  1118     0
+   Chain  B:  33.67 174.88  73.18    N/A  1122     0
+   Chain  E:  35.81  89.97  62.70    N/A    11     0
+   Chain  D:  38.72 199.42  82.74    N/A  1149     0
+   Histogram:
+       Values      Number of atoms
+    33.09 - 52.87       543
+    52.87 - 72.65      1839
+    72.65 - 92.44      1208
+    92.44 - 112.22      634
+   112.22 - 132.00      185
+   132.00 - 151.78       81
+   151.78 - 171.56       30
+   171.56 - 191.34       10
+   191.34 - 211.12        4
+   211.12 - 230.90        2
+
+
+*********************** REFINEMENT MACRO_CYCLE 3 OF 5 *************************
+
+|--(resolution: 3.00 - 56.75 A, n_refl.=14459 (all), 9.98  % free)------------|
+|                                                                             |
+| r_work= 0.2248 r_free= 0.2927 coordinate error (max.-lik. estimate): 0.44 A |
+|                                                                             |
+| normalized target function (ls_wunit_k1) (work): 0.052484                   |
+| target function (ls_wunit_k1) not normalized (work): 683.133402             |
+| target function (ls_wunit_k1) not normalized (free): 131.823352             |
+|-----------------------------------------------------------------------------|
+
+=========================== Bulk-solvent and scaling ==========================
+
+
+============================= updating all scales =============================
+
+                   start: r(all,work,free)=0.2314 0.2248 0.2927 n_refl.: 14459
+       re-set all scales: r(all,work,free)=0.4199 0.4182 0.4359 n_refl.: 14459
+         remove outliers: r(all,work,free)=0.4199 0.4182 0.4359 n_refl.: 14459
+overall B=-1.14 to atoms: r(all,work,free)=0.4148 0.4131 0.4316 n_refl.: 14459
+bulk-solvent and scaling: r(all,work,free)=0.2314 0.2246 0.2939 n_refl.: 14459
+         remove outliers: r(all,work,free)=0.2314 0.2246 0.2939 n_refl.: 14459
+
+ ======================== Statistics in resolution bins ======================== 
+
+Total model structure factor:
+  F_model = k_total * (F_calc + k_mask * F_mask)
+
+    k_total = k_isotropic * k_anisotropic
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 56.752-15.871   96.15    90    10 0.2871  1547.694  1592.757 1.572 1.012 0.310
+ 15.820-12.710   99.02    91    10 0.1658  1730.894  1685.424 1.123 1.014 0.270
+ 12.676-10.227  100.00   162    17 0.1170  1988.139  1983.536 0.969 1.013 0.241
+ 10.169-8.210   100.00   311    35 0.1307  1594.773  1588.043 1.058 1.011 0.241
+  8.204-6.592   100.00   600    67 0.1885  1009.154   996.393 0.941 1.008 0.241
+  6.589-5.298   100.00  1143   126 0.2377   758.205   731.471 0.878 1.002 0.186
+  5.293-4.255   100.00  2194   245 0.1869   874.801   852.741 0.978 0.993 0.172
+  4.254-3.418    99.72  4237   469 0.2460   565.365   546.965 1.099 0.979 0.082
+  3.418-3.000    99.96  4188   464 0.3213   278.729   254.971 0.980 0.964 0.021
+
+  Approximation of k_total with k_overall*exp(-b_overall*s**2/4)
+    k_overall=0.9911   b_overall=0.2510  
+
+============================ Set refinement target ============================
+
+  using refinement target ml 
+
+
+============================ Update CDL restraints ============================
+
+
+================================== NQH flips ==================================
+
+r_work=0.2246 r_free=0.2939
+Analyzing N/Q/H residues for possible flip corrections...
+
+No N/Q/H corrections needed this macrocycle
+r_work=0.2246 r_free=0.2939
+
+========================= Local real-space refinement =========================
+
+Before:
+  r_work=0.2246 r_free=0.2939
+  rotamer outliers:  0.00 %
+After:
+  r_work=0.2246 r_free=0.2939
+  rotamer outliers:  0.00 %
+
+==================== Compute data/restraints target weights ===================
+
+|-----------------------------------------------------------------------------|
+| XYZ refinement: T = Eexperimental * wxc * wxc_scale + Echem * wc            |
+| wxc = 9.019423              wxc_scale = 0.500            wc = 1.000         |
+|                                                                             |
+| ADP refinement: T = Eexperimental * wxu * wxu_scale + Eadp  * wu            |
+| wxu = 1.000000              wxu_scale = 1.000            wu = 0.000         |
+|-----------------------------------------------------------------------------|
+
+
+====================== XYZ individual (reciprocal space) ======================
+
+
+              ----------Updating torsion NCS restraints----------              
+
+Verifying torsion NCS restraints...
+Number of torsion NCS restraints: 1744
+
+    R-FACTORS           RMSD     CLASH  RAMA  ROTA CBET WEIGHT    TARGETS
+ work  free  delta  bonds  angl                                  data   restr
+22.46 29.39   6.92  0.011   1.4   18.0   3.0   0.0    0   none  6.508  0.2321
+22.70 28.96   6.25  0.010   1.4   16.5   3.0   2.2    0  4.510  6.480  0.2109
+
+Legend:
+  - first line corresponds to starting state (before refinement)
+  - R-factors reported in percent
+  - delta is Rfree-Rwork in percent
+  - CLASH is all-atom Molprobity clashscore
+  - ROTA is percent of side-chain rotamer outliers
+  - RAMA is percent of Ramachandran plot outliers
+  - CBET is number of Cbeta deviations
+  - WEIGHT is relative weight between X-ray (or neutron) target and restraints
+  - TARGETS: the values of X-ray (or neutron) and restraints target functions
+
+===================== Post-minimization rotamer correction ====================
+
+Before:
+  r_work=0.2270 r_free=0.2896
+  rotamer outliers:  2.17 %
+outliers start: 10
+tune up
+outliers final: 1
+Did it for: 0
+After:
+  r_work=0.2271 r_free=0.2896
+  rotamer outliers:  0.00 %
+
+====================== ADP refinement (reciprocal space) ======================
+
+
+               ----------group isotropic ADP refinement----------              
+
+|-group b-factor refinement (macro cycle = 0; iterations = 0)-----------------|
+| r_work = 0.2271 r_free = 0.2896 target = 6.480035 restraints weight = None  |
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 1; iterations = 29)----------------|
+| r_work = 0.2291 r_free = 0.2901 target = 6.477633 restraints weight = 2949.652|
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 2; iterations = 26)----------------|
+| r_work = 0.2291 r_free = 0.2904 target = 6.477456 restraints weight = 3030.761|
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 3; iterations = 29)----------------|
+| r_work = 0.2293 r_free = 0.2907 target = 6.477647 restraints weight = 3062.200|
+|-----------------------------------------------------------------------------|
+
+                min    max   mean <Bi,j>   iso aniso
+   Overall:   32.27 233.58  72.77  10.08  4536     0
+   Protein:   32.27 233.58  72.79  10.08  4525     0
+   Water:     40.86  89.98  63.21    N/A    11     0
+   Chain  A:  33.77 150.76  69.08    N/A  1136     0
+   Chain  C:  34.25 233.58  72.54    N/A  1118     0
+   Chain  B:  32.27 181.99  70.37    N/A  1122     0
+   Chain  E:  40.86  89.98  63.21    N/A    11     0
+   Chain  D:  38.12 200.61  79.08    N/A  1149     0
+   Histogram:
+       Values      Number of atoms
+    32.27 - 52.40       753
+    52.40 - 72.53      1930
+    72.53 - 92.66      1083
+    92.66 - 112.79      515
+   112.79 - 132.93      142
+   132.93 - 153.06       77
+   153.06 - 173.19       20
+   173.19 - 193.32        9
+   193.32 - 213.45        5
+   213.45 - 233.58        2
+
+
+*********************** REFINEMENT MACRO_CYCLE 4 OF 5 *************************
+
+|--(resolution: 3.00 - 56.75 A, n_refl.=14459 (all), 9.98  % free)------------|
+|                                                                             |
+| r_work= 0.2293 r_free= 0.2907 coordinate error (max.-lik. estimate): 0.49 A |
+|                                                                             |
+| normalized target function (ml) (work): 6.477647                            |
+| target function (ml) not normalized (work): 84313.053839                    |
+| target function (ml) not normalized (free): 9553.410708                     |
+|-----------------------------------------------------------------------------|
+
+=========================== Bulk-solvent and scaling ==========================
+
+
+============================= updating all scales =============================
+
+                   start: r(all,work,free)=0.2354 0.2293 0.2907 n_refl.: 14459
+       re-set all scales: r(all,work,free)=0.4081 0.4067 0.4220 n_refl.: 14459
+         remove outliers: r(all,work,free)=0.4081 0.4067 0.4220 n_refl.: 14459
+ overall B=0.00 to atoms: r(all,work,free)=0.4081 0.4067 0.4220 n_refl.: 14459
+bulk-solvent and scaling: r(all,work,free)=0.2346 0.2286 0.2889 n_refl.: 14459
+         remove outliers: r(all,work,free)=0.2346 0.2286 0.2889 n_refl.: 14459
+
+ ======================== Statistics in resolution bins ======================== 
+
+Total model structure factor:
+  F_model = k_total * (F_calc + k_mask * F_mask)
+
+    k_total = k_isotropic * k_anisotropic
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 56.752-15.871   96.15    90    10 0.3161  1547.694  1580.321 1.589 1.012 0.310
+ 15.820-12.710   99.02    91    10 0.1792  1730.894  1675.579 1.179 1.014 0.280
+ 12.676-10.227  100.00   162    17 0.1382  1988.139  1971.947 1.014 1.013 0.253
+ 10.169-8.210   100.00   311    35 0.1579  1594.773  1569.582 1.090 1.011 0.250
+  8.204-6.592   100.00   600    67 0.2184  1009.154   986.583 0.971 1.008 0.250
+  6.589-5.298   100.00  1143   126 0.2612   758.205   719.785 0.905 1.001 0.199
+  5.293-4.255   100.00  2194   245 0.1942   874.801   845.079 0.991 0.993 0.180
+  4.254-3.418    99.72  4237   469 0.2405   565.365   543.990 1.103 0.979 0.090
+  3.418-3.000    99.96  4188   464 0.2926   278.729   256.232 0.978 0.963 0.020
+
+  Approximation of k_total with k_overall*exp(-b_overall*s**2/4)
+    k_overall=1.0265   b_overall=1.8163  
+
+============================ Set refinement target ============================
+
+  using refinement target ml 
+
+
+============================ Update CDL restraints ============================
+
+
+================================== NQH flips ==================================
+
+r_work=0.2286 r_free=0.2889
+Analyzing N/Q/H residues for possible flip corrections...
+
+No N/Q/H corrections needed this macrocycle
+r_work=0.2286 r_free=0.2889
+
+========================= Local real-space refinement =========================
+
+Before:
+  r_work=0.2286 r_free=0.2889
+  rotamer outliers:  0.00 %
+After:
+  r_work=0.2286 r_free=0.2889
+  rotamer outliers:  0.00 %
+
+==================== Compute data/restraints target weights ===================
+
+|-----------------------------------------------------------------------------|
+| XYZ refinement: T = Eexperimental * wxc * wxc_scale + Echem * wc            |
+| wxc = 9.041907              wxc_scale = 0.500            wc = 1.000         |
+|                                                                             |
+| ADP refinement: T = Eexperimental * wxu * wxu_scale + Eadp  * wu            |
+| wxu = 1.000000              wxu_scale = 1.000            wu = 0.000         |
+|-----------------------------------------------------------------------------|
+
+
+====================== XYZ individual (reciprocal space) ======================
+
+
+              ----------Updating torsion NCS restraints----------              
+
+Verifying torsion NCS restraints...
+Number of torsion NCS restraints: 1744
+
+    R-FACTORS           RMSD     CLASH  RAMA  ROTA CBET WEIGHT    TARGETS
+ work  free  delta  bonds  angl                                  data   restr
+22.86 28.89   6.03  0.010   1.4   16.8   3.0   0.0    0   none  6.477  0.2078
+22.55 28.79   6.25  0.010   1.3   15.1   3.1   4.1    0  4.521  6.470  0.2085
+
+Legend:
+  - first line corresponds to starting state (before refinement)
+  - R-factors reported in percent
+  - delta is Rfree-Rwork in percent
+  - CLASH is all-atom Molprobity clashscore
+  - ROTA is percent of side-chain rotamer outliers
+  - RAMA is percent of Ramachandran plot outliers
+  - CBET is number of Cbeta deviations
+  - WEIGHT is relative weight between X-ray (or neutron) target and restraints
+  - TARGETS: the values of X-ray (or neutron) and restraints target functions
+
+===================== Post-minimization rotamer correction ====================
+
+Before:
+  r_work=0.2255 r_free=0.2879
+  rotamer outliers:  4.11 %
+outliers start: 18
+tune up
+outliers final: 1
+Did it for: 0
+After:
+  r_work=0.2262 r_free=0.2883
+  rotamer outliers:  0.00 %
+
+====================== ADP refinement (reciprocal space) ======================
+
+
+               ----------group isotropic ADP refinement----------              
+
+|-group b-factor refinement (macro cycle = 0; iterations = 0)-----------------|
+| r_work = 0.2262 r_free = 0.2883 target = 6.471064 restraints weight = None  |
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 1; iterations = 27)----------------|
+| r_work = 0.2266 r_free = 0.2888 target = 6.471300 restraints weight = 3068.919|
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 2; iterations = 30)----------------|
+| r_work = 0.2268 r_free = 0.2893 target = 6.471409 restraints weight = 3124.049|
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 3; iterations = 29)----------------|
+| r_work = 0.2272 r_free = 0.2898 target = 6.471529 restraints weight = 3164.001|
+|-----------------------------------------------------------------------------|
+
+                min    max   mean <Bi,j>   iso aniso
+   Overall:   29.41 231.60  70.15  10.09  4536     0
+   Protein:   29.41 231.60  70.17  10.09  4525     0
+   Water:     35.62  89.86  60.67    N/A    11     0
+   Chain  A:  31.46 149.30  66.41    N/A  1136     0
+   Chain  C:  32.07 231.60  69.85    N/A  1118     0
+   Chain  B:  29.41 178.71  67.86    N/A  1122     0
+   Chain  E:  35.62  89.86  60.67    N/A    11     0
+   Chain  D:  35.45 197.66  76.46    N/A  1149     0
+   Histogram:
+       Values      Number of atoms
+    29.41 - 49.63       745
+    49.63 - 69.85      1936
+    69.85 - 90.07      1098
+    90.07 - 110.29      509
+   110.29 - 130.51      131
+   130.51 - 150.73       81
+   150.73 - 170.95       20
+   170.95 - 191.17        9
+   191.17 - 211.39        5
+   211.39 - 231.60        2
+
+
+*********************** REFINEMENT MACRO_CYCLE 5 OF 5 *************************
+
+|--(resolution: 3.00 - 56.75 A, n_refl.=14459 (all), 9.98  % free)------------|
+|                                                                             |
+| r_work= 0.2272 r_free= 0.2898 coordinate error (max.-lik. estimate): 0.51 A |
+|                                                                             |
+| normalized target function (ml) (work): 6.471529                            |
+| target function (ml) not normalized (work): 84233.427529                    |
+| target function (ml) not normalized (free): 9550.434082                     |
+|-----------------------------------------------------------------------------|
+
+=========================== Bulk-solvent and scaling ==========================
+
+
+============================= updating all scales =============================
+
+                   start: r(all,work,free)=0.2334 0.2272 0.2898 n_refl.: 14459
+       re-set all scales: r(all,work,free)=0.3968 0.3952 0.4123 n_refl.: 14459
+         remove outliers: r(all,work,free)=0.3968 0.3952 0.4123 n_refl.: 14459
+ overall B=0.00 to atoms: r(all,work,free)=0.3968 0.3952 0.4123 n_refl.: 14459
+bulk-solvent and scaling: r(all,work,free)=0.2325 0.2264 0.2886 n_refl.: 14459
+         remove outliers: r(all,work,free)=0.2325 0.2264 0.2886 n_refl.: 14459
+
+ ======================== Statistics in resolution bins ======================== 
+
+Total model structure factor:
+  F_model = k_total * (F_calc + k_mask * F_mask)
+
+    k_total = k_isotropic * k_anisotropic
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 56.752-15.871   96.15    90    10 0.3234  1547.694  1572.927 1.633 1.011 0.310
+ 15.820-12.710   99.02    91    10 0.1850  1730.894  1675.074 1.213 1.014 0.280
+ 12.676-10.227  100.00   162    17 0.1393  1988.139  1968.931 1.033 1.012 0.250
+ 10.169-8.210   100.00   311    35 0.1556  1594.773  1571.261 1.114 1.010 0.250
+  8.204-6.592   100.00   600    67 0.2190  1009.154   986.386 0.989 1.008 0.250
+  6.589-5.298   100.00  1143   126 0.2600   758.205   719.887 0.918 1.001 0.204
+  5.293-4.255   100.00  2194   245 0.1912   874.801   845.486 0.996 0.993 0.190
+  4.254-3.418    99.72  4237   469 0.2363   565.365   544.730 1.090 0.979 0.090
+  3.418-3.000    99.96  4188   464 0.2902   278.729   257.115 0.952 0.965 0.020
+
+  Approximation of k_total with k_overall*exp(-b_overall*s**2/4)
+    k_overall=1.0577   b_overall=4.0968  
+
+============================ Set refinement target ============================
+
+  using refinement target ml 
+
+
+============================ Update CDL restraints ============================
+
+
+============================= Setup riding H model ============================
+
+  Before: r_work=0.2264 r_free=0.2886
+  After: r_work=0.2264 r_free=0.2886
+
+================================== NQH flips ==================================
+
+r_work=0.2264 r_free=0.2886
+Analyzing N/Q/H residues for possible flip corrections...
+
+No N/Q/H corrections needed this macrocycle
+r_work=0.2264 r_free=0.2886
+
+========================= Local real-space refinement =========================
+
+Before:
+  r_work=0.2264 r_free=0.2886
+  rotamer outliers:  0.00 %
+After:
+  r_work=0.2264 r_free=0.2886
+  rotamer outliers:  0.00 %
+
+==================== Compute data/restraints target weights ===================
+
+|-----------------------------------------------------------------------------|
+| XYZ refinement: T = Eexperimental * wxc * wxc_scale + Echem * wc            |
+| wxc = 9.163637              wxc_scale = 0.500            wc = 1.000         |
+|                                                                             |
+| ADP refinement: T = Eexperimental * wxu * wxu_scale + Eadp  * wu            |
+| wxu = 1.000000              wxu_scale = 1.000            wu = 0.000         |
+|-----------------------------------------------------------------------------|
+
+
+====================== XYZ individual (reciprocal space) ======================
+
+
+              ----------Updating torsion NCS restraints----------              
+
+Verifying torsion NCS restraints...
+Number of torsion NCS restraints: 1744
+
+    R-FACTORS           RMSD     CLASH  RAMA  ROTA CBET WEIGHT    TARGETS
+ work  free  delta  bonds  angl                                  data   restr
+22.64 28.86   6.22  0.010   1.3   16.5   3.1   0.0    0   none  6.472  0.2126
+22.67 29.02   6.35  0.010   1.4   16.3   3.3   1.2    0  4.582  6.470  0.2106
+
+Legend:
+  - first line corresponds to starting state (before refinement)
+  - R-factors reported in percent
+  - delta is Rfree-Rwork in percent
+  - CLASH is all-atom Molprobity clashscore
+  - ROTA is percent of side-chain rotamer outliers
+  - RAMA is percent of Ramachandran plot outliers
+  - CBET is number of Cbeta deviations
+  - WEIGHT is relative weight between X-ray (or neutron) target and restraints
+  - TARGETS: the values of X-ray (or neutron) and restraints target functions
+
+===================== Post-minimization rotamer correction ====================
+
+Before:
+  r_work=0.2267 r_free=0.2902
+  rotamer outliers:  1.21 %
+outliers start: 6
+tune up
+outliers final: 1
+Did it for: 0
+After:
+  r_work=0.2268 r_free=0.2899
+  rotamer outliers:  0.00 %
+
+====================== ADP refinement (reciprocal space) ======================
+
+
+               ----------group isotropic ADP refinement----------              
+
+|-group b-factor refinement (macro cycle = 0; iterations = 0)-----------------|
+| r_work = 0.2268 r_free = 0.2899 target = 6.469376 restraints weight = None  |
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 1; iterations = 27)----------------|
+| r_work = 0.2270 r_free = 0.2903 target = 6.469660 restraints weight = 3246.257|
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 2; iterations = 29)----------------|
+| r_work = 0.2273 r_free = 0.2909 target = 6.469797 restraints weight = 3293.162|
+|-----------------------------------------------------------------------------|
+|-group b-factor refinement (macro cycle = 3; iterations = 27)----------------|
+| r_work = 0.2276 r_free = 0.2914 target = 6.469876 restraints weight = 3335.492|
+|-----------------------------------------------------------------------------|
+
+                min    max   mean <Bi,j>   iso aniso
+   Overall:   27.57 229.32  67.67  10.09  4536     0
+   Protein:   27.57 229.32  67.69  10.09  4525     0
+   Water:     33.48  89.97  58.33    N/A    11     0
+   Chain  A:  28.47 146.43  63.84    N/A  1136     0
+   Chain  C:  29.34 229.32  67.39    N/A  1118     0
+   Chain  B:  27.57 176.40  65.47    N/A  1122     0
+   Chain  E:  33.48  89.97  58.33    N/A    11     0
+   Chain  D:  32.26 195.79  73.97    N/A  1149     0
+   Histogram:
+       Values      Number of atoms
+    27.57 - 47.74       788
+    47.74 - 67.92      1937
+    67.92 - 88.09      1063
+    88.09 - 108.27      503
+   108.27 - 128.45      129
+   128.45 - 148.62       82
+   148.62 - 168.80       18
+   168.80 - 188.97        9
+   188.97 - 209.15        5
+   209.15 - 229.32        2
+
+
+                         ----------X-ray data----------                        
+
+|--(resolution: 3.00 - 56.75 A, n_refl.=14459 (all), 9.98  % free)------------|
+|                                                                             |
+| r_work= 0.2276 r_free= 0.2914 coordinate error (max.-lik. estimate): 0.51 A |
+|                                                                             |
+| normalized target function (ml) (work): 6.469876                            |
+| target function (ml) not normalized (work): 84211.912428                    |
+| target function (ml) not normalized (free): 9553.155637                     |
+|-----------------------------------------------------------------------------|
+
+|-----------------------------------------------------------------------------|
+| Bin     Resolution   Compl.  No. Refl.    R-factors          Targets        |
+|number     range              work test   work   test        work        test|
+|  1:   56.75 -    6.46 1.00   1327  148 0.1975 0.2474      7.2502      7.4018|
+|  2:    6.46 -    5.13 1.00   1322  145 0.2555 0.3003      6.9021      6.9725|
+|  3:    5.13 -    4.48 1.00   1285  143 0.1926 0.2638      6.7839      6.9801|
+|  4:    4.48 -    4.07 1.00   1317  147 0.1903 0.2386      6.7125      6.8004|
+|  5:    4.07 -    3.78 1.00   1301  144 0.2200 0.2814      6.5836      6.7274|
+|  6:    3.78 -    3.56 0.99   1289  142 0.2581 0.3946      6.5265      6.8272|
+|  7:    3.56 -    3.38 1.00   1295  144 0.2801 0.3700      6.2799      6.3656|
+|  8:    3.38 -    3.23 1.00   1299  145 0.2785 0.3647      6.0613      6.2825|
+|  9:    3.23 -    3.11 1.00   1283  141 0.2905 0.3193      5.8833       5.987|
+| 10:    3.11 -    3.00 1.00   1298  144 0.3036 0.3584      5.6829      5.8256|
+|-----------------------------------------------------------------------------|
+
+|-----------------------------------------------------------------------------|
+|R-free likelihood based estimates for figures of merit, absolute phase error,|
+|and distribution parameters alpha and beta (Acta Cryst. (1995). A51, 880-887)|
+|                                                                             |
+| Bin     Resolution      No. Refl.   FOM  Phase Scale    Alpha        Beta   |
+|  #        range        work  test        error factor                       |
+|  1:   56.75 -    6.46  1327   148  0.80  26.03   1.01     1.50     371519.35|
+|  2:    6.46 -    5.13  1322   145  0.73  33.70   0.99     1.45     237141.83|
+|  3:    5.13 -    4.48  1285   143  0.84  23.17   0.99     1.45     157464.85|
+|  4:    4.48 -    4.07  1317   147  0.83  24.12   1.02     1.46     134504.48|
+|  5:    4.07 -    3.78  1301   144  0.78  28.86   1.00     1.44     117283.84|
+|  6:    3.78 -    3.56  1289   142  0.73  33.12   0.98     1.35      94387.87|
+|  7:    3.56 -    3.38  1295   144  0.71  35.14   0.92     1.35      67927.34|
+|  8:    3.38 -    3.23  1299   145  0.68  37.97   1.02     1.31      46526.73|
+|  9:    3.23 -    3.11  1283   141  0.70  36.78   0.95     1.30      32895.39|
+| 10:    3.11 -    3.00  1298   144  0.69  36.90   0.87     1.18      22906.49|
+|alpha:            min =        1.18 max =            1.50 mean =         1.38|
+|beta:             min =    22906.49 max =       371519.35 mean =    129116.95|
+|figures of merit: min =        0.00 max =            1.00 mean =         0.75|
+|phase err.(work): min =        0.00 max =           89.82 mean =        31.56|
+|phase err.(test): min =        0.00 max =           89.89 mean =        31.34|
+|-----------------------------------------------------------------------------|
+
+==================================== Final ====================================
+
+
+============================= updating all scales =============================
+
+                   start: r(all,work,free)=0.2339 0.2276 0.2913 n_refl.: 14459
+       re-set all scales: r(all,work,free)=0.3863 0.3845 0.4038 n_refl.: 14459
+         remove outliers: r(all,work,free)=0.3863 0.3845 0.4038 n_refl.: 14459
+ overall B=1.18 to atoms: r(all,work,free)=0.3913 0.3896 0.4077 n_refl.: 14459
+bulk-solvent and scaling: r(all,work,free)=0.2330 0.2267 0.2900 n_refl.: 14459
+         remove outliers: r(all,work,free)=0.2330 0.2267 0.2900 n_refl.: 14459
+
+ ======================== Statistics in resolution bins ======================== 
+
+Total model structure factor:
+  F_model = k_total * (F_calc + k_mask * F_mask)
+
+    k_total = k_isotropic * k_anisotropic
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 56.752-15.871   96.15    90    10 0.3292  1547.694  1573.815 1.691 1.011 0.310
+ 15.820-12.710   99.02    91    10 0.1879  1730.894  1674.498 1.254 1.014 0.280
+ 12.676-10.227  100.00   162    17 0.1423  1988.139  1966.160 1.070 1.012 0.249
+ 10.169-8.210   100.00   311    35 0.1583  1594.773  1568.560 1.151 1.010 0.249
+  8.204-6.592   100.00   600    67 0.2229  1009.154   985.159 1.023 1.008 0.249
+  6.589-5.298   100.00  1143   126 0.2629   758.205   718.395 0.948 1.001 0.208
+  5.293-4.255   100.00  2194   245 0.1917   874.801   844.655 1.022 0.993 0.187
+  4.254-3.418    99.72  4237   469 0.2355   565.365   544.480 1.110 0.979 0.098
+  3.418-3.000    99.96  4188   464 0.2864   278.729   257.124 0.961 0.964 0.019
+
+  Approximation of k_total with k_overall*exp(-b_overall*s**2/4)
+    k_overall=1.1000   b_overall=5.3175  
+
+================= overall refinement statistics: step by step =================
+
+****************** REFINEMENT STATISTICS STEP BY STEP ******************
+leading digit, like 1_, means number of macro-cycle                     
+0    : statistics at the very beginning when nothing is done yet        
+1_bss: bulk solvent correction and/or (anisotropic) scaling             
+1_xyz: refinement of coordinates                                        
+1_gbr: group B-factor refinement                                        
+1_occ: refinement of occupancies                                        
+------------------------------------------------------------------------
+ stage r-work r-free bonds angles b_min b_max b_ave n_water shift
+      0    : 0.3977 0.5336 0.013  1.600  27.7 230.6  68.4  11      0.000
+      1_bss: 0.2555 0.2994 0.013  1.600  30.7 233.6  71.4  11      0.000
+1_settarget: 0.2555 0.2994 0.013  1.600  30.7 233.6  71.4  11      0.000
+      1_nqh: 0.2555 0.2994 0.013  1.600  30.7 233.6  71.4  11      0.000
+     1_sotr: 0.2555 0.2994 0.013  1.600  30.7 233.6  71.4  11      0.000
+   1_ncsrot: 0.2555 0.2994 0.013  1.600  30.7 233.6  71.4  11      0.000
+   1_weight: 0.2555 0.2994 0.013  1.600  30.7 233.6  71.4  11      0.000
+   1_xyzrec: 0.2419 0.3027 0.012  1.357  30.7 233.6  71.4  11      0.118
+      1_adp: 0.2303 0.2931 0.012  1.357  30.8 231.9  73.8  11      0.118
+      2_bss: 0.2299 0.2952 0.012  1.357  30.8 231.9  73.8  11      0.118
+2_settarget: 0.2299 0.2952 0.012  1.357  30.8 231.9  73.8  11      0.118
+2_updatecdl: 0.2299 0.2952 0.012  1.373  30.8 231.9  73.8  11      0.118
+      2_nqh: 0.2299 0.2952 0.012  1.373  30.8 231.9  73.8  11      0.118
+  2_realsrl: 0.2310 0.2943 0.012  1.373  30.8 231.9  73.8  11      0.121
+   2_ncsrot: 0.2310 0.2943 0.012  1.373  30.8 231.9  73.8  11      0.121
+   2_weight: 0.2310 0.2943 0.012  1.373  30.8 231.9  73.8  11      0.121
+   2_xyzrec: 0.2249 0.2935 0.011  1.408  30.8 231.9  73.8  11      0.168
+ 2_realsrl2: 0.2253 0.2938 0.011  1.408  30.8 231.9  73.8  11      0.170
+      2_adp: 0.2248 0.2927 0.011  1.408  33.1 230.9  76.2  11      0.170
+      3_bss: 0.2246 0.2939 0.011  1.408  31.9 229.8  75.1  11      0.170
+3_settarget: 0.2246 0.2939 0.011  1.408  31.9 229.8  75.1  11      0.170
+3_updatecdl: 0.2246 0.2939 0.011  1.416  31.9 229.8  75.1  11      0.170
+      3_nqh: 0.2246 0.2939 0.011  1.416  31.9 229.8  75.1  11      0.170
+  3_realsrl: 0.2246 0.2939 0.011  1.416  31.9 229.8  75.1  11      0.170
+   3_ncsrot: 0.2246 0.2939 0.011  1.416  31.9 229.8  75.1  11      0.170
+   3_weight: 0.2246 0.2939 0.011  1.416  31.9 229.8  75.1  11      0.170
+   3_xyzrec: 0.2270 0.2896 0.010  1.350  31.9 229.8  75.1  11      0.148
+ 3_realsrl2: 0.2271 0.2896 0.010  1.350  31.9 229.8  75.1  11      0.148
+      3_adp: 0.2293 0.2907 0.010  1.350  32.3 233.6  72.8  11      0.148
+      4_bss: 0.2286 0.2889 0.010  1.350  32.3 233.6  72.8  11      0.148
+4_settarget: 0.2286 0.2889 0.010  1.350  32.3 233.6  72.8  11      0.148
+4_updatecdl: 0.2286 0.2889 0.010  1.358  32.3 233.6  72.8  11      0.148
+      4_nqh: 0.2286 0.2889 0.010  1.358  32.3 233.6  72.8  11      0.148
+  4_realsrl: 0.2286 0.2889 0.010  1.358  32.3 233.6  72.8  11      0.148
+   4_ncsrot: 0.2286 0.2889 0.010  1.358  32.3 233.6  72.8  11      0.148
+   4_weight: 0.2286 0.2889 0.010  1.358  32.3 233.6  72.8  11      0.148
+   4_xyzrec: 0.2255 0.2879 0.010  1.345  32.3 233.6  72.8  11      0.151
+ 4_realsrl2: 0.2262 0.2883 0.010  1.345  32.3 233.6  72.8  11      0.153
+      4_adp: 0.2272 0.2898 0.010  1.345  29.4 231.6  70.1  11      0.153
+      5_bss: 0.2264 0.2886 0.010  1.345  29.4 231.6  70.1  11      0.153
+5_settarget: 0.2264 0.2886 0.010  1.345  29.4 231.6  70.1  11      0.153
+5_updatecdl: 0.2264 0.2886 0.010  1.347  29.4 231.6  70.1  11      0.153
+    5_setrh: 0.2264 0.2886 0.010  1.347  29.4 231.6  70.1  11      0.153
+      5_nqh: 0.2264 0.2886 0.010  1.347  29.4 231.6  70.1  11      0.153
+  5_realsrl: 0.2264 0.2886 0.010  1.347  29.4 231.6  70.1  11      0.153
+   5_ncsrot: 0.2264 0.2886 0.010  1.347  29.4 231.6  70.1  11      0.153
+   5_weight: 0.2264 0.2886 0.010  1.347  29.4 231.6  70.1  11      0.153
+   5_xyzrec: 0.2267 0.2902 0.010  1.362  29.4 231.6  70.1  11      0.158
+ 5_realsrl2: 0.2268 0.2899 0.010  1.362  29.4 231.6  70.1  11      0.158
+      5_adp: 0.2276 0.2914 0.010  1.362  27.6 229.3  67.7  11      0.158
+        end: 0.2267 0.2900 0.010  1.362  28.8 230.5  68.8  11      0.158
+------------------------------------------------------------------------
+
+CPU time actual refinement: 603.64
+
+
+============================== Exporting results ==============================
+
+Writing refined structure to PDB file:
+  /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-gmp-DS3/phenixDS3/Refine_1/DS3_refine_1.pdb
+n_use            =  4536
+n_use_u_iso      =  4536
+n_use_u_aniso    =  0
+n_grad_site      =  0
+n_grad_u_iso     =  0
+n_grad_u_aniso   =  0
+n_grad_occupancy =  0
+n_grad_fp        =  0
+n_grad_fdp       =  0
+total number of scatterers =  4536
+
+Writing refined structure to CIF file:
+  /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-gmp-DS3/phenixDS3/Refine_1/DS3_refine_1.cif
+
+=============================== Detailed timings ==============================
+
+  Micro-tasks:
+    mask                            = 0.00   
+    f_calc                          = 0.00   
+    alpha_beta                      = 0.20   
+    target                          = 0.29   
+    gradients_wrt_atomic_parameters = 0.00   
+    fmodel                         = 0.00   
+    r_factors                      = 0.02   
+    phase_errors                   = 7.16   
+    foms                           = 0.01   
+    TOTAL for micro-tasks          = 7.68   
+NUMBER OF MASK CALCS=  0
+Total CPU time: 10.61 minutes
+from_scatterers_fft:    686 calls, 21.60 s
+gradients_fft:          571 calls, 27.01 s
+
+=========================== phenix.refine: finished ===========================
+
+# Date 2020-02-06 Time 19:33:17 CST -0600 (1581039197.51 s)
+wall clock time: 771.47 s
+
+Start R-work = 0.2555, R-free = 0.2994
+Final R-work = 0.2267, R-free = 0.2900
+  Monomer Library directory:
+    "/Applications/phenix-1.17.1-3660/modules/chem_data/mon_lib"
+  Total number of atoms: 4536
+  Number of models: 1
+  Model: ""
+    Number of chains: 5
+    Chain: "A"
+      Number of atoms: 1136
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 152, 1136
+          Classifications: {'peptide': 152}
+          Incomplete info: {'truncation_to_alanine': 6}
+          Link IDs: {'CIS': 1, 'PTRANS': 7, 'TRANS': 143}
+          Chain breaks: 1
+          Unresolved non-hydrogen bonds: 55
+          Unresolved non-hydrogen angles: 71
+          Unresolved non-hydrogen dihedrals: 39
+          Unresolved non-hydrogen chiralities: 7
+          Planarities with less than four sites: {'GLU:plan': 2, 'ARG:plan': 2, 'ASN:plan1': 3, 'ASP:plan': 2}
+          Unresolved non-hydrogen planarities: 28
+    Chain: "B"
+      Number of atoms: 1122
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 155, 1122
+          Classifications: {'peptide': 155}
+          Incomplete info: {'truncation_to_alanine': 7}
+          Link IDs: {'CIS': 2, 'PTRANS': 7, 'TRANS': 145}
+          Chain breaks: 1
+          Unresolved non-hydrogen bonds: 89
+          Unresolved non-hydrogen angles: 118
+          Unresolved non-hydrogen dihedrals: 60
+          Unresolved non-hydrogen chiralities: 16
+          Planarities with less than four sites: {'GLU:plan': 3, 'ARG:plan': 3, 'ASN:plan1': 4, 'ASP:plan': 3}
+          Unresolved non-hydrogen planarities: 40
+    Chain: "C"
+      Number of atoms: 1118
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 157, 1118
+          Classifications: {'peptide': 157}
+          Incomplete info: {'truncation_to_alanine': 11}
+          Link IDs: {'CIS': 1, 'PTRANS': 7, 'TRANS': 148}
+          Chain breaks: 1
+          Unresolved chain link angles: 1
+          Unresolved non-hydrogen bonds: 118
+          Unresolved non-hydrogen angles: 152
+          Unresolved non-hydrogen dihedrals: 88
+          Unresolved non-hydrogen chiralities: 14
+          Planarities with less than four sites: {'TYR:plan': 1, 'GLU:plan': 3, 'ARG:plan': 6, 'ASN:plan1': 3, 'ASP:plan': 4}
+          Unresolved non-hydrogen planarities: 63
+    Chain: "D"
+      Number of atoms: 1149
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 157, 1149
+          Classifications: {'peptide': 157}
+          Incomplete info: {'backbone_only': 1, 'truncation_to_alanine': 10}
+          Link IDs: {'CIS': 1, 'PTRANS': 7, 'TRANS': 148}
+          Chain breaks: 1
+          Unresolved chain link angles: 3
+          Unresolved non-hydrogen bonds: 87
+          Unresolved non-hydrogen angles: 110
+          Unresolved non-hydrogen dihedrals: 65
+          Unresolved non-hydrogen chiralities: 11
+          Planarities with less than four sites: {'GLU:plan': 1, 'ARG:plan': 5, 'ASN:plan1': 2, 'ASP:plan': 2}
+          Unresolved non-hydrogen planarities: 38
+    Chain: "E"
+      Number of atoms: 11
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 11, 11
+          Classifications: {'water': 11}
+          Link IDs: {None: 10}
+  Time building chain proxies: 0.93, per 1000 atoms: 0.21
+Validating user-supplied NCS groups...
+  Validating:
+ncs_group {
+  reference = "(chain A and (resid 1 through 5 or (resid 6 through 7 and (name N or name CA or name C or name O or name CB )) or resid 8 or (resid 9 and (name N or name CA or name C or name O or name CB )) or resid 10 through 11 or (resid 12 and (name N or name CA or name C or name O or name CB or name CG )) or (resid 13 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 14 through 15 or (resid 16 and (name N or name CA or name C or name O or name CB )) or resid 17 through 21 or (resid 22 through 23 and (name N or name CA or name C or name O or name CB or name CG )) or resid 24 through 26 or (resid 27 and (name N or name CA or name C or name O or name CB or name CG )) or resid 29 or (resid 30 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 31 or (resid 32 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 33 through 35 or (resid 36 and (name N or name CA or name C or name O or name CB )) or resid 37 through 39 or (resid 40 and (name N or name CA or name C or name O or name CB or name CG )) or resid 41 through 47 or (resid 48 and (name N or name CA or name C or name O or name CB )) or resid 49 through 51 or (resid 52 and (name N or name CA or name C or name O or name CB or name CG1)) or (resid 53 and (name N or name CA or name C or name O or name CB or name CG )) or resid 54 through 55 or (resid 56 through 57 and (name N or name CA or name C or name O or name CB or name CG )) or (resid 58 and (name N or name CA or name C or name O or name CB )) or resid 59 through 86 or (resid 87 through 88 and (name N or name CA or name C or name O or name CB )) or resid 89 through 91 or (resid 92 and (name N or name CA or name C or name O or name CB )) or (resid 93 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 94 through 100 or (resid 101 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 102 through 105 or (resid 106 and (name N or name CA or name C or name O or name CB or name OG1)) or resid 107 through 113 or (resid 114 through 115 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 116 through 120 or (resid 121 and (name N or name CA or name C or name O or name CB or name CG )) or resid 122 or resid 124 through 137 or (resid 138 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 139 through 165 or (resid 167 and (name N or name CA or name C or name O or name CB )) or resid 168 through 170))"
+  selection = "(chain B and (resid 1 through 8 or (resid 9 and (name N or name CA or name C or name O or name CB )) or resid 10 through 26 or (resid 27 and (name N or name CA or name C or name O or name CB or name CG )) or resid 29 or (resid 30 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 31 through 35 or (resid 36 and (name N or name CA or name C or name O or name CB )) or resid 37 through 39 or (resid 40 and (name N or name CA or name C or name O or name CB or name CG )) or resid 41 through 46 or (resid 47 through 48 and (name N or name CA or name C or name O or name CB )) or resid 49 through 51 or (resid 52 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 53 through 55 or (resid 56 through 57 and (name N or name CA or name C or name O or name CB or name CG )) or (resid 58 and (name N or name CA or name C or name O or name CB )) or resid 59 through 60 or (resid 61 and (name N or name CA or name C or name O or name CB )) or resid 62 through 65 or resid 86 through 89 or (resid 90 and (name N or name CA or name C or name O or name CB )) or resid 91 through 100 or (resid 101 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 102 through 122 or resid 124 through 137 or (resid 138 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 139 through 150 or (resid 151 and (name N or name CA or name C or name O or name CB or name CG )) or resid 152 through 165 or (resid 167 and (name N or name CA or name C or name O or name CB )) or resid 168 through 170))"
+  selection = "(chain C and (resid 1 through 12 or (resid 13 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 14 through 15 or (resid 16 and (name N or name CA or name C or name O or name CB )) or resid 17 through 22 or (resid 23 and (name N or name CA or name C or name O or name CB or name CG )) or resid 24 through 27 or (resid 29 and (name N or name CA or name C or name O or name CB or name CG )) or (resid 30 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 31 through 35 or (resid 36 and (name N or name CA or name C or name O or name CB )) or resid 37 through 52 or (resid 53 and (name N or name CA or name C or name O or name CB or name CG )) or resid 54 through 56 or (resid 57 and (name N or name CA or name C or name O or name CB or name CG )) or (resid 58 and (name N or name CA or name C or name O or name CB )) or resid 59 through 65 or resid 86 through 89 or (resid 90 and (name N or name CA or name C or name O or name CB )) or resid 91 through 105 or (resid 106 and (name N or name CA or name C or name O or name CB or name OG1)) or resid 107 through 114 or (resid 115 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 116 through 120 or (resid 121 and (name N or name CA or name C or name O or name CB or name CG )) or (resid 122 and (name N or name CA or name C or name O or name CB )) or resid 124 through 157 or (resid 158 and (name N or name CA or name C or name O or name CB or name CG )) or resid 159 through 165 or resid 167 through 170))"
+  selection = "(chain D and (resid 1 through 11 or (resid 12 and (name N or name CA or name C or name O or name CB or name CG )) or resid 13 through 22 or (resid 23 and (name N or name CA or name C or name O or name CB or name CG )) or resid 24 through 26 or (resid 27 and (name N or name CA or name C or name O or name CB or name CG )) or resid 29 through 31 or (resid 32 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 33 through 39 or (resid 40 and (name N or name CA or name C or name O or name CB or name CG )) or resid 41 through 47 or (resid 48 and (name N or name CA or name C or name O or name CB )) or resid 49 or (resid 50 through 51 and (name N or name CA or name C or name O or name CB or name CG )) or resid 52 or (resid 53 and (name N or name CA or name C or name O or name CB or name CG )) or resid 54 through 55 or (resid 56 through 57 and (name N or name CA or name C or name O or name CB or name CG )) or resid 58 through 65 or resid 86 or (resid 87 through 88 and (name N or name CA or name C or name O or name CB )) or resid 89 through 91 or (resid 92 and (name N or name CA or name C or name O or name CB )) or (resid 93 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 94 through 100 or (resid 101 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 102 through 105 or (resid 106 and (name N or name CA or name C or name O or name CB or name OG1)) or resid 107 through 113 or (resid 114 through 115 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 116 through 120 or (resid 121 and (name N or name CA or name C or name O or name CB or name CG )) or (resid 122 and (name N or name CA or name C or name O or name CB )) or resid 124 through 153 or (resid 154 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 155 through 161 or (resid 162 and (name N or name CA or name C or name O or name CB or name CG1)) or resid 163 through 164 or (resid 165 and (name N or name CA or name C or name O or name CB or name CG1)) or (resid 167 and (name N or name CA or name C or name O or name CB )) or (resid 168 through 169 and (name N or name CA or name C or name O or name CB or name CG1 or name CG2)) or resid 170))"
+}
+  OK. All atoms were included in validated selection.
+
+Found NCS groups:
+ncs_group {
+  reference = (chain 'A' and (resid 1 through 5 or (resid 6 through 7 and (name N or name CA o \ 
+r name C or name O or name CB )) or resid 8 or (resid 9 and (name N or name CA o \ 
+r name C or name O or name CB )) or resid 10 through 11 or (resid 12 and (name N \ 
+ or name CA or name C or name O or name CB or name CG )) or (resid 13 and (name  \ 
+N or name CA or name C or name O or name CB or name CG1)) or resid 14 through 15 \ 
+ or (resid 16 and (name N or name CA or name C or name O or name CB )) or resid  \ 
+17 through 21 or (resid 22 through 23 and (name N or name CA or name C or name O \ 
+ or name CB or name CG )) or resid 24 through 26 or (resid 27 and (name N or nam \ 
+e CA or name C or name O or name CB or name CG )) or resid 29 or (resid 30 and ( \ 
+name N or name CA or name C or name O or name CB or name CG1)) or resid 31 or (r \ 
+esid 32 and (name N or name CA or name C or name O or name CB or name CG1)) or r \ 
+esid 33 through 35 or (resid 36 and (name N or name CA or name C or name O or na \ 
+me CB )) or resid 37 through 39 or (resid 40 and (name N or name CA or name C or \ 
+ name O or name CB or name CG )) or resid 41 through 47 or (resid 48 and (name N \ 
+ or name CA or name C or name O or name CB )) or resid 49 through 51 or (resid 5 \ 
+2 and (name N or name CA or name C or name O or name CB or name CG1)) or (resid  \ 
+53 and (name N or name CA or name C or name O or name CB or name CG )) or resid  \ 
+54 through 55 or (resid 56 through 57 and (name N or name CA or name C or name O \ 
+ or name CB or name CG )) or (resid 58 and (name N or name CA or name C or name  \ 
+O or name CB )) or resid 59 through 86 or (resid 87 through 88 and (name N or na \ 
+me CA or name C or name O or name CB )) or resid 89 through 91 or (resid 92 and  \ 
+(name N or name CA or name C or name O or name CB )) or (resid 93 and (name N or \ 
+ name CA or name C or name O or name CB or name CG1)) or resid 94 through 100 or \ 
+ (resid 101 and (name N or name CA or name C or name O or name CB or name CG1))  \ 
+or resid 102 through 105 or (resid 106 and (name N or name CA or name C or name  \ 
+O or name CB or name OG1)) or resid 107 through 113 or (resid 114 through 115 an \ 
+d (name N or name CA or name C or name O or name CB or name CG1)) or resid 116 t \ 
+hrough 120 or (resid 121 and (name N or name CA or name C or name O or name CB o \ 
+r name CG )) or resid 122 or resid 124 through 137 or (resid 138 and (name N or  \ 
+name CA or name C or name O or name CB or name CG1)) or resid 139 through 165 or \ 
+ (resid 167 and (name N or name CA or name C or name O or name CB )) or resid 16 \ 
+8 through 170))
+  selection = (chain 'B' and (resid 1 through 8 or (resid 9 and (name N or name CA or name C o \ 
+r name O or name CB )) or resid 10 through 26 or (resid 27 and (name N or name C \ 
+A or name C or name O or name CB or name CG )) or resid 29 or (resid 30 and (nam \ 
+e N or name CA or name C or name O or name CB or name CG1)) or resid 31 through  \ 
+35 or (resid 36 and (name N or name CA or name C or name O or name CB )) or resi \ 
+d 37 through 39 or (resid 40 and (name N or name CA or name C or name O or name  \ 
+CB or name CG )) or resid 41 through 46 or (resid 47 through 48 and (name N or n \ 
+ame CA or name C or name O or name CB )) or resid 49 through 51 or (resid 52 and \ 
+ (name N or name CA or name C or name O or name CB or name CG1)) or resid 53 thr \ 
+ough 55 or (resid 56 through 57 and (name N or name CA or name C or name O or na \ 
+me CB or name CG )) or (resid 58 and (name N or name CA or name C or name O or n \ 
+ame CB )) or resid 59 through 60 or (resid 61 and (name N or name CA or name C o \ 
+r name O or name CB )) or resid 62 through 65 or resid 86 through 89 or (resid 9 \ 
+0 and (name N or name CA or name C or name O or name CB )) or resid 91 through 1 \ 
+00 or (resid 101 and (name N or name CA or name C or name O or name CB or name C \ 
+G1)) or resid 102 through 122 or resid 124 through 137 or (resid 138 and (name N \ 
+ or name CA or name C or name O or name CB or name CG1)) or resid 139 through 15 \ 
+0 or (resid 151 and (name N or name CA or name C or name O or name CB or name CG \ 
+ )) or resid 152 through 165 or (resid 167 and (name N or name CA or name C or n \ 
+ame O or name CB )) or resid 168 through 170))
+  selection = (chain 'C' and (resid 1 through 12 or (resid 13 and (name N or name CA or name C \ 
+ or name O or name CB or name CG1)) or resid 14 through 15 or (resid 16 and (nam \ 
+e N or name CA or name C or name O or name CB )) or resid 17 through 22 or (resi \ 
+d 23 and (name N or name CA or name C or name O or name CB or name CG )) or resi \ 
+d 24 through 27 or (resid 29 and (name N or name CA or name C or name O or name  \ 
+CB or name CG )) or (resid 30 and (name N or name CA or name C or name O or name \ 
+ CB or name CG1)) or resid 31 through 35 or (resid 36 and (name N or name CA or  \ 
+name C or name O or name CB )) or resid 37 through 52 or (resid 53 and (name N o \ 
+r name CA or name C or name O or name CB or name CG )) or resid 54 through 56 or \ 
+ (resid 57 and (name N or name CA or name C or name O or name CB or name CG )) o \ 
+r (resid 58 and (name N or name CA or name C or name O or name CB )) or resid 59 \ 
+ through 65 or resid 86 through 89 or (resid 90 and (name N or name CA or name C \ 
+ or name O or name CB )) or resid 91 through 105 or (resid 106 and (name N or na \ 
+me CA or name C or name O or name CB or name OG1)) or resid 107 through 114 or ( \ 
+resid 115 and (name N or name CA or name C or name O or name CB or name CG1)) or \ 
+ resid 116 through 120 or (resid 121 and (name N or name CA or name C or name O  \ 
+or name CB or name CG )) or (resid 122 and (name N or name CA or name C or name  \ 
+O or name CB )) or resid 124 through 157 or (resid 158 and (name N or name CA or \ 
+ name C or name O or name CB or name CG )) or resid 159 through 165 or resid 167 \ 
+ through 170))
+  selection = (chain 'D' and (resid 1 through 11 or (resid 12 and (name N or name CA or name C \ 
+ or name O or name CB or name CG )) or resid 13 through 22 or (resid 23 and (nam \ 
+e N or name CA or name C or name O or name CB or name CG )) or resid 24 through  \ 
+26 or (resid 27 and (name N or name CA or name C or name O or name CB or name CG \ 
+ )) or resid 29 through 31 or (resid 32 and (name N or name CA or name C or name \ 
+ O or name CB or name CG1)) or resid 33 through 39 or (resid 40 and (name N or n \ 
+ame CA or name C or name O or name CB or name CG )) or resid 41 through 47 or (r \ 
+esid 48 and (name N or name CA or name C or name O or name CB )) or resid 49 or  \ 
+(resid 50 through 51 and (name N or name CA or name C or name O or name CB or na \ 
+me CG )) or resid 52 or (resid 53 and (name N or name CA or name C or name O or  \ 
+name CB or name CG )) or resid 54 through 55 or (resid 56 through 57 and (name N \ 
+ or name CA or name C or name O or name CB or name CG )) or resid 58 through 65  \ 
+or resid 86 or (resid 87 through 88 and (name N or name CA or name C or name O o \ 
+r name CB )) or resid 89 through 91 or (resid 92 and (name N or name CA or name  \ 
+C or name O or name CB )) or (resid 93 and (name N or name CA or name C or name  \ 
+O or name CB or name CG1)) or resid 94 through 100 or (resid 101 and (name N or  \ 
+name CA or name C or name O or name CB or name CG1)) or resid 102 through 105 or \ 
+ (resid 106 and (name N or name CA or name C or name O or name CB or name OG1))  \ 
+or resid 107 through 113 or (resid 114 through 115 and (name N or name CA or nam \ 
+e C or name O or name CB or name CG1)) or resid 116 through 120 or (resid 121 an \ 
+d (name N or name CA or name C or name O or name CB or name CG )) or (resid 122  \ 
+and (name N or name CA or name C or name O or name CB )) or resid 124 through 15 \ 
+3 or (resid 154 and (name N or name CA or name C or name O or name CB or name CG \ 
+1)) or resid 155 through 161 or (resid 162 and (name N or name CA or name C or n \ 
+ame O or name CB or name CG1)) or resid 163 through 164 or (resid 165 and (name  \ 
+N or name CA or name C or name O or name CB or name CG1)) or (resid 167 and (nam \ 
+e N or name CA or name C or name O or name CB )) or (resid 168 through 169 and ( \ 
+name N or name CA or name C or name O or name CB or name CG1 or name CG2)) or re \ 
+sid 170))
+}
+
+  Number of scatterers: 4536
+  At special positions: 0
+  Unit cell: (59.39, 116.651, 109.032, 90, 104.227, 90)
+  Space group: I 1 2 1 (No. 5)
+  Number of sites at special positions: 0
+  Number of scattering types: 4
+    Type Number    sf(0)
+     S       9     16.00
+     O     853      8.00
+     N     814      7.00
+     C    2860      6.00
+    sf(0) = scattering factor at diffraction angle 0.
+
+  Number of disulfides: simple=0, symmetry=0
+
+  Automatic linking
+    Parameters for automatic linking
+      Linking & cutoffs
+        Metal                : False - 3.50
+        Amimo acid           : False - 1.90
+        Carbohydrate         : True  - 1.99
+        Ligands              : True  - 1.99
+        Small molecules      : False - 1.98
+        Amino acid - RNA/DNA : False
+      
+  Number of custom bonds: simple=0, symmetry=0
+  Time building additional restraints: 0.74
+  Conformation dependent library (CDL) restraints added in 273.1 milliseconds
+  
+  Adding C-beta torsion restraints...
+  Number of C-beta restraints generated:  1152
+
+  Time building geometry restraints manager: 0.65 seconds
+
+  NOTE: a complete listing of the restraints can be obtained by requesting
+        output of .geo file.
+
+  Histogram of bond lengths:
+        1.21 -     1.34: 1477
+        1.34 -     1.46: 799
+        1.46 -     1.59: 2267
+        1.59 -     1.71: 1
+        1.71 -     1.83: 18
+  Bond restraints: 4562
+  Sorted by residual:
+  bond pdb=" CB  ARG C 134 "
+       pdb=" CG  ARG C 134 "
+    ideal  model  delta    sigma   weight residual
+    1.520  1.427  0.093 3.00e-02 1.11e+03 9.61e+00
+  bond pdb=" CB  GLU A  18 "
+       pdb=" CG  GLU A  18 "
+    ideal  model  delta    sigma   weight residual
+    1.520  1.433  0.087 3.00e-02 1.11e+03 8.39e+00
+  bond pdb=" CB  ARG C 139 "
+       pdb=" CG  ARG C 139 "
+    ideal  model  delta    sigma   weight residual
+    1.520  1.449  0.071 3.00e-02 1.11e+03 5.59e+00
+  bond pdb=" CB  ASP A   9 "
+       pdb=" CG  ASP A   9 "
+    ideal  model  delta    sigma   weight residual
+    1.516  1.457  0.059 2.50e-02 1.60e+03 5.57e+00
+  bond pdb=" CG1 ILE C  59 "
+       pdb=" CD1 ILE C  59 "
+    ideal  model  delta    sigma   weight residual
+    1.513  1.599 -0.086 3.90e-02 6.57e+02 4.84e+00
+  ... (remaining 4557 not shown)
+
+  Histogram of bond angle deviations from ideal:
+       99.03 -   105.56: 103
+      105.56 -   112.09: 2182
+      112.09 -   118.63: 1497
+      118.63 -   125.16: 2322
+      125.16 -   131.70: 66
+  Bond angle restraints: 6170
+  Sorted by residual:
+  angle pdb=" C   ASP C  88 "
+        pdb=" N   VAL C  89 "
+        pdb=" CA  VAL C  89 "
+      ideal   model   delta    sigma   weight residual
+     121.97  131.70   -9.73 1.80e+00 3.09e-01 2.92e+01
+  angle pdb=" C   VAL A  94 "
+        pdb=" N   VAL A  95 "
+        pdb=" CA  VAL A  95 "
+      ideal   model   delta    sigma   weight residual
+     123.12  117.26    5.86 1.30e+00 5.92e-01 2.03e+01
+  angle pdb=" C   LYS B  -1 "
+        pdb=" N   ALA B   0 "
+        pdb=" CA  ALA B   0 "
+      ideal   model   delta    sigma   weight residual
+     121.54  129.73   -8.19 1.91e+00 2.74e-01 1.84e+01
+  angle pdb=" CG1 VAL A  95 "
+        pdb=" CB  VAL A  95 "
+        pdb=" CG2 VAL A  95 "
+      ideal   model   delta    sigma   weight residual
+     110.80  120.22   -9.42 2.20e+00 2.07e-01 1.83e+01
+  angle pdb=" CA  VAL A  95 "
+        pdb=" CB  VAL A  95 "
+        pdb=" CG2 VAL A  95 "
+      ideal   model   delta    sigma   weight residual
+     110.40  117.59   -7.19 1.70e+00 3.46e-01 1.79e+01
+  ... (remaining 6165 not shown)
+
+  Histogram of dihedral angle deviations from ideal:
+        0.00 -    35.65: 2759
+       35.65 -    71.29: 81
+       71.29 -   106.94: 8
+      106.94 -   142.58: 7
+      142.58 -   178.23: 4
+  Dihedral angle restraints: 2859
+    sinusoidal: 1082
+      harmonic: 1777
+  Sorted by residual:
+  dihedral pdb=" CD  ARG B 139 "
+           pdb=" NE  ARG B 139 "
+           pdb=" CZ  ARG B 139 "
+           pdb=" NH1 ARG B 139 "
+      ideal   model   delta sinusoidal    sigma   weight residual
+       0.00  178.23 -178.23     1      1.00e+01 1.00e-02 1.92e+02
+  dihedral pdb=" CA  ASN C 171 "
+           pdb=" C   ASN C 171 "
+           pdb=" N   GLU C 172 "
+           pdb=" CA  GLU C 172 "
+      ideal   model   delta  harmonic     sigma   weight residual
+     180.00 -148.70  -31.30     0      5.00e+00 4.00e-02 3.92e+01
+  dihedral pdb=" CA  ASP C 163 "
+           pdb=" CB  ASP C 163 "
+           pdb=" CG  ASP C 163 "
+           pdb=" OD1 ASP C 163 "
+      ideal   model   delta sinusoidal    sigma   weight residual
+      70.00 -171.29 -118.71     1      2.00e+01 2.50e-03 3.55e+01
+  ... (remaining 2856 not shown)
+
+  Histogram of chiral volume deviations from ideal:
+       0.000 -    0.195: 738
+       0.195 -    0.391: 16
+       0.391 -    0.586: 2
+       0.586 -    0.782: 1
+       0.782 -    0.977: 1
+  Chirality restraints: 758
+  Sorted by residual:
+  chirality pdb=" CB  VAL A  95 "
+            pdb=" CA  VAL A  95 "
+            pdb=" CG1 VAL A  95 "
+            pdb=" CG2 VAL A  95 "
+    both_signs  ideal   model   delta    sigma   weight residual
+      False     -2.63   -1.65   -0.98 2.00e-01 2.50e+01 2.39e+01
+  chirality pdb=" CB  VAL B  95 "
+            pdb=" CA  VAL B  95 "
+            pdb=" CG1 VAL B  95 "
+            pdb=" CG2 VAL B  95 "
+    both_signs  ideal   model   delta    sigma   weight residual
+      False     -2.63   -2.01   -0.62 2.00e-01 2.50e+01 9.58e+00
+  chirality pdb=" CB  VAL D  95 "
+            pdb=" CA  VAL D  95 "
+            pdb=" CG1 VAL D  95 "
+            pdb=" CG2 VAL D  95 "
+    both_signs  ideal   model   delta    sigma   weight residual
+      False     -2.63   -2.17   -0.46 2.00e-01 2.50e+01 5.29e+00
+  ... (remaining 755 not shown)
+
+  Planarity restraints: 801
+  Sorted by residual:
+                                 delta    sigma   weight rms_deltas residual
+  plane pdb=" CG  GLU D  50 "   -0.016 2.00e-02 2.50e+03   3.29e-02 1.08e+01
+        pdb=" CD  GLU D  50 "    0.057 2.00e-02 2.50e+03
+        pdb=" OE1 GLU D  50 "   -0.020 2.00e-02 2.50e+03
+        pdb=" OE2 GLU D  50 "   -0.020 2.00e-02 2.50e+03
+                                 delta    sigma   weight rms_deltas residual
+  plane pdb=" CG  GLU B   5 "   -0.014 2.00e-02 2.50e+03   2.78e-02 7.71e+00
+        pdb=" CD  GLU B   5 "    0.048 2.00e-02 2.50e+03
+        pdb=" OE1 GLU B   5 "   -0.017 2.00e-02 2.50e+03
+        pdb=" OE2 GLU B   5 "   -0.017 2.00e-02 2.50e+03
+                                 delta    sigma   weight rms_deltas residual
+  plane pdb=" CA  GLU C 135 "    0.013 2.00e-02 2.50e+03   2.59e-02 6.72e+00
+        pdb=" C   GLU C 135 "   -0.045 2.00e-02 2.50e+03
+        pdb=" O   GLU C 135 "    0.017 2.00e-02 2.50e+03
+        pdb=" N   LEU C 136 "    0.015 2.00e-02 2.50e+03
+  ... (remaining 798 not shown)
+
+  Histogram of nonbonded interaction distances:
+        2.03 -     2.61: 64
+        2.61 -     3.18: 4177
+        3.18 -     3.75: 7213
+        3.75 -     4.33: 10444
+        4.33 -     4.90: 16145
+  Nonbonded interactions: 38043
+  Sorted by model distance:
+  nonbonded pdb=" O   ILE D  19 "
+            pdb=" ND2 ASN D  23 "
+     model   vdw
+     2.032 2.520
+  nonbonded pdb=" NZ  LYS A   6 "
+            pdb=" O   HOH E   5 "
+     model   vdw
+     2.083 2.520
+  nonbonded pdb=" N   GLU D  50 "
+            pdb=" OE2 GLU D  50 "
+     model   vdw
+     2.099 2.520
+  nonbonded pdb=" NH2 ARG C 108 "
+            pdb=" OD2 ASP C 112 "
+     model   vdw
+     2.102 2.520
+  nonbonded pdb=" NH1 ARG A 134 "
+            pdb=" OD2 ASP C 141 "
+     model   vdw
+     2.127 2.520
+  ... (remaining 38038 not shown)
+
+  NOTE: a complete listing of the restraints can be obtained by requesting
+        output of .geo file.
+
+=========================== Generating kinemage file ==========================
+
+
+======================= Extracting refinement statistics ======================
+
+
+=================================== Complete ==================================
+
