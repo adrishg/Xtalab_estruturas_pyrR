@@ -1,0 +1,82 @@
+LIBTBX_BASE_DIR = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-apo-DS1/PhenixDS1-apo"
+job {
+  job_id = 31
+  app_id = Refine
+  program_name = None
+  title = """[ phenix.refine ]"""
+  directory = "$(LIBTBX_BASE_DIR)/Refine_31"
+  process_type = None
+  hostname = None
+  queue_id = None
+  citation = None
+  input_file {
+    file_name = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-apo-DS1/despuesPDBReDo/a56X_final-coot-2_ramachandran0.pdb"
+    file_type = Input model
+    param_name = refinement.input.pdb.file_name
+  }
+  input_file {
+    file_name = "$(LIBTBX_BASE_DIR)/Refine_2/apo-ds1_refine_data.mtz"
+    file_type = Reflections file
+    param_name = refinement.input.xray_data.file_name
+  }
+  input_file {
+    file_name = "$(LIBTBX_BASE_DIR)/Refine_2/apo-ds1_refine_data.mtz"
+    file_type = File with R(free) flags
+    param_name = refinement.input.xray_data.r_free_flags.file_name
+  }
+  input_file {
+    file_name = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR_Tthermo.fa"
+    file_type = Sequences
+    param_name = refinement.input.sequence.file_name
+  }
+  output_file {
+    file_name = "apo-ds1_refine_31.mtz"
+    file_type = Map coefficients for Coot
+  }
+  output_file {
+    file_name = "apo-ds1_refine_31.geo"
+    file_type = Geometry restraints before refinement
+  }
+  output_file {
+    file_name = "apo-ds1_refine_31_info.txt"
+    file_type = Run summary in text format
+  }
+  output_file {
+    file_name = "apo-ds1_refine_31.pdb"
+    file_type = Refined model
+  }
+  output_file {
+    file_name = "apo-ds1_refine_31.eff"
+    file_type = Effective parameters for this run
+  }
+  output_file {
+    file_name = "apo-ds1_refine_31.log"
+    file_type = phenix.refine log file
+  }
+  statistic {
+    stat_name = R-work
+    stat_value = 0.1964
+  }
+  statistic {
+    stat_name = R-free
+    stat_value = 0.2460
+  }
+  statistic {
+    stat_name = RMSbonds
+    stat_value = 0.010
+  }
+  statistic {
+    stat_name = RMSangles
+    stat_value = 1.127
+  }
+  statistic {
+    stat_name = Clashscore
+    stat_value = 12.3
+  }
+  statistic {
+    stat_name = MolProbity score
+    stat_value = 1.862
+  }
+  user_comments = None
+  deleted = False
+}
