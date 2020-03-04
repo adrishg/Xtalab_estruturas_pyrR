@@ -1,0 +1,57 @@
+LIBTBX_BASE_DIR = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/phenix/DS2"
+job {
+  job_id = 4
+  app_id = MolProbity
+  program_name = None
+  title = """[ phenix.molprobity ]"""
+  directory = "$(LIBTBX_BASE_DIR)/MolProbity_4"
+  process_type = None
+  hostname = None
+  queue_id = None
+  citation = None
+  input_file {
+    file_name = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz"
+    file_type = Reflections file
+    param_name = input.xray_data.file_name
+  }
+  input_file {
+    file_name = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz"
+    file_type = File with R(free) flags
+    param_name = input.xray_data.r_free_flags.file_name
+  }
+  input_file {
+    file_name = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-apo-mpd-DS2/PDB-redo/pdbReDo_10/apo_mpd-ds2_refine_2-coot-0.pdb"
+    file_type = Input model
+    param_name = input.pdb.file_name
+  }
+  output_file {
+    file_name = "apo_mpd-ds2_molprobity_4_maps.mtz"
+    file_type = Map coefficients
+  }
+  statistic {
+    stat_name = R-work
+    stat_value = 0.2088
+  }
+  statistic {
+    stat_name = R-free
+    stat_value = 0.2179
+  }
+  statistic {
+    stat_name = RMS(bonds)
+    stat_value = 0.015
+  }
+  statistic {
+    stat_name = RMS(angles)
+    stat_value = 1.7256
+  }
+  statistic {
+    stat_name = Clashscore
+    stat_value = 21.67
+  }
+  statistic {
+    stat_name = MolProbity score
+    stat_value = 2.230
+  }
+  user_comments = None
+  deleted = False
+}
