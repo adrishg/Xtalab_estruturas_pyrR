@@ -1,0 +1,82 @@
+LIBTBX_BASE_DIR = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac"
+job {
+  job_id = 5
+  app_id = Refine
+  program_name = None
+  title = """DS2_afinamiento"""
+  directory = "$(LIBTBX_BASE_DIR)/Refine_5"
+  process_type = None
+  hostname = None
+  queue_id = None
+  citation = None
+  input_file {
+    file_name = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/cooot/ds2/ValidationMac_refine_4-coot-0.pdb"
+    file_type = Input model
+    param_name = refinement.input.pdb.file_name
+  }
+  input_file {
+    file_name = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz"
+    file_type = Reflections file
+    param_name = refinement.input.xray_data.file_name
+  }
+  input_file {
+    file_name = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-apo-mpd-DS2/phenixMint/Refine_1/DS2-pyrR-refinements_refine_data.mtz"
+    file_type = File with R(free) flags
+    param_name = refinement.input.xray_data.r_free_flags.file_name
+  }
+  input_file {
+    file_name = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR_Tthermo.fa"
+    file_type = Sequences
+    param_name = refinement.input.sequence.file_name
+  }
+  output_file {
+    file_name = "ValidationMac_refine_5.eff"
+    file_type = Effective parameters for this run
+  }
+  output_file {
+    file_name = "ValidationMac_refine_5.pdb"
+    file_type = Refined model
+  }
+  output_file {
+    file_name = "ValidationMac_refine_5.log"
+    file_type = phenix.refine log file
+  }
+  output_file {
+    file_name = "ValidationMac_refine_5_info.txt"
+    file_type = Run summary in text format
+  }
+  output_file {
+    file_name = "ValidationMac_refine_5.geo"
+    file_type = Geometry restraints before refinement
+  }
+  output_file {
+    file_name = "ValidationMac_refine_5.mtz"
+    file_type = Map coefficients for Coot
+  }
+  statistic {
+    stat_name = R-work
+    stat_value = 0.2148
+  }
+  statistic {
+    stat_name = R-free
+    stat_value = 0.2403
+  }
+  statistic {
+    stat_name = RMSbonds
+    stat_value = 0.009
+  }
+  statistic {
+    stat_name = RMSangles
+    stat_value = 0.971
+  }
+  statistic {
+    stat_name = Clashscore
+    stat_value = 7.4
+  }
+  statistic {
+    stat_name = MolProbity score
+    stat_value = 1.613
+  }
+  user_comments = None
+  deleted = False
+}
