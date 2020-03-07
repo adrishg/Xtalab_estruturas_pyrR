@@ -1,0 +1,46 @@
+LIBTBX_BASE_DIR = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac"
+job {
+  job_id = 19
+  app_id = "LigandFit"
+  program_name = None
+  title = "[ phenix.ligandfit ]"
+  directory = "$(LIBTBX_BASE_DIR)/LigandFit_run_19_"
+  process_type = None
+  hostname = None
+  queue_id = None
+  citation = "elbow"
+  input_file {
+    file_name = "$(LIBTBX_BASE_DIR)/Refine_18/ValidationMac_refine_018.mtz"
+    file_type = "Data"
+    param_name = "ligandfit.data"
+  }
+  input_file {
+    file_name = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-apo-mpd-DS2/mpd/eLBOW_3/mpd.pdb"
+    file_type = "Ligand"
+    param_name = "ligandfit.ligand"
+  }
+  input_file {
+    file_name = "$(LIBTBX_BASE_DIR)/Refine_18/ValidationMac_refine_018.cif"
+    file_type = "Ligand-free model"
+    param_name = "ligandfit.model"
+  }
+  input_file {
+    file_name = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-apo-mpd-DS2/mpd/eLBOW_3/MPD.cif"
+    file_type = "Restraints file"
+    param_name = "ligandfit.input_files.cif_def_file_list"
+  }
+  output_file {
+    file_name = "$(LIBTBX_BASE_DIR)/LigandFit_run_19_/ligand_fit_1_1.pdb"
+    file_type = Ligand coordinates
+  }
+  output_file {
+    file_name = "$(LIBTBX_BASE_DIR)/LigandFit_run_19_/resolve_map.mtz"
+    file_type = Map coefficients
+  }
+  statistic {
+    stat_name = None
+    stat_value = None
+  }
+  user_comments = None
+  deleted = False
+}

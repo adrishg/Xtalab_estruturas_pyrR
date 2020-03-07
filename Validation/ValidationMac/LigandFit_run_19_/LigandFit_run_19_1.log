@@ -1,0 +1,445 @@
+
+
+               PHENIX ligandfit  Fri Mar  6 17:13:41 2020
+
+
+Phenix developers include:
+
+  Paul Adams, Pavel Afonine, Vincent Chen, Ian Davis, Nathaniel Echols,
+  Kreshna Gopal, Ralf Grosse-Kunstleve, Jeff Headd, Li-Wei Hung,
+  Robert Immormino, Tom Ioerger, Airlie McCoy, Erik McKee, Nigel Moriarty,
+  Reetal Pai, Randy Read, Jane Richardson, David Richardson, Tod Romo,
+  Jim Sacchettini, Nicholas Sauter, Jacob Smith, Laurent Storoni,
+  Tom Terwilliger, Peter Zwart
+
+Phenix home page:
+  http://www.phenix-online.org/
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Phenix components are copyrighted by:
+  - Lawrence Berkeley National Laboratory
+  - Los Alamos National Laboratory
+  - University of Cambridge
+  - Duke University
+  - Texas Agricultural Experiment Station &
+    Texas Engineering Experiment Station
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Major third-party components of Phenix include:
+    Python, wxwidgets, wxPython, Boost, SCons, Clipper, PULCHRA,
+    CCP4 Monomer Library, CCP4 I/O libraries, PyCifRW, FFTPACK, L-BFGS
+  Enter phenix.acknowledgments for details.
+
+               If you use PHENIX please cite:
+
+Adams, P.D., Afonine, P.V., Chen, V., Echols, N., Headd, J. J., Hung, L.-W.,
+Grosse-Kunstleve, R.W., McCoy, A.J., Moriarty, N.W., Read, R.J.,
+Richardson, D.C., Richardson, J.S., Terwilliger, T.C. and Zwart, P. H. (2010)
+PHENIX - A Comprehensive Python-based System for Macromolecular Structure
+Solution. Acta Cryst. D66, 213-221.
+
+
+For help type:
+phenix.doc
+
+      
+
+For access to full documentation please type: phenix.doc
+
+
+------------------------------------------------------------ 
+Starting LigandFit with the command:
+
+phenix.ligandfit 
+Reading effective parameters from /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/.phenix/project_data/ligandfit_19.eff
+ligandfit {
+  data = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/Refine_18/ValidationMac_refine_018.mtz"
+  ligand = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-apo-mpd-DS2/mpd/eLBOW_3/mpd.pdb"
+  model = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/Refine_18/ValidationMac_refine_018.cif"
+  quick = False
+  crystal_info {
+    unit_cell = 69.49 69.49 90.581 90 90 120
+    resolution = 0
+    space_group = "P 31 2 1"
+  }
+  file_info {
+    file_or_file_list = *single_file file_with_list_of_files
+    input_labels = FOFCWT PHFOFCWT
+    lig_map_type = fo-fc_difference_map fobs_map *pre_calculated_map_coeffs
+    ligand_format = *PDB SMILES
+  }
+  input_files {
+    existing_ligand_file_list = None
+    ligand_start = None
+    ncs_in = None
+    input_ligand_compare_file = None
+    cif_def_file_list = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-apo-mpd-DS2/mpd/eLBOW_3/MPD.cif"
+    refinement_file = None
+    fobs_labels = None
+    r_free_label = None
+  }
+  search_parameters {
+    fixed_ligand = False
+    conformers = 1
+    fitting {
+      delta_phi_ligand = 40
+      fit_phi_inc = 20
+      fit_phi_range = -180 180
+    }
+    group_search = 0
+    ligand_cc_min = 0.75
+    ligand_completeness_min = 1
+    local_search = True
+    search_dist = 10
+    use_cc_local = False
+    ligands_from_ncs = False
+    max_ligands_from_ncs = 1
+    n_group_search = 3
+    n_indiv_tries_max = 10
+    n_indiv_tries_min = 5
+    number_of_ligands = 1
+    offsets_list = 7 53 29
+    refine_ligand = True
+    ligand_occupancy = 1
+    real_space_target_weight = 10
+  }
+  search_target {
+    ligand_near_chain = None
+    ligand_near_res = None
+    ligand_near_pdb = None
+    name_of_ligand_near_pdb = None
+    search_center = 0 0 0
+  }
+  general {
+    extend_try_list = True
+    ligand_id = None
+    nbatch = 5
+    nproc = 1
+    resolve_command_list = None
+    coot_name = "coot"
+    i_ran_seed = 72432
+    raise_sorry = True
+    background = True
+    check_wait_time = 1
+    max_wait_time = 1
+    wait_between_submit_time = 1
+    cache_resolve_libs = True
+    resolve_size = "12"
+    check_run_command = False
+    run_command = "sh "
+    queue_commands = None
+    condor_universe = "vanilla"
+    add_double_quotes_in_condor = True
+    condor = None
+    last_process_is_local = True
+    skip_r_factor = False
+    test_flag_value = Auto
+    skip_xtriage = False
+    base_path = None
+    temp_dir = None
+    clean_up = True
+    print_citations = True
+    solution_output_pickle_file = None
+    job_title = None
+    top_output_dir = None
+    wizard_directory_number = 19
+    verbose = False
+    extra_verbose = False
+    debug = False
+    require_nonzero = True
+    remove_path_word_list = None
+    fill = False
+    res_fill = None
+    check_only = False
+    keep_files = "ligandfit*.pdb"
+  }
+  display {
+    number_of_solutions_to_display = None
+    solution_to_display = 1
+  }
+  run_control {
+    ignore_blanks = None
+    stop = None
+    display_facts = None
+    display_summary = None
+    carry_on = None
+    run = None
+    copy_run = None
+    display_runs = None
+    delete_runs = None
+    display_labels = None
+    dry_run = False
+    params_only = False
+    display_all = False
+    coot = None
+  }
+  special_keywords {
+    write_run_directory_to_file = None
+  }
+  non_user_parameters {
+    gui_output_dir = "/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac"
+    sg = None
+    get_lig_volume = False
+    input_data_file = None
+    input_lig_file = None
+    ligand_code = None
+    input_partial_model_file = None
+    cif_already_generated = False
+  }
+}
+
+Working directory:  /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_ 
+
+USER = alfredo
+PID = 85169
+
+
+************************************************************
+          PHENIX LigandFit  Fri Mar  6 17:13:41 2020
+************************************************************
+
+Working directory:  /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac 
+
+
+LigandFit_start  LigandFit  Run 19 Fri Mar  6 17:13:41 2020
+
+Map type will be:  pre_calculated_map_coeffs
+
+Set file_or_file_list=single_file 
+as /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-apo-mpd-DS2/mpd/eLBOW_3/mpd.pdb does not contain a list of files 
+
+Ligand starting conformation read from PDB file  /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/mpd.pdb
+
+Generating any necessary cif files for  /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/mpd.pdb
+ ------------------------------------------------------------------------------
+  electronic Ligand Builder & Optimisation Workbench (eLBOW) 1.12-2829 None
+    - Nigel W. Moriarty (NWMoriarty@LBL.Gov)
+ ------------------------------------------------------------------------------
+
+ Random number seed:  3628800
+ Initial processing time : 0.05 seconds
+ 0:00 Parsing Parsing Parsing Parsing Parsing Parsing Parsing Parsing Parsing P
+
+  Reading molecules from /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/pyrR/pyrR-apo-mpd-DS2/mpd/eLBOW_3/MPD.cif to ignore
+  
+
+  Skipping residue codes LIG
+
+	No unknown residues
+Generated CIF for /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/mpd.pdb
+Copying PDB file  /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/Refine_18/ValidationMac_refine_018.cif  to  /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/EDITED_ValidationMac_refine_018.cif
+Removing waters...
+
+Copied partial model file without waters to /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/EDITED_ValidationMac_refine_018.cif
+
+new_lig_template_file_list ['/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/mpd.pdb']
+
+LigandFit_datafile_info  LigandFit  Run 19 Fri Mar  6 17:13:44 2020
+
+FILE:  /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/Refine_18/ValidationMac_refine_018.mtz
+Unit cell: (69.49, 69.49, 90.581, 90, 90, 120)
+Space group: P 31 2 1 (No. 152)
+Found  I-obs SIGI-obs ...guessing they are FP SIGFP  or I SIGI
+Found  2FOFCWT and PH2FOFCWT...
+
+Only using FP and PHIB for this map
+Using user input_labels
+FILE TYPE:  ccp4_mtz
+LABELS:
+['I-obs', 'SIGI-obs', 'R-free-flags', 'F-obs-filtered', 'SIGF-obs-filtered', 'F-model', 'PHIF-model', '2FOFCWT', 'PH2FOFCWT', '2FOFCWT_no_fill', 'PH2FOFCWT_no_fill', 'FOFCWT', 'PHFOFCWT']
+['FOFCWT', 'PHFOFCWT']
+['FP', 'PHIB']
+LABELS: DONE
+Facts written to LigandFit_run_19_/LigandFit_Facts.dat
+
+LigandFit_datafile_info_inputs  LigandFit  Run 19 Fri Mar  6 17:13:45 2020
+
+INPUT LABELS:  ['FOFCWT', 'PHFOFCWT']
+
+LigandFit_get_map  LigandFit  Run 19 Fri Mar  6 17:13:45 2020
+
+
+Getting map using pre-calculated map coeffs from  /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/Refine_18/ValidationMac_refine_018.mtz 
+with FP=FOFCWT PHIB=PHFOFCWT  
+
+
+LigandFit_fit_ligand_inputs  LigandFit  Run 19 Fri Mar  6 17:13:47 2020
+
+CHECKING run command...
+Checking for  /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/test_run.out ... OK
+
+LigandFit_fit_ligand  LigandFit  Run 19 Fri Mar  6 17:13:47 2020
+
+Fitting ligand #1 from /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/mpd.pdb
+Ligand file has 8 atoms
+Searching for ligand with id =1
+Estimated ligand volume: 23.0  A**3
+Estimated ligand center:  [-1.9, 24.5, 12.0]
+Starting CC of ligand as input to map: 0.283
+Starting local CC of ligand as input to map: -0.034
+
+Setting background=False as nproc=1
+TEMP DIR:
+/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0
+Try:  1 quick
+Trying fit with n_indiv_tries_min = 5
+                n_indiv_tries_max = 10
+                n_group_search    = 3
+                ligand_file       = mpd.pdb
+Try:  2 thorough
+Trying fit with n_indiv_tries_min = 100
+                n_indiv_tries_max = 100
+                n_group_search    = 4
+                ligand_file       = mpd.pdb
+Try:  3 randomize
+Randomizing ligand conformation before starting fit
+Randomized version of /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/mpd.pdb placed in random.pdb
+Trying fit with n_indiv_tries_min = 100
+                n_indiv_tries_max = 100
+                n_group_search    = 4
+                ligand_file       = random.pdb
+Try:  4 extra_thorough
+Trying fit with n_indiv_tries_min = 300
+                n_indiv_tries_max = 300
+                n_group_search    = 6
+                ligand_file       = mpd.pdb
+Try:  5 extra_thorough_randomize
+Randomizing ligand conformation before starting fit
+Randomized version of /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/mpd.pdb placed in random.pdb
+Trying fit with n_indiv_tries_min = 300
+                n_indiv_tries_max = 300
+                n_group_search    = 6
+                ligand_file       = random.pdb
+Running 5 jobs on 1 processors
+
+Splitting work into 5 jobs and running with 1 processors using sh 
+background=False in /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0
+
+Starting job 1...Log will be: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/RUN_FILE_1.log
+Starting job 2...Log will be: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/RUN_FILE_2.log
+Starting job 3...Log will be: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/RUN_FILE_3.log
+Starting job 4...Log will be: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/RUN_FILE_4.log
+Starting job 5...Log will be: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/RUN_FILE_5.log
+Collecting all runs now
+
+Collecting run_file: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/RUN_FILE_1  
+info_file: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/INFO_FILE_1 
+method: ligandfit 
+logfile: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/RUN_FILE_1.log
+Calling method:  ligandfit 1
+
+Collecting run_file: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/RUN_FILE_2  
+info_file: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/INFO_FILE_2 
+method: ligandfit 
+logfile: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/RUN_FILE_2.log
+Calling method:  ligandfit 2
+
+Collecting run_file: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/RUN_FILE_3  
+info_file: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/INFO_FILE_3 
+method: ligandfit 
+logfile: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/RUN_FILE_3.log
+Calling method:  ligandfit 3
+
+Collecting run_file: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/RUN_FILE_4  
+info_file: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/INFO_FILE_4 
+method: ligandfit 
+logfile: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/RUN_FILE_4.log
+Calling method:  ligandfit 4
+
+Collecting run_file: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/RUN_FILE_5  
+info_file: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/INFO_FILE_5 
+method: ligandfit 
+logfile: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/TEMP0/RUN_FILE_5.log
+Calling method:  ligandfit 5
+
+Solution for try :  1
+ SCORE=    47.745 CC=     0.719 LIGANDS=       1  LIG=/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/ligand_fit_1.pdb  TEMPLATE=mpd.pdb
+
+Solution for try :  2
+ SCORE=    46.743 CC=     0.775 LIGANDS=       1  LIG=/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/ligand_fit_1.pdb  TEMPLATE=mpd.pdb
+
+Solution for try :  3
+ SCORE=    47.382 CC=     0.673 LIGANDS=       1  LIG=/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/ligand_fit_1.pdb  TEMPLATE=random.pdb
+
+Solution for try :  4
+ SCORE=    46.618 CC=     0.767 LIGANDS=       1  LIG=/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/ligand_fit_1.pdb  TEMPLATE=mpd.pdb
+
+Solution for try :  5
+ SCORE=    47.689 CC=     0.772 LIGANDS=       1  LIG=/Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/ligand_fit_1.pdb  TEMPLATE=random.pdb
+
+Best solution on try  2 : LigandFit Solution 0.775 
+
+
+Removing directories where subprocesses were run...
+
+Refined file  LigandFit_run_19_/TEMP0/ligand_fit.pdb_real_space_refined.pdb
+Overall score: 46.74346
+Atoms placed: 8 of 8
+CC to map: 0.775
+
+This fit is the new best one...
+This fit is good enough
+ solution_number  1
+ score  46.74346
+ cc_overall  0.775
+ starting_cc  0.283
+ lig_volume  23.0
+ lig_xyz [-1.9, 24.5, 12.0]
+ number_of_ligands  1
+ all_model_PDS_key  ligand_fit_1.pdb
+ model_PDS_key_list  ['ligand_fit_1_1.pdb']
+ log_PDS_key_list  ['ligand_1_1.log']
+ cc_PDS_key_list  ['ligand_cc_1_1.log']
+ template_PDS_key_list  ['mpd.pdb']
+ cc_list  [0.775]
+ fit_score_list  [46.74346]
+ atoms_placed_list  [8]
+ atoms_total_list  [8]
+ map_mtz_PDS_key_list  ['resolve_map.mtz']
+ partial_model_PDS_key_list  ['EDITED_ValidationMac_refine_018.cif']
+
+LigandFit_copy_out_top_solutions  LigandFit  Run 19 Fri Mar  6 17:18:28 2020
+
+
+finished  LigandFit  Run 19 Fri Mar  6 17:18:28 2020
+
+Finishing  LigandFit Run 19
+Facts written to LigandFit_run_19_/LigandFit_Facts.dat
+LigandFit Run 19
+ LIGAND SOLUTIONS FOR RUN 19  SORTED BY OVERALL CC
+
+   ****    FILES ARE IN THE DIRECTORY: LigandFit_run_19_  ****
+
+  RANK    SCORE        CC      COPIES  FITTED/TOTAL     NAME           TEMPLATE         RMSD  CC_START    LIG_VOLUME
+
+   1      46.743      0.775        1     8 /    8  /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/ligand_fit_1.pdb  mpd.pdb     0.00      0.28     23.00 
+
+Modify the parameter solution_to_display (current value: 1) 
+to change ligand to be displayed.  You can do this with 
+"choose a variable to set" in the inputs window.
+
+FULL LIGAND MODEL: /Users/alfredo/Documents/GitHub/Xtalab_estruturas_pyrR/Validation/ValidationMac/LigandFit_run_19_/ligand_fit_1.pdb
+
+
+Citations for LigandFit:
+
+Adams PD, Afonine PV, Bunkoczi G, Chen VB, Davis IW, Echols N, Headd JJ, Hung
+LW, Kapral GJ, Grosse-Kunstleve RW, McCoy AJ, Moriarty NW, Oeffner R, Read RJ,
+Richardson DC, Richardson JS, Terwilliger TC, Zwart PH. (2010) PHENIX: a
+comprehensive Python-based system for macromolecular structure solution. Acta
+Cryst. D66:213-221.
+
+Moriarty NW, Grosse-Kunstleve RW, Adams PD. (2009) electronic Ligand Builder
+and Optimization Workbench (eLBOW): a tool for ligand coordinate and restraint
+generation. Acta Crystallogr D Biol Crystallogr 65:1074-80.
+
+Terwilliger TC, Klei H, Adams PD, Moriarty NW, Cohn JD. (2006) Automated ligand
+fitting by core-fragment fitting and extension into density. Acta Crystallogr D
+Biol Crystallogr 62:915-22.
+
+
+
+Cleaning up LigandFit_run_19_/TEMP0 now...
+Done cleaning up ...
