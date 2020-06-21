@@ -1,0 +1,1213 @@
+# Date 2020-06-20 Time 21:22:44 CDT -0500 (1592706164.42 s)
+#phil __OFF__
+
+Command line arguments: "/home/adrmercurio/XtaLab/git_pyrR/phenix/DS3/.phenix/project_data/refine_14.eff" "--overwrite"
+
+USER = adrmercurio
+PID = 4375
+
+-------------------------------------------------------------------------------
+  PHENIX: Python-based Hierarchical ENvironment for Integrated Xtallography
+  Version: 1.17.1
+  Release tag: 3660
+  Platform: intel-linux-2.6-x86_64
+  User: adrmercurio
+-------------------------------------------------------------------------------
+
+              phenix.refine: Macromolecular Structure Refinement
+
+-------------------------------------------------------------------------------
+
+Phenix developers include:
+  Paul Adams, Pavel Afonine, Gabor Bunkoczi, Tom Burnley, Vincent Chen, 
+  Youval Dar, Ian Davis, Eli Draizen, Nathaniel Echols, Richard Gildea, 
+  Piet Gros, Ralf Grosse-Kunstleve, Jeffrey Headd, Bradley Hintze, Li-Wei Hung, 
+  Tom Ioerger, Dorothee Liebschner, Airlie McCoy, Erik McKee, Nigel Moriarty, 
+  Robert Oeffner, Billy Poon, Randy Read, Jane Richardson, David Richardson, 
+  Jim Sacchettini, Nicholas Sauter, Oleg Sobolev, Laurent Storoni, 
+  Tom Terwilliger, Christopher Williams, Peter Zwart
+Phenix home page:
+  http://www.phenix-online.org/
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Phenix components are copyrighted by:
+  - Lawrence Berkeley National Laboratory
+  - Los Alamos National Laboratory
+  - University of Cambridge
+  - Duke University
+  - Texas Agricultural Experiment Station &
+    Texas Engineering Experiment Station
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Major third-party components of Phenix include:
+    Python, wxWidgets, wxPython, Boost, SCons, Clipper,
+    CCP4 Monomer Library, CCP4 I/O libraries, PyCifRW, FFTPACK, L-BFGS,
+    MUSCLE, KSDSSP, PULCHRA, ANTLRv3
+  Enter phenix.acknowledgments for details.
+-------------------------------------------------------------------------------
+
+Processing inputs. This may take a minute or two.
+
+Working crystal symmetry after inspecting all inputs:
+  Unit cell: (59.39, 116.651, 109.032, 90, 104.227, 90)
+  Space group: I 1 2 1 (No. 5)
+
+
+================================== X-ray data =================================
+
+I-obs:
+  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS3/Refine_11/pyrR_ds3_refine_11.mtz:I-obs,SIGI-obs
+
+Miller array info: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS3/Refine_11/pyrR_ds3_refine_11.mtz:I-obs,SIGI-obs
+Observation type: xray.intensity
+Type of data: double, size=14476
+Type of sigmas: double, size=14476
+Number of Miller indices: 14476
+Anomalous flag: False
+Unit cell: (59.39, 116.651, 109.032, 90, 104.227, 90)
+Space group: I 1 2 1 (No. 5)
+Systematic absences: 0
+Centric reflections: 545
+Resolution range: 56.7525 3.00014
+Completeness in resolution range: 0.999793
+Completeness with d_max=infinity: 0.999655
+Wavelength: 1.0000
+
+
+     ----------Scaling input intensities via French-Wilson Method----------    
+
+Trying 60 bins...
+Number of bins = 60
+** Calculating bin mean intensity values for each intensity **
+** Total # rejected intensities: 13 **
+** Summary or rejected intensities **
+-----------------------------------------------------------------
+Miller Index  :  Intensity  :  Sigma  :  Bin Mean Intensity
+(-15, 11, 6)    -696.757      177.776    2893.347
+(-11, 20, 15)    -642.330      122.088    2877.624
+(-5, 27, 14)    -652.867      88.560    3163.399
+(-2, 27, 15)    -542.880      89.366    2660.025
+(-1, 30, 9)    -578.077      89.550    3121.461
+(-11, 22, 11)    -464.016      118.089    3288.698
+(-13, 19, 2)    -724.757      176.670    2584.605
+(-8, 25, 15)    -472.862      108.418    2618.630
+(-6, 13, 27)    -443.083      113.593    2706.421
+(-1, 32, 1)    -629.535      100.054    2666.932
+(-5, 26, 17)    -732.505      116.194    2416.533
+(-1, 30, 11)    -419.865      82.188    2357.635
+(-1, 32, 3)    -664.497      122.247    2457.839
+-----------------------------------------------------------------
+Intensities converted to amplitudes for use in refinement.
+
+Number of F-obs in resolution range:                   14463
+Number of F-obs<0 (these reflections will be rejected): 0
+Number of F-obs=0 (these reflections will be used in refinement): 0
+Refinement resolution range: d_max =  56.7525
+                             d_min =   3.0001
+
+
+Fobs statistics after all cutoffs applied:
+
+Miller array info: None
+Observation type: xray.amplitude
+Type of data: double, size=14463
+Type of sigmas: double, size=14463
+Number of Miller indices: 14463
+Anomalous flag: False
+Unit cell: (59.39, 116.651, 109.032, 90, 104.227, 90)
+Space group: I 1 2 1 (No. 5)
+Systematic absences: 0
+Centric reflections: 545
+Resolution range: 56.7525 3.00014
+Completeness in resolution range: 0.998895
+Completeness with d_max=infinity: 0.998757
+R-free flags:
+  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS3/Refine_11/pyrR_ds3_refine_11.mtz:R-free-flags
+
+Miller array info: /home/adrmercurio/XtaLab/git_pyrR/phenix/DS3/Refine_11/pyrR_ds3_refine_11.mtz:R-free-flags
+Observation type: None
+Type of data: int, size=14476
+Type of sigmas: None
+Number of Miller indices: 14476
+Anomalous flag: False
+Unit cell: (59.39, 116.651, 109.032, 90, 104.227, 90)
+Space group: I 1 2 1 (No. 5)
+Systematic absences: 0
+Centric reflections: 545
+Resolution range: 56.7525 3.00014
+Completeness in resolution range: 0.999793
+Completeness with d_max=infinity: 0.999655
+Wavelength: 1.0000
+
+Test (R-free flags) flag value: 1
+
+Number of work/free reflections by resolution:
+                                         work  free  %free
+  bin  1: 56.7626 -  6.4607 [1477/1480]  1328   149  10.1%
+  bin  2:  6.4607 -  5.1292 [1467/1467]  1322   145   9.9%
+  bin  3:  5.1292 -  4.4811 [1428/1428]  1285   143  10.0%
+  bin  4:  4.4811 -  4.0715 [1464/1464]  1317   147  10.0%
+  bin  5:  4.0715 -  3.7797 [1445/1445]  1301   144  10.0%
+  bin  6:  3.7797 -  3.5569 [1431/1444]  1289   142   9.9%
+  bin  7:  3.5569 -  3.3788 [1439/1439]  1295   144  10.0%
+  bin  8:  3.3788 -  3.2318 [1444/1444]  1299   145  10.0%
+  bin  9:  3.2318 -  3.1074 [1426/1426]  1284   142  10.0%
+  bin 10:  3.1074 -  3.0001 [1442/1442]  1298   144  10.0%
+                                overall 13018  1445  10.0%
+  Monomer Library directory:
+    "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/chem_data/mon_lib"
+  Total number of atoms: 4584
+  Number of models: 1
+  Model: ""
+    Number of chains: 5
+    Chain: "A"
+      Number of atoms: 1121
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 151, 1121
+          Classifications: {'peptide': 151}
+          Incomplete info: {'backbone_only': 1, 'truncation_to_alanine': 14}
+          Link IDs: {'PTRANS': 7, 'TRANS': 143}
+          Chain breaks: 1
+          Unresolved non-hydrogen bonds: 63
+          Unresolved non-hydrogen angles: 75
+          Unresolved non-hydrogen dihedrals: 51
+          Unresolved non-hydrogen chiralities: 5
+          Planarities with less than four sites: {'GLU:plan': 2, 'ARG:plan': 3, 'ASN:plan1': 1, 'ASP:plan': 1}
+          Unresolved non-hydrogen planarities: 28
+    Chain: "B"
+      Number of atoms: 1164
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 154, 1164
+          Classifications: {'peptide': 154}
+          Incomplete info: {'truncation_to_alanine': 10}
+          Link IDs: {'PTRANS': 7, 'TRANS': 146}
+          Chain breaks: 1
+          Unresolved non-hydrogen bonds: 39
+          Unresolved non-hydrogen angles: 48
+          Unresolved non-hydrogen dihedrals: 30
+          Unresolved non-hydrogen chiralities: 2
+          Planarities with less than four sites: {'GLU:plan': 2, 'ARG:plan': 3, 'ASN:plan1': 1, 'ASP:plan': 1}
+          Unresolved non-hydrogen planarities: 25
+    Chain: "C"
+      Number of atoms: 1161
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 153, 1161
+          Classifications: {'peptide': 153}
+          Incomplete info: {'truncation_to_alanine': 11}
+          Link IDs: {'PTRANS': 7, 'TRANS': 145}
+          Chain breaks: 1
+          Unresolved non-hydrogen bonds: 37
+          Unresolved non-hydrogen angles: 47
+          Unresolved non-hydrogen dihedrals: 27
+          Unresolved non-hydrogen chiralities: 5
+          Planarities with less than four sites: {'GLU:plan': 2, 'ARG:plan': 1, 'ASN:plan1': 1}
+          Unresolved non-hydrogen planarities: 17
+    Chain: "D"
+      Number of atoms: 1126
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 153, 1126
+          Classifications: {'peptide': 153}
+          Incomplete info: {'truncation_to_alanine': 22}
+          Link IDs: {'PTRANS': 7, 'TRANS': 145}
+          Chain breaks: 1
+          Unresolved non-hydrogen bonds: 77
+          Unresolved non-hydrogen angles: 94
+          Unresolved non-hydrogen dihedrals: 60
+          Unresolved non-hydrogen chiralities: 5
+          Planarities with less than four sites: {'GLN:plan1': 1, 'GLU:plan': 5, 'ARG:plan': 2, 'ASN:plan1': 2, 'ASP:plan': 1}
+          Unresolved non-hydrogen planarities: 39
+    Chain: "D"
+      Number of atoms: 12
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 2, 12
+          Classifications: {'peptide': 2}
+          Incomplete info: {'truncation_to_alanine': 1}
+          Link IDs: {'TRANS': 1}
+          Unresolved non-hydrogen bonds: 5
+          Unresolved non-hydrogen angles: 7
+          Unresolved non-hydrogen dihedrals: 3
+          Planarities with less than four sites: {'GLU:plan': 1, 'ASN:plan1': 1}
+          Unresolved non-hydrogen planarities: 5
+  Time building chain proxies: 1.05, per 1000 atoms: 0.23
+  Number of scatterers: 4584
+  At special positions: 0
+  Unit cell: (59.39, 116.651, 109.032, 90, 104.227, 90)
+  Space group: I 1 2 1 (No. 5)
+  Number of sites at special positions: 0
+  Number of scattering types: 4
+    Type Number    sf(0)
+     S      13     16.00
+     O     839      8.00
+     N     828      7.00
+     C    2904      6.00
+    sf(0) = scattering factor at diffraction angle 0.
+
+
+============================== Scattering factors =============================
+
+
+                ----------X-ray scattering dictionary----------                
+
+Number of scattering types: 4
+  Type Number    sf(0)   Gaussians
+   S      13     15.96       2
+   O     839      7.97       1
+   N     828      6.97       1
+   C    2904      5.97       2
+  sf(0) = scattering factor at diffraction angle 0.
+
+
+==================== Fixing bad ADP in input model (if any) ===================
+
+
+========================== Anomalous scatterer groups =========================
+
+All atoms refined with f_prime=0 and f_double_prime=0.
+  Number of disulfides: simple=0, symmetry=0
+
+  Automatic linking
+    Parameters for automatic linking
+      Linking & cutoffs
+        Metal                : False - 3.50
+        Amimo acid           : False - 1.90
+        Carbohydrate         : True  - 1.99
+        Ligands              : True  - 1.99
+        Small molecules      : False - 1.98
+        Amino acid - RNA/DNA : False
+      
+  Number of custom bonds: simple=0, symmetry=0
+  Time building additional restraints: 0.53
+  Conformation dependent library (CDL) restraints added in 130.0 milliseconds
+  
+  Time building geometry restraints manager: 0.61 seconds
+
+  NOTE: a complete listing of the restraints can be obtained by requesting
+        output of .geo file.
+
+  Histogram of bond lengths:
+        1.15 -     1.29: 803
+        1.29 -     1.42: 922
+        1.42 -     1.56: 2863
+        1.56 -     1.70: 8
+        1.70 -     1.83: 26
+  Bond restraints: 4622
+  Sorted by residual:
+  bond pdb=" N   PRO A  58 "
+       pdb=" CD  PRO A  58 "
+    ideal  model  delta    sigma   weight residual
+    1.473  1.202  0.271 1.40e-02 5.10e+03 3.76e+02
+  bond pdb=" C   PRO A  57 "
+       pdb=" O   PRO A  57 "
+    ideal  model  delta    sigma   weight residual
+    1.240  1.161  0.079 1.12e-02 7.97e+03 4.97e+01
+  bond pdb=" C   PRO A  58 "
+       pdb=" O   PRO A  58 "
+    ideal  model  delta    sigma   weight residual
+    1.233  1.165  0.068 1.21e-02 6.83e+03 3.19e+01
+  bond pdb=" C   LEU D 159 "
+       pdb=" N   GLU D 160 "
+    ideal  model  delta    sigma   weight residual
+    1.335  1.263  0.072 1.35e-02 5.49e+03 2.82e+01
+  bond pdb=" C   ARG A  44 "
+       pdb=" O   ARG A  44 "
+    ideal  model  delta    sigma   weight residual
+    1.237  1.174  0.062 1.19e-02 7.06e+03 2.74e+01
+  ... (remaining 4617 not shown)
+
+  Histogram of bond angle deviations from ideal:
+       80.94 -   100.75: 20
+      100.75 -   120.56: 4644
+      120.56 -   140.37: 1596
+      140.37 -   160.18: 0
+      160.18 -   179.99: 1
+  Bond angle restraints: 6261
+  Sorted by residual:
+  angle pdb=" CB  ASN B 171 "
+        pdb=" CG  ASN B 171 "
+        pdb=" OD1 ASN B 171 "
+      ideal   model   delta    sigma   weight residual
+     120.80  179.99  -59.19 2.00e+00 2.50e-01 8.76e+02
+  angle pdb=" CB  ASN B 171 "
+        pdb=" CG  ASN B 171 "
+        pdb=" ND2 ASN B 171 "
+      ideal   model   delta    sigma   weight residual
+     116.40   80.94   35.46 1.50e+00 4.44e-01 5.59e+02
+  angle pdb=" OD1 ASN B 171 "
+        pdb=" CG  ASN B 171 "
+        pdb=" ND2 ASN B 171 "
+      ideal   model   delta    sigma   weight residual
+     122.60   99.05   23.55 1.00e+00 1.00e+00 5.55e+02
+  angle pdb=" C   ILE C  34 "
+        pdb=" CA  ILE C  34 "
+        pdb=" CB  ILE C  34 "
+      ideal   model   delta    sigma   weight residual
+     111.29  131.45  -20.16 1.64e+00 3.72e-01 1.51e+02
+  angle pdb=" CA  ASN B 171 "
+        pdb=" CB  ASN B 171 "
+        pdb=" CG  ASN B 171 "
+      ideal   model   delta    sigma   weight residual
+     112.60  102.26   10.34 1.00e+00 1.00e+00 1.07e+02
+  ... (remaining 6256 not shown)
+
+  Histogram of dihedral angle deviations from ideal:
+        0.00 -    35.98: 1705
+       35.98 -    71.96: 46
+       71.96 -   107.93: 1
+      107.93 -   143.91: 0
+      143.91 -   179.88: 1
+  Dihedral angle restraints: 1753
+    sinusoidal: 1136
+      harmonic: 617
+  Sorted by residual:
+  dihedral pdb=" CD  ARG B  36 "
+           pdb=" NE  ARG B  36 "
+           pdb=" CZ  ARG B  36 "
+           pdb=" NH1 ARG B  36 "
+      ideal   model   delta sinusoidal    sigma   weight residual
+       0.00  179.88 -179.88     1      1.00e+01 1.00e-02 1.92e+02
+  dihedral pdb=" CA  LEU D 159 "
+           pdb=" C   LEU D 159 "
+           pdb=" N   GLU D 160 "
+           pdb=" CA  GLU D 160 "
+      ideal   model   delta  harmonic     sigma   weight residual
+     180.00  142.43   37.57     0      5.00e+00 4.00e-02 5.65e+01
+  dihedral pdb=" CA  ARG A  36 "
+           pdb=" C   ARG A  36 "
+           pdb=" N   ARG A  37 "
+           pdb=" CA  ARG A  37 "
+      ideal   model   delta  harmonic     sigma   weight residual
+     180.00  152.68   27.32     0      5.00e+00 4.00e-02 2.99e+01
+  ... (remaining 1750 not shown)
+
+  Histogram of chiral volume deviations from ideal:
+       0.000 -    0.135: 717
+       0.135 -    0.270: 50
+       0.270 -    0.405: 9
+       0.405 -    0.540: 1
+       0.540 -    0.676: 2
+  Chirality restraints: 779
+  Sorted by residual:
+  chirality pdb=" CA  GLU D 160 "
+            pdb=" N   GLU D 160 "
+            pdb=" C   GLU D 160 "
+            pdb=" CB  GLU D 160 "
+    both_signs  ideal   model   delta    sigma   weight residual
+      False      2.51    1.83    0.68 2.00e-01 2.50e+01 1.14e+01
+  chirality pdb=" CA  MET C  35 "
+            pdb=" N   MET C  35 "
+            pdb=" C   MET C  35 "
+            pdb=" CB  MET C  35 "
+    both_signs  ideal   model   delta    sigma   weight residual
+      False      2.51    1.89    0.62 2.00e-01 2.50e+01 9.67e+00
+  chirality pdb=" CA  ILE C  34 "
+            pdb=" N   ILE C  34 "
+            pdb=" C   ILE C  34 "
+            pdb=" CB  ILE C  34 "
+    both_signs  ideal   model   delta    sigma   weight residual
+      False      2.43    1.99    0.44 2.00e-01 2.50e+01 4.88e+00
+  ... (remaining 776 not shown)
+
+  Planarity restraints: 809
+  Sorted by residual:
+                                 delta    sigma   weight rms_deltas residual
+  plane pdb=" CA  LEU D 159 "    0.044 2.00e-02 2.50e+03   8.27e-02 6.83e+01
+        pdb=" C   LEU D 159 "   -0.143 2.00e-02 2.50e+03
+        pdb=" O   LEU D 159 "    0.050 2.00e-02 2.50e+03
+        pdb=" N   GLU D 160 "    0.049 2.00e-02 2.50e+03
+                                 delta    sigma   weight rms_deltas residual
+  plane pdb=" CA  ARG A  44 "   -0.038 2.00e-02 2.50e+03   7.97e-02 6.36e+01
+        pdb=" C   ARG A  44 "    0.138 2.00e-02 2.50e+03
+        pdb=" O   ARG A  44 "   -0.053 2.00e-02 2.50e+03
+        pdb=" N   LEU A  45 "   -0.047 2.00e-02 2.50e+03
+                                 delta    sigma   weight rms_deltas residual
+  plane pdb=" CA  MET A  35 "   -0.040 2.00e-02 2.50e+03   7.55e-02 5.69e+01
+        pdb=" C   MET A  35 "    0.131 2.00e-02 2.50e+03
+        pdb=" O   MET A  35 "   -0.044 2.00e-02 2.50e+03
+        pdb=" N   ARG A  36 "   -0.047 2.00e-02 2.50e+03
+  ... (remaining 806 not shown)
+
+  Histogram of nonbonded interaction distances:
+        1.33 -     2.04: 1
+        2.04 -     2.76: 671
+        2.76 -     3.47: 6501
+        3.47 -     4.19: 11634
+        4.19 -     4.90: 19592
+  Nonbonded interactions: 38399
+  Sorted by model distance:
+  nonbonded pdb=" C   ILE D 170 "
+            pdb=" N   ASN D 171 "
+     model   vdw
+     1.327 3.350
+  nonbonded pdb=" O   LEU D 159 "
+            pdb=" O   VAL D 165 "
+     model   vdw
+     2.208 3.040
+  nonbonded pdb=" NE2 HIS A 133 "
+            pdb=" O   THR A 149 "
+     model   vdw
+     2.228 2.520
+  nonbonded pdb=" O   ILE D 170 "
+            pdb=" N   ASN D 171 "
+     model   vdw
+     2.242 2.520
+  nonbonded pdb=" OE1 GLN A 124 "
+            pdb=" OH  TYR A 142 "
+     model   vdw
+     2.247 2.440
+  ... (remaining 38394 not shown)
+
+  NOTE: a complete listing of the restraints can be obtained by requesting
+        output of .geo file.
+
+======================== Summary of geometry restraints =======================
+
+
+====================== Modifying start model if requested =====================
+
+n_use            =  4584
+n_use_u_iso      =  4584
+n_use_u_aniso    =  0
+n_grad_site      =  0
+n_grad_u_iso     =  0
+n_grad_u_aniso   =  0
+n_grad_occupancy =  0
+n_grad_fp        =  0
+n_grad_fdp       =  0
+total number of scatterers =  4584
+
+================== Extract refinement strategy and selections =================
+
+Refinement flags and selection counts:
+  individual_sites       = False (0 atoms)
+  torsion_angles         = False (0 atoms)
+  rigid_body             = False (0 atoms in 0 groups)
+  individual_adp         =  True (iso = 4584 aniso = 0)
+  group_adp              = False (0 atoms in 0 groups)
+  tls                    = False (0 atoms in 0 groups)
+  occupancies            =  True (0 atoms)
+  group_anomalous        = False
+
+*******************************************************************************
+Automatic adjustment:
+  hydrogens.refine=riding
+*******************************************************************************
+
+
+==================== Process input NCS or/and find new NCS ====================
+
+Using existing and finding new NCS is disabled.
+Use ncs_search.enabled=true to activate it.
+Look at refinement.ncs for more NCS related parameters.
+
+=================== Write initial parameters into .eff file ===================
+
+Writing effective parameters to file:
+  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS3/Refine_14/pyrR_ds3_refine_14.eff
+
+Writing geometry restraints to file:
+  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS3/Refine_14/pyrR_ds3_refine_14.geo
+CPU time processing inputs: 5.63
+
+
+============================ Non-default parameters ===========================
+
+A complete record of all parameters was written to the .eff file above.
+Below are only the non-defaults.
+
+#phil __ON__
+refinement {
+  crystal_symmetry {
+    unit_cell = 59.39 116.651 109.032 90 104.227 90
+    space_group = "I 1 2 1"
+  }
+  input {
+    pdb {
+      file_name = "/home/adrmercurio/XtaLab/git_pyrR/phenix/DS3/Refine_13/pyrR_ds3_refine_13.pdb"
+    }
+    xray_data {
+      file_name = "/home/adrmercurio/XtaLab/git_pyrR/phenix/DS3/Refine_11/pyrR_ds3_refine_11.mtz"
+      labels = "I-obs,SIGI-obs"
+      r_free_flags {
+        file_name = "/home/adrmercurio/XtaLab/git_pyrR/phenix/DS3/Refine_11/pyrR_ds3_refine_11.mtz"
+        label = "R-free-flags"
+        test_flag_value = 1
+      }
+    }
+    sequence {
+      file_name = "/home/adrmercurio/XtaLab/git_pyrR/pyrR_Tthermo.fa"
+    }
+  }
+  output {
+    prefix = "pyrR_ds3_refine"
+    serial = 14
+    serial_format = "%d"
+    write_def_file = False
+  }
+  electron_density_maps {
+    map_coefficients {
+      map_type = "2mFo-DFc"
+      mtz_label_amplitudes = "2FOFCWT"
+      mtz_label_phases = "PH2FOFCWT"
+      fill_missing_f_obs = True
+    }
+    map_coefficients {
+      map_type = "2mFo-DFc"
+      mtz_label_amplitudes = "2FOFCWT_no_fill"
+      mtz_label_phases = "PH2FOFCWT_no_fill"
+    }
+    map_coefficients {
+      map_type = "mFo-DFc"
+      mtz_label_amplitudes = "FOFCWT"
+      mtz_label_phases = "PHFOFCWT"
+    }
+    map_coefficients {
+      map_type = "anomalous"
+      mtz_label_amplitudes = "ANOM"
+      mtz_label_phases = "PHANOM"
+    }
+  }
+  refine {
+    strategy = individual_sites individual_sites_real_space rigid_body \
+               *individual_adp group_adp tls *occupancies group_anomalous
+  }
+  main {
+    number_of_macro_cycles = 1
+  }
+  hydrogens {
+    refine = individual *riding Auto
+  }
+  pdb_interpretation {
+    c_beta_restraints = False
+  }
+  target_weights {
+    optimize_xyz_weight = True
+  }
+  gui {
+    base_output_dir = "/home/adrmercurio/XtaLab/git_pyrR/phenix/DS3"
+    tmp_dir = "/home/adrmercurio/XtaLab/git_pyrR/phenix/DS3/.phenix/tmp"
+  }
+}
+#phil __OFF__
+
+
+=============================== refinement start ==============================
+
+
+   ----------structure factors based statistics (before refinement)----------  
+
+
+                         ----------X-ray data----------                        
+
+|--(resolution: 3.00 - 56.75 A, n_refl.=14463 (all), 9.99  % free)------------|
+|                                                                             |
+| r_work= 0.4001 r_free= 0.5659 coordinate error (max.-lik. estimate): 0.27 A |
+|                                                                             |
+| normalized target function (ml) (work): 4.241242                            |
+| target function (ml) not normalized (work): 55212.486174                    |
+| target function (ml) not normalized (free): 6266.557970                     |
+|-----------------------------------------------------------------------------|
+
+|-----------------------------------------------------------------------------|
+| Bin     Resolution   Compl.  No. Refl.    R-factors          Targets        |
+|number     range              work test   work   test        work        test|
+|  1:   56.75 -    6.46 1.00   1328  149 0.4138 0.5602        5.62      5.6294|
+|  2:    6.46 -    5.13 1.00   1322  145 0.3097 0.4675      4.9446      4.9546|
+|  3:    5.13 -    4.48 1.00   1285  143 0.3449 0.5335      4.5109      4.5573|
+|  4:    4.48 -    4.07 1.00   1317  147 0.4066 0.5917      4.4069      4.5846|
+|  5:    4.07 -    3.78 1.00   1301  144 0.4287 0.6087      4.2487      4.3178|
+|  6:    3.78 -    3.56 0.99   1289  142 0.4693 0.6255      4.1917      4.4011|
+|  7:    3.56 -    3.38 1.00   1295  144 0.4532 0.5793      3.9047      3.9657|
+|  8:    3.38 -    3.23 1.00   1299  145 0.4267 0.6174       3.668      3.8412|
+|  9:    3.23 -    3.11 1.00   1284  142 0.4331 0.5869       3.529      3.5904|
+| 10:    3.11 -    3.00 1.00   1298  144 0.4156 0.5782       3.335      3.4662|
+|-----------------------------------------------------------------------------|
+
+|-----------------------------------------------------------------------------|
+|R-free likelihood based estimates for figures of merit, absolute phase error,|
+|and distribution parameters alpha and beta (Acta Cryst. (1995). A51, 880-887)|
+|                                                                             |
+| Bin     Resolution      No. Refl.   FOM  Phase Scale    Alpha        Beta   |
+|  #        range        work  test        error factor                       |
+|  1:   56.75 -    6.46  1328   149  0.15  79.07   0.76     0.02      18847.23|
+|  2:    6.46 -    5.13  1322   145  0.37  62.73   1.12     0.07       7413.10|
+|  3:    5.13 -    4.48  1285   143  0.81  26.17   1.39     0.12       1532.07|
+|  4:    4.48 -    4.07  1317   147  0.81  26.20   1.59     0.13       1249.83|
+|  5:    4.07 -    3.78  1301   144  0.78  29.08   1.65     0.14       1007.65|
+|  6:    3.78 -    3.56  1289   142  0.73  33.71   1.71     0.14        774.18|
+|  7:    3.56 -    3.38  1295   144  0.71  35.39   1.66     0.14        538.08|
+|  8:    3.38 -    3.23  1299   145  0.71  35.28   1.56     0.13        366.56|
+|  9:    3.23 -    3.11  1284   142  0.71  35.82   1.54     0.13        266.29|
+| 10:    3.11 -    3.00  1298   144  0.68  38.56   1.52     0.12        202.92|
+|alpha:            min =        0.02 max =            0.14 mean =         0.11|
+|beta:             min =      202.92 max =        18847.23 mean =      3267.10|
+|figures of merit: min =        0.00 max =            1.00 mean =         0.64|
+|phase err.(work): min =        0.00 max =           89.97 mean =        40.33|
+|phase err.(test): min =        0.00 max =           89.84 mean =        41.09|
+|-----------------------------------------------------------------------------|
+
+        ----------Initial model statistics (before refinement)----------       
+
+
+                min    max   mean <Bi,j>   iso aniso
+   Overall:   36.63 110.63  67.72   5.27  4584     0
+   Protein:   36.63 110.63  67.72   5.27  4584     0
+   Chain  A:  36.63 110.15  65.17    N/A  1121     0
+   Chain  C:  39.93 110.63  68.34    N/A  1161     0
+   Chain  B:  39.72 103.11  67.17    N/A  1164     0
+   Chain  D:  41.62 105.76  70.16    N/A  1138     0
+   Histogram:
+       Values      Number of atoms
+    36.63 - 44.03        41
+    44.03 - 51.43       338
+    51.43 - 58.83       791
+    58.83 - 66.23      1017
+    66.23 - 73.63      1044
+    73.63 - 81.03       689
+    81.03 - 88.43       386
+    88.43 - 95.83       196
+    95.83 - 103.23       65
+   103.23 - 110.63       17
+
+|-Occupancies statistics------------------------------------------------------|
+| occupancies: max = 1.00   min = 1.00   number of occupancies < 0.1 = 0      |
+|-----------------------------------------------------------------------------|
+
+*********************** REFINEMENT MACRO_CYCLE 1 OF 1 *************************
+
+|--(resolution: 3.00 - 56.75 A, n_refl.=14463 (all), 9.99  % free)------------|
+|                                                                             |
+| r_work= 0.4001 r_free= 0.5659 coordinate error (max.-lik. estimate): 0.27 A |
+|                                                                             |
+| normalized target function (ml) (work): 4.241242                            |
+| target function (ml) not normalized (work): 55212.486174                    |
+| target function (ml) not normalized (free): 6266.557970                     |
+|-----------------------------------------------------------------------------|
+
+=========================== Bulk-solvent and scaling ==========================
+
+
+============================= updating all scales =============================
+
+                   start: r(all,work,free)=0.4188 0.4001 0.5659 n_refl.: 14463
+       re-set all scales: r(all,work,free)=0.4188 0.4001 0.5659 n_refl.: 14463
+         remove outliers: r(all,work,free)=0.4187 0.4000 0.5659 n_refl.: 14460
+ overall B=0.00 to atoms: r(all,work,free)=0.4187 0.4000 0.5659 n_refl.: 14460
+bulk-solvent and scaling: r(all,work,free)=0.2209 0.2151 0.2754 n_refl.: 14460
+         remove outliers: r(all,work,free)=0.2203 0.2151 0.2670 n_refl.: 14459
+
+ ======================== Statistics in resolution bins ======================== 
+
+Total model structure factor:
+  F_model = k_total * (F_calc + k_mask * F_mask)
+
+    k_total = k_isotropic * k_anisotropic
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 56.752-15.820   96.19    91    10 0.3114  1531.706  1504.064 1.414 1.009 0.300
+ 15.741-12.735   99.00    89    10 0.1693  1715.383  1657.160 1.175 1.009 0.277
+ 12.710-10.227  100.00   163    17 0.1415  1978.507  1956.678 1.055 1.010 0.275
+ 10.169-8.210   100.00   311    35 0.1444  1583.582  1562.621 1.098 1.007 0.272
+  8.204-6.592   100.00   600    67 0.1845  1002.072   982.182 0.968 1.005 0.267
+  6.589-5.298   100.00  1143   126 0.2328   752.885   726.918 0.912 0.999 0.240
+  5.293-4.255   100.00  2194   245 0.1820   868.662   841.528 0.986 0.992 0.210
+  4.254-3.418    99.72  4237   469 0.2317   561.397   542.681 1.058 0.979 0.121
+  3.418-3.000    99.96  4188   464 0.2830   276.773   257.484 1.008 0.966 0.004
+
+  Approximation of k_total with k_overall*exp(-b_overall*s**2/4)
+    k_overall=0.9976   b_overall=0.3957  
+
+============================ Set refinement target ============================
+
+  using refinement target ml 
+
+
+==================== Compute data/restraints target weights ===================
+
+|-----------------------------------------------------------------------------|
+| XYZ refinement: T = Eexperimental * wxc * wxc_scale + Echem * wc            |
+| wxc = 1.000000              wxc_scale = 0.500            wc = 0.000         |
+|                                                                             |
+| ADP refinement: T = Eexperimental * wxu * wxu_scale + Eadp  * wu            |
+| wxu = 0.046030              wxu_scale = 1.000            wu = 1.000         |
+|-----------------------------------------------------------------------------|
+
+
+====================== ADP refinement (reciprocal space) ======================
+
+
+                 ----------Individual ADP refinement----------                 
+
+    R-FACTORS      <Bi-Bj>  <B>   WEIGHT       TARGETS
+ work  free  delta                           data restr
+21.51 26.70   5.19  5.275  67.718  0.046    6.422
+21.50 26.67   5.18  5.282  69.008  0.046    6.421
+
+                min    max   mean <Bi,j>   iso aniso
+   Overall:   37.75 111.85  69.01   5.28  4584     0
+   Protein:   37.75 111.85  69.01   5.28  4584     0
+   Chain  A:  37.75 111.85  66.36    N/A  1121     0
+   Chain  C:  41.26 110.69  69.65    N/A  1161     0
+   Chain  B:  41.30 104.22  68.46    N/A  1164     0
+   Chain  D:  42.45 107.90  71.52    N/A  1138     0
+   Histogram:
+       Values      Number of atoms
+    37.75 - 45.16        45
+    45.16 - 52.57       343
+    52.57 - 59.98       777
+    59.98 - 67.39      1003
+    67.39 - 74.80      1046
+    74.80 - 82.21       694
+    82.21 - 89.62       384
+    89.62 - 97.03       202
+    97.03 - 104.44       74
+   104.44 - 111.85       16
+
+
+                         ----------X-ray data----------                        
+
+|--(resolution: 3.00 - 56.75 A, n_refl.=14459 (all), 9.98  % free)------------|
+|                                                                             |
+| r_work= 0.2150 r_free= 0.2667 coordinate error (max.-lik. estimate): 0.34 A |
+|                                                                             |
+| normalized target function (ml) (work): 6.421138                            |
+| target function (ml) not normalized (work): 83577.535499                    |
+| target function (ml) not normalized (free): 9464.065313                     |
+|-----------------------------------------------------------------------------|
+
+|-----------------------------------------------------------------------------|
+| Bin     Resolution   Compl.  No. Refl.    R-factors          Targets        |
+|number     range              work test   work   test        work        test|
+|  1:   56.75 -    6.46 1.00   1327  148 0.1773 0.2034      7.1423      7.2224|
+|  2:    6.46 -    5.13 1.00   1322  145 0.2260 0.2692      6.7977      6.8323|
+|  3:    5.13 -    4.48 1.00   1285  143 0.1830 0.2468       6.715      6.8943|
+|  4:    4.48 -    4.07 1.00   1317  147 0.1823 0.2454      6.6487      6.8461|
+|  5:    4.07 -    3.78 1.00   1301  144 0.2155 0.2563      6.5492      6.6537|
+|  6:    3.78 -    3.56 0.99   1289  142 0.2614 0.3664      6.4985      6.7766|
+|  7:    3.56 -    3.38 1.00   1295  144 0.2633 0.3362      6.2421       6.338|
+|  8:    3.38 -    3.23 1.00   1299  145 0.2790 0.3490      6.0363      6.2527|
+|  9:    3.23 -    3.11 1.00   1283  141 0.2888 0.3059      5.8844      5.9457|
+| 10:    3.11 -    3.00 1.00   1298  144 0.2826 0.3320      5.6676      5.7927|
+|-----------------------------------------------------------------------------|
+
+|-----------------------------------------------------------------------------|
+|R-free likelihood based estimates for figures of merit, absolute phase error,|
+|and distribution parameters alpha and beta (Acta Cryst. (1995). A51, 880-887)|
+|                                                                             |
+| Bin     Resolution      No. Refl.   FOM  Phase Scale    Alpha        Beta   |
+|  #        range        work  test        error factor                       |
+|  1:   56.75 -    6.46  1327   148  0.86  20.82   0.99     1.64     243476.64|
+|  2:    6.46 -    5.13  1322   145  0.79  28.25   0.99     1.58     174011.75|
+|  3:    5.13 -    4.48  1285   143  0.86  21.06   1.00     1.60     132328.24|
+|  4:    4.48 -    4.07  1317   147  0.85  22.13   1.03     1.63     118329.98|
+|  5:    4.07 -    3.78  1301   144  0.81  26.03   1.02     1.64     102904.32|
+|  6:    3.78 -    3.56  1289   142  0.76  30.63   1.00     1.52      81171.86|
+|  7:    3.56 -    3.38  1295   144  0.75  31.96   0.95     1.56      58681.41|
+|  8:    3.38 -    3.23  1299   145  0.73  34.23   1.06     1.54      40868.43|
+|  9:    3.23 -    3.11  1283   141  0.73  33.88   1.01     1.57      29906.55|
+| 10:    3.11 -    3.00  1298   144  0.73  33.66   0.96     1.45      20343.08|
+|alpha:            min =        1.45 max =            1.64 mean =         1.57|
+|beta:             min =    20343.08 max =       243476.64 mean =    100751.72|
+|figures of merit: min =        0.00 max =            1.00 mean =         0.79|
+|phase err.(work): min =        0.00 max =           89.80 mean =        28.24|
+|phase err.(test): min =        0.00 max =           89.57 mean =        28.71|
+|-----------------------------------------------------------------------------|
+
+==================================== Final ====================================
+
+
+============================= updating all scales =============================
+
+                   start: r(all,work,free)=0.2202 0.2150 0.2667 n_refl.: 14459
+       re-set all scales: r(all,work,free)=0.4064 0.4053 0.4187 n_refl.: 14459
+         remove outliers: r(all,work,free)=0.4064 0.4053 0.4187 n_refl.: 14459
+overall B=-1.03 to atoms: r(all,work,free)=0.4019 0.4007 0.4148 n_refl.: 14459
+bulk-solvent and scaling: r(all,work,free)=0.2203 0.2151 0.2675 n_refl.: 14459
+         remove outliers: r(all,work,free)=0.2203 0.2151 0.2675 n_refl.: 14459
+
+ ======================== Statistics in resolution bins ======================== 
+
+Total model structure factor:
+  F_model = k_total * (F_calc + k_mask * F_mask)
+
+    k_total = k_isotropic * k_anisotropic
+   Resolution    Compl Nwork Nfree R_work    <Fobs>  <Fmodel> kiso   kani kmask
+ 56.752-15.820   96.19    91    10 0.3124  1531.706  1506.569 1.413 1.009 0.300
+ 15.741-12.735   99.00    89    10 0.1694  1715.383  1658.900 1.171 1.008 0.277
+ 12.710-10.227  100.00   163    17 0.1415  1978.507  1956.034 1.049 1.009 0.276
+ 10.169-8.210   100.00   311    35 0.1442  1583.582  1562.098 1.092 1.007 0.273
+  8.204-6.592   100.00   600    67 0.1847  1002.072   985.290 0.966 1.005 0.267
+  6.589-5.298   100.00  1143   126 0.2321   752.885   725.021 0.907 0.999 0.242
+  5.293-4.255   100.00  2194   245 0.1817   868.662   842.116 0.982 0.993 0.212
+  4.254-3.418    99.72  4237   469 0.2316   561.397   543.064 1.053 0.980 0.122
+  3.418-3.000    99.96  4188   464 0.2837   276.773   256.477 1.002 0.968 0.000
+
+  Approximation of k_total with k_overall*exp(-b_overall*s**2/4)
+    k_overall=0.9911   b_overall=0.2252  
+
+================= overall refinement statistics: step by step =================
+
+****************** REFINEMENT STATISTICS STEP BY STEP ******************
+leading digit, like 1_, means number of macro-cycle                     
+0    : statistics at the very beginning when nothing is done yet        
+1_bss: bulk solvent correction and/or (anisotropic) scaling             
+1_adp: refinement of ADPs (Atomic Displacement Parameters)              
+1_occ: refinement of occupancies                                        
+------------------------------------------------------------------------
+ stage r-work r-free bonds angles b_min b_max b_ave n_water shift
+      0    : 0.4001 0.5659 0.011  1.835  36.6 110.6  67.7   0      0.000
+      1_bss: 0.2151 0.2670 0.011  1.835  36.6 110.6  67.7   0      0.000
+1_settarget: 0.2151 0.2670 0.011  1.835  36.6 110.6  67.7   0      0.000
+   1_weight: 0.2151 0.2670 0.011  1.835  36.6 110.6  67.7   0      0.000
+      1_adp: 0.2150 0.2667 0.011  1.835  37.7 111.9  69.0   0      0.000
+        end: 0.2151 0.2675 0.011  1.835  36.7 110.8  68.0   0      0.000
+------------------------------------------------------------------------
+
+CPU time actual refinement: 37.86
+
+
+============================== Exporting results ==============================
+
+Writing refined structure to PDB file:
+  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS3/Refine_14/pyrR_ds3_refine_14.pdb
+n_use            =  4584
+n_use_u_iso      =  4584
+n_use_u_aniso    =  0
+n_grad_site      =  0
+n_grad_u_iso     =  0
+n_grad_u_aniso   =  0
+n_grad_occupancy =  0
+n_grad_fp        =  0
+n_grad_fdp       =  0
+total number of scatterers =  4584
+
+Writing refined structure to CIF file:
+  /home/adrmercurio/XtaLab/git_pyrR/phenix/DS3/Refine_14/pyrR_ds3_refine_14.cif
+
+=============================== Detailed timings ==============================
+
+  Micro-tasks:
+    mask                            = 0.00   
+    f_calc                          = 0.00   
+    alpha_beta                      = 0.04   
+    target                          = 0.08   
+    gradients_wrt_atomic_parameters = 0.00   
+    fmodel                         = 0.00   
+    r_factors                      = 0.00   
+    phase_errors                   = 0.70   
+    foms                           = 0.00   
+    TOTAL for micro-tasks          = 0.82   
+NUMBER OF MASK CALCS=  0
+Total CPU time: 51.85 seconds
+from_scatterers_fft:    56 calls, 1.60 s
+gradients_fft:          30 calls, 1.09 s
+
+=========================== phenix.refine: finished ===========================
+
+# Date 2020-06-20 Time 21:23:37 CDT -0500 (1592706217.11 s)
+wall clock time: 52.69 s
+
+Start R-work = 0.2151, R-free = 0.2670
+Final R-work = 0.2151, R-free = 0.2675
+  Monomer Library directory:
+    "/home/adrmercurio/XtaLab/phenix-1.17.1-3660/modules/chem_data/mon_lib"
+  Total number of atoms: 4584
+  Number of models: 1
+  Model: ""
+    Number of chains: 5
+    Chain: "A"
+      Number of atoms: 1121
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 151, 1121
+          Classifications: {'peptide': 151}
+          Incomplete info: {'backbone_only': 1, 'truncation_to_alanine': 14}
+          Link IDs: {'PTRANS': 7, 'TRANS': 143}
+          Chain breaks: 1
+          Unresolved non-hydrogen bonds: 63
+          Unresolved non-hydrogen angles: 75
+          Unresolved non-hydrogen dihedrals: 51
+          Unresolved non-hydrogen chiralities: 5
+          Planarities with less than four sites: {'GLU:plan': 2, 'ARG:plan': 3, 'ASN:plan1': 1, 'ASP:plan': 1}
+          Unresolved non-hydrogen planarities: 28
+    Chain: "B"
+      Number of atoms: 1164
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 154, 1164
+          Classifications: {'peptide': 154}
+          Incomplete info: {'truncation_to_alanine': 10}
+          Link IDs: {'PTRANS': 7, 'TRANS': 146}
+          Chain breaks: 1
+          Unresolved non-hydrogen bonds: 39
+          Unresolved non-hydrogen angles: 48
+          Unresolved non-hydrogen dihedrals: 30
+          Unresolved non-hydrogen chiralities: 2
+          Planarities with less than four sites: {'GLU:plan': 2, 'ARG:plan': 3, 'ASN:plan1': 1, 'ASP:plan': 1}
+          Unresolved non-hydrogen planarities: 25
+    Chain: "C"
+      Number of atoms: 1161
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 153, 1161
+          Classifications: {'peptide': 153}
+          Incomplete info: {'truncation_to_alanine': 11}
+          Link IDs: {'PTRANS': 7, 'TRANS': 145}
+          Chain breaks: 1
+          Unresolved non-hydrogen bonds: 37
+          Unresolved non-hydrogen angles: 47
+          Unresolved non-hydrogen dihedrals: 27
+          Unresolved non-hydrogen chiralities: 5
+          Planarities with less than four sites: {'GLU:plan': 2, 'ARG:plan': 1, 'ASN:plan1': 1}
+          Unresolved non-hydrogen planarities: 17
+    Chain: "D"
+      Number of atoms: 1126
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 153, 1126
+          Classifications: {'peptide': 153}
+          Incomplete info: {'truncation_to_alanine': 22}
+          Link IDs: {'PTRANS': 7, 'TRANS': 145}
+          Chain breaks: 1
+          Unresolved non-hydrogen bonds: 77
+          Unresolved non-hydrogen angles: 94
+          Unresolved non-hydrogen dihedrals: 60
+          Unresolved non-hydrogen chiralities: 5
+          Planarities with less than four sites: {'GLN:plan1': 1, 'GLU:plan': 5, 'ARG:plan': 2, 'ASN:plan1': 2, 'ASP:plan': 1}
+          Unresolved non-hydrogen planarities: 39
+    Chain: "D"
+      Number of atoms: 12
+      Number of conformers: 1
+      Conformer: ""
+        Number of residues, atoms: 2, 12
+          Classifications: {'peptide': 2}
+          Incomplete info: {'truncation_to_alanine': 1}
+          Link IDs: {'TRANS': 1}
+          Unresolved non-hydrogen bonds: 5
+          Unresolved non-hydrogen angles: 7
+          Unresolved non-hydrogen dihedrals: 3
+          Planarities with less than four sites: {'GLU:plan': 1, 'ASN:plan1': 1}
+          Unresolved non-hydrogen planarities: 5
+  Time building chain proxies: 0.58, per 1000 atoms: 0.13
+  Number of scatterers: 4584
+  At special positions: 0
+  Unit cell: (59.39, 116.651, 109.032, 90, 104.227, 90)
+  Space group: I 1 2 1 (No. 5)
+  Number of sites at special positions: 0
+  Number of scattering types: 4
+    Type Number    sf(0)
+     S      13     16.00
+     O     839      8.00
+     N     828      7.00
+     C    2904      6.00
+    sf(0) = scattering factor at diffraction angle 0.
+
+  Number of disulfides: simple=0, symmetry=0
+
+  Automatic linking
+    Parameters for automatic linking
+      Linking & cutoffs
+        Metal                : False - 3.50
+        Amimo acid           : False - 1.90
+        Carbohydrate         : True  - 1.99
+        Ligands              : True  - 1.99
+        Small molecules      : False - 1.98
+        Amino acid - RNA/DNA : False
+      
+  Number of custom bonds: simple=0, symmetry=0
+  Time building additional restraints: 0.53
+  Conformation dependent library (CDL) restraints added in 129.2 milliseconds
+  
+  Time building geometry restraints manager: 0.61 seconds
+
+  NOTE: a complete listing of the restraints can be obtained by requesting
+        output of .geo file.
+
+  Histogram of bond lengths:
+        1.15 -     1.29: 803
+        1.29 -     1.42: 922
+        1.42 -     1.56: 2863
+        1.56 -     1.70: 8
+        1.70 -     1.83: 26
+  Bond restraints: 4622
+  Sorted by residual:
+  bond pdb=" N   PRO A  58 "
+       pdb=" CD  PRO A  58 "
+    ideal  model  delta    sigma   weight residual
+    1.473  1.202  0.271 1.40e-02 5.10e+03 3.76e+02
+  bond pdb=" C   PRO A  57 "
+       pdb=" O   PRO A  57 "
+    ideal  model  delta    sigma   weight residual
+    1.240  1.161  0.079 1.12e-02 7.97e+03 4.97e+01
+  bond pdb=" C   PRO A  58 "
+       pdb=" O   PRO A  58 "
+    ideal  model  delta    sigma   weight residual
+    1.233  1.165  0.068 1.21e-02 6.83e+03 3.19e+01
+  bond pdb=" C   LEU D 159 "
+       pdb=" N   GLU D 160 "
+    ideal  model  delta    sigma   weight residual
+    1.335  1.263  0.072 1.35e-02 5.49e+03 2.82e+01
+  bond pdb=" C   ARG A  44 "
+       pdb=" O   ARG A  44 "
+    ideal  model  delta    sigma   weight residual
+    1.237  1.174  0.062 1.19e-02 7.06e+03 2.74e+01
+  ... (remaining 4617 not shown)
+
+  Histogram of bond angle deviations from ideal:
+       80.94 -   100.75: 20
+      100.75 -   120.56: 4644
+      120.56 -   140.37: 1596
+      140.37 -   160.18: 0
+      160.18 -   179.99: 1
+  Bond angle restraints: 6261
+  Sorted by residual:
+  angle pdb=" CB  ASN B 171 "
+        pdb=" CG  ASN B 171 "
+        pdb=" OD1 ASN B 171 "
+      ideal   model   delta    sigma   weight residual
+     120.80  179.99  -59.19 2.00e+00 2.50e-01 8.76e+02
+  angle pdb=" CB  ASN B 171 "
+        pdb=" CG  ASN B 171 "
+        pdb=" ND2 ASN B 171 "
+      ideal   model   delta    sigma   weight residual
+     116.40   80.94   35.46 1.50e+00 4.44e-01 5.59e+02
+  angle pdb=" OD1 ASN B 171 "
+        pdb=" CG  ASN B 171 "
+        pdb=" ND2 ASN B 171 "
+      ideal   model   delta    sigma   weight residual
+     122.60   99.05   23.55 1.00e+00 1.00e+00 5.55e+02
+  angle pdb=" C   ILE C  34 "
+        pdb=" CA  ILE C  34 "
+        pdb=" CB  ILE C  34 "
+      ideal   model   delta    sigma   weight residual
+     111.29  131.45  -20.16 1.64e+00 3.72e-01 1.51e+02
+  angle pdb=" CA  ASN B 171 "
+        pdb=" CB  ASN B 171 "
+        pdb=" CG  ASN B 171 "
+      ideal   model   delta    sigma   weight residual
+     112.60  102.26   10.34 1.00e+00 1.00e+00 1.07e+02
+  ... (remaining 6256 not shown)
+
+  Histogram of dihedral angle deviations from ideal:
+        0.00 -    35.98: 1705
+       35.98 -    71.96: 46
+       71.96 -   107.93: 1
+      107.93 -   143.91: 0
+      143.91 -   179.88: 1
+  Dihedral angle restraints: 1753
+    sinusoidal: 1136
+      harmonic: 617
+  Sorted by residual:
+  dihedral pdb=" CD  ARG B  36 "
+           pdb=" NE  ARG B  36 "
+           pdb=" CZ  ARG B  36 "
+           pdb=" NH1 ARG B  36 "
+      ideal   model   delta sinusoidal    sigma   weight residual
+       0.00  179.88 -179.88     1      1.00e+01 1.00e-02 1.92e+02
+  dihedral pdb=" CA  LEU D 159 "
+           pdb=" C   LEU D 159 "
+           pdb=" N   GLU D 160 "
+           pdb=" CA  GLU D 160 "
+      ideal   model   delta  harmonic     sigma   weight residual
+     180.00  142.43   37.57     0      5.00e+00 4.00e-02 5.65e+01
+  dihedral pdb=" CA  ARG A  36 "
+           pdb=" C   ARG A  36 "
+           pdb=" N   ARG A  37 "
+           pdb=" CA  ARG A  37 "
+      ideal   model   delta  harmonic     sigma   weight residual
+     180.00  152.68   27.32     0      5.00e+00 4.00e-02 2.99e+01
+  ... (remaining 1750 not shown)
+
+  Histogram of chiral volume deviations from ideal:
+       0.000 -    0.135: 717
+       0.135 -    0.270: 50
+       0.270 -    0.405: 9
+       0.405 -    0.540: 1
+       0.540 -    0.676: 2
+  Chirality restraints: 779
+  Sorted by residual:
+  chirality pdb=" CA  GLU D 160 "
+            pdb=" N   GLU D 160 "
+            pdb=" C   GLU D 160 "
+            pdb=" CB  GLU D 160 "
+    both_signs  ideal   model   delta    sigma   weight residual
+      False      2.51    1.83    0.68 2.00e-01 2.50e+01 1.14e+01
+  chirality pdb=" CA  MET C  35 "
+            pdb=" N   MET C  35 "
+            pdb=" C   MET C  35 "
+            pdb=" CB  MET C  35 "
+    both_signs  ideal   model   delta    sigma   weight residual
+      False      2.51    1.89    0.62 2.00e-01 2.50e+01 9.67e+00
+  chirality pdb=" CA  ILE C  34 "
+            pdb=" N   ILE C  34 "
+            pdb=" C   ILE C  34 "
+            pdb=" CB  ILE C  34 "
+    both_signs  ideal   model   delta    sigma   weight residual
+      False      2.43    1.99    0.44 2.00e-01 2.50e+01 4.88e+00
+  ... (remaining 776 not shown)
+
+  Planarity restraints: 809
+  Sorted by residual:
+                                 delta    sigma   weight rms_deltas residual
+  plane pdb=" CA  LEU D 159 "    0.044 2.00e-02 2.50e+03   8.27e-02 6.83e+01
+        pdb=" C   LEU D 159 "   -0.143 2.00e-02 2.50e+03
+        pdb=" O   LEU D 159 "    0.050 2.00e-02 2.50e+03
+        pdb=" N   GLU D 160 "    0.049 2.00e-02 2.50e+03
+                                 delta    sigma   weight rms_deltas residual
+  plane pdb=" CA  ARG A  44 "   -0.038 2.00e-02 2.50e+03   7.97e-02 6.36e+01
+        pdb=" C   ARG A  44 "    0.138 2.00e-02 2.50e+03
+        pdb=" O   ARG A  44 "   -0.053 2.00e-02 2.50e+03
+        pdb=" N   LEU A  45 "   -0.047 2.00e-02 2.50e+03
+                                 delta    sigma   weight rms_deltas residual
+  plane pdb=" CA  MET A  35 "   -0.040 2.00e-02 2.50e+03   7.55e-02 5.69e+01
+        pdb=" C   MET A  35 "    0.131 2.00e-02 2.50e+03
+        pdb=" O   MET A  35 "   -0.044 2.00e-02 2.50e+03
+        pdb=" N   ARG A  36 "   -0.047 2.00e-02 2.50e+03
+  ... (remaining 806 not shown)
+
+  Histogram of nonbonded interaction distances:
+        1.33 -     2.04: 1
+        2.04 -     2.76: 671
+        2.76 -     3.47: 6501
+        3.47 -     4.19: 11634
+        4.19 -     4.90: 19592
+  Nonbonded interactions: 38399
+  Sorted by model distance:
+  nonbonded pdb=" C   ILE D 170 "
+            pdb=" N   ASN D 171 "
+     model   vdw
+     1.327 3.350
+  nonbonded pdb=" O   LEU D 159 "
+            pdb=" O   VAL D 165 "
+     model   vdw
+     2.208 3.040
+  nonbonded pdb=" NE2 HIS A 133 "
+            pdb=" O   THR A 149 "
+     model   vdw
+     2.228 2.520
+  nonbonded pdb=" O   ILE D 170 "
+            pdb=" N   ASN D 171 "
+     model   vdw
+     2.242 2.520
+  nonbonded pdb=" OE1 GLN A 124 "
+            pdb=" OH  TYR A 142 "
+     model   vdw
+     2.247 2.440
+  ... (remaining 38394 not shown)
+
+  NOTE: a complete listing of the restraints can be obtained by requesting
+        output of .geo file.
+
+=========================== Generating kinemage file ==========================
+
+
+======================= Extracting refinement statistics ======================
+
+
+=================================== Complete ==================================
+
